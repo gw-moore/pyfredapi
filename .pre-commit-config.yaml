@@ -1,0 +1,36 @@
+exclude: ^docs/|.nox/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/psf/black
+    rev: 22.8.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/isort
+    rev: 5.8.0
+    hooks:
+      - id: isort
+        name: isort (python)
+  - repo: https://github.com/pycqa/flake8
+    rev: "4.0.1"
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "v0.971"
+    hooks:
+      - id: mypy
+        additional_dependencies:
+          - "types-requests"
+          - "types-setuptools"
+          - "pandas-stubs"
+  - repo: https://github.com/python-poetry/poetry
+    rev: "1.2.1"
+    hooks:
+      - id: poetry-check
+      - id: poetry-lock
+      - id: poetry-export
+        args: ["-f", "requirements.txt", "-o", "requirements.txt"]
