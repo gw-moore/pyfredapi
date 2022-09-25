@@ -8,7 +8,6 @@ from .base import RETURN_FORMAT, FredBase, Json, JsonOrPandas, ReturnFormat
 
 
 class SeriesArgs(BaseModel):
-    series_id: str
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
     limit: Optional[int] = None
