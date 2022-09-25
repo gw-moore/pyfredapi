@@ -18,7 +18,7 @@ pip install fredapi
 
 ## Basic Usage
 
-Before using `pyfredapi` and must have a API key to the FRED API web service. You can apply for (one for free)[https://fred.stlouisfed.org/docs/api/api_key.html] on the FRED website.
+Before using `pyfredapi` and must have a API key to the FRED API web service. You can apply for [one for free](https://fred.stlouisfed.org/docs/api/api_key.html) on the FRED website.
 
 You can either be set as the environment variable `FRED_API_KEY`, or pass it to the `api_key` parameters when initializing `pyfredapi`.
 
