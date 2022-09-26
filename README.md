@@ -13,7 +13,7 @@
 
 ## Installation
 ```bash
-pip install fredapi
+pip install pyfredapi
 ```
 
 ## Basic Usage
@@ -31,8 +31,8 @@ client = FredApi()
 # api key passed to initializer
 client = FredApi(api_key = "my_api_key")
 
-# get data for the S&P500
-client.get_series_data("SP500")
+# get GDP data
+client.get_series_data("GDP")
 ```
 
 ## Documentation

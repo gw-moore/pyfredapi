@@ -29,7 +29,7 @@ Installation
 
 .. code-block:: bash
 
-   pip install fredapi
+   pip install pyfredapi
 
 
 Example
