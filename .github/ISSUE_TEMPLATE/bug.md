@@ -1,44 +1,26 @@
----
-name: Bug report
-about: Report a bug or unexpected behavior in pyfredapi
-description: Report a bug or unexpected behavior in pyfredapi
-labels: [bug]
----
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
 
 body:
   - type: markdown
     attributes:
-      value:  Thank you for contributing to pyfredapi!
-
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: textarea
-    id: description
+    id: what-happened
     attributes:
-      label: Description
-      description: |
-        Please explain what you're seeing and what you would expect to see. Please provide as much detail as possible.
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
-
-  - type: textarea
-    id: example
-    attributes:
-      label: Example Code
-      description: >
-        If applicable, please add a self-contained example demonstrating the bug.
-
-      placeholder: |
-        import pyfredapi
-
-        ...
-      render: Python
-
   - type: textarea
     id: version
     attributes:
-      label: Python, pyfredapi & OS Version
-      description: |
-        Which version of Python & pyfredapi are you using, and which Operating System?
-
-      render: Text
+      label: Version
+      description: Which version of Python & Pyfredapi are you using, and which Operating System?
     validations:
       required: true
