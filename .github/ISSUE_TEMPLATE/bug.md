@@ -1,26 +1,24 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+---
+name: Bug report
+about: Create a new ticket for a bug
+title: ''
+labels: 'bug'
+assignees: ''
+---
 
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: textarea
-    id: version
-    attributes:
-      label: Version
-      description: Which version of Python & Pyfredapi are you using, and which Operating System?
-    validations:
-      required: true
+**Description.**
+Please enter an explicit description of your issue
+
+**Reproduce**
+Please give exact steps to recreate the issue
+
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
+**Screenshot**
+If applicable, add screenshots to help explain your problem
+
+**Version**
+Please provide the version of Python, pyfredapi, and OS
