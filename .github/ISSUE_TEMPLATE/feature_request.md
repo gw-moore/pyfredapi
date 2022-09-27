@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this pyfredapi
+about: Suggest an idea for pyfredapi
 title: ''
 labels: 'enhancement'
 assignees: ''
