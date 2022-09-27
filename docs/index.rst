@@ -48,7 +48,7 @@ Quick start example of how to pull U.S. gross domestic product data.
    client = FredApi(api_key = "my_api_key")
 
    # get GDP data
-   client.get_series_data("GDP")
+   client.get_series("GDP")
 
 .. toctree::
    :maxdepth: 1
