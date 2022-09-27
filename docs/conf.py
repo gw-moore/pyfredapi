@@ -23,6 +23,7 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "nbsphinx",
     "sphinxcontrib.autodoc_pydantic",
+    "sphinx_copybutton",
 ]
 
 templates_path = ["_templates"]

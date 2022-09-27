@@ -1,12 +1,14 @@
 from typing import Literal, Optional, Union
 
-import pandas as pd
 from pydantic import BaseModel, Extra, PositiveInt
 
 from .base import RETURN_FORMAT, FredBase, Json, JsonOrPandas, ReturnFormat
+from .utils import _convert_to_pandas
 
 
-class CategoryArgs(BaseModel):
+class CategoryApiParameters(BaseModel):
+    """Represents the parameters accepted by the FRED Category endpoints."""
+
     category_id: Optional[int] = None
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
@@ -44,18 +46,20 @@ class FredCategory(FredBase):
     """Represents a FRED Category."""
 
     def get_category(self, category_id: Optional[int] = None, **kwargs) -> Json:
-        """Get category by ID. `FRED Docs <https://fred.stlouisfed.org/docs/api/fred/category.html>`_.
+        """Get category by ID. https://fred.stlouisfed.org/docs/api/fred/category.html.
 
         Parameters
         ----------
         category_id : str | None
             Category id of interest.
+        **kwargs : dict, optional
+            Extra arguments to FRED API category/ endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = CategoryArgs(**kwargs)
+        params = CategoryApiParameters(**kwargs)
         return self._get(
             endpoint="category",
             params={
@@ -67,18 +71,20 @@ class FredCategory(FredBase):
     def get_category_children(
         self, category_id: Optional[int] = None, **kwargs
     ) -> Json:
-        """Get category children by category ID. `FRED Docs <https://fred.stlouisfed.org/docs/api/fred/category_children.html>`_.
+        """Get category children by category ID. https://fred.stlouisfed.org/docs/api/fred/category_children.html.
 
         Parameters
         ----------
         category_id : str | None
             Category id of interest.
+        **kwargs : dict, optional
+            Extra arguments to FRED API category/children endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = CategoryArgs(**kwargs)
+        params = CategoryApiParameters(**kwargs)
         return self._get(
             endpoint="category/children",
             params={
@@ -88,18 +94,21 @@ class FredCategory(FredBase):
         )
 
     def get_category_related(self, category_id: int, **kwargs) -> Json:
-        """Get related categories by category ID. `FRED Docs <https://fred.stlouisfed.org/docs/api/fred/category_related.html>`_.
+        """Get related categories by category ID. https://fred.stlouisfed.org/docs/api/fred/category_related.html.
 
         Parameters
         ----------
         category_id : str
             Category id of interest.
+        **kwargs : dict, optional
+            Extra arguments to FRED API category/children endpoint. Refer to the FRED documentation for a list of all possible arguments.
+
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = CategoryArgs(**kwargs)
+        params = CategoryApiParameters(**kwargs)
         return self._get(
             endpoint="category/related",
             params={
@@ -129,7 +138,7 @@ class FredCategory(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = CategoryArgs(**kwargs)
+        params = CategoryApiParameters(**kwargs)
         response = self._get(
             endpoint="category/series",
             params={
@@ -139,7 +148,7 @@ class FredCategory(FredBase):
         )
 
         if return_format == ReturnFormat.pandas:
-            return pd.DataFrame.from_dict(response["seriess"])
+            return _convert_to_pandas(response["seriess"])
         return response
 
     def get_category_tags(
@@ -163,7 +172,7 @@ class FredCategory(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = CategoryArgs(**kwargs)
+        params = CategoryApiParameters(**kwargs)
         response = self._get(
             endpoint="category/tags",
             params={
@@ -173,7 +182,7 @@ class FredCategory(FredBase):
         )
 
         if return_format == ReturnFormat.pandas:
-            return pd.DataFrame.from_dict(response["tags"])
+            return _convert_to_pandas(response["tags"])
         return response
 
     def get_category_related_tags(
@@ -197,7 +206,7 @@ class FredCategory(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = CategoryArgs(**kwargs)
+        params = CategoryApiParameters(**kwargs)
         response = self._get(
             endpoint="category/related_tags",
             params={
@@ -207,5 +216,5 @@ class FredCategory(FredBase):
         )
 
         if return_format == ReturnFormat.pandas:
-            return pd.DataFrame.from_dict(response["tags"])
+            return _convert_to_pandas(response["tags"])
         return response

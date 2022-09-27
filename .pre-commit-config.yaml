@@ -27,6 +27,7 @@ repos:
           - "types-requests"
           - "types-setuptools"
           - "pandas-stubs"
+          - "pydantic"
   - repo: https://github.com/python-poetry/poetry
     rev: "1.2.1"
     hooks:

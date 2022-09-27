@@ -1,6 +1,8 @@
-name: 🐛 Bug
+---
+name: Bug report
 description: Report a bug or unexpected behavior in pyfredapi
-labels: [bug, unconfirmed]
+labels: [bug]
+---
 
 body:
   - type: markdown
@@ -12,9 +14,7 @@ body:
     attributes:
       label: Description
       description: |
-        Please explain what you're seeing and what you would expect to see.
-
-        Please provide as much detail as possible to make understanding and solving your problem as quick as possible. 🙏
+        Please explain what you're seeing and what you would expect to see. Please provide as much detail as possible.
     validations:
       required: true
 
@@ -23,9 +23,7 @@ body:
     attributes:
       label: Example Code
       description: >
-        If applicable, please add a self-contained,
-        [minimal, reproducible, example](https://stackoverflow.com/help/minimal-reproducible-example)
-        demonstrating the bug.
+        If applicable, please add a self-contained example demonstrating the bug.
 
       placeholder: |
         import pyfredapi

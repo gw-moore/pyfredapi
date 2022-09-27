@@ -1,13 +1,16 @@
 import webbrowser
-from typing import List, Literal, Optional, Union
+from typing import Any, Dict, List, Literal, Optional, Union
 
 import pandas as pd
 from pydantic import BaseModel, Extra, PositiveInt
 
 from .base import RETURN_FORMAT, FredBase, Json, JsonOrPandas, ReturnFormat
+from .utils import _convert_to_pandas
 
 
-class SeriesArgs(BaseModel):
+class SeriesApiParameters(BaseModel):
+    """Represents the parameters accepted by the FRED Series endpoints."""
+
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
     limit: Optional[int] = None
@@ -56,7 +59,7 @@ class SeriesArgs(BaseModel):
         extra = Extra.forbid
 
 
-class SeriesSearchArgs(BaseModel):
+class SeriesSearchParameters(BaseModel):
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
     limit: Optional[int] = None
@@ -113,6 +116,19 @@ class SeriesInfo(BaseModel):
         """Open the FRED webpage for the given series."""
         webbrowser.open(f"{self._base_url}/{self.id}", new=2)
 
+    class Config:
+        extra = Extra.allow
+
+
+class SeriesData(BaseModel):
+    """Represents the response from series/observations endpoints."""
+
+    info: SeriesInfo
+    data: Union[List[Dict[str, Any]], pd.DataFrame]
+
+    class Config:
+        arbitrary_types_allowed = True
+
 
 class FredSeries(FredBase):
     """FRED API series endpoints."""
@@ -128,13 +144,13 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/ endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/ endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
-        SeriesInfo object.
+        An instance of SeriesInfo.
         """
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         response = self._get(
             endpoint="series",
             params={
@@ -152,13 +168,13 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/categories endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/categories endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         return self._get(
             endpoint="series/categories",
             params={
@@ -167,12 +183,12 @@ class FredSeries(FredBase):
             },
         )
 
-    def get_series_data(
+    def get_series(
         self,
         series_id: str,
         return_format: Union[RETURN_FORMAT, ReturnFormat] = "pandas",
         **kwargs,
-    ) -> JsonOrPandas:
+    ) -> SeriesData:
         """Get the observations or data values for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_observations.html.
 
         Parameters
@@ -182,15 +198,15 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             Define how to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observations endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/observations endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+        A SeriesData object that holds the data and metadata for the requested series id.
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         response = self._get(
             endpoint="series/observations",
             params={
@@ -199,9 +215,12 @@ class FredSeries(FredBase):
             },
         )
 
+        series_info = self.get_series_info(series_id=series_id)
+
         if return_format == ReturnFormat.pandas:
-            return pd.DataFrame.from_dict(response["observations"])
-        return response
+            pdf = _convert_to_pandas(response["observations"])
+            return SeriesData(info=series_info, data=pdf)
+        return SeriesData(info=series_info, data=response["observations"])
 
     def get_series_releases(self, series_id: str, **kwargs) -> Json:
         """Get the FRED release for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_release.html.
@@ -211,15 +230,15 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/releases endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/releases endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         return self._get(
-            endpoint="series/releases",
+            endpoint="series/release",
             params={
                 "series_id": series_id,
                 **params.dict(exclude_none=True),
@@ -234,13 +253,13 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/tags endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/tags endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         return self._get(
             endpoint="series/tags",
             params={
@@ -257,13 +276,13 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/updates endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/updates endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         return self._get(
             endpoint="series/updates",
             params={
@@ -275,20 +294,20 @@ class FredSeries(FredBase):
     def get_series_vintagedates(self, series_id: str, **kwargs) -> List[str]:
         """Get the dates in history when a series' data values were revised or new data values were released.
 
-        Vintage dates are the release dates for a series excluding release dates when the data for the series did not change. https://fred.stlouisfed.org/docs/api/fred/series_vintagesdates.html.
+        Vintage dates are the release dates for a series excluding release dates when the data did not change. https://fred.stlouisfed.org/docs/api/fred/series_vintagesdates.html.
 
         Parameters
         ----------
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/vintagedates endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/vintagedates endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
         List of strings representing the the available vintage dates
         """
-        params = SeriesArgs(**kwargs)
+        params = SeriesApiParameters(**kwargs)
         response = self._get(
             endpoint="series/vintagedates",
             params={
@@ -303,7 +322,7 @@ class FredSeries(FredBase):
         series_id: str,
         return_format: Union[RETURN_FORMAT, ReturnFormat] = "pandas",
         **kwargs,
-    ) -> JsonOrPandas:
+    ) -> SeriesData:
         """Get the observations or data values for all releases an economic data series by ID.
 
         Parameters
@@ -313,16 +332,16 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+        A SeriesData object that holds the data and metadata for the requested series id.
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesArgs(**kwargs)
-        return self.get_series_data(
+        params = SeriesApiParameters(**kwargs)
+        return self.get_series(
             series_id=series_id,
             return_format=return_format,
             **{
@@ -337,7 +356,7 @@ class FredSeries(FredBase):
         series_id: str,
         return_format: Union[RETURN_FORMAT, ReturnFormat],
         **kwargs,
-    ) -> JsonOrPandas:
+    ) -> SeriesData:
         """Get the observations or data values for the initial release of an economic data series.
 
         Includes only the the initial release of the series and excludes all revisions.
@@ -349,21 +368,21 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+        A SeriesData object that holds the data and metadata for the requested series id.
         """
         return_format = ReturnFormat(return_format)
 
         # sanitize the kwargs to ensure the user did not
         # in inadvertently supply values for realtime_start & output_type
-        _ = kwargs.pop("realtime_start")
-        _ = kwargs.pop("output_type")
+        _ = kwargs.pop("realtime_start", None)
+        _ = kwargs.pop("output_type", None)
 
-        params = SeriesArgs(**kwargs)
-        return self.get_series_data(
+        params = SeriesApiParameters(**kwargs)
+        return self.get_series(
             series_id=series_id,
             return_format=return_format,
             **{
@@ -379,7 +398,7 @@ class FredSeries(FredBase):
         date: str,
         return_format: Union[RETURN_FORMAT, ReturnFormat] = "pandas",
         **kwargs,
-    ) -> JsonOrPandas:
+    ) -> SeriesData:
         """Get the observations or data values for an economic data series made on or before a specific date.
 
         Retrieves the latest data known for the series as of the date provided. This includes any revisions to
@@ -389,21 +408,21 @@ class FredSeries(FredBase):
         ----------
         series_id : str
             Series id of interest.
-        date: str
+        date : str
             Include only data revisions made on or before this date.
-        return_format : : Literal["json", "pandas"] | ReturnFormat, optional
+        return_format : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+        A SeriesData object that holds the data and metadata for the requested series id.
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesArgs(**kwargs)
-        return self.get_series_data(
+        params = SeriesApiParameters(**kwargs)
+        return self.get_series(
             series_id=series_id,
             return_format=return_format,
             **{
@@ -425,14 +444,14 @@ class FredSeries(FredBase):
         Parameters
         ----------
         search_text : str
-            The word to match against.
-        search_type : Literal[str]
+            The text to match against.
+        search_type : Literal["full_text", "series_id"]
             Defines which type of search to preform. One of the following strings: 'full_text', 'series_id'.
-            `Parameter docs` <https://fred.stlouisfed.org/docs/api/fred/series_search.html#search_type>`_.
+            Parameter docs: https://fred.stlouisfed.org/docs/api/fred/series_search.html#search_type.
         return_format : : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer the FRED documentation for a list of all possible arguments.
+            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
 
         Returns
         -------
@@ -440,7 +459,7 @@ class FredSeries(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesSearchArgs(**kwargs)
+        params = SeriesSearchParameters(**kwargs)
         response = self._get(
             endpoint="series/search",
             params={
@@ -454,8 +473,78 @@ class FredSeries(FredBase):
             return pd.DataFrame.from_dict(response["seriess"])
         return response
 
-    def search_series_tags(self):
-        raise NotImplementedError
+    def search_series_tags(
+        self,
+        search_text: str,
+        return_format: Union[RETURN_FORMAT, ReturnFormat] = "pandas",
+        **kwargs,
+    ) -> JsonOrPandas:
+        """Get the FRED tags for a series search. https://fred.stlouisfed.org/docs/api/fred/release_related_tags.html.
 
-    def search_series_related_tags(self):
-        raise NotImplementedError
+        Parameters
+        ----------
+        search_text : str
+            The text to match against.
+        return_format : : Literal["json", "pandas"] | ReturnFormat, optional
+            In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
+        **kwargs : dict, optional
+            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+
+        Returns
+        -------
+        Either a pandas dataframe or json. Defaults to pandas dataframe.
+        """
+        return_format = ReturnFormat(return_format)
+
+        params = SeriesSearchParameters(**kwargs)
+        response = self._get(
+            endpoint="series/search/tags",
+            params={
+                "series_search_text": search_text,
+                **params.dict(exclude_none=True),
+            },
+        )
+
+        if return_format == ReturnFormat.pandas:
+            return pd.DataFrame.from_dict(response["tags"])
+        return response
+
+    def search_series_related_tags(
+        self,
+        search_text: str,
+        tag_names: str,
+        return_format: Union[RETURN_FORMAT, ReturnFormat] = "pandas",
+        **kwargs,
+    ) -> JsonOrPandas:
+        """Get the related FRED tags for one or more FRED tags matching a series search. https://fred.stlouisfed.org/docs/api/fred/series_search_related_tags.html.
+
+        Parameters
+        ----------
+        search_text : str
+            The text to match against.
+        tag_names : str
+            A semicolon delimited list of tag names that series match all of.
+        return_format : : Literal["json", "pandas"] | ReturnFormat, optional
+            In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
+        **kwargs : dict, optional
+            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+
+        Returns
+        -------
+        Either a pandas dataframe or json. Defaults to pandas dataframe.
+        """
+        return_format = ReturnFormat(return_format)
+
+        params = SeriesSearchParameters(**kwargs)
+        response = self._get(
+            endpoint="series/search/related_tags",
+            params={
+                "series_search_text": search_text,
+                "tag_names": tag_names,
+                **params.dict(exclude_none=True),
+            },
+        )
+
+        if return_format == ReturnFormat.pandas:
+            return pd.DataFrame.from_dict(response["tags"])
+        return response
