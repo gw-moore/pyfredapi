@@ -19,7 +19,7 @@ def test_APIKeyNotFoundError():
 
 
 def test_api_key_property():
-    assert FredBase().api_key == os.environ.get("FRED_API_KEY")
+    assert FredBase()._api_key == os.environ.get("FRED_API_KEY")
 
 
 def test_ReturnFormat():

@@ -1,0 +1,800 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 14:44:00 GMT
+      ETag:
+      - '"e615a99227207b76370e0b42219f8236-gzip"'
+      Expires:
+      - Tue, 27 Sep 2022 14:44:00 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '119'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 14:44:01 GMT
+      ETag:
+      - W/"e615a99227207b76370e0b42219f8236-gzip-gzip"
+      Expires:
+      - Tue, 27 Sep 2022 14:44:01 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '118'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 15:44:24 GMT
+      ETag:
+      - W/"e615a99227207b76370e0b42219f8236-gzip-gzip"
+      Expires:
+      - Tue, 27 Sep 2022 15:44:24 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '98'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 15:44:25 GMT
+      ETag:
+      - W/"e615a99227207b76370e0b42219f8236-gzip-gzip"
+      Expires:
+      - Tue, 27 Sep 2022 15:44:25 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 16:09:28 GMT
+      ETag:
+      - W/"e615a99227207b76370e0b42219f8236-gzip-gzip"
+      Expires:
+      - Tue, 27 Sep 2022 16:09:28 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '98'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&series_id=GDP&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJha1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGyGkx
+        MS+vNDGH2nZipH9DZDsJBDlVgtsC0wlmSKGdlF+A6uf0VFCGhMW6U2JOYl5yKijlBSRW5qbmlYDS
+        BEqMG+saGOoaWSgYmliBCgIsWcDEHD3kDU2QnJCen58CMhWpSEJ1BOlxbYZRBqDYWJxaVJaZnEpt
+        SzFDGtmbKZnFyfl5JZl5pakp+IKcDN+aYoQvcobKzEvOz02lspWYfkW2MjmxILMkMUchMRlSQaEU
+        qZRGrpExuneRE3RyaVFRal4Jbaw2McBndXFqcn5eSmIRWslFqX+NMcIa2b8lRYkpVI5cU4ySEtnC
+        3NSi5IzEvJTMYpKsNdY1NNQ1NFYwNLMysLAyNsSsKY0wrEXOPgVFmblUD1oTjKBFtjI5Na+4FK2Q
+        QG0sOcNUoJSIhCtjc4zyCTn3ZOaVpRaXgApb6mZaU4xyAtnW3Py8kgyq17qWWOwELLYWAPCnq5Qh
+        CwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '801'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 16:09:29 GMT
+      ETag:
+      - '"5a43a7569c5abe96218a9ba44b19e805-gzip"'
+      Expires:
+      - Tue, 27 Sep 2022 16:09:29 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 16:11:08 GMT
+      ETag:
+      - W/"e615a99227207b76370e0b42219f8236-gzip-gzip"
+      Expires:
+      - Tue, 27 Sep 2022 16:11:08 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '98'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWJka1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4iRBVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGJkjW
+        JubllSbmUNtOjPRvaIZkZ0pmcXJ+XklmXmlqCqrN6amgbAELe9I9a2aK7lkUiwnENVXi2QLT78jh
+        XZxaVJaZnApKYkhlEcX+xm9pUn4BvnB2SsxJzEtOBeWzgMTK3NS8EpDzUNK3sa6Boa6RhYKhiRWo
+        2MOS4U3MMYIeuczLzEvOz03F5woyYhvT1wZIySw9Pz8F5BFqhjNGIYuchZNLi4pS80oUEpMh9RNK
+        iUppFJsYoIcvcpYqTk3Oz0tJLEIrPSi11BgjhJEtLSlKTKFylJpilFbIFiYnFmSWJObQJoCNjNED
+        GDnf5qYWJWck5qVkFpPkY2NdQ0NdQ2MFQzMrAwsrY0PMitIIw8fI1ian5hWXoiVi1IaLM0wFSn4l
+        XDGaYyRl1OxallpcAioKqJtlTTEKaGRbc/PzSjKoXgNa4rWzoCgzl+r5xgQj3wBmVBtbCwDwDkFv
+        IAsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '802'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 26 Sep 2022 16:11:09 GMT
+      ETag:
+      - W/"e615a99227207b76370e0b42219f8236-gzip-gzip"
+      Expires:
+      - Tue, 27 Sep 2022 16:11:09 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWpga1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGFkjW
+        JubllSbmUNtOjPRviGwngSCnSnBb4HdCUn4Bqp/TU0EZEhbrTok5iXnJqaCUF5BYmZuaVwJKEygx
+        bqxrYKhrZKFgaGIFKgiwZAETc/SQNzRDCvn0/PwUkKlIRRKqI0iPazOMMgDFxuLUorLM5FRqW4oZ
+        0sjeTMksTs7PK8nMK01NwRfkZPjWFCN8kTNUZl5yfm4qla3E9CuylSVFiSlUttEUI/si56TkxILM
+        ksQchcRkSI2IUoZTmppAtStqyYkcr8mlRUWpeSW0sdrEAD1qka0uTk3Oz0tJLEIrKin1rzFG5CJb
+        mpyaV1yKlnVQmxDOMBUo5QThKsocI9eaIBUTualFyRmJeSmZxSSlLGNdQ0NdQ2MFQzMrAwsrY0PM
+        GtoII2WhWJufV5JB9crIEiPLIttZUJSZS/VYNcGIVWQrM1ITU3Iy81IV0jLTS4vICGFLBUNjK1NT
+        K1MsFYCpMXoqRi4sMvPKUotLQHULdcsoU4wwBsyoNrYWAG5u3OacCwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '840'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 27 Sep 2022 01:21:41 GMT
+      ETag:
+      - W/"a2f806b694e9ddcd699cbd1403914dec-gzip-gzip"
+      Expires:
+      - Wed, 28 Sep 2022 01:21:41 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '98'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWpga1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGFkjW
+        JubllSbmUNtOjPRviGwngSCnSnBb4HdCUn4Bqp/TU0EZEhbrTok5iXnJqaCUF5BYmZuaVwJKEygx
+        bqxrYKhrZKFgaGIFKgiwZAETc/SQNzRDCvn0/PwUkKlIRRKqI0iPazOMMgDFxuLUorLM5FRqW4oZ
+        0sjeTMksTs7PK8nMK01NwRfkZPjWFCN8kTNUZl5yfm4qla3E9CuylSVFiSlUttEUI/si56TkxILM
+        ksQchcRkSI2IUoZTmppAtStqyYkcr8mlRUWpeSW0sdrEAD1qka0uTk3Oz0tJLEIrKin1rzFG5CJb
+        mpyaV1yKlnVQmxDOMBUo5QThKsocI9eaIBUTualFyRmJeSmZxSSlLGNdQ0NdQ2MFQzMrAwsrY0PM
+        GtoII2WhWJufV5JB9crIEiPLIttZUJSZS/VYNcGIVWQrM1ITU3Iy81IV0jLTS4vICGFLBUNjK1NT
+        K1MsFYCpMXoqRi4sMvPKUotLQHULdcsoU4wwBsyoNrYWAG5u3OacCwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '840'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 27 Sep 2022 01:21:42 GMT
+      ETag:
+      - W/"a2f806b694e9ddcd699cbd1403914dec-gzip-gzip"
+      Expires:
+      - Wed, 28 Sep 2022 01:21:42 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWpga1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGFkjW
+        JubllSbmUNtOjPRviGwngSCnSnBb4HdCUn4Bqp/TU0EZEhbrTok5iXnJqaCUF5BYmZuaVwJKEygx
+        bqxrYKhrZKFgaGIFKgiwZAETc/SQNzRDCvn0/PwUkKlIRRKqI0iPazOMMgDFxuLUorLM5FRqW4oZ
+        0sjeTMksTs7PK8nMK01NwRfkZPjWFCN8kTNUZl5yfm4qla3E9CuylSVFiSlUttEUI/si56TkxILM
+        ksQchcRkSI2IUoZTmppAtStqyYkcr8mlRUWpeSW0sdrEAD1qka0uTk3Oz0tJLEIrKin1rzFG5CJb
+        mpyaV1yKlnVQmxDOMBUo5QThKsocI9eaIBUTualFyRmJeSmZxSSlLGNdQ0NdQ2MFQzMrAwsrY0PM
+        GtoII2WhWJufV5JB9crIEiPLIttZUJSZS/VYNcGIVWQrM1ITU3Iy81IV0jLTS4vICGFLBUNjK1NT
+        K1MsFYCpMXoqRi4sMvPKUotLQHULdcsoU4wwBsyoNrYWAG5u3OacCwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '840'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 27 Sep 2022 01:23:29 GMT
+      ETag:
+      - W/"a2f806b694e9ddcd699cbd1403914dec-gzip-gzip"
+      Expires:
+      - Wed, 28 Sep 2022 01:23:29 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '98'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWpga1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGFkjW
+        JubllSbmUNtOjPRviGwngSCnSnBb4HdCUn4Bqp/TU0EZEhbrTok5iXnJqaCUF5BYmZuaVwJKEygx
+        bqxrYKhrZKFgaGIFKgiwZAETc/SQNzRDCvn0/PwUkKlIRRKqI0iPazOMMgDFxuLUorLM5FRqW4oZ
+        0sjeTMksTs7PK8nMK01NwRfkZPjWFCN8kTNUZl5yfm4qla3E9CuylSVFiSlUttEUI/si56TkxILM
+        ksQchcRkSI2IUoZTmppAtStqyYkcr8mlRUWpeSW0sdrEAD1qka0uTk3Oz0tJLEIrKin1rzFG5CJb
+        mpyaV1yKlnVQmxDOMBUo5QThKsocI9eaIBUTualFyRmJeSmZxSSlLGNdQ0NdQ2MFQzMrAwsrY0PM
+        GtoII2WhWJufV5JB9crIEiPLIttZUJSZS/VYNcGIVWQrM1ITU3Iy81IV0jLTS4vICGFLBUNjK1NT
+        K1MsFYCpMXoqRi4sMvPKUotLQHULdcsoU4wwBsyoNrYWAG5u3OacCwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '840'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 27 Sep 2022 01:23:30 GMT
+      ETag:
+      - W/"a2f806b694e9ddcd699cbd1403914dec-gzip-gzip"
+      Expires:
+      - Wed, 28 Sep 2022 01:23:30 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '97'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWpga1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGFkjW
+        JubllSbmUNtOjPRviGwngSCnSnBb4HdCUn4Bqp/TU0EZEhbrTok5iXnJqaCUF5BYmZuaVwJKEygx
+        bqxrYKhrZKFgaGIFKgiwZAETc/SQNzRDCvn0/PwUkKlIRRKqI0iPazOMMgDFxuLUorLM5FRqW4oZ
+        0sjeTMksTs7PK8nMK01NwRfkZPjWFCN8kTNUZl5yfm4qla3E9CuylSVFiSlUttEUI/si56TkxILM
+        ksQchcRkSI2IUoZTmppAtStqyYkcr8mlRUWpeSW0sdrEAD1qka0uTk3Oz0tJLEIrKin1rzFG5CJb
+        mpyaV1yKlnVQmxDOMBUo5QThKsocI9eaIBUTualFyRmJeSmZxSSlLGNdQ0NdQ2MFQzMrAwsrY0PM
+        GtoII2WhWJufV5JB9crIEiPLIttZUJSZS/VYNcGIVWQrM1ITU3Iy81IV0jLTS4vICGFLBUNjK1NT
+        K1MsFYCpMXoqRi4sMvPKUotLQHULdcsoU4wwBsyoNrYWAG5u3OacCwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '840'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 27 Sep 2022 01:38:42 GMT
+      ETag:
+      - W/"a2f806b694e9ddcd699cbd1403914dec-gzip-gzip"
+      Expires:
+      - Wed, 28 Sep 2022 01:38:42 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '59'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jWw1DUyU9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1AHmuIL+g
+        NCexKLOkUsnK3EIH1RdWpga1OnCn5CWWZObnobomPTUf5FmYc0i309ISr50FpUk5mckKKfm5iZl5
+        VgrJmSVgRygUpRaWphaD/IYSOMlIYZNXmpOjo5SMHAQWuoZGuobmCkbGVsbGVobGmEFAwDmlxWix
+        kZ6ar6SjBPN+aF5mSWqKQnBJYklqMShSHHNTizKTQXpQ3EE4KgxBaQElRaHFBbpDilMTQTEOc4lf
+        folCcGpicX5eYk5OpYJjSlYpNLQod4ixEVKiKCxNLCpJLcqpRE0XaUWphUgBQ3q6sDBBTxdGFkjW
+        JubllSbmUNtOjPRviGwngSCnSnBb4HdCUn4Bqp/TU0EZEhbrTok5iXnJqaCUF5BYmZuaVwJKEygx
+        bqxrYKhrZKFgaGIFKgiwZAETc/SQNzRDCvn0/PwUkKlIRRKqI0iPazOMMgDFxuLUorLM5FRqW4oZ
+        0sjeTMksTs7PK8nMK01NwRfkZPjWFCN8kTNUZl5yfm4qla3E9CuylSVFiSlUttEUI/si56TkxILM
+        ksQchcRkSI2IUoZTmppAtStqyYkcr8mlRUWpeSW0sdrEAD1qka0uTk3Oz0tJLEIrKin1rzFG5CJb
+        mpyaV1yKlnVQmxDOMBUo5QThKsocI9eaIBUTualFyRmJeSmZxSSlLGNdQ0NdQ2MFQzMrAwsrY0PM
+        GtoII2WhWJufV5JB9crIEiPLIttZUJSZS/VYNcGIVWQrM1ITU3Iy81IV0jLTS4vICGFLBUNjK1NT
+        K1MsFYCpMXoqRi4sMvPKUotLQHULdcsoU4wwBsyoNrYWAG5u3OacCwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '840'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 27 Sep 2022 01:38:42 GMT
+      ETag:
+      - W/"a2f806b694e9ddcd699cbd1403914dec-gzip-gzip"
+      Expires:
+      - Wed, 28 Sep 2022 01:38:42 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '58'
+    status:
+      code: 200
+      message: OK
+version: 1

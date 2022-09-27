@@ -8,6 +8,20 @@ FredBase
     :undoc-members:
     :show-inheritance:
 
+FredCategory
+------------------------------
+.. automodule:: pyfredapi.api.category
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+FredMaps
+------------------------------
+.. automodule:: pyfredapi.api.maps
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 FredSeries
 ------------------------------
 .. automodule:: pyfredapi.api.series
@@ -15,9 +29,16 @@ FredSeries
     :undoc-members:
     :show-inheritance:
 
-FredCategory
+FredSources
 ------------------------------
-.. automodule:: pyfredapi.api.category
+.. automodule:: pyfredapi.api.sources
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+FredTags
+------------------------------
+.. automodule:: pyfredapi.api.tags
     :members:
     :undoc-members:
     :show-inheritance:

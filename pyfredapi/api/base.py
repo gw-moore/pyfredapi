@@ -13,7 +13,7 @@ Json = Dict[str, Any]
 JsonOrPandas = Union[Dict, pd.DataFrame]
 
 
-class BaseApiArgs(BaseModel):
+class BaseApiParameters(BaseModel):
     api_key: str
     file_type: str = "json"
 
@@ -39,18 +39,18 @@ class FredBase:
     """
 
     def __init__(self, api_key: Optional[str] = None):
-        self.api_key = api_key
-        if self.api_key is None:
-            self.api_key = environ.get("FRED_API_KEY", None)
+        self._api_key = api_key
+        if self._api_key is None:
+            self._api_key = environ.get("FRED_API_KEY", None)
 
-        if self.api_key is None:
+        if self._api_key is None:
             raise APIKeyNotFoundError()
 
-        if not self.api_key.isalnum() or len(self.api_key) != 32:
+        if not self._api_key.isalnum() or len(self._api_key) != 32:
             raise InvalidAPIKey()
 
-        self.base_url = "https://api.stlouisfed.org/fred"
-        self.base_params = BaseApiArgs(api_key=self.api_key).dict()
+        self._base_url = "https://api.stlouisfed.org/fred"
+        self._base_params = BaseApiParameters(api_key=self._api_key).dict()
 
     def _get(self, endpoint: str, params: Optional[Dict[str, Any]] = None) -> Json:
         """Make a get request to a FRED web service endpoint and return the response as Json.
@@ -72,7 +72,7 @@ class FredBase:
             params = {}
         try:
             response = requests.get(
-                f"{self.base_url}/{endpoint}", params={**self.base_params, **params}
+                f"{self._base_url}/{endpoint}", params={**self._base_params, **params}
             )
         except requests.exceptions.RequestException as e:
             raise FredAPIRequestError(

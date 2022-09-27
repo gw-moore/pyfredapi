@@ -12,7 +12,7 @@ from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisf
 
 Requests to the API can be customized according to the parameters made available by the web service endpoints.
 
-Quick Start
+Overview
 =================
 
 Before you can use :code:`pyfredapi` you must have an API key to the FRED API web service. You can `apply for one <https://fred.stlouisfed.org/docs/api/api_key.html>`_ for free on the FRED website.
@@ -23,7 +23,7 @@ You can set your API in two ways:
 * pass it to the :code:`api_key` parameter
 
 Installation
-------------
+-------------
 
 :code:`pyfreadpi` can be installed via pip.
 
@@ -33,7 +33,7 @@ Installation
 
 
 Example
--------
+--------
 
 Quick start example of how to pull U.S. gross domestic product data.
 
@@ -52,11 +52,14 @@ Quick start example of how to pull U.S. gross domestic product data.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Tutorials
+   :caption: Examples
    :hidden:
 
+   FRED Series <example_notebooks/FredSeries.ipynb>
+   FRED Maps <example_notebooks/FredMaps.ipynb>
+
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: References
    :hidden:
 
