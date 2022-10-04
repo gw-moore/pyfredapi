@@ -1,0 +1,96 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
+        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
+        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
+        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
+        cBummgEAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:03:29 GMT
+      ETag:
+      - '"9363a96f7f1e2e44124f1b5dc28454ea-gzip"'
+      Expires:
+      - Mon, 03 Oct 2022 14:13:29 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '100'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
+        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
+        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
+        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
+        cBummgEAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:03:30 GMT
+      ETag:
+      - W/"9363a96f7f1e2e44124f1b5dc28454ea-gzip-gzip"
+      Expires:
+      - Mon, 03 Oct 2022 14:13:30 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '99'
+    status:
+      code: 200
+      message: OK
+version: 1

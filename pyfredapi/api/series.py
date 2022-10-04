@@ -11,6 +11,7 @@ from .utils import _convert_to_pandas
 class SeriesApiParameters(BaseModel):
     """Represents the parameters accepted by the FRED Series endpoints."""
 
+    series_id: Optional[str] = None
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
     limit: Optional[int] = None
@@ -81,6 +82,7 @@ class SeriesSearchParameters(BaseModel):
             "group_popularity",
         ]
     ] = None
+    sort_order: Optional[Literal["asc", "desc"]] = None
     filter_variable: Optional[
         Literal["frequency", "units", "seasonal_adjustment"]
     ] = None
@@ -109,7 +111,7 @@ class SeriesInfo(BaseModel):
     seasonal_adjustment_short: str
     last_updated: str
     popularity: int
-    notes: str
+    notes: Optional[str] = None
     _base_url: str = "https://fred.stlouisfed.org/series"
 
     def open_url(self):
@@ -144,19 +146,15 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/ endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/ endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         An instance of SeriesInfo.
         """
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         response = self._get(
-            endpoint="series",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            endpoint="series", params={**params.dict(exclude_none=True)}
         )
         return SeriesInfo(**response["seriess"][0])
 
@@ -168,19 +166,16 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/categories endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/categories endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/categories",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            params={**params.dict(exclude_none=True)},
         )
 
     def get_series(
@@ -198,7 +193,7 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             Define how to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observations endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observations endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
@@ -206,13 +201,10 @@ class FredSeries(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         response = self._get(
             endpoint="series/observations",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            params={**params.dict(exclude_none=True)},
         )
 
         series_info = self.get_series_info(series_id=series_id)
@@ -230,19 +222,16 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/releases endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/releases endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/release",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            params={**params.dict(exclude_none=True)},
         )
 
     def get_series_tags(self, series_id: str, **kwargs) -> Json:
@@ -253,19 +242,16 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/tags endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/tags endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/tags",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            params={**params.dict(exclude_none=True)},
         )
 
     def get_series_updates(self, series_id: str, **kwargs) -> Json:
@@ -276,19 +262,16 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/updates endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/updates endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/updates",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            params={**params.dict(exclude_none=True)},
         )
 
     def get_series_vintagedates(self, series_id: str, **kwargs) -> List[str]:
@@ -301,19 +284,16 @@ class FredSeries(FredBase):
         series_id : str
             Series id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/vintagedates endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/vintagedates endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         List of strings representing the the available vintage dates
         """
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(series_id=series_id, **kwargs)
         response = self._get(
             endpoint="series/vintagedates",
-            params={
-                "series_id": series_id,
-                **params.dict(exclude_none=True),
-            },
+            params={**params.dict(exclude_none=True)},
         )
         return response["vintage_dates"]
 
@@ -332,7 +312,7 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
@@ -340,15 +320,20 @@ class FredSeries(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesApiParameters(**kwargs)
+        # sanitize the kwargs to ensure the user did not
+        # in inadvertently supply values for realtime_start & realtime_end
+        _ = kwargs.pop("realtime_start", None)
+        _ = kwargs.pop("realtime_end", None)
+
+        params = SeriesApiParameters(
+            realtime_start=self._earliest_realtime_start,
+            realtime_end=self._latest_realtime_end,
+            **kwargs,
+        )
         return self.get_series(
             series_id=series_id,
             return_format=return_format,
-            **{
-                "realtime_start": self._earliest_realtime_start,
-                "realtime_end": self._latest_realtime_end,
-                **params.dict(exclude_none=True),
-            },
+            **params.dict(exclude_none=True),
         )
 
     def get_series_initial_release(
@@ -368,7 +353,7 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
@@ -381,15 +366,13 @@ class FredSeries(FredBase):
         _ = kwargs.pop("realtime_start", None)
         _ = kwargs.pop("output_type", None)
 
-        params = SeriesApiParameters(**kwargs)
+        params = SeriesApiParameters(
+            realtime_start=self._earliest_realtime_start, output_type=4, **kwargs
+        )
         return self.get_series(
             series_id=series_id,
             return_format=return_format,
-            **{
-                "realtime_start": self._earliest_realtime_start,
-                "output_type": 4,
-                **params.dict(exclude_none=True),
-            },
+            **params.dict(exclude_none=True),
         )
 
     def get_series_asof_date(
@@ -413,7 +396,7 @@ class FredSeries(FredBase):
         return_format : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
@@ -421,15 +404,18 @@ class FredSeries(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesApiParameters(**kwargs)
+        # sanitize the kwargs to ensure the user did not
+        # in inadvertently supply values for realtime_start & realtime_end
+        _ = kwargs.pop("realtime_start", None)
+        _ = kwargs.pop("realtime_end", None)
+
+        params = SeriesApiParameters(
+            realtime_start=self._earliest_realtime_start, realtime_end=date, **kwargs
+        )
         return self.get_series(
             series_id=series_id,
             return_format=return_format,
-            **{
-                "realtime_start": self._earliest_realtime_start,
-                "realtime_end": date,
-                **params.dict(exclude_none=True),
-            },
+            **params.dict(exclude_none=True),
         )
 
     def search_series(
@@ -451,7 +437,7 @@ class FredSeries(FredBase):
         return_format : : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
@@ -488,7 +474,7 @@ class FredSeries(FredBase):
         return_format : : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
@@ -527,7 +513,7 @@ class FredSeries(FredBase):
         return_format : : Literal["json", "pandas"] | ReturnFormat, optional
             In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
         **kwargs : dict, optional
-            Extra arguments to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API series/observation endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------

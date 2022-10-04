@@ -8,9 +8,7 @@
 
 <!-- badges: end -->
 
-`pyfredapi` is a Python API for accessing the [FRED API web service](https://fred.stlouisfed.org/docs/api/fred/) provided by the Federal Reserve Bank of St. Louis. `pyfredapi` makes it easy to retrieve economic data from [FRED](https://fred.stlouisfed.org/) and [ALFRED](https://alfred.stlouisfed.org/). Requests to the api can be customized according to the parameters made available by the web service.
-
-`pyfredapi` aims to be a full featured api for the FRED API web service. `pyfredapi` provides convenient methods for requesting data series and can return data as a [pandas](https://pandas.pydata.org/) dataframe or as json.
+`pyfredapi` aims to be a full featured api for the [FRED API web service](https://fred.stlouisfed.org/docs/api/fred/). `pyfredapi` covers all the FRED api endpoints and can return data as a [pandas](https://pandas.pydata.org/) dataframe or as json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) for information the available functionality.
 
 ## Installation
 ```bash

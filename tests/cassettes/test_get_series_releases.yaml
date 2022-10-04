@@ -1287,4 +1287,355 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:18:28 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:18:28 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '109'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json
+  response:
+    body:
+      string: '{"error_code":400,"error_message":"Bad Request.  Variable series_id
+        has not been set."}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '87'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:18:28 GMT
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:26:36 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:26:36 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '109'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:26:36 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:26:36 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '107'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:27:06 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:27:06 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '109'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:27:06 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:27:06 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '107'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:29:48 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:29:48 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '109'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwUtJByKbmpWDK5aQmFqcWK1lF
+        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
+        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
+        jQWsNrYWAFUO1OsDAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 14:29:49 GMT
+      ETag:
+      - W/"03df2da696b80f3ea10b6ae2aeab4935-gzip-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 14:29:49 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '107'
+    status:
+      code: 200
+      message: OK
 version: 1

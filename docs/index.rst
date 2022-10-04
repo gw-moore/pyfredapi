@@ -3,17 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to pyfreadpi's documentation!
+pyfreadpi's: python client for FRED
 =====================================
 
-:code:`pyfredapi` is a Python API for accessing the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred/>`_
-provided by the Federal Reserve Bank of St. Louis. :code:`pyfredapi` makes it easy to retrieve economic data
+:code:`pyfredapi` is a Python client for the for the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred.html>`_
+provided by the Federal Reserve Bank of St. Louis. :code:`pyfredapi` has methods to retrieve economic data
 from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisfed.org/>`_.
 
-Requests to the API can be customized according to the parameters made available by the web service endpoints.
+`pyfredapi` aims to be a full featured api for the FRED API web service. `pyfredapi` covers all the FRED api endpoints and can 
+return data as a `pandas <https://pandas.pydata.org/>`_ dataframe or as json. Requests to the API can be customized according to 
+the parameters made available by the web service endpoints.
 
-Overview
-=================
+FRED API Key
+-------------
 
 Before you can use :code:`pyfredapi` you must have an API key to the FRED API web service. You can `apply for one <https://fred.stlouisfed.org/docs/api/api_key.html>`_ for free on the FRED website.
 
@@ -51,12 +53,23 @@ Quick start example of how to pull U.S. gross domestic product data.
    client.get_series("GDP")
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Examples
+   :caption: Overview
+   :titlesonly:
    :hidden:
 
-   FRED Series <example_notebooks/FredSeries.ipynb>
-   FRED Maps <example_notebooks/FredMaps.ipynb>
+   Overview <tutorials/overview.md>
+
+.. toctree::
+   :titlesonly:
+   :caption: Tutorials
+   :hidden:
+
+   FRED Series <tutorials/FredSeries.ipynb>
+   FRED Maps <tutorials/FredMaps.ipynb>
+   FRED Category <tutorials/FredCategory.ipynb>
+   FRED Release <tutorials/FredRelease.ipynb>
+   FRED Sources <tutorials/FredSources.ipynb>
+   FRED Tags <tutorials/FredTags.ipynb>
 
 .. toctree::
    :maxdepth: 1
@@ -65,10 +78,3 @@ Quick start example of how to pull U.S. gross domestic product data.
 
    API <references/api>
    Changelog <references/CHANGELOG.md>
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`

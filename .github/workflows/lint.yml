@@ -1,0 +1,40 @@
+# .github/workflows/lint
+name: Linting
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ".[lint]"
+      - name: flake8
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 .
+      - name: isort
+        run: |
+          isort --check
+      - name: black
+        run: |
+          black . --check
+      - name: mypy
+        run: |
+          mypy pyfredapi

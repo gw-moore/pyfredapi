@@ -785,4 +785,95 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
+        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '83'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 15:52:27 GMT
+      ETag:
+      - W/"309ef209c7535167094b030940fe59fc-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 15:52:27 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '120'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category?file_type=json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjLQUcpLzE1VslJyRkjqKBUkFqXmlcSDVQBW
+        G1sLAH/yg+w7AAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '69'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 15:52:27 GMT
+      ETag:
+      - W/"a139a9f0c0691d81e5381b2fa35ee452-gzip"
+      Expires:
+      - Tue, 04 Oct 2022 15:52:27 GMT
+      Set-Cookie:
+      - cookiesession1=678A3E1F993D511C6E96DC418EEB562C;Expires=Tue, 03 Oct 2023 15:51:22
+        GMT;Path=/;HttpOnly
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '119'
+    status:
+      code: 200
+      message: OK
 version: 1

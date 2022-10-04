@@ -4,7 +4,11 @@ from unittest import mock
 import pytest
 
 from pyfredapi.api.base import FredBase, ReturnFormat
-from pyfredapi.api.exceptions import APIKeyNotFoundError, InvalidAPIKey
+from pyfredapi.api.exceptions import (
+    APIKeyNotFoundError,
+    FredAPIRequestError,
+    InvalidAPIKey,
+)
 
 
 def test_InvalidAPIKey():
@@ -27,9 +31,8 @@ def test_ReturnFormat():
         ReturnFormat("foobar")
 
 
-def test_get():
-    ...
-
-
 def test_FredAPIRequestError():
-    ...
+    with pytest.raises(FredAPIRequestError):
+        FredBase()._get(
+            endpoint="not-a-real-endpoint",
+        )

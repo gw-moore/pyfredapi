@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUwVtJByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHZ6Yo6SgV5xeVxIPllKyUEouTlXSUkvNL80qUrAwtdJTy09KKU0uUrAx0lHIyczNB
+        ogYGBjpQE4qVrKKrlTJBVjkHuLu4uRgYBXs6mpma+yG7hWSXlmSW5KQqWSk55+cVl+amFikEFGUm
+        pyp45qWkVlgphOSXJOYouOXnpyi4ViTnlKZk5qUrBKUWlySWFiXmlRQrpOUXKQTn5Jel5mUmKuko
+        5ScVpxaVJZZk5ufBA83Q0tJM18BQ18AQTQEs3AzN4dJpRamFpal5yaCAc8zLK03MUdJRggvGF2fk
+        g+PBUUlHqTQvs6RYyUrJvSi/vCRDISixJFUhoCi1LDO/tFghILUoMx8U4mBVcH341RanJhbn5yXm
+        xCemZJUWl+Sm5oHi3C+/RCEYKpNTqeAIlksFmY1FPdwmv2CQG3MSi0viSwtSEktSQfFmZGBooWtg
+        rGtgqWBoamVoYGViomtgpqSjVJBfUJqTWJRZUgmO/fSi/NKCeGRBQx2lvPySVJB//V2dXRRSUouT
+        izILSvKLFDxdrBRgCSImDywL8jRY3D0AKgJOZUWVYMHgML+YvJg8x5wcBbDqlMSSRIXijPzSnBSF
+        pFSF5MyS1BSFRFDU5uTklxdbgVXpKMQo+SZm5im4Jufn5edmJoNSSGZyYkl+UbGCrkJyfm5BTmpJ
+        qgLIsKTE4tQYJR0FnOo1YKo0dTJKSgqsYvRj9FMq9FLyM/Xyi9Jj9A0N9AzNLcxj9EHqdA0MDEyN
+        dFPzFDQck5NTi4tTUxTy80AWpWrG5DnnF1QWZaZnlOgoGBkYmumAHaunEJRaUJSZB/JIeWZJhkJB
+        alFuZnFxZn6enlKtDrZcZDmai+C5KDgxNxWagxA5KjI1sQiW6+CpHDk/YddVpAcq9qDZh04Zy8jI
+        ysQMM2MZ6ihRL2NFjmYsIjKW77Conix0DUwhtRe8JlKyUvLNzyvJyKnEWj/5wnLKUKyfzHQNLRUM
+        TawMjaxMjXQNTNHqJ6pmo9H6iZj6ydfMdBjUT9TLRtirmsFfQdEzZ41WUMTkrMDhUkFBu1fIFVRg
+        aWJRSWoRjioqcChXUSa6huYKhgZWhoZWRsaYVZQBNVt6o1UUkRlpeFRRVMtIQ7WSQspbxgY0zluj
+        lRTuvBXg6ero5mJgCBrkMzOkzvBEQFF+SmkybJCvGDSGAxrlg4/pOCaXZJZllmSmFsOG/nwT80rT
+        EpNLSotSFfLTICOBEFOIHvyzgI/uIY8Owgb/jEAZDrN3ReTgH3iYEjTyY2praGAAq9Lg4xMY0liG
+        7JSslKg6xGdkpGtgqWtoAhriMzG0MjbHzEPkdKFgyQE67gAf4vOM8HeCio0O8mEO8sGCLdjT12w4
+        5yIjXQPQKDryaAQJYxQY+QSUvIoHTTYyNLUyMhvNRgM4Vo7IRoHDPRuZYFZGxPekBnlGMrG0Ak3E
+        oQ/pkdNfgqUIaN0DKjDAs0uj9VFqigLBVh146nYg6iOX/NzU4pLMZAVKG3ZGBgYGI7VhZ2ZlYGJl
+        YIJZI1GQkYxGMxJJs7fQ8sdooBp2dMxIo2076NIIAqsgYEliNCeRmZMGpm1H35w02ryDLDMazUu0
+        WFMUHObnHODp7B/k6Onn6+qppINYJUjllXmOOTkKniWpucVIC/PA6/QS81IUXPNSi9IriVmcN5Kb
+        caZWJkZWBpaYzTis43PGiCV4JC86I329nYKGkYGhgabOoFx2h1hDB0/vvsMmvRvpGoBGrIfpSJqJ
+        laEFZoI3xjZhOprg4etMsST4wOGU4Id1o8gCvMyaqDGv0SSPM8m7+bvQvE0Dbr8M/I4C+CCuAf5J
+        RZg0HSYVQYW2ia6RgYKhgZWxKdZJRUJjT6ONFtjCf0ijxc3fheaNFuolaFCljTkxQewa5EGaouHr
+        IQ2tDEwxWyVYm+FI/dbRFI2RomneKqFqijbETNFkTLXBimHQFBSWOWuY9GgpDd3KNci7loDF1gIA
+        5iNcank5AAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1547'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 15:41:26 GMT
+      ETag:
+      - W/"c4e1d651e0adad8005b5da78da58c27e-gzip-gzip"
+      Expires:
+      - Mon, 03 Oct 2022 15:51:26 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '114'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: !!binary |
+        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
+        5iNcank5AAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1547'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 03 Oct 2022 15:41:26 GMT
+      ETag:
+      - W/"c4e1d651e0adad8005b5da78da58c27e-gzip-gzip"
+      Expires:
+      - Mon, 03 Oct 2022 15:51:26 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '113'
+    status:
+      code: 200
+      message: OK
+version: 1

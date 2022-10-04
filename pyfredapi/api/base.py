@@ -61,12 +61,12 @@ class FredBase:
         ----------
         endpoint : str
             The FRED endpoint to hit.
-        params : Dict[str, str] | None
+        params : Dict[str, Any] | None
             Dictionary of query parameters. Defaults to None.
 
         Returns
         -------
-        A dictionary representing json.
+        A dictionary representing the json response.
         """
         if not params:
             params = {}
