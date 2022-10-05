@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Install Test Packages
-        run: pip install pytest coverage pytest-cov pytest-vcr
+        run: pip install ".[test]"
       - name: Run Tests
         run: pytest --cov=pyfredapi tests/ --cov-report=xml --vcr-record=none
       - name: Scan
