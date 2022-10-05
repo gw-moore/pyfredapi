@@ -8,7 +8,7 @@
 
 <!-- badges: end -->
 
-`pyfredapi` aims to be a full featured api for the [FRED API web service](https://fred.stlouisfed.org/docs/api/fred/). `pyfredapi` covers all the FRED api endpoints and can return data as a [pandas](https://pandas.pydata.org/) dataframe or as json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) for information the available functionality.
+`pyfredapi` aims to be a full featured api for the [FRED API web service](https://fred.stlouisfed.org/docs/api/fred/). `pyfredapi` covers all the FRED api endpoints and can return data as a [pandas](https://pandas.pydata.org/) dataframe or json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) to learn more.
 
 ## Installation
 ```bash

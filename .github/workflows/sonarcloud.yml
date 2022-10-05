@@ -19,6 +19,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install Test Packages
+        run: pip install pytest coverage
+      - name: Run Tests
+        run: pytest --cov=pyfredapi tests/ --cov-report=xml
       - name: Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

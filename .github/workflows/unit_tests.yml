@@ -1,9 +1,8 @@
-# .github/workflows/lint
 name: Unit Tests
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, synchronize, reopened]
     branches:
       - master
       - develop
@@ -25,7 +24,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install ".[dev]"
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Test with pytest
         run: |
-          pytest --cov=pyfredapi tests/ --vcr-record=none
+          pytest tests/ --vcr-record=none

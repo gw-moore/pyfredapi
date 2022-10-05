@@ -3,7 +3,7 @@ name: Linting
 
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened, synchronize, reopened]
     branches:
       - master
       - develop
