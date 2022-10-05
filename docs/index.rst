@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-pyfreadpi's: python client for FRED
+pyfreadpi - python client for FRED
 =====================================
 
 :code:`pyfredapi` is a Python client for the for the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred.html>`_
