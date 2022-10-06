@@ -48,8 +48,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: coverage-xml
-      # - name: Fix coverage file for sonarcloud
-      #   run: sed -i "s/home\/runner\/work\/starlite\/starlite/github\/workspace/g" coverage.xml
+      - name: Fix coverage file for sonarcloud
+        run: sed -i "s/home\/runner\/work\/pyfredapi\/pyfredapi/github\/workspace/g" coverage.xml
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         env:
