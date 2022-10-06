@@ -28,9 +28,10 @@ jobs:
       - name: Install Poetry
         uses: snok/install-poetry@v1
       - name: Install pyfredapi
-        run: poetry install --with test
+        run: |
+          poetry install --with test --no-interaction
       - name: Run Tests
-        run: pytest --cov=pyfredapi tests/ --cov-report=xml --vcr-record=none
+        run: poetry run pytest --cov=pyfredapi tests/ --cov-report=xml --vcr-record=none
       - name: Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
