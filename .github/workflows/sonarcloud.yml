@@ -14,6 +14,8 @@ on:
 jobs:
   test:
     name: Run Tests
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -36,6 +38,7 @@ jobs:
           path: coverage.xml
 
   sonarcloud:
+    name: Sonarcloud Scan
     needs: test
     runs-on: ubuntu-latest
     steps:
