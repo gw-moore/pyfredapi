@@ -33,7 +33,8 @@ jobs:
           poetry run flake8 .
       - name: isort
         run: |
-          poetry run isort --check
+          poetry run isort pyfredapi
+          poetry run isort tests
       - name: black
         run: |
           poetry run black . --check
