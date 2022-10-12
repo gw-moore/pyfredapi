@@ -61,6 +61,8 @@ class SeriesApiParameters(BaseModel):
 
 
 class SeriesSearchParameters(BaseModel):
+    search_text: Optional[str] = None
+    search_type: Optional[Literal["full_text", "series_id"]] = None
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
     limit: Optional[int] = None
@@ -86,7 +88,7 @@ class SeriesSearchParameters(BaseModel):
     filter_variable: Optional[
         Literal["frequency", "units", "seasonal_adjustment"]
     ] = None
-    filter_values: Optional[str] = None
+    filter_value: Optional[str] = None
     tag_names: Optional[str] = None
     exclude_tag_names: Optional[str] = None
 
@@ -153,9 +155,7 @@ class FredSeries(FredBase):
         An instance of SeriesInfo.
         """
         params = SeriesApiParameters(series_id=series_id, **kwargs)
-        response = self._get(
-            endpoint="series", params={**params.dict(exclude_none=True)}
-        )
+        response = self._get(endpoint="series", params=params.dict(exclude_none=True))
         return SeriesInfo(**response["seriess"][0])
 
     def get_series_categories(self, series_id: str, **kwargs) -> Json:
@@ -175,7 +175,7 @@ class FredSeries(FredBase):
         params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/categories",
-            params={**params.dict(exclude_none=True)},
+            params=params.dict(exclude_none=True),
         )
 
     def get_series(
@@ -204,7 +204,7 @@ class FredSeries(FredBase):
         params = SeriesApiParameters(series_id=series_id, **kwargs)
         response = self._get(
             endpoint="series/observations",
-            params={**params.dict(exclude_none=True)},
+            params=params.dict(exclude_none=True),
         )
 
         series_info = self.get_series_info(series_id=series_id)
@@ -231,7 +231,7 @@ class FredSeries(FredBase):
         params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/release",
-            params={**params.dict(exclude_none=True)},
+            params=params.dict(exclude_none=True),
         )
 
     def get_series_tags(self, series_id: str, **kwargs) -> Json:
@@ -251,7 +251,7 @@ class FredSeries(FredBase):
         params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/tags",
-            params={**params.dict(exclude_none=True)},
+            params=params.dict(exclude_none=True),
         )
 
     def get_series_updates(self, series_id: str, **kwargs) -> Json:
@@ -271,7 +271,7 @@ class FredSeries(FredBase):
         params = SeriesApiParameters(series_id=series_id, **kwargs)
         return self._get(
             endpoint="series/updates",
-            params={**params.dict(exclude_none=True)},
+            params=params.dict(exclude_none=True),
         )
 
     def get_series_vintagedates(self, series_id: str, **kwargs) -> List[str]:
@@ -293,7 +293,7 @@ class FredSeries(FredBase):
         params = SeriesApiParameters(series_id=series_id, **kwargs)
         response = self._get(
             endpoint="series/vintagedates",
-            params={**params.dict(exclude_none=True)},
+            params=params.dict(exclude_none=True),
         )
         return response["vintage_dates"]
 
@@ -339,7 +339,7 @@ class FredSeries(FredBase):
     def get_series_initial_release(
         self,
         series_id: str,
-        return_format: Union[RETURN_FORMAT, ReturnFormat],
+        return_format: Union[RETURN_FORMAT, ReturnFormat] = "pandas",
         **kwargs,
     ) -> SeriesData:
         """Get the observations or data values for the initial release of an economic data series.
@@ -445,14 +445,14 @@ class FredSeries(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = SeriesSearchParameters(**kwargs)
+        params = SeriesSearchParameters(
+            search_text=search_text,
+            search_type=search_type,
+            **kwargs,
+        )
         response = self._get(
             endpoint="series/search",
-            params={
-                "search_text": search_text,
-                "search_type": search_type,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
         if return_format == ReturnFormat.pandas:

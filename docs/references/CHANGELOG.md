@@ -1,15 +1,18 @@
 # Changelog
 
-## Unreleased
+## Version 0.3.0
 
 ### Added
 - Methods and tests for `FredRelease`, `FredTags`, and `FredSource`
-- py.typed file
-- Pull request template
+- py.typed file.
+- Pull request template.
+- GitHub actions workflows for sonarcloud, linting, and testing.
 
 ### Changed
 - Update `SeriesInfo`'s `notes` field to be optional.
-- Add `sort_order` parameter to `SeriesSearchParameters`
+- Add `sort_order` parameter to `SeriesSearchParameters`.
+- Updates to the README.
+- Updates to the documentation.
 
 ## Version 0.2.0
 
