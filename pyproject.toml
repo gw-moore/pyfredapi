@@ -88,6 +88,8 @@ pytest-vcr = "^1.0.2"
 flake8-bandit = "^4.1.1"
 flake8-docstrings = "^1.6.0"
 pandas-stubs = "^1.5.0.221003"
+black = "^22.8.0"
+
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.1.3"
