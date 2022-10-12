@@ -14,6 +14,9 @@ on:
 
 jobs:
   build:
+    name: Check Code For Formatting
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Setup Python

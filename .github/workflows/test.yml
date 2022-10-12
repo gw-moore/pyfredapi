@@ -13,6 +13,9 @@ on:
 
 jobs:
   build:
+    name: Run Tests
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
