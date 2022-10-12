@@ -78,9 +78,7 @@ class FredMaps(FredBase):
         params = MapApiParameters(series_id=series_id)
         response = self._get(
             endpoint="series/group",
-            params={
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
         return GeoseriesInfo(**response["series_group"])
 
@@ -112,9 +110,7 @@ class FredMaps(FredBase):
         params = MapApiParameters(shape=shape)
         return self._get(
             endpoint="shapes/file",
-            params={
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
     def get_geoseries(
@@ -149,9 +145,7 @@ class FredMaps(FredBase):
         )
         response = self._get(
             endpoint="series/data",
-            params={
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
         geoseries_info = self.get_geoseries_info(series_id=series_id)

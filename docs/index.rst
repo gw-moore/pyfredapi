@@ -3,17 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to pyfreadpi's documentation!
-=====================================
+pyfreadpi - Python client for FRED API
+=======================================
 
-:code:`pyfredapi` is a Python API for accessing the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred/>`_
-provided by the Federal Reserve Bank of St. Louis. :code:`pyfredapi` makes it easy to retrieve economic data
-from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisfed.org/>`_.
+:code:`pyfredapi` is a Python client for the for the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred.html>`_
+provided by the Federal Reserve Bank of St. Louis. :code:`pyfredapi` covers all the the FRED API end points, and
+can retrieve economic data from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisfed.org/>`_. Data
+can be return as a `pandas <https://pandas.pydata.org/>`_ dataframe or as json. Requests to the FRED API can be customized according to
+the parameters made available by the web service endpoints.
 
-Requests to the API can be customized according to the parameters made available by the web service endpoints.
+Quick Start
+===========
 
-Overview
-=================
+FRED API Key
+------------
 
 Before you can use :code:`pyfredapi` you must have an API key to the FRED API web service. You can `apply for one <https://fred.stlouisfed.org/docs/api/api_key.html>`_ for free on the FRED website.
 
@@ -31,32 +34,43 @@ Installation
 
    pip install pyfredapi
 
+Usage
+------
 
-Example
---------
+Users will primarily interact with the :code:`FredApi` class. :code:`FredApi` is a convenience wrapper around separate classes that
+cover each of the FRED API namespaces. For a deeper dive into each of the separate clients, see the `API documentation <https://pyfredapi.readthedocs.io/en/latest/references/api.html#>`_.
+
+- :code:`FredCategory` - covers the FRED Categories endpoints.
+- :code:`FredMaps` - covers the FRED Maps endpoints.
+- :code:`FredRelease` - covers the FRED Releases endpoints.
+- :code:`FredSeries`` - covers the FRED Series endpoints.
+- :code:`FredSources` - covers the FRED Sources endpoints.
+- :code:`FredTags` - covers the FRED Tags endpoints.
 
 Quick start example of how to pull U.S. gross domestic product data.
 
 .. code-block:: python
 
-   from pyfredapi import FredApi
+   from pyfredapi import FredSeries
 
    # api key set as environment variable
-   client = FredApi()
+   client = FredSeries()
 
    # api key passed to initializer
-   client = FredApi(api_key = "my_api_key")
+   client = FredSeries(api_key = "my_api_key")
 
    # get GDP data
    client.get_series("GDP")
 
+For practical examples using the different clients, checkout the tutorials in the sidebar.
+
 .. toctree::
-   :maxdepth: 1
-   :caption: Examples
+   :titlesonly:
+   :caption: Tutorials
    :hidden:
 
-   FRED Series <example_notebooks/FredSeries.ipynb>
-   FRED Maps <example_notebooks/FredMaps.ipynb>
+   FRED Maps <tutorials/FredMaps.ipynb>
+   FRED Series <tutorials/FredSeries.ipynb>
 
 .. toctree::
    :maxdepth: 1
@@ -65,10 +79,3 @@ Quick start example of how to pull U.S. gross domestic product data.
 
    API <references/api>
    Changelog <references/CHANGELOG.md>
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`

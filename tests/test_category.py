@@ -1,18 +1,12 @@
-import os
-from typing import Dict, Optional
-
 import pandas as pd
 import pytest
-import requests
 
 from pyfredapi import FredCategory
 from pyfredapi.api.utils import _convert_to_pandas
 
-from .conftest import BASE_FRED_URL
+from .conftest import base_request as category_request
 
-base_params = {
-    "api_key": os.environ.get("FRED_API_KEY", None),
-    "file_type": "json",
+category_params = {
     "category_id": 125,
 }
 
@@ -23,51 +17,54 @@ def client():
 
 
 @pytest.mark.vcr()
-def category_request(endpoint: str, extra_params: Optional[Dict[str, str]] = None):
-    if extra_params is None:
-        extra_params = {}
-
-    return requests.get(
-        f"{BASE_FRED_URL}/{endpoint}",
-        params={**base_params, **extra_params},
-    )
-
-
-@pytest.mark.vcr()
 def test_get_category(client):
-    actual = client.get_category(base_params["category_id"])
+    actual = client.get_category(category_params["category_id"])
     assert actual is not None
     assert isinstance(actual, dict)
     assert isinstance(actual["categories"], list)
-    assert category_request("category").json() == actual
+
+    expected = category_request(
+        endpoint="category", extra_params=category_params
+    ).json()
+    assert expected == actual
 
 
 @pytest.mark.vcr()
 def test_get_category_children(client):
-    actual = client.get_category_children(base_params["category_id"])
+    actual = client.get_category_children(category_params["category_id"])
     assert actual is not None
     assert isinstance(actual, dict)
     assert isinstance(actual["categories"], list)
-    assert category_request("category/children").json() == actual
+
+    expected = category_request(
+        endpoint="category/children", extra_params=category_params
+    ).json()
+    assert expected == actual
 
 
 @pytest.mark.vcr()
 def test_get_category_related(client):
-    actual = client.get_category_related(base_params["category_id"])
+    actual = client.get_category_related(category_params["category_id"])
     assert actual is not None
     assert isinstance(actual, dict)
     assert isinstance(actual["categories"], list)
-    assert category_request("category/related").json() == actual
+
+    expected = category_request(
+        endpoint="category/related", extra_params=category_params
+    ).json()
+    assert expected == actual
 
 
 @pytest.mark.vcr()
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_category_series(client, return_type):
     actual = client.get_category_series(
-        category_id=base_params["category_id"],
+        category_id=category_params["category_id"],
         return_format=return_type,
     )
-    expected = category_request("category/series").json()
+    expected = category_request(
+        endpoint="category/series", extra_params=category_params
+    ).json()
 
     if return_type == "json":
         assert isinstance(actual, dict)
@@ -83,10 +80,12 @@ def test_get_category_series(client, return_type):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_category_tags(client, return_type):
     actual = client.get_category_tags(
-        category_id=base_params["category_id"],
+        category_id=category_params["category_id"],
         return_format=return_type,
     )
-    expected = category_request("category/tags").json()
+    expected = category_request(
+        endpoint="category/tags", extra_params=category_params
+    ).json()
 
     if return_type == "json":
         assert isinstance(actual, dict)
@@ -101,13 +100,14 @@ def test_get_category_tags(client, return_type):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_category_related_tags(client, return_type):
     actual = client.get_category_related_tags(
-        category_id=base_params["category_id"],
+        category_id=category_params["category_id"],
         return_format=return_type,
         **{"tag_names": "balance"},
     )
 
     expected = category_request(
-        "category/related_tags", extra_params={"tag_names": "balance"}
+        endpoint="category/related_tags",
+        extra_params={**category_params, "tag_names": "balance"},
     ).json()
 
     if return_type == "json":

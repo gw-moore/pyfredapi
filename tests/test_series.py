@@ -1,21 +1,18 @@
-import os
-from typing import Dict, Optional
-
 import pandas as pd
 import pytest
-import requests
 
 from pyfredapi import FredSeries
 from pyfredapi.api.series import SeriesData, SeriesInfo
 from pyfredapi.api.utils import _convert_to_pandas
 
-from .conftest import BASE_FRED_URL
+from .conftest import base_request
 
-base_params = {
-    "api_key": os.environ.get("FRED_API_KEY", None),
-    "file_type": "json",
+series_params = {
     "series_id": "GDP",
 }
+
+test_search_text = "monetary+service+index"
+series_obv_endpoint = "series/observations"
 
 
 @pytest.fixture()
@@ -23,44 +20,36 @@ def client():
     return FredSeries()
 
 
-def series_request(
-    endpoint: str,
-    extra_params: Optional[Dict[str, str]] = None,
-    base_params: Dict[str, str] = base_params,
-):
-    if extra_params is None:
-        extra_params = {}
-
-    return requests.get(
-        f"{BASE_FRED_URL}/{endpoint}",
-        params={**base_params, **extra_params},
-    )
-
-
 @pytest.mark.vcr()
 def test_get_series_info(client):
-    actual = client.get_series_info(base_params["series_id"])
+    actual = client.get_series_info(series_params["series_id"])
     assert isinstance(actual, SeriesInfo)
 
 
 @pytest.mark.vcr()
 def test_get_series_categories(client):
-    actual = client.get_series_categories(series_id=base_params["series_id"])
-    actual = series_request("series/categories").json()
+    actual = client.get_series_categories(series_id=series_params["series_id"])
+    expected = base_request(
+        endpoint="series/categories",
+        extra_params=series_params,
+    ).json()
     assert isinstance(actual, dict)
-    assert actual == actual
+    assert expected == actual
 
 
 @pytest.mark.vcr()
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_series(client, return_type):
     actual = client.get_series(
-        series_id=base_params["series_id"], return_format=return_type
+        series_id=series_params["series_id"], return_format=return_type
     )
     assert isinstance(actual, SeriesData)
     assert isinstance(actual.info, SeriesInfo)
 
-    expected = series_request("series/observations").json()["observations"]
+    expected = base_request(
+        endpoint=series_obv_endpoint,
+        extra_params=series_params,
+    ).json()["observations"]
 
     if return_type == "json":
         assert isinstance(actual.data, list)
@@ -72,32 +61,44 @@ def test_get_series(client, return_type):
 
 @pytest.mark.vcr()
 def test_get_series_releases(client):
-    actual = client.get_series_releases(series_id=base_params["series_id"])
-    expected = series_request("series/release").json()
+    actual = client.get_series_releases(series_id=series_params["series_id"])
+    expected = base_request(
+        endpoint="series/release",
+        extra_params=series_params,
+    ).json()
     assert isinstance(actual, dict)
     assert expected == actual
 
 
 @pytest.mark.vcr()
 def test_get_series_tags(client):
-    actual = client.get_series_tags(series_id=base_params["series_id"])
-    expected = series_request("series/tags").json()
+    actual = client.get_series_tags(series_id=series_params["series_id"])
+    expected = base_request(
+        endpoint="series/tags",
+        extra_params=series_params,
+    ).json()
     assert isinstance(actual, dict)
     assert expected == actual
 
 
 @pytest.mark.vcr()
 def test_get_series_updates(client):
-    actual = client.get_series_updates(series_id=base_params["series_id"])
-    expected = series_request("series/updates").json()
+    actual = client.get_series_updates(series_id=series_params["series_id"])
+    expected = base_request(
+        endpoint="series/updates",
+        extra_params=series_params,
+    ).json()
     assert isinstance(actual, dict)
     assert expected == actual
 
 
 @pytest.mark.vcr()
 def test_get_series_vintagedates(client):
-    actual = client.get_series_vintagedates(series_id=base_params["series_id"])
-    expected = series_request("series/vintagedates").json()["vintage_dates"]
+    actual = client.get_series_vintagedates(series_id=series_params["series_id"])
+    expected = base_request(
+        endpoint="series/vintagedates",
+        extra_params=series_params,
+    ).json()["vintage_dates"]
     assert isinstance(actual, list)
     assert expected == actual
 
@@ -106,16 +107,17 @@ def test_get_series_vintagedates(client):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_series_all_releases(client, return_type):
     actual = client.get_series_all_releases(
-        series_id=base_params["series_id"], return_format=return_type
+        series_id=series_params["series_id"], return_format=return_type
     )
     assert isinstance(actual, SeriesData)
     assert isinstance(actual.info, SeriesInfo)
 
-    expected = series_request(
-        "series/observations",
-        {
+    expected = base_request(
+        endpoint=series_obv_endpoint,
+        extra_params={
             "realtime_start": "1776-07-04",
             "realtime_end": "9999-12-31",
+            "series_id": series_params["series_id"],
         },
     ).json()["observations"]
 
@@ -131,16 +133,17 @@ def test_get_series_all_releases(client, return_type):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_series_initial_release(client, return_type):
     actual = client.get_series_initial_release(
-        series_id=base_params["series_id"], return_format=return_type
+        series_id=series_params["series_id"], return_format=return_type
     )
     assert isinstance(actual, SeriesData)
     assert isinstance(actual.info, SeriesInfo)
 
-    expected = series_request(
-        "series/observations",
-        {
+    expected = base_request(
+        endpoint=series_obv_endpoint,
+        extra_params={
             "realtime_start": "1776-07-04",
             "output_type": "4",
+            "series_id": series_params["series_id"],
         },
     ).json()["observations"]
 
@@ -156,16 +159,19 @@ def test_get_series_initial_release(client, return_type):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_get_series_asof_date(client, return_type):
     actual = client.get_series_asof_date(
-        series_id=base_params["series_id"], date="2019-01-01", return_format=return_type
+        series_id=series_params["series_id"],
+        date="2019-01-01",
+        return_format=return_type,
     )
     assert isinstance(actual, SeriesData)
     assert isinstance(actual.info, SeriesInfo)
 
-    expected = series_request(
-        "series/observations",
-        {
+    expected = base_request(
+        endpoint=series_obv_endpoint,
+        extra_params={
             "realtime_start": "1776-07-04",
             "realtime_end": "2019-01-01",
+            "series_id": series_params["series_id"],
         },
     ).json()["observations"]
 
@@ -181,12 +187,15 @@ def test_get_series_asof_date(client, return_type):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_search_series(client, return_type):
     actual = client.search_series(
-        search_text="monetary+service+index",
+        search_text=test_search_text,
         return_format=return_type,
     )
-    expected = series_request(
-        "series/search",
-        {"search_text": "monetary+service+index"},
+    expected = base_request(
+        endpoint="series/search",
+        extra_params={
+            "search_text": test_search_text,
+            "search_type": "full_text",
+        },
     ).json()
 
     if return_type == "json":
@@ -201,18 +210,13 @@ def test_search_series(client, return_type):
 @pytest.mark.vcr()
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_search_series_tags(client, return_type):
-    search_text = "monetary+service+index"
     actual = client.search_series_tags(
-        search_text=search_text,
+        search_text=test_search_text,
         return_format=return_type,
     )
-    expected = series_request(
-        "series/search/tags",
-        {"series_search_text": search_text},
-        base_params={
-            "api_key": os.environ.get("FRED_API_KEY", None),
-            "file_type": "json",
-        },
+    expected = base_request(
+        endpoint="series/search/tags",
+        extra_params={"series_search_text": test_search_text},
     ).json()
 
     if return_type == "json":
@@ -228,14 +232,14 @@ def test_search_series_tags(client, return_type):
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
 def test_search_series_related_tags(client, return_type):
     actual = client.search_series_related_tags(
-        search_text="monetary+service+index",
+        search_text=test_search_text,
         tag_names="30-year;frb",
         return_format=return_type,
     )
-    expected = series_request(
-        "series/search/related_tags",
-        {
-            "series_search_text": "monetary+service+index",
+    expected = base_request(
+        endpoint="series/search/related_tags",
+        extra_params={
+            "series_search_text": test_search_text,
             "tag_names": "30-year;frb",
         },
     ).json()

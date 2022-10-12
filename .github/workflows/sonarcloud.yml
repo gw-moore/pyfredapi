@@ -1,0 +1,53 @@
+name: SonarCloud
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  test:
+    name: Run Tests
+    env:
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+      - name: Install pyfredapi
+        run: |
+          poetry install --with test --no-interaction
+      - name: Test with Coverage
+        run: poetry run pytest --cov=pyfredapi --cov-report=xml --vcr-record=none
+      - uses: actions/upload-artifact@v3
+        with:
+          name: coverage-xml
+          path: coverage.xml
+
+  sonarcloud:
+    name: Sonarcloud Scan
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: coverage-xml
+      - name: Fix coverage file for sonarcloud
+        run: sed -i "s/home\/runner\/work\/pyfredapi\/pyfredapi/github\/workspace/g" coverage.xml
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

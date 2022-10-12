@@ -53,19 +53,16 @@ class FredCategory(FredBase):
         category_id : str | None
             Category id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API category/ endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API category/ endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = CategoryApiParameters(**kwargs)
+        params = CategoryApiParameters(category_id=category_id, **kwargs)
         return self._get(
             endpoint="category",
-            params={
-                "category_id": category_id,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
     def get_category_children(
@@ -78,19 +75,16 @@ class FredCategory(FredBase):
         category_id : str | None
             Category id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API category/children endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API category/children endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = CategoryApiParameters(**kwargs)
+        params = CategoryApiParameters(category_id=category_id, **kwargs)
         return self._get(
             endpoint="category/children",
-            params={
-                "category_id": category_id,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
     def get_category_related(self, category_id: int, **kwargs) -> Json:
@@ -101,20 +95,17 @@ class FredCategory(FredBase):
         category_id : str
             Category id of interest.
         **kwargs : dict, optional
-            Extra arguments to FRED API category/children endpoint. Refer to the FRED documentation for a list of all possible arguments.
+            Additional parameters to FRED API category/children endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
 
         Returns
         -------
         Dictionary representing the json response.
         """
-        params = CategoryApiParameters(**kwargs)
+        params = CategoryApiParameters(category_id=category_id, **kwargs)
         return self._get(
             endpoint="category/related",
-            params={
-                "category_id": category_id,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
     def get_category_series(
@@ -138,13 +129,10 @@ class FredCategory(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = CategoryApiParameters(**kwargs)
+        params = CategoryApiParameters(category_id=category_id, **kwargs)
         response = self._get(
             endpoint="category/series",
-            params={
-                "category_id": category_id,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
         if return_format == ReturnFormat.pandas:
@@ -172,13 +160,10 @@ class FredCategory(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = CategoryApiParameters(**kwargs)
+        params = CategoryApiParameters(category_id=category_id, **kwargs)
         response = self._get(
             endpoint="category/tags",
-            params={
-                "category_id": category_id,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
         if return_format == ReturnFormat.pandas:
@@ -206,13 +191,10 @@ class FredCategory(FredBase):
         """
         return_format = ReturnFormat(return_format)
 
-        params = CategoryApiParameters(**kwargs)
+        params = CategoryApiParameters(category_id=category_id, **kwargs)
         response = self._get(
             endpoint="category/related_tags",
-            params={
-                "category_id": category_id,
-                **params.dict(exclude_none=True),
-            },
+            params=params.dict(exclude_none=True),
         )
 
         if return_format == ReturnFormat.pandas:
