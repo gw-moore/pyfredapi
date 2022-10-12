@@ -15,9 +15,8 @@ on:
 jobs:
   build:
     name: Check Code For Formatting
-    env:
-      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Setup Python
         uses: actions/setup-python@v2
@@ -35,13 +34,13 @@ jobs:
           poetry install --with lint --no-interaction
       - name: flake8
         run: |
-          flake8 .
+          poetry run flake8 .
       - name: isort
         run: |
-          isort --check
+          poetry run isort --check
       - name: black
         run: |
-          black . --check
+          poetry run black . --check
       - name: mypy
         run: |
-          mypy pyfredapi
+          poetry run mypy pyfredapi
