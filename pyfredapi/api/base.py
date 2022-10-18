@@ -1,3 +1,5 @@
+"""This module contains the FredBase implementation."""
+
 from enum import Enum
 from http import HTTPStatus
 from os import environ
@@ -14,6 +16,8 @@ JsonOrPandas = Union[Dict, pd.DataFrame]
 
 
 class BaseApiParameters(BaseModel):
+    """Represents the parameters accepted by all FRED Series endpoints."""
+
     api_key: str
     file_type: str = "json"
 
@@ -25,6 +29,8 @@ RETURN_FORMAT = Literal["json", "pandas"]
 
 
 class ReturnFormat(str, Enum):
+    """Represents the return format."""
+
     json = "json"
     pandas = "pandas"
 

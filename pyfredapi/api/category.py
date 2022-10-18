@@ -1,3 +1,6 @@
+"""This module contains the FredCategory implementation."""
+
+
 from typing import Literal, Optional, Union
 
 from pydantic import BaseModel, Extra, PositiveInt

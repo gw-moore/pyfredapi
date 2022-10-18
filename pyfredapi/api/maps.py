@@ -1,3 +1,6 @@
+"""This module contains the FredMaps implementation."""
+
+
 from typing import Any, Dict, List, Literal, Optional, Union
 
 import pandas as pd
@@ -100,8 +103,8 @@ class FredMaps(FredBase):
 
         Parameters
         ----------
-        shape : Literal["bea", "msa", "frb", "necta", "state", "country", "county", "censusregion", "censusdivision"]
-            The type of shape you want to pull Well-known text (WKT) data for
+        shape : One of "bea", "msa", "frb", "necta", "state", "country", "county", "censusregion", "censusdivision"
+            Define the shape of Well-known text (WKT) data.
 
         Returns
         -------
@@ -128,11 +131,11 @@ class FredMaps(FredBase):
         Parameters
         ----------
         series_id : str
-            The FRED series_id you want to request maps data for. Not all series that are in FRED have geographical data.
+            Series id of interest. Not all series that are in FRED have geographical data.
         start_date : str, optional
-            The start date you want to request series group data from. YYYY-MM-DD formatted string.
+            Define start date. YYYY-MM-DD formatted string.
         end_date : str, optional
-            The date you want to request series group data from. YYYY-MM-DD formatted string.
+            Define the end date. YYYY-MM-DD formatted string.
         return_format : Literal["json", "pandas"] | ReturnFormat
             Define how to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
 

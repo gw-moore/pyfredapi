@@ -14,6 +14,8 @@ series_params = {
 test_search_text = "monetary+service+index"
 series_obv_endpoint = "series/observations"
 
+return_type_mark = pytest.mark.parametrize("return_type", ["json", "pandas"])
+
 
 @pytest.fixture()
 def client():
@@ -38,7 +40,7 @@ def test_get_series_categories(client):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_get_series(client, return_type):
     actual = client.get_series(
         series_id=series_params["series_id"], return_format=return_type
@@ -104,7 +106,7 @@ def test_get_series_vintagedates(client):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_get_series_all_releases(client, return_type):
     actual = client.get_series_all_releases(
         series_id=series_params["series_id"], return_format=return_type
@@ -130,7 +132,7 @@ def test_get_series_all_releases(client, return_type):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_get_series_initial_release(client, return_type):
     actual = client.get_series_initial_release(
         series_id=series_params["series_id"], return_format=return_type
@@ -156,7 +158,7 @@ def test_get_series_initial_release(client, return_type):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_get_series_asof_date(client, return_type):
     actual = client.get_series_asof_date(
         series_id=series_params["series_id"],
@@ -184,7 +186,7 @@ def test_get_series_asof_date(client, return_type):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_search_series(client, return_type):
     actual = client.search_series(
         search_text=test_search_text,
@@ -208,7 +210,7 @@ def test_search_series(client, return_type):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_search_series_tags(client, return_type):
     actual = client.search_series_tags(
         search_text=test_search_text,
@@ -229,7 +231,7 @@ def test_search_series_tags(client, return_type):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
+@return_type_mark
 def test_search_series_related_tags(client, return_type):
     actual = client.search_series_related_tags(
         search_text=test_search_text,

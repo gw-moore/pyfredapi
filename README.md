@@ -11,8 +11,15 @@
 `pyfredapi` is a Python client for the [FRED API web service](https://fred.stlouisfed.org/docs/api/fred/). `pyfredapi` covers all the FRED api endpoints and can return data as a [pandas](https://pandas.pydata.org/) dataframe or json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) to learn more.
 
 ## Installation
+
 ```bash
 pip install pyfredapi
+```
+
+If you want to use the plotting capabilities of `pyfredapi`, install the package with the optional plotting dependencies.
+
+```bash
+pip install "pyfredapi[plot]"
 ```
 
 ## Basic Usage

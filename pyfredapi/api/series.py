@@ -1,7 +1,11 @@
+"""This module contains the FredSeries implementation."""
+
 import webbrowser
 from typing import Any, Dict, List, Literal, Optional, Union
 
 import pandas as pd
+import plotly.express as px
+from plotly.graph_objects import Figure
 from pydantic import BaseModel, Extra, PositiveInt
 
 from .base import RETURN_FORMAT, FredBase, Json, JsonOrPandas, ReturnFormat
@@ -57,10 +61,14 @@ class SeriesApiParameters(BaseModel):
     vintage_dates: Optional[str] = None
 
     class Config:
+        """pydantic config."""
+
         extra = Extra.forbid
 
 
 class SeriesSearchParameters(BaseModel):
+    """Represents the parameters accepted by the FRED Series Search endpoints."""
+
     search_text: Optional[str] = None
     search_type: Optional[Literal["full_text", "series_id"]] = None
     realtime_start: Optional[str] = None
@@ -125,13 +133,34 @@ class SeriesInfo(BaseModel):
 
 
 class SeriesData(BaseModel):
-    """Represents the response from series/observations endpoints."""
+    """Represents the response from series/observations endpoint."""
 
     info: SeriesInfo
     data: Union[List[Dict[str, Any]], pd.DataFrame]
 
     class Config:
         arbitrary_types_allowed = True
+
+    def plot(self) -> Figure:
+        """Create a plotly time series plot.
+
+        Raises
+        ------
+        ValueError
+            If data format is not a pandas dataframe.
+        """
+        if not isinstance(self.data, pd.DataFrame):
+            raise ValueError(
+                "Plots can only be created when data is returned as a pandas dataframe."
+            )
+        return px.line(
+            data_frame=self.data,
+            x="date",
+            y="value",
+            title=f"{self.info.title}, {self.info.observation_start} - {self.info.observation_end}",
+            color_discrete_sequence=px.colors.qualitative.Safe,
+            labels=dict(value=self.info.id, date="Date"),
+        )
 
 
 class FredSeries(FredBase):

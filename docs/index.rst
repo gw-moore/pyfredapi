@@ -69,8 +69,9 @@ For practical examples using the different clients, checkout the tutorials in th
    :caption: Tutorials
    :hidden:
 
-   FRED Maps <tutorials/FredMaps.ipynb>
    FRED Series <tutorials/FredSeries.ipynb>
+   Series Collection <tutorials/SeriesCollection.ipynb>
+   FRED Maps <tutorials/FredMaps.ipynb>
 
 .. toctree::
    :maxdepth: 1

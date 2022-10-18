@@ -1,14 +1,28 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Add `SeriesCollection`
+- Add `plot` function to `SeriesData`
+- Add optional dependency group 'plot'. Contains plotly.
+
+### Changed
+
+- Removed 'dev' install group to make dependencies DRY.
+
 ## Version 0.3.0
 
 ### Added
+
 - Methods and tests for `FredRelease`, `FredTags`, and `FredSource`
 - py.typed file.
 - Pull request template.
 - GitHub actions workflows for sonarcloud, linting, and testing.
 
 ### Changed
+
 - Update `SeriesInfo`'s `notes` field to be optional.
 - Add `sort_order` parameter to `SeriesSearchParameters`.
 - Updates to the README.
@@ -29,10 +43,10 @@
 - Updates `FredCategory` & `FredSeries` method docstrings to fix typos, add missing parameters, and add links to the FRED endpoint documentation.
 - Process data when returning pandas data so that date and numeric columns are the correct type.
 - Change some of the method names in `FredSeries`
-    - `get_series_data` -> `get_series`
-    - `get_series_data_all_releases` -> `get_series_all_releases`
-    - `get_series_data_initial_release` -> `get_series_initial_release`.
-    - `get_series_data_asof_date` -> `get_series_asof_date`.
+  - `get_series_data` -> `get_series`
+  - `get_series_data_all_releases` -> `get_series_all_releases`
+  - `get_series_data_initial_release` -> `get_series_initial_release`.
+  - `get_series_data_asof_date` -> `get_series_asof_date`.
 - Rename `BaseApiArgs` to `BaseApiParameters`.
 - Rename `CategoryArgs` to `CategoryApiParameters`.
 - Rename `SeriesArgs` to `SeriesApiParameters`.

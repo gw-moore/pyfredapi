@@ -1,3 +1,6 @@
+"""This module contains the custom exceptions for pyfredapi."""
+
+
 class BaseFredAPIError(Exception):
     """Base class for all API errors."""
 
