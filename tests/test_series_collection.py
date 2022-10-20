@@ -44,7 +44,7 @@ def test_keep_realtime_cols():
 
 
 def parse_cpi_title(title: str) -> str:
-    """Function to parse a CPI series title into a human readable label."""
+    """Parse CPI series title into a readable label."""
     return (
         title.lower()
         .replace("consumer price index", "cpi ")
@@ -129,6 +129,29 @@ def test_merge_wide():
     cols = set(wide_df.columns.to_list())
     assert set(["date"] + series) == cols
     assert set(series) == set([c for c in wide_df.columns.tolist() if c != "date"])
+
+
+@pytest.mark.vcr()
+def test_list_methods_same():
+    sc = SeriesCollection()
+    sc.add_series("CPIAUCSL")
+    sc.list_series()
+    sc.list_end_date()
+    sc.list_frequency()
+    sc.list_seasonality()
+    sc.list_start_date()
+    sc.list_units()
+
+
+def test_list_methods_diff():
+    sc = SeriesCollection()
+    sc.add_series(["CPIAUCSL", "WGS10YR"])
+    sc.list_series()
+    sc.list_end_date()
+    sc.list_frequency()
+    sc.list_seasonality()
+    sc.list_start_date()
+    sc.list_units()
 
 
 def test_plot():

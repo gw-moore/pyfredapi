@@ -10,14 +10,15 @@
 
 ### Changed
 
+- Sphinx docs theme to sphinx_material.
 - Removed 'dev' install group to make dependencies DRY.
-- Sonarcloud config to generate main branch statistics
+- Sonarcloud config to generate main branch statistics.
 
 ## Version 0.3.0
 
 ### Added
 
-- Methods and tests for `FredRelease`, `FredTags`, and `FredSource`
+- Methods and tests for `FredRelease`, `FredTags`, and `FredSource`.
 - py.typed file.
 - Pull request template.
 - GitHub actions workflows for sonarcloud, linting, and testing.

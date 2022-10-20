@@ -89,7 +89,8 @@ class SeriesCollection:
 
         for series_id in series_ids:
             if series_id in self.data:
-                print(f"Overwriting {series_id}")
+                print(f"Already have {series_id}")
+                continue
 
             print(f"Requesting series {series_id}...")
             series_data = self.client.get_series(series_id=series_id, **kwargs)
