@@ -1,16 +1,17 @@
 # Changelog
 
-## Unreleased
+## Version 0.4.0
 
 ### Added
 
-- Add `SeriesCollection`
+- Add `SeriesCollection` class, test, and docs
 - Add `plot` function to `SeriesData`
-- Add optional dependency group 'plot'. Contains plotly.
+- Docstring to the top of all api modules
 
 ### Changed
 
 - Removed 'dev' install group to make dependencies DRY.
+- Sonarcloud config to generate main branch statistics
 
 ## Version 0.3.0
 
