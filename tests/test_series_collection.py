@@ -143,6 +143,7 @@ def test_list_methods_same():
     sc.list_units()
 
 
+@pytest.mark.vcr()
 def test_list_methods_diff():
     sc = SeriesCollection()
     sc.add_series(["CPIAUCSL", "WGS10YR"])
