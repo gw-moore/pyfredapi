@@ -3,7 +3,7 @@
 
 from typing import Literal, Optional
 
-from pydantic import BaseModel, PositiveInt
+from pydantic import BaseModel, Extra, PositiveInt
 
 from .base import FredBase, Json
 
@@ -20,6 +20,9 @@ class SourceApiParameters(BaseModel):
         Literal["source_id", "name", "realtime_start", "realtime_end"]
     ] = None
     sort_order: Optional[Literal["asc", "desc"]] = None
+
+    class Config:
+        extra = Extra.allow
 
 
 class FredSources(FredBase):

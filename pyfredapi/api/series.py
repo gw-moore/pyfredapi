@@ -61,9 +61,7 @@ class SeriesApiParameters(BaseModel):
     vintage_dates: Optional[str] = None
 
     class Config:
-        """pydantic config."""
-
-        extra = Extra.forbid
+        extra = Extra.allow
 
 
 class SeriesSearchParameters(BaseModel):
@@ -101,7 +99,7 @@ class SeriesSearchParameters(BaseModel):
     exclude_tag_names: Optional[str] = None
 
     class Config:
-        extra = Extra.forbid
+        extra = Extra.allow
 
 
 class SeriesInfo(BaseModel):
@@ -159,7 +157,7 @@ class SeriesData(BaseModel):
             y="value",
             title=f"{self.info.title}, {self.info.observation_start} - {self.info.observation_end}",
             color_discrete_sequence=px.colors.qualitative.Safe,
-            labels=dict(value=self.info.id, date="Date"),
+            labels=dict(value=f"{self.info.id} ({self.info.units_short})", date="Date"),
         )
 
 

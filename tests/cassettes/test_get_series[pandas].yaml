@@ -2540,4 +2540,290 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '4205'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Oct 2022 22:31:20 GMT
+      Expires:
+      - Thu, 20 Oct 2022 22:32:20 GMT
+      Last-Modified:
+      - Thu, 29 Sep 2022 12:46:02 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '62'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyUNJByKbmpaDLFacWZaYWFytZ
+        RVcrZYJk3V0CkLWQbGBJZklOqpKVkntRfnGxgkt+bmpxSWayQkBRfkppcomSjlJ+UnFqUVliSWZ+
+        Hty5hpYm5roGhroGhmgKkFxsYAKRTitKLSxNzUuuVLJSCixNLCpJLcqpVNJRgovHF2fkgwMhUElH
+        qTQvs6RYyUrJKTMnJzM/r1ghP03BJT8nJ7GoGCYLV++UmaMHkldR0lEqTk0szs9LzIlPTMkqLS7J
+        Tc0DBWswVDSnUsERLJ6aouCYl1eamKMQlFiSil0f3PxgR8cgJR2lnMTikvjSgpTEklRQgIOjysBS
+        18hSwcDcysTMysBI18BUSUepIL+gNCexKLOkUsnK0lhHKS+/JBXsFVdHBcfk5PzSvBIF5/yUVCsF
+        R0NLwyDnmLyYPEiop8BCvQAS6goa7i4BmjoKJRmpCmmpiSWlRakpCrmpicWlRakgD4fqBesp5JeW
+        FJSW6ChkFoPV5SYWZaeWKJQl5pSC1YD0pufnpxQrJOalKICiMDM5tVgBYkNqikJSpUJOYlJ+EVi6
+        oCi/ILWopFIhJz8Z5E2FzDywoaF5mSWpKQrBJYklqcV6bvlFCrn5RakKmXlp+UW54CSho1CcmgpW
+        616amZKqUJIP5viBJRNzFDzzkvNzU8GWQJMULCzAUQtyJYolChp+ngGOmmANIEmn0qLUxFKQp12T
+        8/PyczOTFRzzEnMqizOLFTQySkoKrGL0Y/TLy8v1klIT9dLzy2L086B2AxajX5CSFqOfl1mQmF6a
+        maJXkJKmqadUG1sLAEJPsoyAAwAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '648'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Oct 2022 22:31:20 GMT
+      Expires:
+      - Thu, 20 Oct 2022 22:32:20 GMT
+      Last-Modified:
+      - Thu, 29 Sep 2022 12:46:02 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '61'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '4205'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Oct 2022 22:31:20 GMT
+      Expires:
+      - Thu, 20 Oct 2022 22:32:20 GMT
+      Last-Modified:
+      - Thu, 29 Sep 2022 12:46:02 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '60'
+    status:
+      code: 200
+      message: OK
 version: 1

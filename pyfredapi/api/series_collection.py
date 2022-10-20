@@ -12,18 +12,20 @@ console = Console()
 
 def _rename_series(
     series_data: SeriesData,
-    labels: Union[Dict[str, str], Callable[[str], str], None] = None,
+    rename: Union[Dict[str, str], Callable[[str], str], None] = None,
 ):
     """Rename series with a dictionary or title parsing function."""
-    if not isinstance(labels, dict) and not callable(labels):
-        raise ValueError("`Rename` parameter must be either a dictionary or function.")
+    if not isinstance(rename, dict) and not callable(rename):
+        raise TypeError(
+            f"`Rename` argument must be a dictionary or function, not {type(rename)}."
+        )
 
-    if isinstance(labels, dict):
-        series_name = labels.get(series_data.info.id, None)
-    elif callable(labels):
-        series_name = labels(series_data.info.title)
+    if isinstance(rename, dict):
+        series_name = rename.get(series_data.info.id, None)
+    elif callable(rename):
+        series_name = rename(series_data.info.title)
 
-    if series_name is None or labels is None:
+    if series_name is None or rename is None:
         series_name = series_data.info.id
 
     return series_name
@@ -48,7 +50,7 @@ class SeriesCollection:
     def rename_series(self, rename):
         """Rename series columns."""
         for series_id, series_data in self.data.items():
-            series_name = _rename_series(series_data=series_data, labels=rename)
+            series_name = _rename_series(series_data=series_data, rename=rename)
 
             orig_col_name = [
                 c
@@ -128,7 +130,7 @@ class SeriesCollection:
             print(f"Removed series {series_id}")
 
     def merge_long(self, col_name: Union[str, None] = None) -> pd.DataFrame:
-        """Merge the series in the collection into one long pandas dataframe.
+        """Merge the series in the collection into a long pandas dataframe.
 
         Parameters
         ----------
@@ -157,7 +159,7 @@ class SeriesCollection:
         return pd.concat(long_df_prep, axis=0).reset_index(drop=True)  # type: ignore
 
     def merge_wide(self) -> pd.DataFrame:
-        """Merge the series in the collection into one wide pandas dataframe. Only works if all the series in the collection share the same date index.
+        """Merge the series in the collection into a wide pandas dataframe. Only works if all the series in the collection share the same date index.
 
         Returns
         -------
@@ -173,7 +175,7 @@ class SeriesCollection:
         self,
         base_series_id: str,
     ) -> pd.DataFrame:
-        """Merge the series in the collection into one wide pandas dataframe based on date.
+        """Merge the series in the collection into a wide pandas dataframe based on nearest date.
 
         Uses pandas `merge_asof` methods to merge the data based on nearest date.
 
