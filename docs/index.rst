@@ -64,7 +64,7 @@ Quick start example of how to pull U.S. gross domestic product data.
    :hidden:
 
    FRED Series <tutorials/FredSeries.ipynb>
-   .. Series Collection <tutorials/SeriesCollection.ipynb>
+   Series Collection <tutorials/SeriesCollection.ipynb>
    FRED Maps <tutorials/FredMaps.ipynb>
 
 .. toctree::
