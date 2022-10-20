@@ -2,7 +2,7 @@
 
 from typing import Literal, Optional
 
-from pydantic import BaseModel, PositiveInt
+from pydantic import BaseModel, Extra, PositiveInt
 
 from .base import FredBase, Json
 
@@ -36,6 +36,9 @@ class ReleaseApiParameters(BaseModel):
     include_release_dates_with_no_data: Optional[bool] = None
     element_id: Optional[int] = None
     tag_names: Optional[str] = None
+
+    class Config:
+        extra = Extra.allow
 
 
 class FredRelease(FredBase):

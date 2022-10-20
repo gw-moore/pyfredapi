@@ -42,7 +42,7 @@ class CategoryApiParameters(BaseModel):
     exclude_tag_names: Optional[str] = None
 
     class Config:
-        extra = Extra.forbid
+        extra = Extra.allow
 
 
 class FredCategory(FredBase):

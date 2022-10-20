@@ -68,7 +68,7 @@ def test_rename_on_add(rename):
 
 @pytest.mark.vcr()
 def test_rename_err():
-    with pytest.raises(ValueError):
+    with pytest.raises(TypeError):
         sc = SeriesCollection()
         sc.add_series("CPIAUCSL", rename="foobar")
 

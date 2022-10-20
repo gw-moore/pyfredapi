@@ -4,8 +4,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pyfredapi"
-version = "0.4.0"
-description = "A fully featured FRED API client library for Python."
+version = "0.4.1"
+description = "A full featured library for the FRED API web service."
 authors = ["Greg Moore <gwmoore.career@gmail.com>"]
 readme = "README.md"
 classifiers = [
@@ -46,7 +46,6 @@ Sphinx = "5.1.*"
 myst-parser = "^0.18.0"
 nbsphinx = "^0.8.9"
 sphinxcontrib-napoleon = "^0.7"
-autodoc-pydantic = "^1.7.2"
 sphinx-copybutton = "^0.5.0"
 sphinx-material = "^0.0.35"
 

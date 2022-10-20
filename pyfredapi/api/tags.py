@@ -3,7 +3,7 @@
 
 from typing import Literal, Optional
 
-from pydantic import BaseModel, PositiveInt
+from pydantic import BaseModel, Extra, PositiveInt
 
 from .base import FredBase, Json
 
@@ -25,6 +25,9 @@ class TagsApiParameters(BaseModel):
     ] = None
     sort_order: Optional[Literal["acs", "desc"]] = None
     exclude_tag_names: Optional[str] = None
+
+    class Config:
+        extra = Extra.allow
 
 
 class FredTags(FredBase):

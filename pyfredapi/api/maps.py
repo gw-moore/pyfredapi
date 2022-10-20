@@ -29,6 +29,9 @@ class MapApiParameters(BaseModel):
     date: Optional[str] = None
     start_date: Optional[str] = None
 
+    class Config:
+        extra = Extra.allow
+
 
 class GeoseriesInfo(BaseModel):
     """Represents an economics data series information. https://fred.stlouisfed.org/docs/api/geofred/series_group.html."""
