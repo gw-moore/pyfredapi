@@ -30,4 +30,4 @@ jobs:
           poetry install --with test --no-interaction
       - name: Test with pytest
         run: |
-          poetry run pytest tests/ --vcr-record=none
+          poetry run pytest tests/ --vcr-record=none --no-header -vv

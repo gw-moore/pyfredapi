@@ -1,18 +1,9 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import pkg_resources
 
 project = "pyfreadpi"
-copyright = "2022, Greg Moore"
+copyright = "2022"
 author = "Greg Moore"
-release = "0.1.0"
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+release = pkg_resources.get_distribution("pyfredapi").version
 
 extensions = [
     "myst_parser",
@@ -29,11 +20,45 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
+# HTML Configuration
+import plotly.io as pio
 
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+pio.renderers.default = "browser"
 
-html_theme = "sphinx_rtd_theme"
+import sphinx_material
+
+html_context = sphinx_material.get_html_context()
+html_theme_path = sphinx_material.html_theme_path()
+html_theme = "sphinx_material"
+# Set link name generated in the top bar.
+html_title = f"pyfredapi version {release}"
+# Material theme options (see theme.conf for more information)
+html_theme_options = {
+    # Set the name of the project to appear in the navigation.
+    "nav_title": "pyfredapi",
+    # Set the color and the accent color
+    # "color_primary": "blue",
+    # "color_accent": "light-blue",
+    # Set the repo location to get a badge with stats
+    "repo_url": "https://github.com/gw-moore/pyfredapi/",
+    "repo_name": "pyfredapi",
+    "repo_type": "github",
+    "master_doc": True,
+    # Visible levels of the global TOC; -1 means unlimited
+    "globaltoc_depth": 3,
+    # If False, expand all TOC entries
+    "globaltoc_collapse": True,
+    # If True, show hidden TOC entries
+    "globaltoc_includehidden": True,
+}
+html_show_sourcelink = True
+html_sidebars = {
+    "**": [
+        "globaltoc.html",
+        #'localtoc.html',
+    ]
+}
+
 html_static_path = ["_static"]
 
 # Make function signatures readable

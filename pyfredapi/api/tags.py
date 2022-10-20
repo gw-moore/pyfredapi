@@ -1,3 +1,6 @@
+"""This module contains the FredTags implementation."""
+
+
 from typing import Literal, Optional
 
 from pydantic import BaseModel, PositiveInt
