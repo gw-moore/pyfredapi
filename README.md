@@ -16,12 +16,6 @@
 pip install pyfredapi
 ```
 
-If you want to use the plotting capabilities of `pyfredapi`, install the package with the optional plotting dependencies.
-
-```bash
-pip install "pyfredapi[plot]"
-```
-
 ## Basic Usage
 
 Before using `pyfredapi` and must have an API key to the FRED API web service. You can apply for [one for free](https://fred.stlouisfed.org/docs/api/api_key.html) on the FRED website.
