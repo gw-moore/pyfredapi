@@ -66,7 +66,6 @@ html_theme_options = {
     # ],
     "color_primary": "indigo",
     "color_accent": "blue",
-    "theme_color": "#4B0082",
     "globaltoc_depth": 2,
     "master_doc": True,
     "heroes": {
