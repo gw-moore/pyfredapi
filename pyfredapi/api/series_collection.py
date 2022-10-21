@@ -39,11 +39,11 @@ class SeriesCollection:
 
     Parameters
     ----------
-    client : FredSeries, optional
-        A FredSeries object. Defaults to `FredSeries()`.
+    client : FredSeries
+        A FredSeries object.
     """
 
-    def __init__(self, client: FredSeries = FredSeries()):
+    def __init__(self, client: FredSeries):
         self.client = client
         self.data: Dict[str, SeriesData] = {}
 
