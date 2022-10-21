@@ -23,7 +23,7 @@ Before you can use :code:`pyfredapi` you must have an API key to the FRED API we
 You can set your API in two ways:
 
 * set your API key to the environment variable :code:`FRED_API_KEY`
-* pass it to the :code:`api_key` parameter
+* pass it to the :code:`api_key` parameter when creating a client instance
 
 Quick Start
 -----------
