@@ -1,8 +1,15 @@
 import pandas as pd
 import pytest
 
-from pyfredapi import FredCategory
-from pyfredapi.api.utils import _convert_to_pandas
+from pyfredapi.category import (
+    get_category,
+    get_category_children,
+    get_category_related,
+    get_category_related_tags,
+    get_category_series,
+    get_category_tags,
+)
+from pyfredapi.series import SeriesInfo
 
 from .conftest import base_request as category_request
 
@@ -11,14 +18,9 @@ category_params = {
 }
 
 
-@pytest.fixture()
-def client():
-    return FredCategory()
-
-
 @pytest.mark.vcr()
-def test_get_category(client):
-    actual = client.get_category(category_params["category_id"])
+def test_get_category():
+    actual = get_category(category_params["category_id"])
     assert actual is not None
     assert isinstance(actual, dict)
     assert isinstance(actual["categories"], list)
@@ -30,8 +32,8 @@ def test_get_category(client):
 
 
 @pytest.mark.vcr()
-def test_get_category_children(client):
-    actual = client.get_category_children(category_params["category_id"])
+def test_get_category_children():
+    actual = get_category_children(category_params["category_id"])
     assert actual is not None
     assert isinstance(actual, dict)
     assert isinstance(actual["categories"], list)
@@ -43,8 +45,8 @@ def test_get_category_children(client):
 
 
 @pytest.mark.vcr()
-def test_get_category_related(client):
-    actual = client.get_category_related(category_params["category_id"])
+def test_get_category_related():
+    actual = get_category_related(category_params["category_id"])
     assert actual is not None
     assert isinstance(actual, dict)
     assert isinstance(actual["categories"], list)
@@ -56,30 +58,24 @@ def test_get_category_related(client):
 
 
 @pytest.mark.vcr()
-@pytest.mark.parametrize("return_type", ["json", "pandas"])
-def test_get_category_series(client, return_type):
-    actual = client.get_category_series(
-        category_id=category_params["category_id"],
-        return_format=return_type,
-    )
+def test_get_category_series():
+    actual = get_category_series(category_id=category_params["category_id"])
     expected = category_request(
         endpoint="category/series", extra_params=category_params
     ).json()
 
-    if return_type == "json":
-        assert isinstance(actual, dict)
-        assert "seriess" in actual
-        assert expected == actual
-    elif return_type == "pandas":
-        assert isinstance(actual, pd.DataFrame)
-        actual_pdf = _convert_to_pandas(expected["seriess"])
-        pd.testing.assert_frame_equal(actual_pdf, actual)
+    expected = {series["id"]: SeriesInfo(**series) for series in expected["seriess"]}
+
+    assert isinstance(actual, dict)
+    for series_info in actual.values():
+        assert isinstance(series_info, SeriesInfo)
+    assert actual == expected
 
 
 @pytest.mark.vcr()
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
-def test_get_category_tags(client, return_type):
-    actual = client.get_category_tags(
+def test_get_category_tags(return_type):
+    actual = get_category_tags(
         category_id=category_params["category_id"],
         return_format=return_type,
     )
@@ -98,8 +94,8 @@ def test_get_category_tags(client, return_type):
 
 @pytest.mark.vcr()
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
-def test_get_category_related_tags(client, return_type):
-    actual = client.get_category_related_tags(
+def test_get_category_related_tags(return_type):
+    actual = get_category_related_tags(
         category_id=category_params["category_id"],
         return_format=return_type,
         **{"tag_names": "balance"},

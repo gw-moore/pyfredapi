@@ -26,7 +26,7 @@ jobs:
           python-version: "3.10"
       - name: Install Poetry
         uses: snok/install-poetry@v1
-      - name: Install pyfredapi
+      - name: Install dependencies
         run: |
           poetry install --with test --no-interaction
       - name: Test with Coverage

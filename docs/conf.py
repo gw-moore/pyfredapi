@@ -22,14 +22,23 @@ master_doc = "index"
 
 extensions = [
     "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
     "myst_parser",
     "nbsphinx",
     "sphinx_copybutton",
+    "sphinxcontrib.autodoc_pydantic",
 ]
 
 nbsphinx_execute = "never"
+autosummary_generate = True
+autodoc_pydantic_model_show_config_summary = False
+autodoc_pydantic_model_show_config_member = False
+autodoc_pydantic_model_show_field_summary = True
+autodoc_pydantic_model_undoc_members = False
+napoleon_numpy_docstring = True
+napoleon_preprocess_types = True
 
 # Setup auto-doc options for all documented modules in references/api.rst
 autodoc_default_options = {
