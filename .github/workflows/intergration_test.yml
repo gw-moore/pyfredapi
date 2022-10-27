@@ -27,9 +27,19 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install --with lint --no-interaction
-      - name: Run pre-commit
+      - name: flake8
         run: |
-          pre-commit run --all-files
+          poetry run flake8 .
+      - name: isort
+        run: |
+          poetry run isort pyfredapi
+          poetry run isort tests
+      - name: black
+        run: |
+          poetry run black . --check
+      - name: mypy
+        run: |
+          poetry run mypy pyfredapi
 
   pytest:
     name: Run pytest
@@ -76,5 +86,5 @@ jobs:
           poetry install --with docs --no-interaction
       - name: Build docs
         run: |
-          cd docs
-          make html
+          poetry shell
+          make html -C docs/

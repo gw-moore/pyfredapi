@@ -21,13 +21,20 @@ Report a bug by [opening a new issue](https://github.com/gw-moore/pyfredapi/issu
 poetry install --with docs,test,lint
 ```
 
-  5. If you've added changed the API...
+  5. Setup pre-commit
+
+```bash
+poetry shell
+pre-commit install
+```
+
+  6. If you've added changed the API...
       - Add or update tests
       - Add or update documentation
-  6. Ensure the test and lint suites pass with tox. From the root of the project directory, run:
+  7. Ensure the test and lint suites pass with tox. From the root of the project directory, run:
 
 ```bash
 tox
 ```
 
-  7. Submit a pull request (PR)
+  8. Submit a pull request (PR)
