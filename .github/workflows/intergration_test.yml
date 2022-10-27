@@ -86,5 +86,4 @@ jobs:
           poetry install --with docs --no-interaction
       - name: Build docs
         run: |
-          poetry shell
-          make html -C docs/
+          poetry run make html -C docs/
