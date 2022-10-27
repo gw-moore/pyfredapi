@@ -33,3 +33,7 @@ gdp = pfs.get_series(series_id="GDP")
 # api key passed to the function
 gdp = pfs.get_series(series_id="GDP", api_key="my_api_key")
 ```
+
+## Contributing
+
+Thank you for your interest in contributing to `pyfredapi`. Check out the [contributing guide](https://pyfredapi.readthedocs.io/en/latest/references/CONTRIBUTING.html) to get started.

@@ -68,3 +68,4 @@ Quick start example:
 
    API <references/api>
    Changelog <references/CHANGELOG.md>
+   Contributing <references/CONTRIBUTING.rst>
