@@ -1,0 +1,108 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/tags?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVhY6SvlpacWpJUpWBjpKOZm5mSVK
+        VoYGBgY6SiWJ6cVKVtHVSnmJualKVkqlxYlKOkrpRfmlBfGZINvTU/OVdJTy8ktSi5WslELzMktS
+        UxSCSxJLUosV8tMUHHNTizKTQXqSi1ITS1JBWowMDI10DYx0jcwVDA2sDC2sDC11DcyUdJQK8gtK
+        cxKLMksqwdbroHrByszU2MLcrFYH7piC0qSczGSFlPzcxMw8K4XkzJLEksz8PIWi1MLS1GKQZTrI
+        Tk0GeRnq0rzSnBwdJRQ3WegaGukamisYGVsZG1sZGmO6ydISw0kGlsbGBkhOygO7ACOIQBEAtVkJ
+        FO6khQWmvUZmBqj2FpYmFpWkFuVUolqdVpRaiBQ9pFttYYLuZUMDU0sDCyQvo6eI4tTEYiQ7g1MT
+        i/PzEnNyKhUcU7JKodGCEvKEU4OFBbozLI1NzE2QXJGUCkpkSAmzuAgpupWcSotSE0tBKdI1OT8v
+        PzczWcExLzGnsjgT5FYSXWOO4RpzC0NDIyTXpKcUoEZEemoeUpi4F+UXFyu45OemFpdkJisEFOWn
+        lCaD0giJDrEwQA8WcxMjE2SH5GUWoIVLUQ7Ix7DE6AdOr4k5Cp55yfm5qQqJeSkw5yg4JoPLB5By
+        dHdZ6BqaKRiaWhkZWhma6xqYomVecwx3AWZoZGZpUBtbCwBiHcVA3AQAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '613'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 21 Oct 2022 14:44:47 GMT
+      ETag:
+      - '"494f1aa937ac96f405bbfe506bf2935b-gzip"'
+      Expires:
+      - Sat, 22 Oct 2022 14:44:47 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '83'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/tags?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVhY6SvlpacWpJUpWBjpKOZm5mSVK
+        VoYGBgY6SiWJ6cVKVtHVSnmJualKVkqlxYlKOkrpRfmlBfGZINvTU/OVdJTy8ktSi5WslELzMktS
+        UxSCSxJLUosV8tMUHHNTizKTQXqSi1ITS1JBWowMDI10DYx0jcwVDA2sDC2sDC11DcyUdJQK8gtK
+        cxKLMksqwdbroHrByszU2MLcrFYH7piC0qSczGSFlPzcxMw8K4XkzJLEksz8PIWi1MLS1GKQZTrI
+        Tk0GeRnq0rzSnBwdJRQ3WegaGukamisYGVsZG1sZGmO6ydISw0kGlsbGBkhOygO7ACOIQBEAtVkJ
+        FO6khQWmvUZmBqj2FpYmFpWkFuVUolqdVpRaiBQ9pFttYYLuZUMDU0sDCyQvo6eI4tTEYiQ7g1MT
+        i/PzEnNyKhUcU7JKodGCEvKEU4OFBbozLI1NzE2QXJGUCkpkSAmzuAgpupWcSotSE0tBKdI1OT8v
+        PzczWcExLzGnsjgT5FYSXWOO4RpzC0NDIyTXpKcUoEZEemoeUpi4F+UXFyu45OemFpdkJisEFOWn
+        lCaD0giJDrEwQA8WcxMjE2SH5GUWoIVLUQ7Ix7DE6AdOr4k5Cp55yfm5qQqJeSkw5yg4JoPLB5By
+        dHdZ6BqaKRiaWhkZWhma6xqYomVecwx3AWZoZGZpUBtbCwBiHcVA3AQAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '613'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 21 Oct 2022 14:44:48 GMT
+      ETag:
+      - W/"494f1aa937ac96f405bbfe506bf2935b-gzip-gzip"
+      Expires:
+      - Sat, 22 Oct 2022 14:44:48 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '81'
+    status:
+      code: 200
+      message: OK
+version: 1

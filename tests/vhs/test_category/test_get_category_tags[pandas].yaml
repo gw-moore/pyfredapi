@@ -1,0 +1,116 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkYmOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1MFPSUSrI
+        LyjNSSzKLKlUsjK30EH1hZWpUa0O3Cl5iSWZ+XmorklPzQd5FuYc0u20tMRrZ0FpUk5mskJKfm5i
+        Zp6VQnJmCdgRCkWphaWpxSC/oQROMlLY5JXm5OgoJSMHgYWuoZGuobmCkbGVsbGVoTFmEBBwTmkx
+        Wmykp+Yr6SjBvB+al1mSmqIQXJJYkloMihTH3NSizGSQHhR3EI4KQ1BaQElRqHGRlJiTmJecih4Z
+        oNiBOYb0uDDBiH8TC6T4LyxNLCpJLcqpRLU1rSi1ECkMSLfWwgQ9CRijJDv0MC9OTQQlbpg//fJL
+        FIJTE4vz8xJzcioVHFOySqEJg/IwNzZA8j8Bd1DFDRYYUWCEHBYpmcXJ+XklmXmlqSmosZCeSlnc
+        m5mhR4IRit9Ti8oyk1NB4Y5UFlFsKaZvkS1NzMsrTcxB9SflqQ3DTkPkRJ6en59CZV+aG6AHraEZ
+        UrJKyi9A9SJqqDpBcjqoNAlIrMxNzSsBOQ8laRvrGhjqGlkoGJpYgQp3LMWaiTmGE0yQnJCZl5yf
+        S+XCxAyjYEcO5uTEgsySxByFxGRInYhSiqMGAOkFipExum+Rwzu5tKgoNa+ENlabGOKzujg1OT8v
+        JbEIrQSl1L/GGEka2b8lRYkpVI5bU1N8vsxNLUrOSMxLySwmyVpjXUNDXUNjBUMzKwMLK2NDzMrZ
+        CCMVIyfivFRQS4SapRNGvkW2Ljk1r7gUlBWRbERtmznDVKBkVsJ1vzlGzkGuAnLz80oyqF4HW2LE
+        KLKdBUWZuVRPtaYYwYtsZUlRYl5xWmoRWghTnFWM0FMuYEa1sbUAcg9Y6AIMAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '845'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 21 Oct 2022 14:44:15 GMT
+      ETag:
+      - W/"c21027dd6c9bfd3018524a28a083b372-gzip-gzip"
+      Expires:
+      - Sat, 22 Oct 2022 14:44:14 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '104'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkYmOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKSamJSjpK6UX5pQXxmSDri4tAJuXll6QWK1kpOZUWpSaW
+        KuSnKbgm5+fl52YmKzjmJeZUFmcWg+wrSk0sSQXpMjIwNNI1MNI1MlcwNLAytLAytNQ1MFPSUSrI
+        LyjNSSzKLKlUsjK30EH1hZWpUa0O3Cl5iSWZ+XmorklPzQd5FuYc0u20tMRrZ0FpUk5mskJKfm5i
+        Zp6VQnJmCdgRCkWphaWpxSC/oQROMlLY5JXm5OgoJSMHgYWuoZGuobmCkbGVsbGVoTFmEBBwTmkx
+        Wmykp+Yr6SjBvB+al1mSmqIQXJJYkloMihTH3NSizGSQHhR3EI4KQ1BaQElRqHGRlJiTmJecih4Z
+        oNiBOYb0uDDBiH8TC6T4LyxNLCpJLcqpRLU1rSi1ECkMSLfWwgQ9CRijJDv0MC9OTQQlbpg//fJL
+        FIJTE4vz8xJzcioVHFOySqEJg/IwNzZA8j8Bd1DFDRYYUWCEHBYpmcXJ+XklmXmlqSmosZCeSlnc
+        m5mhR4IRit9Ti8oyk1NB4Y5UFlFsKaZvkS1NzMsrTcxB9SflqQ3DTkPkRJ6en59CZV+aG6AHraEZ
+        UrJKyi9A9SJqqDpBcjqoNAlIrMxNzSsBOQ8laRvrGhjqGlkoGJpYgQp3LMWaiTmGE0yQnJCZl5yf
+        S+XCxAyjYEcO5uTEgsySxByFxGRInYhSiqMGAOkFipExum+Rwzu5tKgoNa+ENlabGOKzujg1OT8v
+        JbEIrQSl1L/GGEka2b8lRYkpVI5bU1N8vsxNLUrOSMxLySwmyVpjXUNDXUNjBUMzKwMLK2NDzMrZ
+        CCMVIyfivFRQS4SapRNGvkW2Ljk1r7gUlBWRbERtmznDVKBkVsJ1vzlGzkGuAnLz80oyqF4HW2LE
+        KLKdBUWZuVRPtaYYwYtsZUlRYl5xWmoRWghTnFWM0FMuYEa1sbUAcg9Y6AIMAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '845'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 21 Oct 2022 14:44:15 GMT
+      ETag:
+      - W/"c21027dd6c9bfd3018524a28a083b372-gzip-gzip"
+      Expires:
+      - Sat, 22 Oct 2022 14:44:15 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '103'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -5,7 +5,13 @@ import pandas as pd
 import pytest
 import requests
 
-from pyfredapi.api.maps import FredMaps, GeoseriesData, GeoseriesInfo
+from pyfredapi.maps import (
+    GeoseriesData,
+    GeoseriesInfo,
+    get_geoseries,
+    get_geoseries_info,
+    get_shape_files,
+)
 
 BASE_FRED_URL = "https://api.stlouisfed.org/geofred/"
 
@@ -13,11 +19,6 @@ base_params = {
     "api_key": os.environ.get("FRED_API_KEY", None),
     "file_type": "json",
 }
-
-
-@pytest.fixture()
-def client():
-    return FredMaps()
 
 
 def maps_request(endpoint: str, extra_params: Optional[Dict[str, str]] = None):
@@ -30,9 +31,9 @@ def maps_request(endpoint: str, extra_params: Optional[Dict[str, str]] = None):
     )
 
 
-@pytest.mark.vcr()
-def test_get_geoseries_info(client):
-    actual = client.get_geoseries_info(series_id="WIPCPI")
+@pytest.mark.vcr("cassettes/maps/")
+def test_get_geoseries_info():
+    actual = get_geoseries_info(series_id="WIPCPI")
     response = maps_request("series/group", extra_params={"series_id": "WIPCPI"}).json()
     expected = GeoseriesInfo(**response["series_group"])
     assert isinstance(actual, GeoseriesInfo)
@@ -40,8 +41,8 @@ def test_get_geoseries_info(client):
 
 
 @pytest.mark.vcr()
-def test_get_shape_files(client):
-    actual = client.get_shape_files(shape="bea")
+def test_get_shape_files():
+    actual = get_shape_files(shape="bea")
     expected = maps_request("shapes/file", extra_params={"shape": "bea"}).json()
     assert isinstance(actual, dict)
     assert expected == actual
@@ -49,8 +50,8 @@ def test_get_shape_files(client):
 
 @pytest.mark.vcr()
 @pytest.mark.parametrize("return_type", ["json", "pandas"])
-def test_get_geoseries(client, return_type):
-    actual = client.get_geoseries(
+def test_get_geoseries(return_type):
+    actual = get_geoseries(
         series_id="WIPCPI",
         start_date="2019-01-01",
         end_date="2021-01-01",

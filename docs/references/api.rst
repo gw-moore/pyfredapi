@@ -1,26 +1,87 @@
 pyfredapi: Public API Reference
 ================================
 
-FredBase
+FRED Categories
 ------------------------------
-.. automodule:: pyfredapi.api.base
+.. currentmodule:: pyfredapi.category
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
 
-FredCategory
-------------------------------
-.. automodule:: pyfredapi.api.category
+    get_category
+    get_category_children
+    get_category_related
+    get_category_related_tags
+    get_category_series
+    get_category_tags
+    CategoryApiParameters
 
-FredMaps
+FRED Maps
 ------------------------------
-.. automodule:: pyfredapi.api.maps
+.. currentmodule:: pyfredapi.maps
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
 
-FredSeries
-------------------------------
-.. automodule:: pyfredapi.api.series
+    get_geoseries
+    get_geoseries_info
+    get_shape_files
+    MapApiParameters
 
-FredSources
+FRED Series
 ------------------------------
-.. automodule:: pyfredapi.api.sources
+.. currentmodule:: pyfredapi.series
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
 
-FredTags
+    get_series
+    get_series_all_releases
+    get_series_asof_date
+    get_series_categories
+    get_series_info
+    get_series_initial_release
+    get_series_releases
+    get_series_tags
+    get_series_updates
+    get_series_vintagedates
+    search_series
+    search_series_related_tags
+    search_series_tags
+    SeriesApiParameters
+    SeriesInfo
+    SeriesSearchParameters
+
+FRED Sources
 ------------------------------
-.. automodule:: pyfredapi.api.tags
+.. currentmodule:: pyfredapi.sources
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
+
+    get_sources
+    get_source
+    get_source_release
+    SourceApiParameters
+
+FRED Tags
+------------------------------
+.. currentmodule:: pyfredapi.tags
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
+
+    get_tags
+    get_related_tags
+    get_series_matching_tags
+    TagsApiParameters
+
+Series Collection
+------------------------------
+.. currentmodule:: pyfredapi.series_collection
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
+
+    SeriesCollection
+    SeriesData

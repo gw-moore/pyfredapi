@@ -36,3 +36,9 @@ def vcr_config():
         # Exclude the api_key from the url request
         "filter_query_parameters": ["api_key"],
     }
+
+
+@pytest.fixture(scope="module")
+def vcr_cassette_dir(request):
+    # Put all cassettes in vhs/{module}/{test}.yaml
+    return os.path.join("tests/vhs", request.module.__name__.split(".")[-1])

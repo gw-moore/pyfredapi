@@ -1,5 +1,23 @@
 # Changelog
 
+## Version 0.5.0 - 2022-10-26
+
+This release introduces breaking changes. The `pyfredapi` api has been refactored to use functions rather than class methods.
+
+### Added
+
+- CONTRIBUTING.md
+
+### Changed
+
+- Refactored the API into functions. Each FRED API endpoint now has an associated function rather than being attached to a class. All tests and docs have been updated to reflect this change
+- Moved `SeriesData` to the `SeriesCollection` module. `get_series` now only returns series data. To get both series data and series info in
+one object, use a `SeriesCollection`
+
+### Fixed
+
+- Broken formatting in the sphinx autodocs api reference
+
 ## Version 0.4.1 - 2022-10-20
 
 ### Changed

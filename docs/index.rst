@@ -3,7 +3,7 @@ pyfredapi
 
 :code:`pyfredapi` is a Python library that makes it is easy to retrieve data from the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred>`_.
 :code:`pyfredapi` covers all the the FRED API endpoints, and can retrieve data from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisfed.org/>`_.
-Data can be return as a `pandas <https://pandas.pydata.org/>`_ dataframe or as json. Requests to the FRED API can be customized according to
+Data can be return as a `pandas <https://pandas.pydata.org/>`_ dataframe or as `json <https://www.json.org/json-en.html>`_. Requests to the FRED API can be customized according to
 the parameters made available by the web service endpoints.
 
 Installation
@@ -23,7 +23,7 @@ Before you can use :code:`pyfredapi` you must have an API key to the FRED API we
 You can set your API in two ways:
 
 * set your API key to the environment variable :code:`FRED_API_KEY`
-* pass it to the :code:`api_key` parameter
+* pass it to the :code:`api_key` parameter when creating a client instance
 
 Quick Start
 -----------
@@ -58,9 +58,9 @@ Quick start example:
    :caption: Tutorials
    :maxdepth: 1
 
-   FRED Series <tutorials/FredSeries.ipynb>
-   Series Collection <tutorials/SeriesCollection.ipynb>
-   FRED Maps <tutorials/FredMaps.ipynb>
+   FRED Series <tutorials/series.ipynb>
+   Series Collection <tutorials/series_collection.ipynb>
+   FRED Maps <tutorials/maps.ipynb>
 
 .. toctree::
    :caption: Reference
@@ -68,3 +68,4 @@ Quick start example:
 
    API <references/api>
    Changelog <references/CHANGELOG.md>
+   Contributing <references/CONTRIBUTING.rst>
