@@ -24,13 +24,13 @@ Before using `pyfredapi` and must have an API key to the FRED API web service. Y
 You can either be set as the environment variable `FRED_API_KEY`, or pass it to the `api_key` parameters when initializing `pyfredapi`.
 
 ```python
-import pyfredapi.series as pfs
+import pyfredapi.series as pf
 
 # api key set as environment variable
-gdp = pfs.get_series(series_id="GDP")
+pf.get_series(series_id="GDP")
 
 # api key passed to the function
-gdp = pfs.get_series(series_id="GDP", api_key="my_api_key")
+pf.get_series(series_id="GDP", api_key="my_api_key")
 ```
 
 ## Contributing

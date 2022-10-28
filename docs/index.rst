@@ -43,16 +43,13 @@ Quick start example:
 
 .. code-block:: python
 
-   from pyfredapi import FredSeries
+   import pyfreadpi as pf
 
    # api key set as environment variable
-   client = FredSeries()
+   pf.get_series_info(series_id="GDP")
 
    # api key passed to initializer
-   client = FredSeries(api_key = "my_api_key")
-
-   # get GDP data
-   client.get_series("GDP")
+   pf.get_series_info(series_id="GDP", api_key="my_api_key"")
 
 .. toctree::
    :caption: Tutorials

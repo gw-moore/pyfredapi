@@ -67,9 +67,9 @@ pandas==1.5.1 ; python_version >= "3.8" and python_version < "3.11" \
     --hash=sha256:e675f8fe9aa6c418dc8d3aac0087b5294c1a4527f1eacf9fe5ea671685285454 \
     --hash=sha256:eb7e8cf2cf11a2580088009b43de84cabbf6f5dae94ceb489f28dba01a17cb77 \
     --hash=sha256:f340331a3f411910adfb4bbe46c2ed5872d9e473a783d7f14ecf49bc0869c594
-plotly==5.10.0 ; python_version >= "3.8" and python_version < "3.11" \
-    --hash=sha256:4d36d9859b7a153b273562deeed8c292587a472eb1fd57cd4158ec89d9defadb \
-    --hash=sha256:989b13825cc974390aa0169479485d9257d37848a47bc63957251f8e1a7046ba
+plotly==5.11.0 ; python_version >= "3.8" and python_version < "3.11" \
+    --hash=sha256:4efef479c2ec1d86dcdac8405b6ca70ca65649a77408e39a7e84a1ea2db6c787 \
+    --hash=sha256:52fd74b08aa4fd5a55b9d3034a30dbb746e572d7ed84897422f927fdf687ea5f
 pydantic==1.10.2 ; python_version >= "3.8" and python_version < "3.11" \
     --hash=sha256:05e00dbebbe810b33c7a7362f231893183bcc4251f3f2ff991c31d5c08240c42 \
     --hash=sha256:06094d18dd5e6f2bbf93efa54991c3240964bb663b87729ac340eb5014310624 \

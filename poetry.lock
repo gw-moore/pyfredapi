@@ -340,7 +340,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "exceptiongroup"
-version = "1.0.0rc9"
+version = "1.0.0"
 description = "Backport of PEP 654 (exception groups)"
 category = "dev"
 optional = false
@@ -444,7 +444,7 @@ gitdb = ">=4.0.1,<5"
 
 [[package]]
 name = "identify"
-version = "2.5.7"
+version = "2.5.8"
 description = "File identification library for Python"
 category = "dev"
 optional = false
@@ -973,7 +973,7 @@ test = ["black", "check-manifest", "flake8", "ipykernel", "ipython", "ipywidgets
 
 [[package]]
 name = "nbconvert"
-version = "7.2.2"
+version = "7.2.3"
 description = "Converting Jupyter Notebooks"
 category = "dev"
 optional = false
@@ -1229,7 +1229,7 @@ test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock 
 
 [[package]]
 name = "plotly"
-version = "5.10.0"
+version = "5.11.0"
 description = "An open-source, interactive data visualization library for Python"
 category = "main"
 optional = false
@@ -2416,8 +2416,8 @@ entrypoints = [
     {file = "entrypoints-0.4.tar.gz", hash = "sha256:b706eddaa9218a19ebcd67b56818f05bb27589b1ca9e8d797b74affad4ccacd4"},
 ]
 exceptiongroup = [
-    {file = "exceptiongroup-1.0.0rc9-py3-none-any.whl", hash = "sha256:2e3c3fc1538a094aab74fad52d6c33fc94de3dfee3ee01f187c0e0c72aec5337"},
-    {file = "exceptiongroup-1.0.0rc9.tar.gz", hash = "sha256:9086a4a21ef9b31c72181c77c040a074ba0889ee56a7b289ff0afb0d97655f96"},
+    {file = "exceptiongroup-1.0.0-py3-none-any.whl", hash = "sha256:2ac84b496be68464a2da60da518af3785fff8b7ec0d090a581604bc870bdee41"},
+    {file = "exceptiongroup-1.0.0.tar.gz", hash = "sha256:affbabf13fb6e98988c38d9c5650e701569fe3c1de3233cfb61c5f33774690ad"},
 ]
 executing = [
     {file = "executing-1.1.1-py2.py3-none-any.whl", hash = "sha256:236ea5f059a38781714a8bfba46a70fad3479c2f552abee3bbafadc57ed111b8"},
@@ -2452,8 +2452,8 @@ GitPython = [
     {file = "GitPython-3.1.29.tar.gz", hash = "sha256:cc36bfc4a3f913e66805a28e84703e419d9c264c1077e537b54f0e1af85dbefd"},
 ]
 identify = [
-    {file = "identify-2.5.7-py2.py3-none-any.whl", hash = "sha256:7a67b2a6208d390fd86fd04fb3def94a3a8b7f0bcbd1d1fcd6736f4defe26390"},
-    {file = "identify-2.5.7.tar.gz", hash = "sha256:5b8fd1e843a6d4bf10685dd31f4520a7f1c7d0e14e9bc5d34b1d6f111cabc011"},
+    {file = "identify-2.5.8-py2.py3-none-any.whl", hash = "sha256:48b7925fe122720088aeb7a6c34f17b27e706b72c61070f27fe3789094233440"},
+    {file = "identify-2.5.8.tar.gz", hash = "sha256:7a214a10313b9489a0d61467db2856ae8d0b8306fc923e03a9effa53d8aedc58"},
 ]
 idna = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
@@ -2778,8 +2778,8 @@ nbclient = [
     {file = "nbclient-0.7.0.tar.gz", hash = "sha256:a1d844efd6da9bc39d2209bf996dbd8e07bf0f36b796edfabaa8f8a9ab77c3aa"},
 ]
 nbconvert = [
-    {file = "nbconvert-7.2.2-py3-none-any.whl", hash = "sha256:fc7a3787c927cbd45a52e088e934fbbaab39afe61767522168a724b7483992be"},
-    {file = "nbconvert-7.2.2.tar.gz", hash = "sha256:24acfaa466d2c9b7eb524800e4a45afbed862c5d058cfb30fc7aa24d448c95eb"},
+    {file = "nbconvert-7.2.3-py3-none-any.whl", hash = "sha256:66326174c190dc4f0a6cbbff96f30c632774b441fa3c7565662bb3d41992fb0f"},
+    {file = "nbconvert-7.2.3.tar.gz", hash = "sha256:7ae7ccc68495b565dab153459ee7e65039970913eb115070da6e2c673cf0e9f8"},
 ]
 nbformat = [
     {file = "nbformat-5.7.0-py3-none-any.whl", hash = "sha256:1b05ec2c552c2f1adc745f4eddce1eac8ca9ffd59bb9fd859e827eaa031319f9"},
@@ -2905,8 +2905,8 @@ platformdirs = [
     {file = "platformdirs-2.5.2.tar.gz", hash = "sha256:58c8abb07dcb441e6ee4b11d8df0ac856038f944ab98b7be6b27b2a3c7feef19"},
 ]
 plotly = [
-    {file = "plotly-5.10.0-py2.py3-none-any.whl", hash = "sha256:989b13825cc974390aa0169479485d9257d37848a47bc63957251f8e1a7046ba"},
-    {file = "plotly-5.10.0.tar.gz", hash = "sha256:4d36d9859b7a153b273562deeed8c292587a472eb1fd57cd4158ec89d9defadb"},
+    {file = "plotly-5.11.0-py2.py3-none-any.whl", hash = "sha256:52fd74b08aa4fd5a55b9d3034a30dbb746e572d7ed84897422f927fdf687ea5f"},
+    {file = "plotly-5.11.0.tar.gz", hash = "sha256:4efef479c2ec1d86dcdac8405b6ca70ca65649a77408e39a7e84a1ea2db6c787"},
 ]
 pluggy = [
     {file = "pluggy-1.0.0-py2.py3-none-any.whl", hash = "sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3"},
