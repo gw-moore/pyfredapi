@@ -1,8 +1,18 @@
 # Changelog
 
+## Version 0.5.1 - 2022-11-5
+
+### Added
+
+- Support for python 3.11
+
+### Removed
+
+- Github actions for building docs
+
 ## Version 0.5.0 - 2022-10-26
 
-This release introduces breaking changes. The `pyfredapi` api has been refactored to use functions rather than class methods.
+This release introduces breaking changes. The `pyfredapi` api has been refactored to use functions rather than class methods
 
 ### Added
 
