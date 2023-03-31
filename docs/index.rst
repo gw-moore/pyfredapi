@@ -2,8 +2,8 @@ pyfredapi
 ==================
 
 :code:`pyfredapi` is a Python library that makes it is easy to retrieve data from the `FRED API web service <https://fred.stlouisfed.org/docs/api/fred>`_.
-:code:`pyfredapi` covers all the the FRED API endpoints, and can retrieve data from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisfed.org/>`_.
-Data can be return as a `pandas <https://pandas.pydata.org/>`_ dataframe or as `json <https://www.json.org/json-en.html>`_. Requests to the FRED API can be customized according to
+:code:`pyfredapi` covers all the FRED API endpoints, and can retrieve data from `FRED <https://fred.stlouisfed.org/>`_ and `ALFRED <https://alfred.stlouisfed.org/>`_.
+Data can be returned as a `pandas <https://pandas.pydata.org/>`_ dataframe or as `json <https://www.json.org/json-en.html>`_. Requests to the FRED API can be customized according to
 the parameters made available by the web service endpoints.
 
 Installation
@@ -23,21 +23,21 @@ Before you can use :code:`pyfredapi` you must have an API key to the FRED API we
 You can set your API in two ways:
 
 * set your API key to the environment variable :code:`FRED_API_KEY`
-* pass it to the :code:`api_key` parameter when creating a client instance
+* pass it to the :code:`api_key` parameter of the request function
 
 Quick Start
 -----------
 
-Each of the FRED API endpoint namespaces is covered by a class in :code:`pyfredapi`. For a deeper dive into each of the
-separate classes see the tutorials and API reference in the sidebar.
+Each of the FRED API endpoint namespaces is covered by a module in :code:`pyfredapi`. For a deeper dive into each of the
+modules see the tutorials and API reference in the sidebar.
 
-- :code:`FredCategory` - covers the FRED Categories endpoints
-- :code:`FredMaps` - covers the FRED Maps endpoints
-- :code:`FredRelease` - covers the FRED Releases endpoints
-- :code:`FredSeries` - covers the FRED Series endpoints
-- :code:`FredSources` - covers the FRED Sources endpoints
-- :code:`FredTags` - covers the FRED Tags endpoints
-- :code:`SeriesCollection` - makes handling multiple series easier
+- :code:`category` - covers the FRED Categories endpoints
+- :code:`maps` - covers the FRED Maps endpoints
+- :code:`release` - covers the FRED Releases endpoints
+- :code:`series` - covers the FRED Series endpoints
+- :code:`sources` - covers the FRED Sources endpoints
+- :code:`tags` - covers the FRED Tags endpoints
+- :code:`series_collection` - makes handling multiple series easier
 
 Quick start example:
 

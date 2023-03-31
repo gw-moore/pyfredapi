@@ -1,5 +1,3 @@
-from typing import Any, Dict
-
 import pandas as pd
 
 # ! Excluding realtime_start & realtime_end because pandas can't convert the max/min dates in FRED
@@ -19,7 +17,7 @@ FRED_DATE_COLS = ["date"]
 FRED_NUM_COLS = ["value"]
 
 
-def _convert_to_pandas(data: Dict[str, Any]) -> pd.DataFrame:
+def _convert_to_pandas(data: dict) -> pd.DataFrame:
     """Convert a FRED response dictionary to a pandas dataframe.
 
     Parameters

@@ -1,4 +1,4 @@
-"""This module provides functions to request data from the `FRED API Sources endpoints. <https://fred.stlouisfed.org/docs/api/fred/#Sources>`_.
+"""The sources module provides functions to request data from the `FRED API Sources endpoints. <https://fred.stlouisfed.org/docs/api/fred/#Sources>`_.
 
 The FRED database contains many sources of data. The sources module provides functions to query the FRED database for information about the available sources.
 """
@@ -33,6 +33,8 @@ def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
 
     Parameters
     ----------
+    api_key : str | None
+        FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``sources/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
@@ -57,6 +59,8 @@ def get_source(
     ----------
     source_id : int
         Source id of interest.
+    api_key : str | None
+        FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``source/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
@@ -81,8 +85,11 @@ def get_source_release(
     ----------
     source_id : int
         Source id of interest.
+    api_key : str | None
+        FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
-        Additional parameters to FRED API ``source/releases`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
+        Additional parameters to FRED API ``source/releases`` endpoint.
+        Refer to the FRED documentation for a list of all possible parameters.
 
     Returns
     -------

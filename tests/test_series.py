@@ -19,7 +19,7 @@ from pyfredapi.series import (
 )
 from pyfredapi.utils import _convert_to_pandas
 
-from .conftest import base_request
+from .conftest import get_request
 
 series_params = {
     "series_id": "GDP",
@@ -40,7 +40,7 @@ def test_get_series_info():
 @pytest.mark.vcr()
 def test_get_series_categories():
     actual = get_series_categories(series_id=series_params["series_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="series/categories",
         extra_params=series_params,
     ).json()
@@ -52,7 +52,7 @@ def test_get_series_categories():
 @return_type_mark
 def test_get_series(return_type):
     actual = get_series(series_id=series_params["series_id"], return_format=return_type)
-    expected = base_request(
+    expected = get_request(
         endpoint=series_obv_endpoint, extra_params=series_params
     ).json()["observations"]
 
@@ -67,7 +67,7 @@ def test_get_series(return_type):
 @pytest.mark.vcr()
 def test_get_series_releases():
     actual = get_series_releases(series_id=series_params["series_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="series/release",
         extra_params=series_params,
     ).json()
@@ -78,7 +78,7 @@ def test_get_series_releases():
 @pytest.mark.vcr()
 def test_get_series_tags():
     actual = get_series_tags(series_id=series_params["series_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="series/tags",
         extra_params=series_params,
     ).json()
@@ -89,7 +89,7 @@ def test_get_series_tags():
 @pytest.mark.vcr()
 def test_get_series_updates():
     actual = get_series_updates(series_id=series_params["series_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="series/updates",
         extra_params=series_params,
     ).json()
@@ -100,7 +100,7 @@ def test_get_series_updates():
 @pytest.mark.vcr()
 def test_get_series_vintagedates():
     actual = get_series_vintagedates(series_id=series_params["series_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="series/vintagedates",
         extra_params=series_params,
     ).json()["vintage_dates"]
@@ -115,7 +115,7 @@ def test_get_series_all_releases(return_type):
         series_id=series_params["series_id"], return_format=return_type
     )
 
-    expected = base_request(
+    expected = get_request(
         endpoint=series_obv_endpoint,
         extra_params={
             "realtime_start": "1776-07-04",
@@ -139,7 +139,7 @@ def test_get_series_initial_release(return_type):
         series_id=series_params["series_id"], return_format=return_type
     )
 
-    expected = base_request(
+    expected = get_request(
         endpoint=series_obv_endpoint,
         extra_params={
             "realtime_start": "1776-07-04",
@@ -165,7 +165,7 @@ def test_get_series_asof_date(return_type):
         return_format=return_type,
     )
 
-    expected = base_request(
+    expected = get_request(
         endpoint=series_obv_endpoint,
         extra_params={
             "realtime_start": "1776-07-04",
@@ -189,7 +189,7 @@ def test_search_series(return_type):
         search_text=test_search_text,
         return_format=return_type,
     )
-    expected = base_request(
+    expected = get_request(
         endpoint="series/search",
         extra_params={
             "search_text": test_search_text,
@@ -213,7 +213,7 @@ def test_search_series_tags(return_type):
         search_text=test_search_text,
         return_format=return_type,
     )
-    expected = base_request(
+    expected = get_request(
         endpoint="series/search/tags",
         extra_params={"series_search_text": test_search_text},
     ).json()
@@ -235,7 +235,7 @@ def test_search_series_related_tags(return_type):
         tag_names="30-year;frb",
         return_format=return_type,
     )
-    expected = base_request(
+    expected = get_request(
         endpoint="series/search/related_tags",
         extra_params={
             "series_search_text": test_search_text,

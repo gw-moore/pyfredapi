@@ -1,5 +1,17 @@
 # Changelog
 
+## Version 0.5.2 - 2023-03-30
+
+### Fixed
+
+- Typos and errors in the documentation
+- Add timeouts to api requests
+
+### Changed
+
+- Updated dependencies to latest versions
+- Updated the linting suite to [ruff](https://github.com/charliermarsh/ruff)
+
 ## Version 0.5.1 - 2022-11-5
 
 ### Added

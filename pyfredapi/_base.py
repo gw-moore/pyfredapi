@@ -1,4 +1,4 @@
-"""This module contains the base functions used pyfredapi modules."""
+"""The _base module contains the base functions used pyfredapi modules."""
 
 from http import HTTPStatus
 from os import environ
@@ -31,7 +31,6 @@ def _get_api_key(api_key: Optional[str] = None) -> str:
     elif not api_key.isalnum() or len(api_key) != 32:
         raise InvalidAPIKey()
 
-    assert api_key is not None  # for mypy
     return api_key
 
 
@@ -67,12 +66,14 @@ def _get_request(
         params = {}
     try:
         response = requests.get(
-            f"{base_url}/{endpoint}", params={**_base_params.dict(), **params}
+            f"{base_url}/{endpoint}",
+            params={**_base_params.dict(), **params},
+            timeout=30,
         )
     except requests.exceptions.RequestException as e:
         raise FredAPIRequestError(
             message=f"Error invoking Fred API: {e}", status_code=None
-        )
+        ) from e
     if response.status_code != HTTPStatus.OK:
         raise FredAPIRequestError(
             message=response.json()["error_message"],

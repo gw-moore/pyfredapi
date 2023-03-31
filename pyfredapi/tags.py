@@ -1,4 +1,4 @@
-"""This module provides functions to request data from the `FRED API Tags endpoints <https://fred.stlouisfed.org/docs/api/fred/#Tags>`_.
+"""The tags module provides functions to request data from the `FRED API Tags endpoints <https://fred.stlouisfed.org/docs/api/fred/#Tags>`_.
 
 FRED tags are assigned to series. Tags define a characteristic about the series. Each tag is a unique character identifier. For example:
 
@@ -37,6 +37,8 @@ class TagsApiParameters(BaseModel):
     exclude_tag_names: Optional[str] = None
 
     class Config:
+        """pydantic config."""
+
         extra = Extra.allow
 
 
@@ -102,6 +104,8 @@ def get_series_matching_tags(
     ----------
     tag_names : str
         A semicolon delimited list of tag names that series match all of.
+    api_key : str | None
+        FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``tags/series`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 

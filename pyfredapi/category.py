@@ -1,4 +1,4 @@
-"""This module provides functions to request data from the `FRED API Categories endpoints <https://fred.stlouisfed.org/docs/api/fred/#Categories>`_."""
+"""The category module provides functions to request data from the `FRED API Categories endpoints <https://fred.stlouisfed.org/docs/api/fred/#Categories>`_."""
 
 
 from typing import Dict, Literal, Optional

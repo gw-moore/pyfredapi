@@ -1,10 +1,9 @@
-"""This module contains the custom exceptions for pyfredapi."""
+"""The exceptions module contains the custom exceptions for pyfredapi."""
 
 
 class BaseFredAPIError(Exception):
-    """Base class for all API errors."""
-
     def __init__(self, message):
+        """Base class for all API errors."""  # noqa: D401
         self.message = message
 
     def __str__(self):
@@ -12,9 +11,8 @@ class BaseFredAPIError(Exception):
 
 
 class InvalidAPIKey(BaseFredAPIError):
-    """Error raised when the API Key is invalid."""
-
     def __init__(self):
+        """Error raised when the API Key is invalid."""
         super().__init__(
             "API key must be a 32 character lower-cased alpha-numeric string."
         )
@@ -30,9 +28,8 @@ class APIKeyNotFoundError(BaseFredAPIError):
 
 
 class FredAPIRequestError(BaseFredAPIError):
-    """Error raised when a request to the FRED API fails."""
-
     def __init__(self, message, status_code):
+        """Error raised when a request to the FRED API fails."""
         super().__init__(message)
         self.status_code = status_code
 

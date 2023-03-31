@@ -14,7 +14,7 @@ from pyfredapi.releases import (
     get_releases_dates,
 )
 
-from .conftest import base_request
+from .conftest import get_request
 
 base_params = {
     "api_key": os.environ.get("FRED_API_KEY", None),
@@ -26,7 +26,7 @@ base_params = {
 @pytest.mark.vcr()
 def test_get_releases():
     actual = get_releases()
-    expected = base_request(endpoint="releases").json()
+    expected = get_request(endpoint="releases").json()
 
     assert actual == expected
 
@@ -34,7 +34,7 @@ def test_get_releases():
 @pytest.mark.vcr()
 def test_get_releases_dates():
     actual = get_releases_dates()
-    expected = base_request(endpoint="releases/dates").json()
+    expected = get_request(endpoint="releases/dates").json()
 
     assert actual == expected
 
@@ -42,7 +42,7 @@ def test_get_releases_dates():
 @pytest.mark.vcr()
 def test_get_release():
     actual = get_release(release_id=base_params["release_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="release",
         extra_params={"release_id": base_params["release_id"]},
     ).json()
@@ -53,7 +53,7 @@ def test_get_release():
 @pytest.mark.vcr()
 def test_get_release_dates():
     actual = get_release_dates(release_id=base_params["release_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="release/dates",
         extra_params={"release_id": base_params["release_id"]},
     ).json()
@@ -64,7 +64,7 @@ def test_get_release_dates():
 @pytest.mark.vcr()
 def test_get_release_series():
     actual = get_release_series(release_id=base_params["release_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="release/series",
         extra_params={"release_id": base_params["release_id"]},
     ).json()
@@ -75,7 +75,7 @@ def test_get_release_series():
 @pytest.mark.vcr()
 def test_get_release_sources():
     actual = get_release_sources(release_id=base_params["release_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="release/sources",
         extra_params={"release_id": base_params["release_id"]},
     ).json()
@@ -86,7 +86,7 @@ def test_get_release_sources():
 @pytest.mark.vcr()
 def test_get_release_tags():
     actual = get_release_tags(release_id=base_params["release_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="release/tags",
         extra_params={"release_id": base_params["release_id"]},
     ).json()
@@ -99,7 +99,7 @@ def test_get_release_related_tags():
     actual = get_release_related_tags(
         release_id=base_params["release_id"], tag_names="sa;foreign"
     )
-    expected = base_request(
+    expected = get_request(
         endpoint="release/related_tags",
         extra_params={
             "release_id": base_params["release_id"],
@@ -113,7 +113,7 @@ def test_get_release_related_tags():
 @pytest.mark.vcr()
 def test_get_release_tables():
     actual = get_release_tables(release_id=base_params["release_id"])
-    expected = base_request(
+    expected = get_request(
         endpoint="release/tables",
         extra_params={"release_id": base_params["release_id"]},
     ).json()

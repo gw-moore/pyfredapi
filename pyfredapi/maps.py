@@ -1,4 +1,4 @@
-"""This module provides functions to request data from the `FRED API Maps endpoints <https://fred.stlouisfed.org/docs/api/fred/#Maps>`_.
+"""The maps module provides functions to request data from the `FRED API Maps endpoints <https://fred.stlouisfed.org/docs/api/fred/#Maps>`_.
 
 The FRED Maps API is a web service that allows developers to write programs and build applications to harvest data and shape files of series available on the maps found
 in the FRED website hosted by the Economic Research Division of the Federal Reserve Bank of St. Louis. Not all series that are in FRED have geographical data.
@@ -57,6 +57,8 @@ class GeoseriesInfo(BaseModel):
 
 
 class GeoseriesData(BaseModel):
+    """Represents metadata about an economics data series. https://fred.stlouisfed.org/docs/api/fred/series.html."""
+
     info: GeoseriesInfo
     data: Union[Dict[str, List[Dict[str, Any]]], pd.DataFrame]
 

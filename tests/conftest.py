@@ -16,7 +16,7 @@ base_params = {
 BASE_FRED_URL = "https://api.stlouisfed.org/fred"
 
 
-def base_request(
+def get_request(
     endpoint: str,
     extra_params: Optional[Dict[str, str]] = None,
     base_params: Dict[str, str] = base_params,
@@ -27,6 +27,7 @@ def base_request(
     return requests.get(
         f"{BASE_FRED_URL}/{endpoint}",
         params={**base_params, **extra_params},
+        timeout=30,
     )
 
 

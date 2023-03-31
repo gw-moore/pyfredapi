@@ -1,6 +1,8 @@
-import sphinx_material
-from pyfredapi import __version__
+"""Sphinx configuration."""
 import plotly.io as pio
+import sphinx_material
+
+from pyfredapi import __version__
 
 pio.renderers.default = "browser"
 

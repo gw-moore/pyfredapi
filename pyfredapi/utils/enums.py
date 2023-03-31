@@ -1,4 +1,4 @@
-"""This module contains the enum definitions."""
+"""The enum module contains enum definitions."""
 
 
 from enum import Enum
