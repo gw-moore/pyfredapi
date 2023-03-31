@@ -5,6 +5,7 @@
 ### Fixed
 
 - Typos and errors in the documentation
+- Add timeouts to api requests
 
 ### Changed
 
