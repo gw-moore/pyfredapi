@@ -1,4 +1,4 @@
-"""This module provides functions to request data from the `FRED API Sources endpoints <https://fred.stlouisfed.org/docs/api/fred/#Series>'_."""
+"""The series module provides functions to request data from the `FRED API Sources endpoints <https://fred.stlouisfed.org/docs/api/fred/#Series>'_."""
 
 import webbrowser
 from typing import List, Literal, Optional
@@ -112,7 +112,7 @@ class SeriesSearchParameters(BaseModel):
 
 
 class SeriesInfo(BaseModel):
-    """Represents an economics data series information. https://fred.stlouisfed.org/docs/api/fred/series.html."""
+    """Represents metadata about an economics data series. https://fred.stlouisfed.org/docs/api/fred/series.html."""
 
     id: str
     realtime_start: str

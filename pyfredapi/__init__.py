@@ -1,3 +1,11 @@
+"""pyfredapi - Python client for the Federal Reserve Economic Data (FRED) API
+==============================================================================.
+
+**pyfredapi** is a Python client for the FRED API web service (https://fred.stlouisfed.org/docs/api/fred/).
+`pyfredapi` covers all the FRED API endpoints and can return data as a pandas (https://pandas.pydata.org/)
+dataframe or json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) to learn more.
+"""
+
 import pkg_resources as _pkg_resources
 
 __version__ = _pkg_resources.get_distribution("pyfredapi").version
@@ -44,11 +52,3 @@ from .series import (
 from .series_collection import SeriesCollection, SeriesData
 from .sources import get_source, get_source_release, get_sources
 from .tags import get_related_tags, get_series_matching_tags, get_tags
-
-__doc__ = """
-pyfredapi - Python client for the Federal Reserve Economic Data (FRED) API
-===========================================================================
-**pyfredapi** is a Python client for the FRED API web service (https://fred.stlouisfed.org/docs/api/fred/).
-`pyfredapi` covers all the FRED API endpoints and can return data as a pandas (https://pandas.pydata.org/)
-dataframe or json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) to learn more.
-"""

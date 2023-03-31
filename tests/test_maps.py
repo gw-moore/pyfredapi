@@ -21,20 +21,23 @@ base_params = {
 }
 
 
-def maps_request(endpoint: str, extra_params: Optional[Dict[str, str]] = None):
+def maps_get_request(endpoint: str, extra_params: Optional[Dict[str, str]] = None):
     if extra_params is None:
         extra_params = {}
 
     return requests.get(
         f"{BASE_FRED_URL}/{endpoint}",
         params={**base_params, **extra_params},
+        timeout=30,
     )
 
 
 @pytest.mark.vcr("cassettes/maps/")
 def test_get_geoseries_info():
     actual = get_geoseries_info(series_id="WIPCPI")
-    response = maps_request("series/group", extra_params={"series_id": "WIPCPI"}).json()
+    response = maps_get_request(
+        "series/group", extra_params={"series_id": "WIPCPI"}
+    ).json()
     expected = GeoseriesInfo(**response["series_group"])
     assert isinstance(actual, GeoseriesInfo)
     assert expected == actual
@@ -43,7 +46,7 @@ def test_get_geoseries_info():
 @pytest.mark.vcr()
 def test_get_shape_files():
     actual = get_shape_files(shape="bea")
-    expected = maps_request("shapes/file", extra_params={"shape": "bea"}).json()
+    expected = maps_get_request("shapes/file", extra_params={"shape": "bea"}).json()
     assert isinstance(actual, dict)
     assert expected == actual
 
@@ -60,7 +63,7 @@ def test_get_geoseries(return_type):
     assert isinstance(actual, GeoseriesData)
     assert isinstance(actual.info, GeoseriesInfo)
 
-    expected = maps_request(
+    expected = maps_get_request(
         "series/data",
         extra_params={
             "series_id": "WIPCPI",

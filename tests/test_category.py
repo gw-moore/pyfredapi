@@ -11,7 +11,7 @@ from pyfredapi.category import (
 )
 from pyfredapi.series import SeriesInfo
 
-from .conftest import base_request as category_request
+from .conftest import get_request as category_request
 
 category_params = {
     "category_id": 125,

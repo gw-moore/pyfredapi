@@ -1,6 +1,6 @@
-"""This module contains the SeriesCollection implementation.
+"""The series_collection module contains the SeriesCollection implementation.
 
-Often users of the FRED API will want analyze multiple economic series. This can be done with `FredSeries` alone, but can be tedious and cumbersome.
+SeriesCollection is meant to make handling multiple series easier. Often users of the FRED API will want analyze multiple economic series. This can be done with `FredSeries` alone, but can be tedious and cumbersome.
 `pyfredapi` offers the `SeriesCollection` class to streamline the process of collecting and munging the data for plotting and analysis.
 """
 
@@ -112,14 +112,16 @@ class SeriesCollection:
 
     Useful when you need to collect and manage multiple economic series. Provides methods
     for listing metadata, collecting data, and merging data together in long or wide formats.
-
-    Parameters
-    ----------
-    client : FredSeries
-        A FredSeries object.
     """
 
     def __init__(self, api_key: Union[str, None] = None):
+        """Create instance of SeriesCollection.
+
+        Parameters
+        ----------
+        api_key : str | None
+            FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
+        """
         if api_key is None:
             self.api_key = _get_api_key()
         self.data: Dict[str, SeriesData] = {}
@@ -174,11 +176,9 @@ class SeriesCollection:
             print(f"Requesting series {series_id}...")
 
             df = get_series(series_id=series_id, api_key=self.api_key, **kwargs)
-            assert isinstance(df, pd.DataFrame)
-            series_data = SeriesData(
-                info=get_series_info(series_id=series_id),
-                df=df,
-            )
+            assert isinstance(df, pd.DateFrame)  # noqa: S101
+
+            series_data = SeriesData(info=get_series_info(series_id=series_id), df=df)
 
             if drop_realtime:
                 series_data.df.drop(
@@ -198,8 +198,8 @@ class SeriesCollection:
 
         Parameters
         ----------
-        series : Union[str, List[str]]
-            Series to remove from collection.
+        series_ids : Union[str, List[str]]
+            Series ids to remove from collection.
         """
         if isinstance(series_ids, str):
             series_ids = [series_ids]
@@ -208,7 +208,7 @@ class SeriesCollection:
             try:
                 del self.data[series_id]
             except KeyError:
-                raise ValueError(f"No series '{series_id}' in collection")
+                raise ValueError from KeyError(f"No series '{series_id}' in collection")
 
             delattr(self, series_id)
             print(f"Removed series {series_id}")

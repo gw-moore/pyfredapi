@@ -4,8 +4,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pyfredapi"
-version = "0.5.1"
-description = "A full featured library for the FRED API web service."
+version = "0.5.2"
+description = "A full featured API client for the FRED API web service."
 authors = ["Greg Moore <gwmoore.career@gmail.com>"]
 readme = "README.md"
 classifiers = [
@@ -38,9 +38,6 @@ optional = true
 [tool.poetry.group.test]
 optional = true
 
-[tool.poetry.group.plot.dependencies]
-plotly = "^5.10.0"
-
 [tool.poetry.group.docs.dependencies]
 jupyter = "^1.0.0"
 Sphinx = "5.1.*"
@@ -62,8 +59,9 @@ types-setuptools = "^65.3.0"
 pydantic = "^1.10.2"
 flake8-bandit = "^4.1.1"
 flake8-docstrings = "^1.6.0"
-#pandas-stubs = "^1.5.0.221003"
 black = {extras = ["jupyter"], version = "^22.8.0"}
+ruff = "^0.0.260"
+pandas-stubs = "^1.5.3.230321"
 
 
 [tool.poetry.group.test.dependencies]
@@ -92,3 +90,64 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
+
+[tool.ruff]
+select = [
+    "E",  # pycodestyle
+    "F",  # Pyflakes
+    "I",  # isort
+    "D",  # pydocstyle
+    "S",  # flake8-bandit
+    "B",  # flake8-bugbear
+]
+ignore = [
+    "E501", # Line too long
+    "D106",  # Missing docstring in public nested class
+    "D101"  # Missing docstring in public class
+]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.11
+target-version = "py311"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402", "D105", "F401", "D205"]
+"tests/*" = ["S101", "D103", "D100"]
+"exceptions.py" = ["D101", "D105", "D107"]
