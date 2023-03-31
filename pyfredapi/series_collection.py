@@ -176,7 +176,7 @@ class SeriesCollection:
             print(f"Requesting series {series_id}...")
 
             df = get_series(series_id=series_id, api_key=self.api_key, **kwargs)
-            assert isinstance(df, pd.DateFrame)  # noqa: S101
+            assert isinstance(df, pd.DataFrame)  # noqa: S101
 
             series_data = SeriesData(info=get_series_info(series_id=series_id), df=df)
 
