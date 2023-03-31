@@ -6,9 +6,9 @@
 dataframe or json. Checkout the [docs](https://pyfredapi.readthedocs.io/en/latest/) to learn more.
 """
 
-import pkg_resources as _pkg_resources
+from importlib.metadata import version as _version
 
-__version__ = _pkg_resources.get_distribution("pyfredapi").version
+__version__ = _version("pyfredapi")
 
 from .category import (
     CategoryApiParameters,
