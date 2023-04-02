@@ -2,6 +2,7 @@
 
 from typing import Literal, Optional
 
+from frozendict import frozendict
 from pydantic import BaseModel, Extra, PositiveInt
 
 from ._base import _get_request
@@ -60,7 +61,7 @@ def get_releases(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     return _get_request(
         endpoint="releases",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -82,7 +83,7 @@ def get_releases_dates(api_key: ApiKeyType = None, **kwargs: KwargsType) -> Json
     return _get_request(
         endpoint="releases/dates",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -103,12 +104,16 @@ def get_release(
     Returns
     -------
     Dictionary representing the Json response.
+
+    Example
+    -------
+    >>> release_info = get_release(release_id=53)
     """
     params = ReleaseApiParameters(release_id=release_id, **kwargs)
     return _get_request(
         endpoint="release",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -134,7 +139,7 @@ def get_release_dates(
     return _get_request(
         endpoint="release/dates",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -160,7 +165,7 @@ def get_release_series(
     return _get_request(
         endpoint="release/series",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -186,7 +191,7 @@ def get_release_sources(
     return _get_request(
         endpoint="release/sources",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -212,7 +217,7 @@ def get_release_tags(
     return _get_request(
         endpoint="release/tags",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -240,7 +245,7 @@ def get_release_related_tags(
     return _get_request(
         endpoint="release/related_tags",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -266,5 +271,5 @@ def get_release_tables(
     return _get_request(
         endpoint="release/tables",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )

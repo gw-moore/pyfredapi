@@ -12,6 +12,7 @@ Categories are organized in a hierarchical structure where parent categories con
 
 from typing import Literal, Optional
 
+from frozendict import frozendict
 from pydantic import BaseModel, Extra, PositiveInt
 
 from ._base import _get_request
@@ -61,7 +62,7 @@ def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     return _get_request(
         endpoint="tags",
         api_key=api_key,
-        params={**params.dict(exclude_none=True)},
+        params=frozenset(**params.dict(exclude_none=True)),
     )
 
 
@@ -91,7 +92,7 @@ def get_related_tags(
     return _get_request(
         endpoint="related_tags",
         api_key=api_key,
-        params={**params.dict(exclude_none=True)},
+        params=frozendict(**params.dict(exclude_none=True)),
     )
 
 
@@ -118,8 +119,10 @@ def get_series_matching_tags(
     return _get_request(
         endpoint="tags/series",
         api_key=api_key,
-        params={
-            "tag_names": tag_names,
-            **params.dict(exclude_none=True),
-        },
+        params=frozendict(
+            {
+                "tag_names": tag_names,
+                **params.dict(exclude_none=True),
+            }
+        ),
     )

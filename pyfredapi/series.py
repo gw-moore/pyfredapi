@@ -4,6 +4,7 @@ import webbrowser
 from typing import List, Literal, Optional
 
 import pandas as pd
+from frozendict import frozendict
 from pydantic import BaseModel, Extra, PositiveInt
 
 from ._base import _get_request
@@ -160,7 +161,9 @@ def get_series_info(
     """
     params = SeriesApiParameters(series_id=series_id, **kwargs)
     response = _get_request(
-        api_key=api_key, endpoint="series", params=params.dict(exclude_none=True)
+        api_key=api_key,
+        endpoint="series",
+        params=frozendict(params.dict(exclude_none=True)),
     )
     return SeriesInfo(**response["seriess"][0])
 
@@ -188,7 +191,7 @@ def get_series_categories(
     return _get_request(
         api_key=api_key,
         endpoint="series/categories",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -222,7 +225,7 @@ def get_series(
     response = _get_request(
         api_key=api_key,
         endpoint="series/observations",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
     if return_format == ReturnFormat.pandas:
@@ -254,7 +257,7 @@ def get_series_releases(
     return _get_request(
         endpoint="series/release",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -281,7 +284,7 @@ def get_series_tags(
     return _get_request(
         endpoint="series/tags",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -308,7 +311,7 @@ def get_series_updates(
     return _get_request(
         endpoint="series/updates",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -337,7 +340,7 @@ def get_series_vintagedates(
     response = _get_request(
         endpoint="series/vintagedates",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
     return response["vintage_dates"]
 
@@ -516,7 +519,7 @@ def search_series(
     response = _get_request(
         endpoint="series/search",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
     if return_format == ReturnFormat.pandas:
@@ -554,10 +557,12 @@ def search_series_tags(
     response = _get_request(
         endpoint="series/search/tags",
         api_key=api_key,
-        params={
-            "series_search_text": search_text,
-            **params.dict(exclude_none=True),
-        },
+        params=frozendict(
+            {
+                "series_search_text": search_text,
+                **params.dict(exclude_none=True),
+            }
+        ),
     )
 
     if return_format == ReturnFormat.pandas:
@@ -598,11 +603,13 @@ def search_series_related_tags(
     response = _get_request(
         endpoint="series/search/related_tags",
         api_key=api_key,
-        params={
-            "series_search_text": search_text,
-            "tag_names": tag_names,
-            **params.dict(exclude_none=True),
-        },
+        params=frozendict(
+            {
+                "series_search_text": search_text,
+                "tag_names": tag_names,
+                **params.dict(exclude_none=True),
+            }
+        ),
     )
 
     if return_format == ReturnFormat.pandas:

@@ -3,6 +3,7 @@
 
 from typing import Dict, Literal, Optional
 
+from frozendict import frozendict
 from pydantic import BaseModel, Extra, PositiveInt
 
 from ._base import _get_request
@@ -72,12 +73,17 @@ def get_category(
     -------
     dict
         Dictionary representing the json response.
+
+    Examples
+    --------
+    >>> import pyfredapi as pf
+    >>> pf.get_category(category_id=125)
     """
     params = CategoryApiParameters(category_id=category_id, **kwargs)
     return _get_request(
         api_key=api_key,
         endpoint="category",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -99,12 +105,17 @@ def get_category_children(
     -------
     dict
         Dictionary representing the json response.
+
+    Examples
+    --------
+    >>> import pyfredapi as pf
+    >>> pf.get_category_children(category_id=13)
     """
     params = CategoryApiParameters(category_id=category_id, **kwargs)
     return _get_request(
         endpoint="category/children",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -132,7 +143,7 @@ def get_category_related(
     return _get_request(
         api_key=api_key,
         endpoint="category/related",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -161,7 +172,7 @@ def get_category_series(
     response = _get_request(
         api_key=api_key,
         endpoint="category/series",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
     return {series["id"]: SeriesInfo(**series) for series in response["seriess"]}
@@ -197,7 +208,7 @@ def get_category_tags(
     response = _get_request(
         api_key=api_key,
         endpoint="category/tags",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
     if return_format == ReturnFormat.pandas:
@@ -235,7 +246,7 @@ def get_category_related_tags(
     response = _get_request(
         api_key=api_key,
         endpoint="category/related_tags",
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
     if return_format == ReturnFormat.pandas:
