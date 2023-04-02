@@ -17,6 +17,7 @@ def test_invalid_api_key_err():
 
 
 def test_api_key_not_found_err():
+    _get_api_key.cache_clear()
     with mock.patch.dict(os.environ, {}, clear=True):
         with pytest.raises(APIKeyNotFoundError):
             _ = _get_api_key()

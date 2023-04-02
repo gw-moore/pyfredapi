@@ -1,10 +1,12 @@
 """The _base module contains the base functions used pyfredapi modules."""
 
+from functools import lru_cache
 from http import HTTPStatus
 from os import environ
 from typing import Any, Dict, Optional, Union
 
 import requests
+from frozendict import frozendict
 from pydantic import BaseModel, Extra
 
 from .exceptions import APIKeyNotFoundError, FredAPIRequestError, InvalidAPIKey
@@ -21,6 +23,7 @@ class BaseApiParameters(BaseModel):
         extra = Extra.forbid
 
 
+@lru_cache
 def _get_api_key(api_key: Optional[str] = None) -> str:
     """Get FRED_API_KEY from the environment."""
     if api_key is None:
@@ -34,6 +37,7 @@ def _get_api_key(api_key: Optional[str] = None) -> str:
     return api_key
 
 
+@lru_cache
 def _get_request(
     endpoint: str,
     api_key: Union[str, None] = None,
@@ -67,7 +71,7 @@ def _get_request(
     try:
         response = requests.get(
             f"{base_url}/{endpoint}",
-            params={**_base_params.dict(), **params},
+            params=frozendict({**_base_params.dict(), **params}),
             timeout=30,
         )
     except requests.exceptions.RequestException as e:

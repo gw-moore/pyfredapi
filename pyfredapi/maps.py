@@ -7,6 +7,7 @@ in the FRED website hosted by the Economic Research Division of the Federal Rese
 from typing import Any, Dict, List, Literal, Optional, Union
 
 import pandas as pd
+from frozendict import frozendict
 from pydantic import BaseModel, Extra
 
 from ._base import _get_request
@@ -86,7 +87,7 @@ def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesI
         base_url=_geo_fred_url,
         endpoint="series/group",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
     return GeoseriesInfo(**response["series_group"])
 
@@ -124,7 +125,7 @@ def get_shape_files(
         base_url=_geo_fred_url,
         endpoint="shapes/file",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -162,7 +163,7 @@ def get_geoseries(
     response = _get_request(
         endpoint="series/data",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
         base_url=_geo_fred_url,
     )
 

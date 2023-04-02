@@ -5,6 +5,7 @@ The FRED database contains many sources of data. The sources module provides fun
 
 from typing import Literal, Optional
 
+from frozendict import frozendict
 from pydantic import BaseModel, Extra, PositiveInt
 
 from ._base import _get_request
@@ -46,7 +47,7 @@ def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     return _get_request(
         endpoint="sources",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -72,7 +73,7 @@ def get_source(
     return _get_request(
         endpoint="source",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )
 
 
@@ -99,5 +100,5 @@ def get_source_release(
     return _get_request(
         endpoint="source/releases",
         api_key=api_key,
-        params=params.dict(exclude_none=True),
+        params=frozendict(params.dict(exclude_none=True)),
     )

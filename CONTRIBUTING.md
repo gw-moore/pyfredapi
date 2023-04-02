@@ -15,7 +15,8 @@ Report a bug by [opening a new issue](https://github.com/gw-moore/pyfredapi/issu
   1. Fork the repo
   2. Clone your fork of the repo
   3. Create a branch from `main`
-  4. Install the project dependency with [poetry](https://python-poetry.org/)
+  4. Follow the [poetry](https://python-poetry.org/) install instructions to install version 1.4.0
+  5. Install the project's development dependencies with [poetry](https://python-poetry.org/)
 
 ```bash
 poetry install --with docs,test,lint
