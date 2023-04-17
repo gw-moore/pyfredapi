@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pyfredapi"
-version = "0.5.3"
+version = "0.5.4"
 description = "A full featured API client for the FRED API web service."
 authors = ["Greg Moore <gwmoore.career@gmail.com>"]
 readme = "README.md"
@@ -23,12 +23,12 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0.0"
-requests = "^2.28.2"
-pandas = "^1.5.3"
-pydantic = "^1.10.7"
-rich = "^13.3.3"
-plotly = "^5.14.0"
-frozendict = "^2.3.6"
+requests = ">=2"
+pandas = ">=1"
+pydantic = ">=1"
+rich = ">=13"
+plotly = ">=5"
+frozendict = ">=2"
 
 [tool.poetry.group.docs]
 optional = true
@@ -57,6 +57,7 @@ ruff = "^0.0.260"
 # pandas-stubs = "^1.5.3.230321"
 mypy = "^1.1.1"
 pre-commit = "^3.2.1"
+types-frozendict = "^2.0.9"
 
 
 [tool.poetry.group.test.dependencies]

@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.5.4 - 2022-04-16
+
+### Changed
+
+- Loosened the required package versions to major version numbers only.
+
 ## Version 0.5.3 - 2022-04-02
 
 ### Changed
