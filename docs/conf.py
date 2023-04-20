@@ -11,7 +11,7 @@ pio.renderers.default = "browser"
 project = "pyfredapi"
 html_title = "pyfredapi"
 
-copyright = "2022, Greg Moore"
+copyright = "2023, Greg Moore"
 author = "Greg Moore"
 
 # The full version, including alpha/beta/rc tags
