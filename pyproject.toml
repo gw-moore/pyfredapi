@@ -8,6 +8,7 @@ version = "0.5.4"
 description = "A full featured API client for the FRED API web service."
 authors = ["Greg Moore <gwmoore.career@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

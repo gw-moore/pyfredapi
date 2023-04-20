@@ -4,7 +4,7 @@ from unittest import mock
 import pytest
 
 from pyfredapi._base import _get_api_key, _get_request
-from pyfredapi.exceptions import APIKeyNotFoundError, FredAPIRequestError, InvalidAPIKey
+from pyfredapi.exceptions import APIKeyNotFound, FredAPIRequestError, InvalidAPIKey
 
 
 def test_get_api_kay():
@@ -19,7 +19,7 @@ def test_invalid_api_key_err():
 def test_api_key_not_found_err():
     _get_api_key.cache_clear()
     with mock.patch.dict(os.environ, {}, clear=True):
-        with pytest.raises(APIKeyNotFoundError):
+        with pytest.raises(APIKeyNotFound):
             _ = _get_api_key()
 
 

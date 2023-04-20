@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 0.6.0 - UNRELEASED
+
+### Added
+...
+
+### Changed
+
+- Bumped copyright year to 2023.
+- Renamed APIKeyNotFoundError exception to APIKeyNotFound.
+
 ## Version 0.5.4 - 2022-04-16
 
 ### Changed
