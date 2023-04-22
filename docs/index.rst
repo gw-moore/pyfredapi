@@ -20,10 +20,16 @@ FRED API Key
 
 Before you can use :code:`pyfredapi` you must have an API key to the FRED API web service. You can `apply for one <https://fred.stlouisfed.org/docs/api/api_key.html>`_ for free on the FRED website.
 
-You can set your API in two ways:
+You can set your API key in two ways:
 
 * set your API key to the environment variable :code:`FRED_API_KEY`
 * pass it to the :code:`api_key` parameter of the request function
+
+You can set the API key as an environment variable by adding the following line to your `~/.zshrc`, `~/.bashrc` file:
+
+.. code-block:: bash
+
+   export FRED_API_KEY="your_api_key"
 
 Quick Start
 -----------

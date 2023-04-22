@@ -7,6 +7,7 @@
 
 ### Changed
 
+- Switched to using [Hatch](https://github.com/pypa/hatch) for packaging and publishing.
 - Bumped copyright year to 2023.
 - Renamed APIKeyNotFoundError exception to APIKeyNotFound.
 - Updated the bug report github issue template.

@@ -24,13 +24,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.10"
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
       - name: Install dependencies
         run: |
-          poetry install --with test --no-interaction
+          pip install '.[test]'
       - name: Test with Coverage
-        run: poetry run pytest --cov=pyfredapi --cov-report=xml --vcr-record=none
+        run: pytest --cov=pyfredapi --cov-report=xml --vcr-record=none
       - uses: actions/upload-artifact@v3
         with:
           name: coverage-xml
