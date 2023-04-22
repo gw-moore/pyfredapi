@@ -43,7 +43,7 @@ When a PR is opened for the main branch, the GitHub actions pipeline will the te
 
 The package is published to PyPi via GitHub actions pipeline. The pipeline is triggered when a new version release is created in GitHub. Use the GitHub UI to create a new release.
 
+- [ ] Title the tag `pyfredapi-v<version>`. The tag is used to trigger the GitHub actions pipeline to publish the package to PyPi.
 - [ ] Title the release `pyfredapi v<version>`
 - [ ] Add the changelog release notes to the release description
 - [ ] Publish the release
-- [ ] Title the tag `pyfredapi-v<version>`. The tag is used to trigger the GitHub actions pipeline to publish the package to PyPi.
