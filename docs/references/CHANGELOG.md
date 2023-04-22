@@ -1,10 +1,19 @@
 # Changelog
 
+## Version 0.6.0 - 2023-04-22
+
+### Changed
+
+- Switched to the [Hatch](https://github.com/pypa/hatch) build tool.
+- Bumped copyright year to 2023.
+- Renamed APIKeyNotFoundError exception to APIKeyNotFound.
+- Updated the bug report github issue template.
+
 ## Version 0.5.4 - 2022-04-16
 
 ### Changed
 
-- Loosened the required package versions to major version numbers only.
+- Loosened the dependency package versions to >= latest major version.
 
 ## Version 0.5.3 - 2022-04-02
 

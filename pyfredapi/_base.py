@@ -9,7 +9,7 @@ import requests
 from frozendict import frozendict
 from pydantic import BaseModel, Extra
 
-from .exceptions import APIKeyNotFoundError, FredAPIRequestError, InvalidAPIKey
+from .exceptions import APIKeyNotFound, FredAPIRequestError, InvalidAPIKey
 from .utils._common_type_hints import JsonType
 
 
@@ -30,7 +30,7 @@ def _get_api_key(api_key: Optional[str] = None) -> str:
         api_key = environ.get("FRED_API_KEY", None)
 
     if api_key is None:
-        raise APIKeyNotFoundError()
+        raise APIKeyNotFound()
     elif not api_key.isalnum() or len(api_key) != 32:
         raise InvalidAPIKey()
 

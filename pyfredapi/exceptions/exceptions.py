@@ -18,7 +18,7 @@ class InvalidAPIKey(BaseFredAPIError):
         )
 
 
-class APIKeyNotFoundError(BaseFredAPIError):
+class APIKeyNotFound(BaseFredAPIError):
     """Error raised when FRED_API_KEY not found in the environment."""
 
     def __init__(self):
