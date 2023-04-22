@@ -45,7 +45,7 @@ export FRED_API_KEY="your_api_key"
 
 ### Using pyfredapi
 
-Each of the FRED API endpoint namespaces is covered by a module in `pyfredapi`. For a deeper dive into each of the modules see the tutorials and API reference in the documentation.
+Each of the FRED API endpoint namespaces is covered by a module in `pyfredapi`. For a deeper dive into each of the modules see the tutorials and API reference in the [documentation](https://pyfredapi.readthedocs.io/en/latest/).
 
 - `category` - covers the FRED Categories endpoints
 - `maps` - covers the FRED Maps endpoints
@@ -54,7 +54,6 @@ Each of the FRED API endpoint namespaces is covered by a module in `pyfredapi`. 
 - `sources` - covers the FRED Sources endpoints
 - `tags` - covers the FRED Tags endpoints
 - `series_collection` - makes handling multiple series easier
-
 
 Quick start example:
 
