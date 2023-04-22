@@ -9,6 +9,7 @@
 
 - Bumped copyright year to 2023.
 - Renamed APIKeyNotFoundError exception to APIKeyNotFound.
+- Switched to using [hatch](https://github.com/pypa/hatch) for project management and packaging.
 
 ## Version 0.5.4 - 2022-04-16
 
