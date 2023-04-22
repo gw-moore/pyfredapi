@@ -1,4 +1,4 @@
-name: continuous-integration
+name: test
 
 on:
   pull_request:
@@ -12,33 +12,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.10"
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
+
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.11"
+
       - name: Install dependencies
         run: |
           pip install '.[lint]'
+
       - name: black
         run: |
           black . --check
+
       - name: ruff
         run: |
           ruff check .
+
       - name: mypy
         run: |
           mypy pyfredapi
 
-  pytest:
+  test:
     name: Run pytest
+    runs-on: ubuntu-latest
     env:
       FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-    runs-on: ubuntu-latest
+
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10", "3.11"]
