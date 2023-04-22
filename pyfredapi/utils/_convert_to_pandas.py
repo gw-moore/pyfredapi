@@ -13,7 +13,7 @@ import pandas as pd
 #     df.loc[(df[c] < "1677-09-21"), c] = "1677-09-21"
 #     df.loc[(df[c] > "2262-04-11"), c] = "2262-04-11"
 
-FRED_DATE_COLS = ["date"]
+FRED_DATE_COLS = ["date", "created"]
 FRED_NUM_COLS = ["value"]
 
 
