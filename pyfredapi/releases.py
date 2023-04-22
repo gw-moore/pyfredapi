@@ -48,7 +48,7 @@ def get_releases(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
 
     Parameters
     ----------
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``releases/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -70,7 +70,7 @@ def get_releases_dates(api_key: ApiKeyType = None, **kwargs: KwargsType) -> Json
 
     Parameters
     ----------
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``releases/dates`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -96,7 +96,7 @@ def get_release(
     ----------
     release_id : int
         Release id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``release/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -126,7 +126,7 @@ def get_release_dates(
     ----------
     release_id : int
         Release id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``release/dates/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -152,7 +152,7 @@ def get_release_series(
     ----------
     release_id : int
         Release id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API release/release_series/ endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -178,7 +178,7 @@ def get_release_sources(
     ----------
     release_id : int
         Release id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``release/sources/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -204,7 +204,7 @@ def get_release_tags(
     ----------
     release_id : int
         Release id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``release/tags/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -232,7 +232,7 @@ def get_release_related_tags(
         Release id of interest.
     tag_names : str
         A semicolon delimited list of tag names that series match all of. See the related request fred/release/tags.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``release/related_tags/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -258,7 +258,7 @@ def get_release_tables(
     ----------
     release_id : int
         Release id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``release/tables/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.

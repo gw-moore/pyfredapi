@@ -119,7 +119,7 @@ class SeriesCollection:
 
         Parameters
         ----------
-        api_key : str | None
+        api_key : str | None, optional
             FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
         """
         if api_key is None:
@@ -163,7 +163,7 @@ class SeriesCollection:
         rename : Union[Dict[str, str], Callable[[str], str], None]
             Label to give series. Defaults to series ID.
         **kwargs : dict, optional
-            Additional parameters to FRED API series/ endpoint. Refer to the FRED documentation for a list of all possible parameters.
+            Additional parameters to FRED API `series/` endpoint. Refer to the FRED documentation for a list of all possible parameters.
         """
         if isinstance(series_ids, str):
             series_ids = [series_ids]

@@ -33,8 +33,7 @@ When a PR is merged into, the Read The Docs build will be triggered and the docu
     ```
 - [ ] Test that the documentation builds locally
     ```bash
-    make clean -C docs/
-    make html -C docs/
+    make clean html -C docs/
     open docs/_build/html/index.html
     ```
 - [ ] Review the documentation site

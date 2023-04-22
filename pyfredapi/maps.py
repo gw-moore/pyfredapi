@@ -74,7 +74,7 @@ def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesI
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
 
     Returns
@@ -112,7 +112,7 @@ def get_shape_files(
     ----------
     shape : One of "bea", "msa", "frb", "necta", "state", "country", "county", "censusregion", "censusdivision"
         Define the shape of Well-known text (WKT) data.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
 
     Returns
@@ -145,7 +145,7 @@ def get_geoseries(
     ----------
     series_id : str
         Series id of interest. Not all series that are in FRED have geographical data.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     start_date : str, optional
         Define start date. YYYY-MM-DD formatted string.

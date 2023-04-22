@@ -48,7 +48,7 @@ def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
 
     Parameters
     ----------
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``tags/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -75,7 +75,7 @@ def get_related_tags(
     ----------
     tag_names : str
         A semicolon delimited list of tag names that series match all of.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in the environment.
     **kwargs : dict, optional
         Additional parameters to FRED API ``related_tags/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -105,7 +105,7 @@ def get_series_matching_tags(
     ----------
     tag_names : str
         A semicolon delimited list of tag names that series match all of.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``tags/series`` endpoint. Refer to the FRED documentation for a list of all possible parameters.

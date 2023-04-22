@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Update the docstring for `api_key` parameter.
 - When data is converted to a pandas dataframe, `created` will be cast a date-type column.
 
 ## Version 0.6.0 - 2023-04-22
@@ -12,7 +13,7 @@
 
 - Switched to the [Hatch](https://github.com/pypa/hatch) build tool.
 - Bumped copyright year to 2023.
-- Renamed APIKeyNotFoundError exception to APIKeyNotFound.
+- Renamed `APIKeyNotFoundError` exception to `APIKeyNotFound`.
 - Updated the bug report github issue template.
 
 ## Version 0.5.4 - 2022-04-16
@@ -137,7 +138,7 @@ This release introduces breaking changes. The `pyfredapi` API has been refactore
 
 ## Version 0.1.0 - 2022-09-25
 
-**Note:** This version has been deleted from pypi.
+**Note:** This version has been deleted from Python Package Index.
 
 Initial release of `pyfredapi` package.
 

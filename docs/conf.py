@@ -68,13 +68,6 @@ html_theme_options = {
     "repo_name": project,
     "repo_type": "github",
     "nav_title": f"{project} v{release}",
-    # "nav_links": [
-    #     {
-    #         "href": "index",
-    #         "title": project,
-    #         "internal": True,
-    #     }
-    # ],
     "color_primary": "indigo",
     "color_accent": "blue",
     "globaltoc_depth": 2,

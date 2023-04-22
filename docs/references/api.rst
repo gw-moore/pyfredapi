@@ -1,6 +1,17 @@
 pyfredapi: Public API Reference
 ================================
 
+Base Module
+------------------------------
+.. currentmodule:: pyfredapi._base
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
+
+    _get_api_key
+    _get_request
+    BaseApiParameters
+
 FRED Categories
 ------------------------------
 .. currentmodule:: pyfredapi.category
@@ -28,6 +39,22 @@ FRED Maps
     get_shape_files
     MapApiParameters
 
+FRED Releases
+------------------------------
+.. currentmodule:: pyfredapi.releases
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
+
+    get_releases
+    get_releases_dates
+    get_release
+    get_release_dates
+    get_release_series
+    get_release_related_tags
+    get_release_tables
+    ReleaseApiParameters
+
 FRED Series
 ------------------------------
 .. currentmodule:: pyfredapi.series
@@ -52,6 +79,16 @@ FRED Series
     SeriesInfo
     SeriesSearchParameters
 
+Series Collection
+------------------------------
+.. currentmodule:: pyfredapi.series_collection
+.. autosummary::
+    :toctree: _autosummary
+    :nosignatures:
+
+    SeriesCollection
+    SeriesData
+
 FRED Sources
 ------------------------------
 .. currentmodule:: pyfredapi.sources
@@ -75,13 +112,3 @@ FRED Tags
     get_related_tags
     get_series_matching_tags
     TagsApiParameters
-
-Series Collection
-------------------------------
-.. currentmodule:: pyfredapi.series_collection
-.. autosummary::
-    :toctree: _autosummary
-    :nosignatures:
-
-    SeriesCollection
-    SeriesData

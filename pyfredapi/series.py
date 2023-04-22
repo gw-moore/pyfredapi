@@ -149,7 +149,7 @@ def get_series_info(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -177,7 +177,7 @@ def get_series_categories(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/categories`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -207,7 +207,7 @@ def get_series(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : Literal[json, pandas] | ReturnFormat, optional
         Define how to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
@@ -243,7 +243,7 @@ def get_series_releases(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/releases`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -270,7 +270,7 @@ def get_series_tags(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/tags`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -297,7 +297,7 @@ def get_series_updates(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/updates`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -326,7 +326,7 @@ def get_series_vintagedates(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/vintagedates`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -357,7 +357,7 @@ def get_series_all_releases(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : Literal["json", "pandas"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
@@ -403,7 +403,7 @@ def get_series_initial_release(
     ----------
     series_id : str
         Series id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : Literal["json", "pandas"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
@@ -451,7 +451,7 @@ def get_series_asof_date(
         Series id of interest.
     date : str
         Include only data revisions made on or before this date.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : Literal["json", "pandas"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
@@ -494,7 +494,7 @@ def search_series(
     ----------
     search_text : str
         The text to match against.
-    api_key : str | None
+    api_key : str | None, optional, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     search_type : Literal["full_text", "series_id"]
         Defines which type of search to preform. One of the following strings: 'full_text', 'series_id'.
@@ -539,7 +539,7 @@ def search_series_tags(
     ----------
     search_text : str
         The text to match against.
-    api_key : str | None
+    api_key : str | None, optional, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : : Literal["json", "pandas"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
@@ -585,7 +585,7 @@ def search_series_related_tags(
         The text to match against.
     tag_names : str
         A semicolon delimited list of tag names that series match all of.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : : Literal["json", "pandas"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.

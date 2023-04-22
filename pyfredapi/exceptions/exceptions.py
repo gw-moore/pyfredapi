@@ -19,11 +19,10 @@ class InvalidAPIKey(BaseFredAPIError):
 
 
 class APIKeyNotFound(BaseFredAPIError):
-    """Error raised when FRED_API_KEY not found in the environment."""
-
     def __init__(self):
+        """Error raised when FRED_API_KEY not found in the environment."""
         super().__init__(
-            """API key not found. Either set a FRED_API_KEY environment variable or pass your API key to the api_key parameter"""
+            """API key not found. Either set a FRED_API_KEY environment variable or pass your API key to the `api_key` parameter."""
         )
 
 

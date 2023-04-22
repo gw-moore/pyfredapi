@@ -64,7 +64,7 @@ def get_category(
     ----------
     category_id : str | None
         Category id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs: Dict[str, str], optional
         Additional parameters to FRED API ``category/`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -96,7 +96,7 @@ def get_category_children(
     ----------
     category_id : str | None
         Category id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``category/children`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -128,7 +128,7 @@ def get_category_related(
     ----------
     category_id : str
         Category id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``category/children`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -158,7 +158,7 @@ def get_category_series(
     ----------
     category_id : str
         Category id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     **kwargs : dict, optional
         Additional parameters to FRED API ``category/children`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
@@ -190,7 +190,7 @@ def get_category_tags(
     ----------
     category_id : str | None
         Category id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : str | ReturnFormat
         Define how to return the response. Must be either 'json' or 'pandas'.
@@ -228,7 +228,7 @@ def get_category_related_tags(
     ----------
     category_id : str | None
         Category id of interest.
-    api_key : str | None
+    api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     return_format : str | ReturnFormat
         Define how to return the response. Must be either 'json' or 'pandas'.

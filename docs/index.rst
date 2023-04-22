@@ -54,8 +54,8 @@ Quick start example:
    # api key set as environment variable
    pf.get_series_info(series_id="GDP")
 
-   # api key passed to initializer
-   pf.get_series_info(series_id="GDP", api_key="my_api_key"")
+   # api key passed to function
+   pf.get_series_info(series_id="GDP", api_key="my_api_key")
 
 .. toctree::
    :caption: Tutorials

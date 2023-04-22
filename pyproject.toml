@@ -40,7 +40,7 @@ dependencies = [
     "pydantic>=1.0.0",
     "rich>=13.0.0",
     "plotly>=5.0.0",
-    "frozendict >=2.0.0"
+    "frozendict>=2.0.0"
 ]
 dynamic = ["version"]
 
@@ -107,9 +107,6 @@ exclude = '''
     | dist
 )/
 '''
-
-[tool.isort]
-profile = "black"
 
 [tool.ruff]
 select = [

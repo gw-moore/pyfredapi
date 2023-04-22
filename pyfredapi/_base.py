@@ -1,4 +1,8 @@
-"""The _base module contains the base functions used pyfredapi modules."""
+"""The _base module contains the get request functions used in the pyfredapi modules.
+
+The _base module is not intended to be used directly by the user. It is used by the other
+functions in pyfredapi.
+"""
 
 from functools import lru_cache
 from http import HTTPStatus
@@ -25,7 +29,21 @@ class BaseApiParameters(BaseModel):
 
 @lru_cache
 def _get_api_key(api_key: Optional[str] = None) -> str:
-    """Get FRED_API_KEY from the environment."""
+    """Get FRED_API_KEY from the environment.
+
+    api_key : str | None
+        FRED API key. Defaults to None. If None, will check for FRED_API_KEY in the environment.
+
+    Returns
+    -------
+    str
+        The FRED API key.
+
+    Raises
+    ------
+    APIKeyNotFound
+        If the api_key is None and FRED_API_KEY is not in the environment.
+    """
     if api_key is None:
         api_key = environ.get("FRED_API_KEY", None)
 
@@ -51,10 +69,10 @@ def _get_request(
     Parameters
     ----------
     endpoint : str
-        The FRED endpoint to hit.
-    api_key : str | None
-        FRED API key. Defaults to None. If None, will search for FRED_API_KEY in the environment.
-    params : Dict[str, Any] | None
+        The FRED API endpoint.
+    api_key : str | None, optional
+        FRED API key. Defaults to None. If None, will check for FRED_API_KEY in the environment.
+    params : Dict[str, Any] | None, optional
         Dictionary of query parameters. Defaults to None.
     base_url : str, optional
         Base fred url. Defaults to https://api.stlouisfed.org/fred.
@@ -62,6 +80,11 @@ def _get_request(
     Returns
     -------
     A dictionary representing the json response.
+
+    Raises
+    ------
+    FredAPIRequestError
+        If the request fails.
     """
     api_key = _get_api_key(api_key)
     _base_params = BaseApiParameters(api_key=api_key)
