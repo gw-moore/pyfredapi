@@ -9,15 +9,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDL5RelpBbFJ1Uq
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyUtJByKbmpaDL5RelpBbFJ1Uq
         WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVgY6SvlpacWpJUogJmA5mbmZJUpW
-        hgYGBjpKJYnpxUpW0bG1AE9RmYWVAAAA
+        hgYGBjpKJYnpxUpW0bG1AG24FqSVAAAA
     headers:
       Accept-Ranges:
       - bytes
@@ -30,17 +30,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 14:45:09 GMT
+      - Sat, 22 Apr 2023 20:40:41 GMT
       ETag:
-      - W/"7f562ec062862312766976d4b589a044-gzip-gzip"
+      - W/"3c82e10296fb170591f631856fdcf09e-gzip-gzip"
       Expires:
-      - Sat, 22 Oct 2022 14:45:09 GMT
+      - Sun, 23 Apr 2023 20:40:41 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '107'
+      - '37'
     status:
       code: 200
       message: OK
@@ -54,15 +54,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDL5RelpBbFJ1Uq
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyUtJByKbmpaDL5RelpBbFJ1Uq
         WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVgY6SvlpacWpJUogJmA5mbmZJUpW
-        hgYGBjpKJYnpxUpW0bG1AE9RmYWVAAAA
+        hgYGBjpKJYnpxUpW0bG1AG24FqSVAAAA
     headers:
       Accept-Ranges:
       - bytes
@@ -75,17 +75,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 14:45:09 GMT
+      - Sat, 22 Apr 2023 20:55:41 GMT
       ETag:
-      - W/"7f562ec062862312766976d4b589a044-gzip-gzip"
+      - W/"3c82e10296fb170591f631856fdcf09e-gzip-gzip"
       Expires:
-      - Sat, 22 Oct 2022 14:45:09 GMT
+      - Sun, 23 Apr 2023 20:55:41 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '106'
+      - '35'
     status:
       code: 200
       message: OK

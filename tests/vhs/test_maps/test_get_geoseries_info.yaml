@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
@@ -18,7 +18,7 @@ interactions:
         H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
         zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
         peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwAgmCxAGrrQUA1qmJWsgAAAA=
+        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
     headers:
       Accept-Ranges:
       - bytes
@@ -27,15 +27,15 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '191'
+      - '190'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 14:56:34 GMT
+      - Sat, 22 Apr 2023 20:40:10 GMT
       ETag:
-      - '"153c7c9bf9aea8ceb7e89963b1a4d947-gzip"'
+      - '"5889800a00eb5b66e0b913388ebd05ba-gzip"'
       Expires:
-      - Sat, 22 Oct 2022 14:54:33 GMT
+      - Sun, 23 Apr 2023 19:38:55 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -55,7 +55,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
@@ -64,7 +64,7 @@ interactions:
         H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
         zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
         peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwAgmCxAGrrQUA1qmJWsgAAAA=
+        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
     headers:
       Accept-Ranges:
       - bytes
@@ -73,15 +73,107 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '191'
+      - '190'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 14:56:34 GMT
+      - Sat, 22 Apr 2023 20:40:10 GMT
       ETag:
-      - '"153c7c9bf9aea8ceb7e89963b1a4d947-gzip"'
+      - '"5889800a00eb5b66e0b913388ebd05ba-gzip"'
       Expires:
-      - Sat, 22 Oct 2022 14:54:33 GMT
+      - Sun, 23 Apr 2023 19:38:55 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '120'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
+        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
+        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
+        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 22 Apr 2023 20:55:07 GMT
+      ETag:
+      - '"5889800a00eb5b66e0b913388ebd05ba-gzip"'
+      Expires:
+      - Sun, 23 Apr 2023 19:38:55 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '120'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
+        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
+        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
+        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 22 Apr 2023 20:55:07 GMT
+      ETag:
+      - '"5889800a00eb5b66e0b913388ebd05ba-gzip"'
+      Expires:
+      - Sun, 23 Apr 2023 19:38:55 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:

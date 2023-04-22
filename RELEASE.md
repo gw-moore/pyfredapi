@@ -14,6 +14,10 @@ Preform these tasks before opening a PR for the `main` branch.
     ```bash
     pip-compile -o requirements.txt pyproject.toml  --resolver=backtracking
     ```
+- [ ] Run unit tests and make fresh vcr cassettes
+    ```bash
+    pytest tests/ --vcr-record=all --runslow
+    ```
 - [ ] Make sure the `pyfredapi` package builds locally
     ```bash
     hatch build

@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
@@ -32,17 +32,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 15:15:02 GMT
+      - Sat, 22 Apr 2023 20:40:21 GMT
       ETag:
-      - '"3859ca83e63a083196ab4d648b611413-gzip"'
+      - W/"5f3e5288484b6ae416be3b7ba4a86f1e-gzip-gzip"
       Expires:
-      - Fri, 21 Oct 2022 15:25:02 GMT
+      - Sat, 22 Apr 2023 20:50:21 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '116'
+      - '78'
     status:
       code: 200
       message: OK
@@ -56,7 +56,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
@@ -79,17 +79,111 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 15:15:03 GMT
+      - Sat, 22 Apr 2023 20:40:22 GMT
       ETag:
-      - W/"3859ca83e63a083196ab4d648b611413-gzip-gzip"
+      - W/"5f3e5288484b6ae416be3b7ba4a86f1e-gzip-gzip"
       Expires:
-      - Fri, 21 Oct 2022 15:25:02 GMT
+      - Sat, 22 Apr 2023 20:50:22 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '115'
+      - '77'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
+        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
+        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
+        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
+        cBummgEAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 22 Apr 2023 20:55:20 GMT
+      ETag:
+      - '"1634761625547bad0d3bc538a117365b-gzip"'
+      Expires:
+      - Sat, 22 Apr 2023 21:05:20 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '76'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
+        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
+        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
+        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
+        cBummgEAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 22 Apr 2023 20:55:20 GMT
+      ETag:
+      - W/"1634761625547bad0d3bc538a117365b-gzip-gzip"
+      Expires:
+      - Sat, 22 Apr 2023 21:05:20 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '75'
     status:
       code: 200
       message: OK

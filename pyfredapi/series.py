@@ -566,7 +566,7 @@ def search_series_tags(
     )
 
     if return_format == ReturnFormat.pandas:
-        return pd.DataFrame.from_dict(response["tags"])
+        return _convert_to_pandas(response["tags"])
     return response
 
 

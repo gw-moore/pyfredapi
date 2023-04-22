@@ -10,6 +10,7 @@ from pyfredapi.category import (
     get_category_tags,
 )
 from pyfredapi.series import SeriesInfo
+from pyfredapi.utils import _convert_to_pandas
 
 from .conftest import get_request as category_request
 
@@ -89,7 +90,7 @@ def test_get_category_tags(return_type):
         assert expected == actual
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
-        pd.testing.assert_frame_equal(pd.DataFrame.from_dict(expected["tags"]), actual)
+        pd.testing.assert_frame_equal(_convert_to_pandas(expected["tags"]), actual)
 
 
 @pytest.mark.vcr()
@@ -112,4 +113,4 @@ def test_get_category_related_tags(return_type):
         assert expected == actual
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
-        pd.testing.assert_frame_equal(pd.DataFrame.from_dict(expected["tags"]), actual)
+        pd.testing.assert_frame_equal(_convert_to_pandas(expected["tags"]), actual)

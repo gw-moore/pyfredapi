@@ -9,7 +9,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&realtime_end=2019-01-01&realtime_start=1776-07-04&series_id=GDP
   response:
@@ -663,9 +663,9 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 14:45:00 GMT
+      - Sat, 22 Apr 2023 20:40:35 GMT
       Expires:
-      - Fri, 21 Oct 2022 14:46:00 GMT
+      - Sat, 22 Apr 2023 20:41:35 GMT
       Last-Modified:
       - Mon, 07 Jan 2019 18:40:19 GMT
       Vary:
@@ -673,7 +673,7 @@ interactions:
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '120'
+      - '46'
     status:
       code: 200
       message: OK
@@ -687,61 +687,7 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1
-    method: GET
-    uri: https://api.stlouisfed.org/fred/series?file_type=json&series_id=GDP
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy0jU00DUyVNJByKbmpaDLFacWZaYWFytZ
-        RVcrZYJk3V0CkLWQbGBJZklOqpKVkntRfnGxgkt+bmpxSWayQkBRfkppcomSjlJ+UnFqUVliSWZ+
-        Hty5hpYm5roGhroGIOciK0BysYEJRDqtKLWwNDUvuVLJSimwNLGoJLUop1JJRwkuHl+ckQ8OhEAl
-        HaXSvMySYiUrJafMnJzM/Lxihfw0BZf8nJzEomKYLFy9U2aOHkheRUlHqTg1sTg/LzEnPjElq7S4
-        JDc1DxSswVDRnEoFR7B4aoqCY15eaWKOQlBiSSp2fXDzgx0dg5R0lHISi0viSwtSEktSQQEOjioD
-        S10jSwUDcysTMysDI10DUyUdpYL8gtKcxKLMkkolK0tjHaW8/JJUsFdcHRUck5PzS/NKFJzzU1Kt
-        FBwNLQ2DnGPyYvIgoZ4CC/UCSKgraLi7BGjqKJRkpCqkpSaWlBalpijkpiYWlxalgjwcqhesp5Bf
-        WlJQWqKjkFkMVpebWJSdWqJQlphTClYD0puen59SrJCYl6IAisLM5NRiBYgNqSkKSZUKOYlJ+UVg
-        6YKi/ILUopJKhZz8ZJA3FTLzwIaG5mWWpKYoBJcklqQW67nlFynk5helKmTmpeUX5YKThI5CcWoq
-        WK17aWZKqkJJPpjjB5ZMzFHwzEvOz00FWwJNUrCwAEctyJUoliho+HkGOGqCNYAknUqLUhNLQZ52
-        Tc7Py8/NTFZwzEvMqSzOLFbQyCgpKbCK0Y/RLy8v10tKTdRLzy+L0c+D2g1YjH5BSlqMfl5mQWJ6
-        aWaKXkFKmqaeUm1sLQCTEdb/gAMAAA==
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '649'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Fri, 21 Oct 2022 14:45:01 GMT
-      Expires:
-      - Fri, 21 Oct 2022 14:46:01 GMT
-      Last-Modified:
-      - Thu, 29 Sep 2022 12:46:02 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '119'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.28.1
+      - python-requests/2.28.2
     method: GET
     uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&realtime_end=2019-01-01&realtime_start=1776-07-04&series_id=GDP
   response:
@@ -1395,17 +1341,20 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 21 Oct 2022 14:45:01 GMT
+      - Sat, 22 Apr 2023 20:55:35 GMT
       Expires:
-      - Fri, 21 Oct 2022 14:46:01 GMT
+      - Sat, 22 Apr 2023 20:56:35 GMT
       Last-Modified:
       - Mon, 07 Jan 2019 18:40:19 GMT
+      Set-Cookie:
+      - cookiesession1=678A3E1FE7D1BF56506B0F8ED846B8F0;Expires=Sun, 21 Apr 2024 20:54:31
+        GMT;Path=/;Secure;HttpOnly
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '118'
+      - '44'
     status:
       code: 200
       message: OK

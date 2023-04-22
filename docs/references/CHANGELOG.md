@@ -1,8 +1,8 @@
 # Changelog
 
-# UNRELEASED
+## UNRELEASED
 
-# Changed
+### Changed
 
 - When data is converted to a pandas dataframe, `created` will be cast a date-type column.
 

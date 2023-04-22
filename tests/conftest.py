@@ -1,4 +1,5 @@
 import os
+import time
 from typing import Dict, Optional
 
 import pytest
@@ -14,6 +15,32 @@ base_params = {
     "file_type": "json",
 }
 BASE_FRED_URL = "https://api.stlouisfed.org/fred"
+
+
+def pytest_addoption(parser):
+    parser.addoption(
+        "--runslow",
+        action="store_true",
+        default=False,
+        help="Slow down tests to not overload the FRED API. (Y/N)",
+    )
+
+
+def pytest_configure(config):
+    config.addinivalue_line("markers", "slow: mark test as slow to run")
+
+
+@pytest.fixture(scope="session")
+def runslow(request):
+    return request.config.getoption("--runslow")
+
+
+@pytest.fixture(autouse=True)
+def slow_down_tests(runslow):
+    yield
+
+    if runslow:
+        time.sleep(0.5)
 
 
 def get_request(
