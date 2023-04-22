@@ -9,6 +9,7 @@
 
 - Bumped copyright year to 2023.
 - Renamed APIKeyNotFoundError exception to APIKeyNotFound.
+- Updated the bug report github issue template.
 
 ## Version 0.5.4 - 2022-04-16
 
