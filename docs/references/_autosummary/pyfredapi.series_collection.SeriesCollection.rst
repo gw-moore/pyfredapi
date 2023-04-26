@@ -14,9 +14,7 @@
    .. autosummary::
    
       ~SeriesCollection.__init__
-      ~SeriesCollection.add_series
-      ~SeriesCollection.drop_series
-      ~SeriesCollection.extract_series
+      ~SeriesCollection.add
       ~SeriesCollection.list_end_date
       ~SeriesCollection.list_frequency
       ~SeriesCollection.list_seasonality
@@ -26,7 +24,7 @@
       ~SeriesCollection.merge_asof
       ~SeriesCollection.merge_long
       ~SeriesCollection.merge_wide
-      ~SeriesCollection.plot
+      ~SeriesCollection.remove
       ~SeriesCollection.rename_series
    
    

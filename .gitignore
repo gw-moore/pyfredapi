@@ -134,6 +134,7 @@ dmypy.json
 
 # IDE
 .vscode/
+.idea/
 
 # docs in development
 dev_docs/

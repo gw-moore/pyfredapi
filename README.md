@@ -24,6 +24,9 @@ The [documentation](https://pyfredapi.readthedocs.io/en/latest/) is made with [S
 
 ```bash
 pip install pyfredapi
+
+# install with plotting dependencies
+pip install 'pyfredapi[plot]'
 ```
 
 ## Quick Start

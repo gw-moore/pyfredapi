@@ -12,31 +12,30 @@ def test_init():
 @pytest.mark.vcr()
 def test_add_series():
     sc = SeriesCollection()
-    sc.add_series("CPIAUCSL")
+    sc.add("CPIAUCSL")
     assert hasattr(sc, "CPIAUCSL")
     assert isinstance(sc.CPIAUCSL, SeriesData)
-    assert isinstance(sc.data["CPIAUCSL"], SeriesData)
 
 
-def test_drop_series():
-    sc = SeriesCollection()
-    sc.CPIAUCSL = None
-    sc.data = {"CPIAUCSL": None}
+@pytest.mark.vcr()
+def test_remove_series():
+    sc = SeriesCollection(series_id=["CPIAUCSL", "CPILFESL"])
     assert hasattr(sc, "CPIAUCSL")
-    sc.drop_series("CPIAUCSL")
+    assert hasattr(sc, "CPILFESL")
+    sc.remove("CPIAUCSL")
     assert not hasattr(sc, "CPIAUCSL")
+    assert hasattr(sc, "CPILFESL")
 
 
 def test_drop_series_err():
     with pytest.raises(ValueError):
         sc = SeriesCollection()
-        sc.drop_series("foobar")
+        sc.remove("foobar")
 
 
 @pytest.mark.vcr()
 def test_keep_realtime_cols():
-    sc = SeriesCollection()
-    sc.add_series("CPIAUCSL", drop_realtime=False)
+    sc = SeriesCollection(series_id="CPIAUCSL", drop_realtime=False)
     df_cols = set(sc.CPIAUCSL.df.columns.to_list())
     assert set(("date", "CPIAUCSL", "realtime_start", "realtime_end")) == df_cols
 
@@ -58,8 +57,7 @@ def parse_cpi_title(title: str) -> str:
     "rename", [{"CPIAUCSL": "cpi_all_items"}, parse_cpi_title], ids=["dict", "func"]
 )
 def test_rename_on_add(rename):
-    sc = SeriesCollection()
-    sc.add_series("CPIAUCSL", rename=rename)
+    sc = SeriesCollection(series_id="CPIAUCSL", rename=rename)
     df_cols = set(sc.CPIAUCSL.df.columns.to_list())
     assert set(("date", "cpi_all_items")) == df_cols
 
@@ -67,8 +65,8 @@ def test_rename_on_add(rename):
 @pytest.mark.vcr()
 def test_rename_err():
     with pytest.raises(TypeError):
-        sc = SeriesCollection()
-        sc.add_series("CPIAUCSL", rename="foobar")
+        sc = SeriesCollection(rename="foobar")
+        sc.add("CPIAUCSL")
 
 
 @pytest.mark.vcr()
@@ -77,7 +75,7 @@ def test_rename_err():
 )
 def test_rename_after_add(rename):
     sc = SeriesCollection()
-    sc.add_series("CPIAUCSL")
+    sc.add("CPIAUCSL")
     sc.rename_series(rename=rename)
     df_cols = set(sc.CPIAUCSL.df.columns.to_list())
     assert set(("date", "cpi_all_items")) == df_cols
@@ -86,8 +84,7 @@ def test_rename_after_add(rename):
 @pytest.mark.vcr()
 def test_rename_partial():
     rename = {"CPIAUCSL": "cpi_all_items"}
-    sc = SeriesCollection()
-    sc.add_series(["CPIAUCSL", "CPILFESL"])
+    sc = SeriesCollection(series_id=["CPIAUCSL", "CPILFESL"])
     sc.rename_series(rename=rename)
     assert set(("date", "cpi_all_items")) == set(sc.CPIAUCSL.df.columns.to_list())
     assert set(("date", "CPILFESL")) == set(sc.CPILFESL.df.columns.to_list())
@@ -96,8 +93,7 @@ def test_rename_partial():
 @pytest.mark.vcr()
 def test_merge_long():
     series = ["CPIAUCSL", "CPILFESL"]
-    sc = SeriesCollection()
-    sc.add_series(series)
+    sc = SeriesCollection(series_id=series)
     long_df = sc.merge_long()
     assert isinstance(long_df, pd.DataFrame)
     cols = set(long_df.columns.to_list())
@@ -108,8 +104,7 @@ def test_merge_long():
 @pytest.mark.vcr()
 def test_merge_asof():
     series = ["CPIAUCSL", "CPILFESL"]
-    sc = SeriesCollection()
-    sc.add_series(series)
+    sc = SeriesCollection(series_id=series)
     asof_df = sc.merge_asof(base_series_id="CPIAUCSL")
     assert isinstance(asof_df, pd.DataFrame)
     cols = set(asof_df.columns.to_list())
@@ -120,8 +115,7 @@ def test_merge_asof():
 @pytest.mark.vcr()
 def test_merge_wide():
     series = ["CPIAUCSL", "CPILFESL"]
-    sc = SeriesCollection()
-    sc.add_series(series)
+    sc = SeriesCollection(series_id=series)
     wide_df = sc.merge_wide()
     assert isinstance(wide_df, pd.DataFrame)
     cols = set(wide_df.columns.to_list())
@@ -132,7 +126,7 @@ def test_merge_wide():
 @pytest.mark.vcr()
 def test_list_methods_same():
     sc = SeriesCollection()
-    sc.add_series("CPIAUCSL")
+    sc.add("CPIAUCSL")
     sc.list_series()
     sc.list_end_date()
     sc.list_frequency()
@@ -144,22 +138,10 @@ def test_list_methods_same():
 @pytest.mark.vcr()
 def test_list_methods_diff():
     sc = SeriesCollection()
-    sc.add_series(["CPIAUCSL", "WGS10YR"])
+    sc.add(["CPIAUCSL", "WGS10YR"])
     sc.list_series()
     sc.list_end_date()
     sc.list_frequency()
     sc.list_seasonality()
     sc.list_start_date()
     sc.list_units()
-
-
-def test_plot():
-    with pytest.raises(NotImplementedError):
-        sc = SeriesCollection()
-        sc.plot()
-
-
-def test_extract_series():
-    with pytest.raises(NotImplementedError):
-        sc = SeriesCollection()
-        sc.extract_series()

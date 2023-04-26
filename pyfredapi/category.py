@@ -148,9 +148,7 @@ def get_category_related(
 
 
 def get_category_series(
-    category_id: int,
-    api_key: ApiKeyType = None,
-    **kwargs: KwargsType,
+    category_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> Dict[str, SeriesInfo]:
     """Get the series info for each series in a category by category ID. https://fred.stlouisfed.org/docs/api/fred/category_series.html.
 

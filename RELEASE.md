@@ -6,7 +6,9 @@ This document describes the process for preparing new version of the `pyfredapi`
 
 Preform these tasks before opening a PR for the `main` branch.
 
-- [ ] `pyfredapi` uses [semantic versioning](https://semver.org/spec/v2.0.0.html). Determine if this is a major, minor, or patch release based on the UNRELEASED section in changelog and use [hatch to bump the package version number](https://hatch.pypa.io/latest/version/#updating)
+- [ ] Bump the version number. `pyfredapi` follow [semantic versioning](https://semver.org/spec/v2.0.0.html), and uses [hatch](https://hatch.pypa.io/latest/) to manage the version number.
+    - Determine if this is a major, minor, or patch release based on the UNRELEASED section in changelog
+    - Use [hatch to bump the package version number](https://hatch.pypa.io/latest/version/#updating)
 - [ ] Update the `CHANGELOG.md` file with the changes for the new release. Follow the [keepachangelog](https://keepachangelog.com/en/1.0.0/) guidelines.
 - [ ] Check that no updates are needed in `CONTRIBUTING.md`
 - [ ] Check that no updates are needed in `README.md`

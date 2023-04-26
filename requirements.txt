@@ -18,11 +18,7 @@ mdurl==0.1.2
     # via markdown-it-py
 numpy==1.24.2
     # via pandas
-packaging==23.1
-    # via plotly
-pandas==2.0.0
-    # via pyfredapi (pyproject.toml)
-plotly==5.14.1
+pandas==1.5.3
     # via pyfredapi (pyproject.toml)
 pydantic==1.10.7
     # via pyfredapi (pyproject.toml)
@@ -38,11 +34,7 @@ rich==13.3.4
     # via pyfredapi (pyproject.toml)
 six==1.16.0
     # via python-dateutil
-tenacity==8.2.2
-    # via plotly
 typing-extensions==4.5.0
     # via pydantic
-tzdata==2023.3
-    # via pandas
 urllib3==1.26.15
     # via requests

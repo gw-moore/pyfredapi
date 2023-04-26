@@ -15,6 +15,9 @@ Installation
 
    pip install pyfredapi
 
+   # install with plotting dependencies
+   pip install 'pyfredapi[plot]'
+
 FRED API Key
 ------------
 
@@ -63,6 +66,7 @@ Quick start example:
 
    FRED Series <tutorials/series.ipynb>
    Series Collection <tutorials/series_collection.ipynb>
+   FRED Categories <tutorials/category.ipynb>
    FRED Maps <tutorials/maps.ipynb>
 
 .. toctree::

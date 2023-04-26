@@ -25,6 +25,4 @@ def test_api_key_not_found_err():
 
 def test_fredapi_request_err():
     with pytest.raises(FredAPIRequestError):
-        _get_request(
-            endpoint="not-a-real-endpoint",
-        )
+        _get_request(endpoint="not-a-real-endpoint")

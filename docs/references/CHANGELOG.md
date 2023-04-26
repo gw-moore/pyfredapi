@@ -2,10 +2,25 @@
 
 ## UNRELEASED
 
+## Version 0.7.0 - 2023-04-27
+
 ### Changed
 
-- Update the docstring for `api_key` parameter.
-- When data is converted to a pandas dataframe, `created` will be cast a date-type column.
+- Refactor `SeriesCollection`'s internal structure to represent a sequence.
+  - Updated `__init__` to handle adding the initial set of series.
+  - `SeriesCollection` is now iterable, indexable, and sized.
+  - Renamed `add_series()` to `add()`.
+  - Renamed `drop_series()` to `remove()`.
+- Updated the docstring for `api_key` parameter.
+- When data is converted to a pandas dataframe, the `created` attribute will be cast a date-type column.
+- Added `sleep` parameter to `SeriesCollection.add_series`. Defaults to 0.1 seconds.
+- Added upper bound to dependency versions.
+- Made `plotly` an optional dependency.
+
+### Removed
+
+- Unnecessary type ignore comments.
+- .flake8 config file.
 
 ## Version 0.6.0 - 2023-04-22
 
