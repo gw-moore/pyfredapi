@@ -215,7 +215,7 @@ class SeriesCollection:
 
             series_data.df.rename(columns={orig_col_name: series_name}, inplace=True)
 
-    def add(self, series_ids: Union[str, List[str]], **kwargs) -> None:
+    def add(self, series_id: Union[str, List[str]], **kwargs) -> None:
         """Add series to the collection.
 
         A request to the FRED api will be made for the series. The data will
@@ -226,25 +226,25 @@ class SeriesCollection:
 
         Parameters
         ----------
-        series_ids : Union[str, List[str]]
+        series_id : Union[str, List[str]]
             Series to add to collection.
         **kwargs : dict, optional
             Additional parameters to FRED API `series/` endpoint.
             Refer to the FRED documentation for a list of all possible parameters.
         """
-        if isinstance(series_ids, str):
-            series_ids = [series_ids]
+        if isinstance(series_id, str):
+            series_id = [series_id]
 
-        for series_id in series_ids:
+        for sid in series_id:
             time.sleep(self.sleep)
-            if series_id in self._data:
-                print(f"Already have {series_id}")
+            if sid in self._data:
+                print(f"Already have {sid}")
                 continue
 
-            print(f"Requesting series {series_id}...")
+            print(f"Requesting series {sid}...")
 
-            info = get_series_info(series_id=series_id)
-            df = get_series(series_id=series_id, api_key=self.api_key, **kwargs)
+            info = get_series_info(series_id=sid)
+            df = get_series(series_id=sid, api_key=self.api_key, **kwargs)
             assert isinstance(df, pd.DataFrame)  # noqa: S101
 
             series_data = SeriesData(info=info, df=df)
@@ -260,28 +260,28 @@ class SeriesCollection:
 
             series_data.df.rename(columns={"value": series_name}, inplace=True)
             self._data.append(series_data)
-            setattr(self, series_id, series_data)
+            setattr(self, sid, series_data)
 
-    def remove(self, series_ids: Union[str, List[str]]) -> None:
+    def remove(self, series_id: Union[str, List[str]]) -> None:
         """Remove series from collection.
 
         Parameters
         ----------
-        series_ids : Union[str, List[str]]
+        series_id : Union[str, List[str]]
             Series ids to remove from collection.
         """
-        if isinstance(series_ids, str):
-            series_ids = [series_ids]
+        if isinstance(series_id, str):
+            series_id = [series_id]
 
-        for series_id in series_ids:
+        for sid in series_id:
             try:
-                series_info = [s for s in self._data if s.info.id == series_id].pop()
+                series_info = [s for s in self._data if s.info.id == sid].pop()
             except IndexError as e:
-                raise ValueError(f"No series '{series_id}' in collection") from e
+                raise ValueError(f"No series '{sid}' in collection") from e
 
             self._data.remove(series_info)
-            delattr(self, series_id)
-            print(f"Removed series {series_id}")
+            delattr(self, sid)
+            print(f"Removed series {sid}")
 
     def merge_long(self, col_name: Union[str, None] = None) -> pd.DataFrame:
         """Merge the series in the collection into a long pandas dataframe.

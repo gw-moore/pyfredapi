@@ -5,13 +5,13 @@ from pyfredapi.series_collection import SeriesCollection, SeriesData
 
 
 def test_init():
-    sc = SeriesCollection()
+    sc = SeriesCollection(series_id="CPIAUCSL")
     assert isinstance(sc, SeriesCollection)
 
 
 @pytest.mark.vcr()
 def test_add_series():
-    sc = SeriesCollection()
+    sc = SeriesCollection(series_id=["CPIAUCSL"])
     sc.add("CPIAUCSL")
     assert hasattr(sc, "CPIAUCSL")
     assert isinstance(sc.CPIAUCSL, SeriesData)
@@ -29,7 +29,7 @@ def test_remove_series():
 
 def test_drop_series_err():
     with pytest.raises(ValueError):
-        sc = SeriesCollection()
+        sc = SeriesCollection(series_id=["CPIAUCSL"])
         sc.remove("foobar")
 
 
@@ -65,8 +65,7 @@ def test_rename_on_add(rename):
 @pytest.mark.vcr()
 def test_rename_err():
     with pytest.raises(TypeError):
-        sc = SeriesCollection(rename="foobar")
-        sc.add("CPIAUCSL")
+        _ = SeriesCollection(series_id=["CPIAUCSL"], rename="foobar")
 
 
 @pytest.mark.vcr()
@@ -74,8 +73,7 @@ def test_rename_err():
     "rename", [{"CPIAUCSL": "cpi_all_items"}, parse_cpi_title], ids=["dict", "func"]
 )
 def test_rename_after_add(rename):
-    sc = SeriesCollection()
-    sc.add("CPIAUCSL")
+    sc = SeriesCollection(series_id=["CPIAUCSL"])
     sc.rename_series(rename=rename)
     df_cols = set(sc.CPIAUCSL.df.columns.to_list())
     assert set(("date", "cpi_all_items")) == df_cols
@@ -125,8 +123,7 @@ def test_merge_wide():
 
 @pytest.mark.vcr()
 def test_list_methods_same():
-    sc = SeriesCollection()
-    sc.add("CPIAUCSL")
+    sc = SeriesCollection(series_id="CPIAUCSL")
     sc.list_series()
     sc.list_end_date()
     sc.list_frequency()
@@ -137,8 +134,7 @@ def test_list_methods_same():
 
 @pytest.mark.vcr()
 def test_list_methods_diff():
-    sc = SeriesCollection()
-    sc.add(["CPIAUCSL", "WGS10YR"])
+    sc = SeriesCollection(series_id=["CPIAUCSL", "WGS10YR"])
     sc.list_series()
     sc.list_end_date()
     sc.list_frequency()

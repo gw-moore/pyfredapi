@@ -183,4 +183,96 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/source?file_type=json&source_id=1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
+        RVcrZaYoWRkiKSfZsLzE3FQlKyWn/MSiFIX8NAX3/LLUorz8omIQpyQjVcEtNSW1KDFHISi1OLWo
+        LFUhuLK4JDVXQSM0WFNJRyknMy9byUopo6SkwCpGP0a/vLxcLw2iowiiATC99PyyGH2l2thaALTu
+        +vH0AAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '177'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:57 GMT
+      ETag:
+      - W/"e5f730ee1f703697d5e4ece7c183f626-gzip-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:57 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '30'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/source?file_type=json&source_id=1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
+        RVcrZaYoWRkiKSfZsLzE3FQlKyWn/MSiFIX8NAX3/LLUorz8omIQpyQjVcEtNSW1KDFHISi1OLWo
+        LFUhuLK4JDVXQSM0WFNJRyknMy9byUopo6SkwCpGP0a/vLxcLw2iowiiATC99PyyGH2l2thaALTu
+        +vH0AAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '177'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:57 GMT
+      ETag:
+      - W/"e5f730ee1f703697d5e4ece7c183f626-gzip-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:57 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '29'
+    status:
+      code: 200
+      message: OK
 version: 1

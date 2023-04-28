@@ -89,4 +89,49 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVgY6SvlpacWpJUogJmA5mbmZJUpW
+        hgYGBjpKJYnpxUpW0bG1ADvPSoCVAAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:42 GMT
+      ETag:
+      - W/"54d0e6d98b0491cc5f504bc7603102fb-gzip-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:42 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '39'
+    status:
+      code: 200
+      message: OK
 version: 1

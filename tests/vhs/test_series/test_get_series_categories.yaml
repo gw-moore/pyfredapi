@@ -175,4 +175,92 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
+        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '78'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:22 GMT
+      ETag:
+      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:22 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '77'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
+        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '78'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:22 GMT
+      ETag:
+      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:22 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '75'
+    status:
+      code: 200
+      message: OK
 version: 1

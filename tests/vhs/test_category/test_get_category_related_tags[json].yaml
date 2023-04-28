@@ -227,4 +227,118 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKeYklmfl5SjpK6UX5pQXxmSAXpKfmg2zIyy9JLVayUgIZ
+        XJSaWJIKkjMyMDTSNTDSNTJXMDSwMrSwMrTUNTBT0lEqyC8ozUksyiypVLKytNRBda6ViUGtDtzO
+        gtKknMxkhZT83MTMPCuF5MwSsCMUilILS1OLQfagOCcZ5DWoY/JKc3J0lJKRnWOha2ika2iuYGRs
+        ZWxsZWhMsnNKixMx/K+kowS1USk0L7MkNUUhuCSxJLVYIT9NwTE3tSgzGaQHxR2Eg8UQFAEo0Yga
+        LkmpIEORIqK4CMnrSk6lRamJpSAXuCbn5+XnZiYrOOYl5lQWZxaTHkXm5uhRZGyGFEWFpYlFJalF
+        OZWoIZNWlFqIFDSkW2thgm6tkQmStXnoUVGcmgjyHCwu/PJLFIJTE4vz8xJzcioVHFOySqHphcSo
+        wEyhRkZI7kjPz08B2YsUF+mpoFwCcwjpPjezQPe5oQWSjQQ8ThVPW2BkSxQnpGQWJ+fnlWTmlaam
+        oEY7xX7HiHVD5FgvTi0qy0xOpXaAY6RwFEuT8gvwedIpMScxLzkVlNsCEitzU/NKQM5DSWXGugaG
+        ukYWCoYmVqCiEEvBY2KMEefI5WBJUWJKKj5HkJ7KTPHbmJiXV5qYg2ol5XnaFN2XyAk7OTWvuBQU
+        dkh5CbVcc4apQAldwsWpOUaOQrY3My85P5fKoWtmhs+nufl5JRlULzEtMfIOsi+TS4uKUvNKFBKT
+        IXU/SsVJabY1xvAuchWRmVeWWlwCyhmo6YlSWzGTMHJZUVCUmZtYhFYtUWqlCUZRgWxlcmJBZkli
+        Dm3C2BDDauR6KCM1MSUnMy9VIS0zvbSIpNRsrGtoqGtoqWBobGVqamWKpXTCDGhkq3NTi5IzEvNS
+        MovJsNZYwdDMysDCytgQszVmZISeiZCtLUAUtkgFBqURbIxRVABmVBtbCwDrnCAXmQsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '850'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:04 GMT
+      ETag:
+      - W/"d30ca904f26ed64f4b3363fa50266ac9-gzip-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:04 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '107'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related_tags?category_id=125&file_type=json&tag_names=balance
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkbGOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKeYklmfl5SjpK6UX5pQXxmSAXpKfmg2zIyy9JLVayUgIZ
+        XJSaWJIKkjMyMDTSNTDSNTJXMDSwMrSwMrTUNTBT0lEqyC8ozUksyiypVLKytNRBda6ViUGtDtzO
+        gtKknMxkhZT83MTMPCuF5MwSsCMUilILS1OLQfagOCcZ5DWoY/JKc3J0lJKRnWOha2ika2iuYGRs
+        ZWxsZWhMsnNKixMx/K+kowS1USk0L7MkNUUhuCSxJLVYIT9NwTE3tSgzGaQHxR2Eg8UQFAEo0Yga
+        LkmpIEORIqK4CMnrSk6lRamJpSAXuCbn5+XnZiYrOOYl5lQWZxaTHkXm5uhRZGyGFEWFpYlFJalF
+        OZWoIZNWlFqIFDSkW2thgm6tkQmStXnoUVGcmgjyHCwu/PJLFIJTE4vz8xJzcioVHFOySqHphcSo
+        wEyhRkZI7kjPz08B2YsUF+mpoFwCcwjpPjezQPe5oQWSjQQ8ThVPW2BkSxQnpGQWJ+fnlWTmlaam
+        oEY7xX7HiHVD5FgvTi0qy0xOpXaAY6RwFEuT8gvwedIpMScxLzkVlNsCEitzU/NKQM5DSWXGugaG
+        ukYWCoYmVqCiEEvBY2KMEefI5WBJUWJKKj5HkJ7KTPHbmJiXV5qYg2ol5XnaFN2XyAk7OTWvuBQU
+        dkh5CbVcc4apQAldwsWpOUaOQrY3My85P5fKoWtmhs+nufl5JRlULzEtMfIOsi+TS4uKUvNKFBKT
+        IXU/SsVJabY1xvAuchWRmVeWWlwCyhmo6YlSWzGTMHJZUVCUmZtYhFYtUWqlCUZRgWxlcmJBZkli
+        Dm3C2BDDauR6KCM1MSUnMy9VIS0zvbSIpNRsrGtoqGtoqWBobGVqamWKpXTCDGhkq3NTi5IzEvNS
+        MovJsNZYwdDMysDCytgQszVmZISeiZCtLUAUtkgFBqURbIxRVABmVBtbCwDrnCAXmQsAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '850'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:04 GMT
+      ETag:
+      - W/"d30ca904f26ed64f4b3363fa50266ac9-gzip-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:04 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '106'
+    status:
+      code: 200
+      message: OK
 version: 1

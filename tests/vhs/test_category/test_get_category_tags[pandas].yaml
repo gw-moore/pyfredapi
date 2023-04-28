@@ -115,4 +115,62 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.29.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDL5RelpBbFJ1Uq
+        WSkVpxZlphbHJ+eX5pUo6SgV5xeVxIOllayUUlKLk5V0lCByVkZmOkr5aWnFqSVKVgY6SjmZuZkl
+        SlaGBgYGOkolienFSlbR1Up5ibmpSlZKeYklmfl5SjpK6UX5pQXxmSAXpKfmg2zIyy9JLVayUgIZ
+        XJSaWJIKkjMyMDTSNTDSNTJXMDSwMrSwMrTUNTBT0lEqyC8ozUksyiypVLKytNRBda6ViUmtDtzO
+        gtKknMxkhZT83MTMPCuF5MwSsCMUilILS1OLQfagOCcZ5DWoY/JKc3J0lJKRnWOha2ika2iuYGRs
+        ZWxsZWhMsnNKixMx/K+kowS1USk0L7MkNUUhuCSxJLVYIT9NwTE3tSgzGaQHxR2Eg8UQFAEo0Yga
+        LkmpIEORIqK4CMnrSk6lRamJpSAXuCbn5+XnZiYrOOYl5lQWZxaTHkXm5hhRZIQURUmJOYl5yano
+        4QJKKLBwId1OUwN0O43NkOzMQ4+H4tREkM9gFvrllygEpyYW5+cl5uRUKjimZJVCEwuJ8YCZPI0s
+        kNxRWJpYVJJalFOJ6vu0otRCpGRBuvctTNC9b4ScK1Iyi5Pz80oy80pTU1BtTk+lLNzNMC02QPIv
+        gWCnSpBbYJQIhshRn5iXV5qYg+prysPbFD28DZHDOym/ANVC1GB2guQAUHYLSKzMTc0rAaVFlJRm
+        rGtgqGtkoWBoYgUqC7GUPCbGGE5AzmWZecn5uVTOZGZmeK0sTi0qy0xOBfkFqaBB9TrpSdsMozQx
+        RPZnXiqoPqGifaYYyQk5A5cUJaZQOVRNMSIS2cLkxILMksQchcRkSA2MUn1RGraGGGGLnHOSU/OK
+        S9FiE7XacIapQEm7hGsrcwv0hIRsb3p+fgqatZR61Ayvhbn5eSUZVC+TLTGKRmRPFqcm5+elJBah
+        1QSUetQYo2BCtjS5tKgoNa+ENonJGKN0QC4SC4oyc6nuWxOM9ItsZUlRYl5xWmoRldOSEUZaQrY0
+        M68stbgEVKbjqwFILwYxSwnkUjA3tSg5IzEvJbOYpMLJWNfQUNfQWMHQzMrAwsrYELN9a2SEnlOR
+        rS1A1F5ULIGNMQIYMKPa2FoAH/Z0DOsMAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '881'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 28 Apr 2023 02:18:03 GMT
+      ETag:
+      - W/"1434349e173e654f7ba0bc90e775198c-gzip-gzip"
+      Expires:
+      - Sat, 29 Apr 2023 02:18:03 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '108'
+    status:
+      code: 200
+      message: OK
 version: 1
