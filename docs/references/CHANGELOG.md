@@ -2,6 +2,12 @@
 
 ## UNRELEASED
 
+## Version 0.8.0 - 2023-04-27
+
+### Changed
+
+- Make `series_id` a required parameter for `SeriesCollection()`.
+
 ## Version 0.7.1 - 2023-04-27
 
 ### Fixed

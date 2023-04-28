@@ -126,7 +126,7 @@ class SeriesCollection:
 
     def __init__(
         self,
-        series_id: Union[List[str], str, None] = None,
+        series_id: Union[List[str], str],
         api_key: Union[str, None] = None,
         rename: Union[Dict[str, str], Callable[[str], str], None] = None,
         drop_realtime: bool = True,
@@ -137,7 +137,7 @@ class SeriesCollection:
 
         Parameters
         ----------
-        series_id : List[str] | str | None, optional
+        series_id : List[str] | str
             List of series IDs to add to collection.
         api_key : str | None, optional
             FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
@@ -160,8 +160,6 @@ class SeriesCollection:
 
         if isinstance(series_id, str):
             series_id = [series_id]
-        if series_id is None:
-            series_id = []
 
         for sid in series_id:
             time.sleep(sleep)
