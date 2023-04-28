@@ -1,7 +1,5 @@
 # Changelog
 
-## UNRELEASED
-
 ## Version 0.8.0 - 2023-04-27
 
 ### Changed
