@@ -7,6 +7,7 @@
 ### Fixed
 
 - Import error in `SeriesCollection` when `plotly` is not installed.
+- Updated dev dependencies to include `plotly`.
 
 ## Version 0.7.0 - 2023-04-27
 

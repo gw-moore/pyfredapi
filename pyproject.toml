@@ -79,6 +79,7 @@ test = [
 
 dev = [
     "pip-tools==6.13.0",
+    "pyfredapi[plot]",
     "pyfredapi[docs]",
     "pyfredapi[lint]",
     "pyfredapi[test]",
