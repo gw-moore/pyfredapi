@@ -4,6 +4,12 @@
 
 ## Version 0.7.0 - 2023-04-27
 
+### Fixed
+
+- Import error in `SeriesCollection` when `plotly` is not installed.
+
+## Version 0.7.0 - 2023-04-27
+
 ### Changed
 
 - Refactor `SeriesCollection`'s internal structure to represent a sequence.

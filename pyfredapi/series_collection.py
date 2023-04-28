@@ -41,7 +41,7 @@ class SeriesData:
     info: SeriesInfo
     df: pd.DataFrame
 
-    def plot(self) -> Figure:
+    def plot(self) -> "Figure":
         """Create a `plotly <https://plotly.com/python/>`_ time series plot.
 
         Raises
