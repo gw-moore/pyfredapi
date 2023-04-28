@@ -2,7 +2,7 @@
 
 ## UNRELEASED
 
-## Version 0.7.0 - 2023-04-27
+## Version 0.7.1 - 2023-04-27
 
 ### Fixed
 
