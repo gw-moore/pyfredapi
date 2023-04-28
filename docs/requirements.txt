@@ -209,6 +209,7 @@ packaging==23.1
     #   ipykernel
     #   jupyter-server
     #   nbconvert
+    #   plotly
     #   qtconsole
     #   qtpy
     #   sphinx
@@ -224,6 +225,8 @@ pickleshare==0.7.5
     # via ipython
 platformdirs==3.2.0
     # via jupyter-core
+plotly==5.14.1
+    # via pyfredapi (pyproject.toml)
 pockets==0.9.1
     # via sphinxcontrib-napoleon
 prometheus-client==0.16.0
@@ -348,6 +351,8 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 stack-data==0.6.2
     # via ipython
+tenacity==8.2.2
+    # via plotly
 terminado==0.17.1
     # via
     #   jupyter-server
