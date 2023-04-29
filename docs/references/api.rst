@@ -8,8 +8,6 @@ Base Module
     :toctree: _autosummary
     :nosignatures:
 
-    _get_api_key
-    _get_request
     BaseApiParameters
 
 FRED Categories

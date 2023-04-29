@@ -9,15 +9,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZGRogaSDZuLzE3FQlKyXn/Lzi0tzUIoWAoszkVAXPvJTUCiUdpYKi1OLi+KJUsJWAKVmV
-        FJWm6ijlZOZlK1kpZZSUFFjF6Mfol5eX6yXlFOul55fF6CcXZMboK9XG1gIAITa72eQAAAA=
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":10,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -30,17 +28,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:37 GMT
+      - Sat, 02 Sep 2023 19:57:34 GMT
       ETag:
-      - W/"58c7be1fd24b4cbd94fa10c22b905ad8-gzip-gzip"
+      - W/"7adc664c6b5b9605e135ae8f43432400-gzip-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:37 GMT
+      - Sun, 03 Sep 2023 19:57:34 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '96'
+      - '94'
     status:
       code: 200
       message: OK
@@ -54,15 +52,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZGRogaSDZuLzE3FQlKyXn/Lzi0tzUIoWAoszkVAXPvJTUCiUdpYKi1OLi+KJUsJWAKVmV
-        FJWm6ijlZOZlK1kpZZSUFFjF6Mfol5eX6yXlFOul55fF6CcXZMboK9XG1gIAITa72eQAAAA=
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":10,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -75,17 +71,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:38 GMT
+      - Sat, 02 Sep 2023 19:57:34 GMT
       ETag:
-      - W/"58c7be1fd24b4cbd94fa10c22b905ad8-gzip-gzip"
+      - W/"7adc664c6b5b9605e135ae8f43432400-gzip-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:38 GMT
+      - Sun, 03 Sep 2023 19:57:34 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '95'
+      - '93'
     status:
       code: 200
       message: OK
@@ -99,15 +95,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZGRogaSDZuLzE3FQlKyXn/Lzi0tzUIoWAoszkVAXPvJTUCiUdpYKi1OLi+KJUsJWAKVmV
-        FJWm6ijlZOZlK1kpZZSUFFjF6Mfol5eX6yXlFOul55fF6CcXZMboK9XG1gIAITa72eQAAAA=
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":10,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -120,17 +114,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:05 GMT
+      - Sun, 03 Sep 2023 01:29:49 GMT
       ETag:
-      - W/"58c7be1fd24b4cbd94fa10c22b905ad8-gzip-gzip"
+      - W/"7adc664c6b5b9605e135ae8f43432400-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:05 GMT
+      - Mon, 04 Sep 2023 01:29:49 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '114'
+      - '94'
     status:
       code: 200
       message: OK
@@ -144,15 +138,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZGRogaSDZuLzE3FQlKyXn/Lzi0tzUIoWAoszkVAXPvJTUCiUdpYKi1OLi+KJUsJWAKVmV
-        FJWm6ijlZOZlK1kpZZSUFFjF6Mfol5eX6yXlFOul55fF6CcXZMboK9XG1gIAITa72eQAAAA=
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":10,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -165,11 +157,54 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:05 GMT
+      - Sun, 03 Sep 2023 01:29:49 GMT
       ETag:
-      - W/"58c7be1fd24b4cbd94fa10c22b905ad8-gzip-gzip"
+      - W/"7adc664c6b5b9605e135ae8f43432400-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:05 GMT
+      - Mon, 04 Sep 2023 01:29:49 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '93'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":10,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '167'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 03 Sep 2023 01:54:10 GMT
+      ETag:
+      - W/"7adc664c6b5b9605e135ae8f43432400-gzip-gzip"
+      Expires:
+      - Mon, 04 Sep 2023 01:54:10 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -189,15 +224,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZGRogaSDZuLzE3FQlKyXn/Lzi0tzUIoWAoszkVAXPvJTUCiUdpYKi1OLi+KJUsJWAKVmV
-        FJWm6ijlZOZlK1kpZZSUFFjF6Mfol5eX6yXlFOul55fF6CcXZMboK9XG1gIAITa72eQAAAA=
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":10,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -210,62 +243,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:12 GMT
+      - Sun, 03 Sep 2023 01:54:11 GMT
       ETag:
-      - W/"58c7be1fd24b4cbd94fa10c22b905ad8-gzip-gzip"
+      - W/"7adc664c6b5b9605e135ae8f43432400-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:12 GMT
+      - Mon, 04 Sep 2023 01:54:11 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '98'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.29.0
-    method: GET
-    uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZGRogaSDZuLzE3FQlKyXn/Lzi0tzUIoWAoszkVAXPvJTUCiUdpYKi1OLi+KJUsJWAKVmV
-        FJWm6ijlZOZlK1kpZZSUFFjF6Mfol5eX6yXlFOul55fF6CcXZMboK9XG1gIAITa72eQAAAA=
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '167'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Fri, 28 Apr 2023 02:18:13 GMT
-      ETag:
-      - W/"58c7be1fd24b4cbd94fa10c22b905ad8-gzip-gzip"
-      Expires:
-      - Sat, 29 Apr 2023 02:18:13 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '97'
+      - '112'
     status:
       code: 200
       message: OK

@@ -9,14 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
-        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+      string: '{"categories":[{"id":125,"name":"Trade Balance","parent_id":13}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -29,11 +27,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:19 GMT
+      - Sat, 02 Sep 2023 19:57:14 GMT
       ETag:
-      - W/"11c3a5982195af3895aca973f7e42ddc-gzip"
+      - W/"9c9b276d2399266df5c8d8add8063e03-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:19 GMT
+      - Sun, 03 Sep 2023 19:57:14 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -53,14 +51,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
-        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+      string: '{"categories":[{"id":125,"name":"Trade Balance","parent_id":13}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -73,11 +69,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:19 GMT
+      - Sat, 02 Sep 2023 19:57:14 GMT
       ETag:
-      - W/"11c3a5982195af3895aca973f7e42ddc-gzip"
+      - W/"9c9b276d2399266df5c8d8add8063e03-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:19 GMT
+      - Sun, 03 Sep 2023 19:57:14 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -97,14 +93,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
-        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+      string: '{"categories":[{"id":125,"name":"Trade Balance","parent_id":13}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -117,11 +111,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:28:49 GMT
+      - Sun, 03 Sep 2023 01:29:29 GMT
       ETag:
-      - W/"11c3a5982195af3895aca973f7e42ddc-gzip"
+      - W/"9c9b276d2399266df5c8d8add8063e03-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:28:49 GMT
+      - Mon, 04 Sep 2023 01:29:29 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -141,14 +135,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
-        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+      string: '{"categories":[{"id":125,"name":"Trade Balance","parent_id":13}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -161,11 +153,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:28:49 GMT
+      - Sun, 03 Sep 2023 01:29:29 GMT
       ETag:
-      - W/"11c3a5982195af3895aca973f7e42ddc-gzip"
+      - W/"9c9b276d2399266df5c8d8add8063e03-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:28:49 GMT
+      - Mon, 04 Sep 2023 01:29:29 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -185,14 +177,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
-        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+      string: '{"categories":[{"id":125,"name":"Trade Balance","parent_id":13}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -205,17 +195,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:17:58 GMT
+      - Sun, 03 Sep 2023 01:53:49 GMT
       ETag:
-      - W/"11c3a5982195af3895aca973f7e42ddc-gzip"
+      - W/"9c9b276d2399266df5c8d8add8063e03-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:17:58 GMT
+      - Mon, 04 Sep 2023 01:53:49 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '118'
+      - '120'
     status:
       code: 200
       message: OK
@@ -229,14 +219,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MtVRykvMTVWyUgopSkxJVXBKzEnMS05V
-        0lEqSCxKzSuJBysDzLg2thYA+F23z0EAAAA=
+      string: '{"categories":[{"id":125,"name":"Trade Balance","parent_id":13}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -249,17 +237,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:17:59 GMT
+      - Sun, 03 Sep 2023 01:53:50 GMT
       ETag:
-      - W/"11c3a5982195af3895aca973f7e42ddc-gzip"
+      - W/"9c9b276d2399266df5c8d8add8063e03-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:17:59 GMT
+      - Mon, 04 Sep 2023 01:53:50 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '117'
+      - '119'
     status:
       code: 200
       message: OK

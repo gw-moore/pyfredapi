@@ -9,17 +9,14 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
-        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
-        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
-        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
-        cBummgEAAA==
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -32,17 +29,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:46 GMT
+      - Sat, 02 Sep 2023 19:57:43 GMT
       ETag:
-      - W/"41a552fce265eaa06652862f2265d36a-gzip-gzip"
+      - '"dbfef5e2fed2514e5bbf423a67680d66-gzip"'
       Expires:
-      - Thu, 27 Apr 2023 15:08:46 GMT
+      - Sat, 02 Sep 2023 20:07:43 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '78'
+      - '76'
     status:
       code: 200
       message: OK
@@ -56,17 +53,14 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
-        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
-        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
-        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
-        cBummgEAAA==
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -79,17 +73,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:46 GMT
+      - Sat, 02 Sep 2023 19:57:43 GMT
       ETag:
-      - W/"41a552fce265eaa06652862f2265d36a-gzip-gzip"
+      - W/"dbfef5e2fed2514e5bbf423a67680d66-gzip-gzip"
       Expires:
-      - Thu, 27 Apr 2023 15:08:46 GMT
+      - Sat, 02 Sep 2023 20:07:43 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '77'
+      - '75'
     status:
       code: 200
       message: OK
@@ -103,17 +97,14 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
-        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
-        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
-        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
-        cBummgEAAA==
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -126,17 +117,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:12 GMT
+      - Sun, 03 Sep 2023 01:29:58 GMT
       ETag:
-      - '"3f2ee28961b077794aa9225a89111994-gzip"'
+      - '"2b093fe75672fc776d03b448d66b797e-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 01:39:12 GMT
+      - Sun, 03 Sep 2023 01:39:58 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '96'
+      - '76'
     status:
       code: 200
       message: OK
@@ -150,17 +141,14 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
-        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
-        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
-        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
-        cBummgEAAA==
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -173,11 +161,55 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:12 GMT
+      - Sun, 03 Sep 2023 01:29:58 GMT
       ETag:
-      - W/"3f2ee28961b077794aa9225a89111994-gzip-gzip"
+      - W/"2b093fe75672fc776d03b448d66b797e-gzip-gzip"
       Expires:
-      - Fri, 28 Apr 2023 01:39:12 GMT
+      - Sun, 03 Sep 2023 01:39:58 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '75'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 03 Sep 2023 01:54:19 GMT
+      ETag:
+      - '"03cf6b6db733fef8de5661b8c4cf2b0c-gzip"'
+      Expires:
+      - Sun, 03 Sep 2023 02:04:19 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -197,17 +229,14 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
-        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
-        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
-        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
-        cBummgEAAA==
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -220,64 +249,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:19 GMT
+      - Sun, 03 Sep 2023 01:54:20 GMT
       ETag:
-      - '"7ed365d82f652ee187a009e4c30464d4-gzip"'
+      - W/"03cf6b6db733fef8de5661b8c4cf2b0c-gzip-gzip"
       Expires:
-      - Fri, 28 Apr 2023 02:28:19 GMT
+      - Sun, 03 Sep 2023 02:04:20 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '80'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.29.0
-    method: GET
-    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkrNSU0sTo3PTFGyUjI0UNJRSs1JzU3NKylWsqpWMjYxsTAEMaCCYGVgQR0U
-        nYYGOkrFqUWZqcVgFXmlOTk6SgWJRal5JUgCOZl5qUpWEMmSyoJUJSul4tTkksz8PCUdpbzEXJCA
-        c35ecWluapFCQFFmcqqCZ15KaoVCUqWCa0VBal5KZklpUaqCc2JJanp+UaWSjlJOallqjpKVEsjh
-        yRmZOSlFqXlKVtGxtTpKxmbmhkYYbgcJ0tXtwQWpyZmJOQqO6elFqemJJWA/ZSanFuNzPWC1tQDh
-        cBummgEAAA==
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '235'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Fri, 28 Apr 2023 02:18:20 GMT
-      ETag:
-      - W/"7ed365d82f652ee187a009e4c30464d4-gzip-gzip"
-      Expires:
-      - Fri, 28 Apr 2023 02:28:20 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '79'
+      - '94'
     status:
       code: 200
       message: OK

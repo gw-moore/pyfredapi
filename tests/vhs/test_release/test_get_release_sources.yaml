@@ -9,15 +9,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
-        RVcrZaYoWRkZIakn2TTA8hJzU5WslEL1gvUUnEqLUhNLFfLTFHwSk/KLFIJLEksyi0syk4uVdJRy
-        MvOylayUMkpKCoqtYvRj9MvLy/WScor10vPLYvSVamNrAV+oHQTVAAAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","sources":[{"id":22,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"U.S.
+        Bureau of Labor Statistics","link":"https:\/\/www.bls.gov\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -30,56 +28,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:41 GMT
+      - Sat, 02 Sep 2023 19:57:38 GMT
       ETag:
-      - W/"10494880d8d7a0e8d1a1912b3e61b973-gzip-gzip"
+      - W/"3ca13a7e6cee02dee6868eee1bd8e310-gzip-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:41 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '86'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.28.2
-    method: GET
-    uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
-        RVcrZaYoWRkZIakn2TTA8hJzU5WslEL1gvUUnEqLUhNLFfLTFHwSk/KLFIJLEksyi0syk4uVdJRy
-        MvOylayUMkpKCoqtYvRj9MvLy/WScor10vPLYvSVamNrAV+oHQTVAAAA
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '156'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Thu, 27 Apr 2023 14:58:42 GMT
-      ETag:
-      - W/"10494880d8d7a0e8d1a1912b3e61b973-gzip-gzip"
-      Expires:
-      - Fri, 28 Apr 2023 14:58:42 GMT
+      - Sun, 03 Sep 2023 19:57:38 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -99,15 +52,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
-        RVcrZaYoWRkZIakn2TTA8hJzU5WslEL1gvUUnEqLUhNLFfLTFHwSk/KLFIJLEksyi0syk4uVdJRy
-        MvOylayUMkpKCoqtYvRj9MvLy/WScor10vPLYvSVamNrAV+oHQTVAAAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","sources":[{"id":22,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"U.S.
+        Bureau of Labor Statistics","link":"https:\/\/www.bls.gov\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -120,17 +71,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:09 GMT
+      - Sat, 02 Sep 2023 19:57:39 GMT
       ETag:
-      - W/"10494880d8d7a0e8d1a1912b3e61b973-gzip-gzip"
+      - W/"3ca13a7e6cee02dee6868eee1bd8e310-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:09 GMT
+      - Sun, 03 Sep 2023 19:57:39 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '104'
+      - '82'
     status:
       code: 200
       message: OK
@@ -144,15 +95,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
-        RVcrZaYoWRkZIakn2TTA8hJzU5WslEL1gvUUnEqLUhNLFfLTFHwSk/KLFIJLEksyi0syk4uVdJRy
-        MvOylayUMkpKCoqtYvRj9MvLy/WScor10vPLYvSVamNrAV+oHQTVAAAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","sources":[{"id":22,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"U.S.
+        Bureau of Labor Statistics","link":"https:\/\/www.bls.gov\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -165,17 +114,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:09 GMT
+      - Sun, 03 Sep 2023 01:29:54 GMT
       ETag:
-      - W/"10494880d8d7a0e8d1a1912b3e61b973-gzip-gzip"
+      - W/"3ca13a7e6cee02dee6868eee1bd8e310-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:09 GMT
+      - Mon, 04 Sep 2023 01:29:53 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '102'
+      - '84'
     status:
       code: 200
       message: OK
@@ -189,15 +138,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
-        RVcrZaYoWRkZIakn2TTA8hJzU5WslEL1gvUUnEqLUhNLFfLTFHwSk/KLFIJLEksyi0syk4uVdJRy
-        MvOylayUMkpKCoqtYvRj9MvLy/WScor10vPLYvSVamNrAV+oHQTVAAAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","sources":[{"id":22,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"U.S.
+        Bureau of Labor Statistics","link":"https:\/\/www.bls.gov\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -210,17 +157,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:16 GMT
+      - Sun, 03 Sep 2023 01:29:54 GMT
       ETag:
-      - W/"10494880d8d7a0e8d1a1912b3e61b973-gzip-gzip"
+      - W/"3ca13a7e6cee02dee6868eee1bd8e310-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:16 GMT
+      - Mon, 04 Sep 2023 01:29:54 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '88'
+      - '82'
     status:
       code: 200
       message: OK
@@ -234,15 +181,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpaDLFeeXFiWnFitZ
-        RVcrZaYoWRkZIakn2TTA8hJzU5WslEL1gvUUnEqLUhNLFfLTFHwSk/KLFIJLEksyi0syk4uVdJRy
-        MvOylayUMkpKCoqtYvRj9MvLy/WScor10vPLYvSVamNrAV+oHQTVAAAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","sources":[{"id":22,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"U.S.
+        Bureau of Labor Statistics","link":"https:\/\/www.bls.gov\/"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -255,17 +200,60 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:16 GMT
+      - Sun, 03 Sep 2023 01:54:15 GMT
       ETag:
-      - W/"10494880d8d7a0e8d1a1912b3e61b973-gzip-gzip"
+      - W/"3ca13a7e6cee02dee6868eee1bd8e310-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:16 GMT
+      - Mon, 04 Sep 2023 01:54:15 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '86'
+      - '103'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/sources?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","sources":[{"id":22,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"U.S.
+        Bureau of Labor Statistics","link":"https:\/\/www.bls.gov\/"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '156'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 03 Sep 2023 01:54:15 GMT
+      ETag:
+      - W/"3ca13a7e6cee02dee6868eee1bd8e310-gzip-gzip"
+      Expires:
+      - Mon, 04 Sep 2023 01:54:15 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '101'
     status:
       code: 200
       message: OK

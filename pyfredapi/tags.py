@@ -13,14 +13,17 @@ Categories are organized in a hierarchical structure where parent categories con
 from typing import Literal, Optional
 
 from frozendict import frozendict
-from pydantic import BaseModel, Extra, PositiveInt
+from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
+from .utils import _convert_pydantic_model_to_frozen_dict
 from .utils._common_type_hints import ApiKeyType, JsonType, KwargsType
 
 
 class TagsApiParameters(BaseModel):
     """Represents the parameters accepted by the FRED Tags endpoints."""
+
+    model_config = ConfigDict(extra="allow")
 
     realtime_start: Optional[str] = None
     realtime_end: Optional[str] = None
@@ -36,11 +39,6 @@ class TagsApiParameters(BaseModel):
     ] = None
     sort_order: Optional[Literal["acs", "desc"]] = None
     exclude_tag_names: Optional[str] = None
-
-    class Config:
-        """pydantic config."""
-
-        extra = Extra.allow
 
 
 def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
@@ -58,11 +56,11 @@ def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     dict
         A dictionary representing the json response.
     """
-    params = TagsApiParameters(**kwargs)
+    params = _convert_pydantic_model_to_frozen_dict(TagsApiParameters(**kwargs))
     return _get_request(
         endpoint="tags",
         api_key=api_key,
-        params=frozenset(**params.dict(exclude_none=True)),
+        params=params,
     )
 
 
@@ -85,14 +83,13 @@ def get_related_tags(
     dict
         A dictionary representing the json response.
     """
-    params = TagsApiParameters(
-        tag_names=tag_names,
-        **kwargs,
+    params = _convert_pydantic_model_to_frozen_dict(
+        TagsApiParameters(tag_names=tag_names, **kwargs)
     )
     return _get_request(
         endpoint="related_tags",
         api_key=api_key,
-        params=frozendict(**params.dict(exclude_none=True)),
+        params=params,
     )
 
 
@@ -115,14 +112,14 @@ def get_series_matching_tags(
     dict
         A dictionary representing the json response.
     """
-    params = TagsApiParameters(**kwargs)
+    params = _convert_pydantic_model_to_frozen_dict(TagsApiParameters(**kwargs))
     return _get_request(
         endpoint="tags/series",
         api_key=api_key,
         params=frozendict(
             {
                 "tag_names": tag_names,
-                **params.dict(exclude_none=True),
+                **params,
             }
         ),
     )

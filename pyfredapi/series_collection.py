@@ -6,7 +6,7 @@ SeriesCollection is meant to make handling multiple series easier. Often users o
 
 import time
 from dataclasses import dataclass
-from typing import Callable, Dict, List, Union
+from typing import Callable, Dict, List, Sequence, Union
 
 import pandas as pd
 from rich.console import Console
@@ -126,7 +126,7 @@ class SeriesCollection:
 
     def __init__(
         self,
-        series_id: Union[List[str], str],
+        series_id: Union[Sequence[str], str],
         api_key: Union[str, None] = None,
         rename: Union[Dict[str, str], Callable[[str], str], None] = None,
         drop_realtime: bool = True,
@@ -137,8 +137,8 @@ class SeriesCollection:
 
         Parameters
         ----------
-        series_id : List[str] | str
-            List of series IDs to add to collection.
+        series_id : Sequence[str] | str
+            Sequence of series IDs to add to collection.
         api_key : str | None, optional
             FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
         drop_realtime : bool, optional
@@ -215,7 +215,7 @@ class SeriesCollection:
 
             series_data.df.rename(columns={orig_col_name: series_name}, inplace=True)
 
-    def add(self, series_id: Union[str, List[str]], **kwargs) -> None:
+    def add(self, series_id: Union[str, Sequence[str]], **kwargs) -> None:
         """Add series to the collection.
 
         A request to the FRED api will be made for the series. The data will
@@ -226,7 +226,7 @@ class SeriesCollection:
 
         Parameters
         ----------
-        series_id : Union[str, List[str]]
+        series_id : Union[str, Sequence[str]]
             Series to add to collection.
         **kwargs : dict, optional
             Additional parameters to FRED API `series/` endpoint.
@@ -262,12 +262,12 @@ class SeriesCollection:
             self._data.append(series_data)
             setattr(self, sid, series_data)
 
-    def remove(self, series_id: Union[str, List[str]]) -> None:
+    def remove(self, series_id: Union[str, Sequence[str]]) -> None:
         """Remove series from collection.
 
         Parameters
         ----------
-        series_id : Union[str, List[str]]
+        series_id : Union[str, Sequence[str]]
             Series ids to remove from collection.
         """
         if isinstance(series_id, str):

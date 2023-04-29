@@ -14,11 +14,11 @@ Preform these tasks before opening a PR for the `main` branch.
 - [ ] Check that no updates are needed in `README.md`
 - [ ] Update the requirements.txt
     ```bash
-    pip-compile -o requirements.txt pyproject.toml  --resolver=backtracking
+    python -m piptools compile --upgrade -o requirements.txt pyproject.toml
     ```
 - [ ] Run unit tests and make fresh vcr cassettes
     ```bash
-    pytest tests/ --vcr-record=all --runslow
+    pytest tests/ --record-mode=all --runslow
     ```
 - [ ] Make sure the `pyfredapi` package builds locally
     ```bash
@@ -27,11 +27,11 @@ Preform these tasks before opening a PR for the `main` branch.
 
 ### Prepare the documentation
 
-When a PR is merged into, the Read The Docs build will be triggered and the documentation will be updated. It is important to be sure the documentation is correct before merging into the main branch.
+When a commit is made to the `main` branch, the Read The Docs build will be triggered and the documentation will be updated. It is important to be sure the documentation is correct before merging into the main branch.
 
 - [ ] Update documentation dependencies for Read The Docs
     ```bash
-    pip-compile --extra docs -o docs/requirements.txt pyproject.toml  --resolver=backtracking
+    python -m piptools compile --upgrade --extra docs -o docs/requirements.txt pyproject.toml
     ```
 - [ ] Test that the documentation builds locally
     ```bash

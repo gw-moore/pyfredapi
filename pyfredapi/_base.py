@@ -11,7 +11,7 @@ from typing import Any, Dict, Optional, Union
 
 import requests
 from frozendict import frozendict
-from pydantic import BaseModel, Extra
+from pydantic import BaseModel, ConfigDict
 
 from .exceptions import APIKeyNotFound, FredAPIRequestError, InvalidAPIKey
 from .utils._common_type_hints import JsonType
@@ -20,11 +20,10 @@ from .utils._common_type_hints import JsonType
 class BaseApiParameters(BaseModel):
     """Represents the parameters accepted by all FRED Series endpoints."""
 
+    model_config = ConfigDict(extra="forbid")
+
     api_key: str
     file_type: str = "json"
-
-    class Config:
-        extra = Extra.forbid
 
 
 @lru_cache
@@ -94,7 +93,7 @@ def _get_request(
     try:
         response = requests.get(
             f"{base_url}/{endpoint}",
-            params=frozendict({**_base_params.dict(), **params}),
+            params=frozendict({**_base_params.model_dump(), **params}),
             timeout=30,
         )
     except requests.exceptions.RequestException as e:

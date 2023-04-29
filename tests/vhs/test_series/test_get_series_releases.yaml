@@ -9,16 +9,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
-        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
-        jQWsNrYWAPtAWYQDAQAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":53,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -31,57 +28,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:52 GMT
+      - Sat, 02 Sep 2023 19:57:49 GMT
       ETag:
-      - W/"3be52f32223cd567c316a40d67c361a3-gzip-gzip"
+      - W/"7f6a1b084f1ba1a47fe827a7227aaa7d-gzip-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:52 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '68'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.28.2
-    method: GET
-    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
-        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
-        jQWsNrYWAPtAWYQDAQAA
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '186'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Thu, 27 Apr 2023 14:58:52 GMT
-      ETag:
-      - W/"3be52f32223cd567c316a40d67c361a3-gzip-gzip"
-      Expires:
-      - Fri, 28 Apr 2023 14:58:52 GMT
+      - Sun, 03 Sep 2023 19:57:49 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -101,16 +52,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
-        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
-        jQWsNrYWAPtAWYQDAQAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":53,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -123,17 +71,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:17 GMT
+      - Sat, 02 Sep 2023 19:57:50 GMT
       ETag:
-      - W/"3be52f32223cd567c316a40d67c361a3-gzip-gzip"
+      - W/"7f6a1b084f1ba1a47fe827a7227aaa7d-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:17 GMT
+      - Sun, 03 Sep 2023 19:57:50 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '86'
+      - '64'
     status:
       code: 200
       message: OK
@@ -147,16 +95,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
-        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
-        jQWsNrYWAPtAWYQDAQAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":53,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -169,17 +114,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:17 GMT
+      - Sun, 03 Sep 2023 01:30:05 GMT
       ETag:
-      - W/"3be52f32223cd567c316a40d67c361a3-gzip-gzip"
+      - W/"7f6a1b084f1ba1a47fe827a7227aaa7d-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:17 GMT
+      - Mon, 04 Sep 2023 01:30:05 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '84'
+      - '113'
     status:
       code: 200
       message: OK
@@ -193,16 +138,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
-        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
-        jQWsNrYWAPtAWYQDAQAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":53,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -215,17 +157,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:25 GMT
+      - Sun, 03 Sep 2023 01:30:05 GMT
       ETag:
-      - W/"3be52f32223cd567c316a40d67c361a3-gzip-gzip"
+      - W/"7f6a1b084f1ba1a47fe827a7227aaa7d-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:25 GMT
+      - Mon, 04 Sep 2023 01:30:05 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '70'
+      - '111'
     status:
       code: 200
       message: OK
@@ -239,16 +181,13 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyMjAy1jUw0TUyV9JByKbmpWDK5aQmFqcWK1lF
-        VytlpihZmRojaSDZuLzE3FQlKyX3ovziYgWX/NzU4pLMZIWAovyU0uQSJR2lgqLU4uL4olSwpUpW
-        JUWlqTpKOZl52UpWShklJQXFVjH6Mfrl5eV6SamJeun5ZTH6KYkliTH66SkFMfrpIGN1U6DG6hZA
-        jQWsNrYWAPtAWYQDAQAA
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":53,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -261,17 +200,60 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:25 GMT
+      - Sun, 03 Sep 2023 01:54:26 GMT
       ETag:
-      - W/"3be52f32223cd567c316a40d67c361a3-gzip-gzip"
+      - W/"7f6a1b084f1ba1a47fe827a7227aaa7d-gzip-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:25 GMT
+      - Mon, 04 Sep 2023 01:54:26 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '68'
+      - '85'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2023-09-02","realtime_end":"2023-09-02","releases":[{"id":53,"realtime_start":"2023-09-02","realtime_end":"2023-09-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 03 Sep 2023 01:54:27 GMT
+      ETag:
+      - W/"7f6a1b084f1ba1a47fe827a7227aaa7d-gzip-gzip"
+      Expires:
+      - Mon, 04 Sep 2023 01:54:27 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '83'
     status:
       code: 200
       message: OK

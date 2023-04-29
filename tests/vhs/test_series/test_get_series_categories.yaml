@@ -9,14 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
-        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+      string: '{"categories":[{"id":106,"name":"GDP\/GNP","parent_id":18}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -29,55 +27,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:48 GMT
+      - Sat, 02 Sep 2023 19:57:45 GMT
       ETag:
-      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      - W/"d3a83cc7c7afdef911f3fa07c00defed-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:48 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '75'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.28.2
-    method: GET
-    uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
-  response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
-        Ss0riQerAMyiNrYWAAMe5nI8AAAA
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '78'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Thu, 27 Apr 2023 14:58:49 GMT
-      ETag:
-      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
-      Expires:
-      - Fri, 28 Apr 2023 14:58:49 GMT
+      - Sun, 03 Sep 2023 19:57:45 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -97,14 +51,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
-        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+      string: '{"categories":[{"id":106,"name":"GDP\/GNP","parent_id":18}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -117,17 +69,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:14 GMT
+      - Sat, 02 Sep 2023 19:57:45 GMT
       ETag:
-      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      - W/"d3a83cc7c7afdef911f3fa07c00defed-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:14 GMT
+      - Sun, 03 Sep 2023 19:57:45 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '93'
+      - '71'
     status:
       code: 200
       message: OK
@@ -141,14 +93,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
-        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+      string: '{"categories":[{"id":106,"name":"GDP\/GNP","parent_id":18}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -161,17 +111,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:15 GMT
+      - Sun, 03 Sep 2023 01:30:01 GMT
       ETag:
-      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      - W/"d3a83cc7c7afdef911f3fa07c00defed-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:29:15 GMT
+      - Mon, 04 Sep 2023 01:30:00 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '91'
+      - '120'
     status:
       code: 200
       message: OK
@@ -185,14 +135,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
-        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+      string: '{"categories":[{"id":106,"name":"GDP\/GNP","parent_id":18}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -205,17 +153,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:22 GMT
+      - Sun, 03 Sep 2023 01:30:01 GMT
       ETag:
-      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      - W/"d3a83cc7c7afdef911f3fa07c00defed-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:22 GMT
+      - Mon, 04 Sep 2023 01:30:01 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '77'
+      - '118'
     status:
       code: 200
       message: OK
@@ -229,14 +177,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWSk4sSU3PL8pMLVayiq5WykxRsjI0MNNRykvMTVWyUnJ3CYjRd/cLUNJRKkgs
-        Ss0riQerAMyiNrYWAAMe5nI8AAAA
+      string: '{"categories":[{"id":106,"name":"GDP\/GNP","parent_id":18}]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -249,17 +195,59 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:22 GMT
+      - Sun, 03 Sep 2023 01:54:22 GMT
       ETag:
-      - W/"2bf4093f7eb3c38e2ac8850d83df83bc-gzip"
+      - W/"d3a83cc7c7afdef911f3fa07c00defed-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:22 GMT
+      - Mon, 04 Sep 2023 01:54:22 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '75'
+      - '92'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/categories?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"categories":[{"id":106,"name":"GDP\/GNP","parent_id":18}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '78'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 03 Sep 2023 01:54:23 GMT
+      ETag:
+      - W/"d3a83cc7c7afdef911f3fa07c00defed-gzip"
+      Expires:
+      - Mon, 04 Sep 2023 01:54:22 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '90'
     status:
       code: 200
       message: OK

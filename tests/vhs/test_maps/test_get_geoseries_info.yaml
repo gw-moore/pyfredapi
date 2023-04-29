@@ -9,16 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
-        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
-        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2022-01-01"}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -31,11 +27,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:30 GMT
+      - Sat, 02 Sep 2023 19:57:24 GMT
       ETag:
-      - '"dbb56ed08b47e37177fd479b923436a8-gzip"'
+      - '"17bf32cec1be7a5d6104a84f761d1241-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 14:55:09 GMT
+      - Sun, 03 Sep 2023 19:44:37 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -55,16 +51,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
-        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
-        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2022-01-01"}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -77,11 +69,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:30 GMT
+      - Sat, 02 Sep 2023 19:57:25 GMT
       ETag:
-      - '"dbb56ed08b47e37177fd479b923436a8-gzip"'
+      - '"17bf32cec1be7a5d6104a84f761d1241-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 14:55:09 GMT
+      - Sun, 03 Sep 2023 19:44:37 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -101,16 +93,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
-        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
-        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2022-01-01"}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -123,11 +111,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:28:57 GMT
+      - Sun, 03 Sep 2023 01:29:39 GMT
       ETag:
-      - '"dbb56ed08b47e37177fd479b923436a8-gzip"'
+      - '"17bf32cec1be7a5d6104a84f761d1241-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 14:55:09 GMT
+      - Sun, 03 Sep 2023 19:44:37 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -147,16 +135,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
-        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
-        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2022-01-01"}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -169,11 +153,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:28:58 GMT
+      - Sun, 03 Sep 2023 01:29:40 GMT
       ETag:
-      - '"dbb56ed08b47e37177fd479b923436a8-gzip"'
+      - '"17bf32cec1be7a5d6104a84f761d1241-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 14:55:09 GMT
+      - Sun, 03 Sep 2023 19:44:37 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -193,16 +177,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
-        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
-        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2022-01-01"}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -215,11 +195,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:06 GMT
+      - Sun, 03 Sep 2023 01:54:01 GMT
       ETag:
-      - '"dbb56ed08b47e37177fd479b923436a8-gzip"'
+      - '"17bf32cec1be7a5d6104a84f761d1241-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 14:55:09 GMT
+      - Sun, 03 Sep 2023 19:44:37 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -239,16 +219,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKk4tykwtjk8vyi8tULKqVirJLMlJVbJSCkgtUnBOLMgsSVQISC0qzs9LzFHw
-        zEvOz01V0lEqSk3PzM+LL6ksACktLkksAYmiGqVkYWGkpKNUnJpYnJ+nZKXkF+yopKNUmpdZUqxk
-        peSSn5OTWFSspKOUVpRaWJqal1ypZKXkmJdXmpijpKOUm5kXnwIy1UrJ0NLIUtfAUNfAECSeWAET
-        NzIwMoKKA1ZbCwDVEr6xyAAAAA==
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2022-01-01"}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -261,11 +237,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:06 GMT
+      - Sun, 03 Sep 2023 01:54:02 GMT
       ETag:
-      - '"dbb56ed08b47e37177fd479b923436a8-gzip"'
+      - '"17bf32cec1be7a5d6104a84f761d1241-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 14:55:09 GMT
+      - Sun, 03 Sep 2023 19:44:37 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:

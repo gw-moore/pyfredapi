@@ -7,10 +7,10 @@ in the FRED website hosted by the Economic Research Division of the Federal Rese
 from typing import Any, Dict, List, Literal, Optional, Union
 
 import pandas as pd
-from frozendict import frozendict
-from pydantic import BaseModel, Extra
+from pydantic import BaseModel, ConfigDict
 
 from ._base import _get_request
+from .utils import _convert_pydantic_model_to_frozen_dict
 from .utils._common_type_hints import ApiKeyType, JsonType, ReturnFmtType
 from .utils.enums import ReturnFormat
 
@@ -19,6 +19,8 @@ _geo_fred_url = "https://api.stlouisfed.org/geofred/"
 
 class MapApiParameters(BaseModel):
     """Represents the parameters accepted by the FRED Maps endpoints."""
+
+    model_config = ConfigDict(extra="allow")
 
     shape: Optional[
         Literal[
@@ -37,12 +39,11 @@ class MapApiParameters(BaseModel):
     date: Optional[str] = None
     start_date: Optional[str] = None
 
-    class Config:
-        extra = Extra.allow
-
 
 class GeoseriesInfo(BaseModel):
     """Represents geo series information. https://fred.stlouisfed.org/docs/api/geofred/series_group.html."""
+
+    model_config = ConfigDict(extra="allow")
 
     title: str
     region_type: str
@@ -53,18 +54,14 @@ class GeoseriesInfo(BaseModel):
     min_date: str
     max_date: str
 
-    class Config:
-        extra = Extra.allow
-
 
 class GeoseriesData(BaseModel):
     """Represents metadata about an economics data series. https://fred.stlouisfed.org/docs/api/fred/series.html."""
 
+    model_config = ConfigDict(arbitrary_types_allowed=True)
+
     info: GeoseriesInfo
     data: Union[Dict[str, List[Dict[str, Any]]], pd.DataFrame]
-
-    class Config:
-        arbitrary_types_allowed = True
 
 
 def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesInfo:
@@ -82,12 +79,14 @@ def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesI
     GeoseriesInfo
         An instance of GeoseriesInfo.
     """
-    params = MapApiParameters(series_id=series_id)
+    params = _convert_pydantic_model_to_frozen_dict(
+        MapApiParameters(series_id=series_id)
+    )
     response = _get_request(
         base_url=_geo_fred_url,
         endpoint="series/group",
         api_key=api_key,
-        params=frozendict(params.dict(exclude_none=True)),
+        params=params,
     )
     return GeoseriesInfo(**response["series_group"])
 
@@ -120,12 +119,12 @@ def get_shape_files(
     dict
         Dictionary representing the json response.
     """
-    params = MapApiParameters(shape=shape)
+    params = _convert_pydantic_model_to_frozen_dict(MapApiParameters(shape=shape))
     return _get_request(
         base_url=_geo_fred_url,
         endpoint="shapes/file",
         api_key=api_key,
-        params=frozendict(params.dict(exclude_none=True)),
+        params=params,
     )
 
 
@@ -159,11 +158,13 @@ def get_geoseries(
     GeoseriesData
         GeoseriesData object containing the geoseries data and metadata.
     """
-    params = MapApiParameters(series_id=series_id, date=end_date, start_date=start_date)
+    params = _convert_pydantic_model_to_frozen_dict(
+        MapApiParameters(series_id=series_id, date=end_date, start_date=start_date)
+    )
     response = _get_request(
         endpoint="series/data",
         api_key=api_key,
-        params=frozendict(params.dict(exclude_none=True)),
+        params=params,
         base_url=_geo_fred_url,
     )
 

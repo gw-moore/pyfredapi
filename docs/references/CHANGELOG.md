@@ -1,5 +1,16 @@
 # Changelog
 
+## UNRELEASED
+
+### Added
+
+- Support for Python 3.12
+
+### Changed
+
+- Bumped `pydantic` version to >=2.
+- Updated `pandas` version to >=1.0.0,<3.0.0.
+
 ## Version 0.8.0 - 2023-04-27
 
 ### Changed

@@ -9,70 +9,16 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&output_type=4&realtime_start=1776-07-04&series_id=GDP
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"realtime_start":"1776-07-04","realtime_end":"9999-12-31","observation_start":"1600-01-01","observation_end":"9999-12-31","units":"lin","output_type":4,"file_type":"json","order_by":"observation_date","sort_order":"asc","count":127,"offset":0,"limit":100000,"observations":[{"realtime_start":"1992-01-29","realtime_end":"1992-02-27","date":"1991-10-01","value":"5736.6"},{"realtime_start":"1992-04-28","realtime_end":"1992-05-28","date":"1992-01-01","value":"5809.3"},{"realtime_start":"1992-07-30","realtime_end":"1992-08-26","date":"1992-04-01","value":"5893.6"},{"realtime_start":"1992-10-27","realtime_end":"1992-11-24","date":"1992-07-01","value":"5967.1"},{"realtime_start":"1993-01-28","realtime_end":"1993-02-25","date":"1992-10-01","value":"6061.9"},{"realtime_start":"1993-04-29","realtime_end":"1993-05-27","date":"1993-01-01","value":"6158.8"},{"realtime_start":"1993-07-29","realtime_end":"1993-08-30","date":"1993-04-01","value":"6206.9"},{"realtime_start":"1993-10-28","realtime_end":"1993-11-30","date":"1993-07-01","value":"6396.3"},{"realtime_start":"1994-01-28","realtime_end":"1994-02-28","date":"1993-10-01","value":"6510.8"},{"realtime_start":"1994-04-28","realtime_end":"1994-05-26","date":"1994-01-01","value":"6609.4"},{"realtime_start":"1994-07-29","realtime_end":"1994-08-25","date":"1994-04-01","value":"6683.6"},{"realtime_start":"1994-10-28","realtime_end":"1994-11-29","date":"1994-07-01","value":"6775.9"},{"realtime_start":"1995-01-27","realtime_end":"1995-02-28","date":"1994-10-01","value":"6891.1"},{"realtime_start":"1995-04-28","realtime_end":"1995-05-30","date":"1995-01-01","value":"6982.9"},{"realtime_start":"1995-07-28","realtime_end":"1995-08-29","date":"1995-04-01","value":"7011.8"},{"realtime_start":"1995-10-27","realtime_end":"1996-01-18","date":"1995-07-01","value":"7113.2"},{"realtime_start":"1996-02-23","realtime_end":"1996-04-01","date":"1995-10-01","value":"7348.1"},{"realtime_start":"1996-05-02","realtime_end":"1996-05-29","date":"1996-01-01","value":"7430.7"},{"realtime_start":"1996-08-01","realtime_end":"1996-08-28","date":"1996-04-01","value":"7538.1"},{"realtime_start":"1996-10-30","realtime_end":"1996-11-26","date":"1996-07-01","value":"7616"},{"realtime_start":"1997-01-31","realtime_end":"1997-02-27","date":"1996-10-01","value":"7731.7"},{"realtime_start":"1997-04-30","realtime_end":"1997-05-29","date":"1997-01-01","value":"7866.0"},{"realtime_start":"1997-07-31","realtime_end":"1997-08-27","date":"1997-04-01","value":"8004.8"},{"realtime_start":"1997-10-31","realtime_end":"1997-11-25","date":"1997-07-01","value":"8131.7"},{"realtime_start":"1998-01-30","realtime_end":"1998-02-26","date":"1997-10-01","value":"8241.5"},{"realtime_start":"1998-04-30","realtime_end":"1998-05-27","date":"1998-01-01","value":"8332.2"},{"realtime_start":"1998-07-31","realtime_end":"1998-08-26","date":"1998-04-01","value":"8431.7"},{"realtime_start":"1998-10-30","realtime_end":"1998-11-23","date":"1998-07-01","value":"8526.5"},{"realtime_start":"1999-01-29","realtime_end":"1999-02-25","date":"1998-10-01","value":"8672.8"},{"realtime_start":"1999-04-30","realtime_end":"1999-05-26","date":"1999-01-01","value":"8807.9"},{"realtime_start":"1999-07-29","realtime_end":"1999-08-25","date":"1999-04-01","value":"8893.3"},{"realtime_start":"1999-10-28","realtime_end":"1999-11-23","date":"1999-07-01","value":"9276.3"},{"realtime_start":"2000-01-28","realtime_end":"2000-02-24","date":"1999-10-01","value":"9477.1"},{"realtime_start":"2000-04-27","realtime_end":"2000-05-24","date":"2000-01-01","value":"9697.2"},{"realtime_start":"2000-07-28","realtime_end":"2000-08-24","date":"2000-04-01","value":"9937.3"},{"realtime_start":"2000-10-27","realtime_end":"2000-11-28","date":"2000-07-01","value":"10063.3"},{"realtime_start":"2001-01-31","realtime_end":"2001-02-27","date":"2000-10-01","value":"10125.0"},{"realtime_start":"2001-04-27","realtime_end":"2001-05-24","date":"2001-01-01","value":"10243.6"},{"realtime_start":"2001-07-27","realtime_end":"2001-08-28","date":"2001-04-01","value":"10217.6"},{"realtime_start":"2001-10-31","realtime_end":"2001-11-29","date":"2001-07-01","value":"10247.7"},{"realtime_start":"2002-01-30","realtime_end":"2002-02-27","date":"2001-10-01","value":"10221.6"},{"realtime_start":"2002-04-26","realtime_end":"2002-05-23","date":"2002-01-01","value":"10431.3"},{"realtime_start":"2002-07-31","realtime_end":"2002-08-28","date":"2002-04-01","value":"10369.9"},{"realtime_start":"2002-10-31","realtime_end":"2002-11-25","date":"2002-07-01","value":"10486.1"},{"realtime_start":"2003-01-30","realtime_end":"2003-02-27","date":"2002-10-01","value":"10572.3"},{"realtime_start":"2003-04-25","realtime_end":"2003-05-28","date":"2003-01-01","value":"10697.6"},{"realtime_start":"2003-07-31","realtime_end":"2003-08-27","date":"2003-04-01","value":"10777.3"},{"realtime_start":"2003-10-30","realtime_end":"2003-11-24","date":"2003-07-01","value":"11038.4"},{"realtime_start":"2004-01-30","realtime_end":"2004-02-26","date":"2003-10-01","value":"11246.3"},{"realtime_start":"2004-04-29","realtime_end":"2004-05-26","date":"2004-01-01","value":"11447.8"},{"realtime_start":"2004-07-30","realtime_end":"2004-08-26","date":"2004-04-01","value":"11649.3"},{"realtime_start":"2004-10-29","realtime_end":"2004-11-29","date":"2004-07-01","value":"11803.5"},{"realtime_start":"2005-01-28","realtime_end":"2005-02-24","date":"2004-10-01","value":"11967.0"},{"realtime_start":"2005-04-28","realtime_end":"2005-05-25","date":"2005-01-01","value":"12182.7"},{"realtime_start":"2005-07-29","realtime_end":"2005-08-30","date":"2005-04-01","value":"12376.2"},{"realtime_start":"2005-10-28","realtime_end":"2005-11-29","date":"2005-07-01","value":"12589.6"},{"realtime_start":"2006-01-27","realtime_end":"2006-02-27","date":"2005-10-01","value":"12735.3"},{"realtime_start":"2006-04-28","realtime_end":"2006-05-24","date":"2006-01-01","value":"13020.9"},{"realtime_start":"2006-07-28","realtime_end":"2006-08-29","date":"2006-04-01","value":"13193.9"},{"realtime_start":"2006-10-27","realtime_end":"2006-11-28","date":"2006-07-01","value":"13308.3"},{"realtime_start":"2007-01-31","realtime_end":"2007-02-27","date":"2006-10-01","value":"13487.2"},{"realtime_start":"2007-04-27","realtime_end":"2007-05-30","date":"2007-01-01","value":"13632.6"},{"realtime_start":"2007-07-27","realtime_end":"2007-08-29","date":"2007-04-01","value":"13755.9"},{"realtime_start":"2007-10-31","realtime_end":"2007-11-28","date":"2007-07-01","value":"13926.7"},{"realtime_start":"2008-01-30","realtime_end":"2008-02-27","date":"2007-10-01","value":"14080.8"},{"realtime_start":"2008-04-30","realtime_end":"2008-05-28","date":"2008-01-01","value":"14185.2"},{"realtime_start":"2008-07-31","realtime_end":"2008-08-27","date":"2008-04-01","value":"14256.5"},{"realtime_start":"2008-10-30","realtime_end":"2008-11-24","date":"2008-07-01","value":"14429.2"},{"realtime_start":"2009-01-30","realtime_end":"2009-02-26","date":"2008-10-01","value":"14264.6"},{"realtime_start":"2009-04-29","realtime_end":"2009-05-28","date":"2009-01-01","value":"14075.5"},{"realtime_start":"2009-07-31","realtime_end":"2009-08-26","date":"2009-04-01","value":"14149.8"},{"realtime_start":"2009-10-29","realtime_end":"2009-11-23","date":"2009-07-01","value":"14301.5"},{"realtime_start":"2010-01-29","realtime_end":"2010-02-25","date":"2009-10-01","value":"14463.4"},{"realtime_start":"2010-04-30","realtime_end":"2010-06-24","date":"2010-01-01","value":"14601.4"},{"realtime_start":"2010-07-30","realtime_end":"2010-08-26","date":"2010-04-01","value":"14597.7"},{"realtime_start":"2010-10-29","realtime_end":"2010-11-22","date":"2010-07-01","value":"14730.2"},{"realtime_start":"2011-01-28","realtime_end":"2011-02-24","date":"2010-10-01","value":"14870.4"},{"realtime_start":"2011-04-28","realtime_end":"2011-05-25","date":"2011-01-01","value":"15006.4"},{"realtime_start":"2011-07-29","realtime_end":"2011-08-25","date":"2011-04-01","value":"15003.8"},{"realtime_start":"2011-10-27","realtime_end":"2011-11-21","date":"2011-07-01","value":"15198.6"},{"realtime_start":"2012-01-27","realtime_end":"2012-02-28","date":"2011-10-01","value":"15294.3"},{"realtime_start":"2012-04-27","realtime_end":"2012-05-30","date":"2012-01-01","value":"15461.8"},{"realtime_start":"2012-07-27","realtime_end":"2012-08-28","date":"2012-04-01","value":"15595.9"},{"realtime_start":"2012-10-26","realtime_end":"2012-11-28","date":"2012-07-01","value":"15775.7"},{"realtime_start":"2013-01-30","realtime_end":"2013-02-27","date":"2012-10-01","value":"15829.0"},{"realtime_start":"2013-04-26","realtime_end":"2013-05-29","date":"2013-01-01","value":"16010.2"},{"realtime_start":"2013-07-31","realtime_end":"2013-08-28","date":"2013-04-01","value":"16633.4"},{"realtime_start":"2013-11-07","realtime_end":"2013-12-04","date":"2013-07-01","value":"16857.6"},{"realtime_start":"2014-01-30","realtime_end":"2014-02-27","date":"2013-10-01","value":"17102.5"},{"realtime_start":"2014-04-30","realtime_end":"2014-05-28","date":"2014-01-01","value":"17149.6"},{"realtime_start":"2014-07-30","realtime_end":"2014-08-27","date":"2014-04-01","value":"17294.7"},{"realtime_start":"2014-10-30","realtime_end":"2014-11-24","date":"2014-07-01","value":"17535.4"},{"realtime_start":"2015-01-30","realtime_end":"2015-02-26","date":"2014-10-01","value":"17710.7"},{"realtime_start":"2015-04-29","realtime_end":"2015-05-28","date":"2015-01-01","value":"17710.0"},{"realtime_start":"2015-07-30","realtime_end":"2015-08-26","date":"2015-04-01","value":"17840.5"},{"realtime_start":"2015-10-29","realtime_end":"2015-11-23","date":"2015-07-01","value":"18034.8"},{"realtime_start":"2016-01-29","realtime_end":"2016-02-25","date":"2015-10-01","value":"18128.2"},{"realtime_start":"2016-04-28","realtime_end":"2016-05-26","date":"2016-01-01","value":"18221.1"},{"realtime_start":"2016-07-29","realtime_end":"2016-08-25","date":"2016-04-01","value":"18437.6"},{"realtime_start":"2016-10-28","realtime_end":"2016-11-28","date":"2016-07-01","value":"18651.2"},{"realtime_start":"2017-01-27","realtime_end":"2017-02-27","date":"2016-10-01","value":"18860.8"},{"realtime_start":"2017-04-28","realtime_end":"2017-05-25","date":"2017-01-01","value":"19007.3"},{"realtime_start":"2017-07-28","realtime_end":"2017-08-29","date":"2017-04-01","value":"19226.7"},{"realtime_start":"2017-10-27","realtime_end":"2017-11-28","date":"2017-07-01","value":"19495.476"},{"realtime_start":"2018-01-26","realtime_end":"2018-02-27","date":"2017-10-01","value":"19738.887"},{"realtime_start":"2018-04-27","realtime_end":"2018-05-29","date":"2018-01-01","value":"19965.326"},{"realtime_start":"2018-07-27","realtime_end":"2018-08-28","date":"2018-04-01","value":"20402.502"},{"realtime_start":"2018-10-26","realtime_end":"2018-11-27","date":"2018-07-01","value":"20659.029"},{"realtime_start":"2019-02-28","realtime_end":"2019-03-27","date":"2018-10-01","value":"20891.367"},{"realtime_start":"2019-04-26","realtime_end":"2019-05-29","date":"2019-01-01","value":"21062.691"},{"realtime_start":"2019-07-26","realtime_end":"2019-08-28","date":"2019-04-01","value":"21337.898"},{"realtime_start":"2019-10-30","realtime_end":"2019-11-26","date":"2019-07-01","value":"21525.819"},{"realtime_start":"2020-01-30","realtime_end":"2020-02-26","date":"2019-10-01","value":"21734.266"},{"realtime_start":"2020-04-29","realtime_end":"2020-05-27","date":"2020-01-01","value":"21537.94"},{"realtime_start":"2020-07-30","realtime_end":"2020-08-26","date":"2020-04-01","value":"19408.759"},{"realtime_start":"2020-10-29","realtime_end":"2020-11-24","date":"2020-07-01","value":"21157.635"},{"realtime_start":"2021-01-28","realtime_end":"2021-02-24","date":"2020-10-01","value":"21479.529"},{"realtime_start":"2021-04-29","realtime_end":"2021-05-26","date":"2021-01-01","value":"22048.894"},{"realtime_start":"2021-07-29","realtime_end":"2021-08-25","date":"2021-04-01","value":"22722.581"},{"realtime_start":"2021-10-28","realtime_end":"2021-11-23","date":"2021-07-01","value":"23173.496"},{"realtime_start":"2022-01-27","realtime_end":"2022-02-23","date":"2021-10-01","value":"23992.355"},{"realtime_start":"2022-04-28","realtime_end":"2022-05-25","date":"2022-01-01","value":"24382.683"},{"realtime_start":"2022-07-28","realtime_end":"2022-08-24","date":"2022-04-01","value":"24851.809"},{"realtime_start":"2022-10-27","realtime_end":"2022-11-29","date":"2022-07-01","value":"25663.289"},{"realtime_start":"2023-01-26","realtime_end":"2023-02-22","date":"2022-10-01","value":"26132.458"},{"realtime_start":"2023-04-27","realtime_end":"2023-05-24","date":"2023-01-01","value":"26465.865"},{"realtime_start":"2023-07-27","realtime_end":"2023-08-29","date":"2023-04-01","value":"26834.953"}]}
+
+
+
+        '
     headers:
       Accept-Ranges:
       - bytes
@@ -81,15 +27,15 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '3282'
+      - '3307'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:59:01 GMT
+      - Sat, 02 Sep 2023 19:58:01 GMT
       Expires:
-      - Thu, 27 Apr 2023 15:00:01 GMT
+      - Sat, 02 Sep 2023 19:59:01 GMT
       Last-Modified:
-      - Thu, 27 Apr 2023 12:53:02 GMT
+      - Wed, 30 Aug 2023 12:53:03 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -109,70 +55,16 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&output_type=4&realtime_start=1776-07-04&series_id=GDP
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWKkpNzCnJzE2NLy5JLCpRslIyNDc30zUw1zUwUdJByKbmpShZKVlaWlrqGhrp
-        Ghsq6SjlJxWnFpUllmTm5yE0mxkY6BoY6hqgK8CivzQvs6RYyUopJzMPZFppSUFpSXxJZUGqkpWJ
-        jlJaZk4qlKeUVZwPVlKUkloUn1SpZIVid0piSaqSjlJxflFJfD5IiZKVUmJxspKOUnJ+aV6JkpWh
-        kZmOUn5aWnFqiZKVgY5STmZuJkjYAARQ/FGsZBWNLUgsLY1AvjKyxAwSQ7Ccka6RuZKOEtgpVkqG
-        lpaGuoaggFDSUSpLzClNVbJSMjU3NtMzU6rVwWmBia6RBS4LTCFyCAvADgIHM9wCCwNLPWN8Fpjr
-        GhvgssBC18gMxQdGugYmkHhEWGBpjNcHhgaQYICnKUisg4PI0FDXCJSiUHxgjmaBpZm5niFOHxiD
-        4wB7EBnrGhjpGpmi+QA9DswMzAz1LPFZYKKLI5KNdQ1MIb5D+ADsIJQ4MDM0tdCzwGeBOR4LLCDx
-        g2IBWhyYGRmY4fUBKA5wBZGhIRYL0OLAzNjSDE8qAjkHkhQxI9kEHAcgy5F9gBEHpoYGeILIBJTs
-        cOQDE3AcoCZTsINQ48DMwFLPBGccmIAKNxyRbKJrYIGeisAOQrPAAl8+MAFlfZw+AOUDUDGCCCKw
-        g1AtMDc3xRPJpuB8ACpvMOPAFEscgB2EaoGFpSGejGaKJw5MQXEALkYQPgA7CNUCSwsj/D4wx5WK
-        TMFxgBpEYAehWGBuYGiIJxWZguMAexCZgYLPEDWZmoISBaoFhobGekY4U5EZOJyNsZamZqDgAxuG
-        HETo+cDc2MQCTxyYgcLZwAiXBaaQYgRhAdhXYEthxbW5ibGBnjk+H1hAil/MVGQGjgPUIEL4Cm6B
-        qTF+HxgaQMobbBaA8gFqToa0OkANB7gFZoa4K0xQuQVpiGAabw6OHVD0IwcQRgyYGxviCSBQEwiX
-        +81BsQMuRBAWgB2EGgMWZmZ6BjhjwByU6MBNKaw+sECvbsAOQrHAwsDABE8uMAflApwWgGIAtcIE
-        OwjVAkO8QQRKQLiCyAIcB6hRDHYQqgVGJoZ6pjiDyAKUlcClDWYQWYDjADWSwQ5CtcDY2AhPPrbA
-        EwcW4FyA6gOwg1AtMCEQRLhzgYUuKA5AhQgiFYEdhGqBqZEZniCyBBVn4KSIGUSW4DhAjWQLUKJA
-        tcDM3AhPKrLEEweW4DhADSKwg1AtsDAwx1MbWILiALcPMGpksIPQLLA0xtNosQR5GUeNbIklDsAO
-        QrHA0sgcZ6vIyADS58FmAUTOCL3pC3YQqgUm5jibvhBDTCDFAVokQ+RMUSyAiEE7YbCy1NLM0hxX
-        PoBowF4jQ+QssFgAankh9W8sLY3NccUB2BBQyxSUW7H5AJQPkKobsHpQHxS5NjA0MDDDGctGBuBe
-        J9YKASKH2kUD24BeIRgaGBqZ4iqwIabgjAVDcE5A6uFA1KPFgqGBkQnOtiNEhzmueDYEF0eooWQI
-        ypsoCcnQwMjQHFcvDWwDqDwChStmPBiC8wJS0wusHjMejEzM9XA0LIwMDMA9U2xlNkQOIx4wu8qG
-        BkZGhnj8AO6agrurmH4wAscDUpkKsRUjHkClNo7OMkSHOa60ZIQlHsAuQosHYzNLXIUe2Abc8WAE
-        jgekYhusHjMeTCzMcLUgjQwMwL1THPEA6S6DciO05gHbgJkfTM2N8ORpY1DqA3e6MeMB0l9GTa1g
-        F6GFEqhYwtHIg/gBZzwYg+MB1Q9gF6HZYG6Or1wyBtUNOEMJVC6h5mljUGWFaoOhgbEFrg6nkQF4
-        FAVrIwkiZ4Qy8AL2M0Y8GBqZ4Kt+wF1UbBUoxAZTdBtAJTek6Q+rHQwNTUzMcbUBIKZgHzyCyKEO
-        HkHEQJYgVQ+GhmYmOIenwDpA9QOo7MFMSybg/ACSQ6RWzF6zoaGFgTGuhpKRgQG4l4qjkoZ0m1Fj
-        GrPbbGgIGqDC0aCH2IB9DA8iZ4oytAARQy+XjAwtjPCUreB+Ko6YBnecwSkZEUqYHWdDI2NzMzwN
-        AUjPGZRvMePBFEs8gF2Emh+MTC0s8ZTe4J4qeLgU0wZItxo1T4NdhGaDubEpnnIJ3FXFEdPgfjXy
-        SKSRgQHYRag2GBsYGeApvcF9Vdw2WKD0ziE2oOcHY0NLY7w2gPIDKCSwhRKoXALFESKmwS5C84Ox
-        gQWeUAL3V7H1Do0MQFUNRj1tBiop0WwwsTDHk5bAHVYcMQ3uQaOlVrCL0GwwMzbCk5bAPVbcNmDE
-        A9hFaDaYm+IcbAOHBO562hycH1DjAewiNBssjczw5GlwnxUcEpgxDelEg1IBIqYxO9GGJgYWOMdU
-        jQwMwJ1W3Dagzi1A1KOXSyaGFqZ4Yhrca8WRliDdaFQ/gF2EGkomRqY4u7lgN4HiAcv0BUQOdXYB
-        LAZKxKB2LryOMzExssTjB0tQRxpHKEE60kj9XLANGPW0iZGZCZ7UCu644ii9IT1p1LQEdhFaKBmY
-        m+Kp48A9VxzxYAluL6H6AewiNBsMTSzxtATAXVecfgCVS6htb7CL0GwwNsA55mNkAA5USPmJkR9A
-        cqjTPEYGBmAXodlgYmaMu0UGMsUER4sMJGeG1tkFiWHkBzMDQ/w24GovgUxDby+BxNDrBxNTSzy9
-        LEMDUGmMPR5Acoa6RqCxY3ipAbIBVLwit8hMzI0NcOcHQ5CXsQ7SGxmA5FAHNcDxBrIENcdZmBvg
-        CSVw7xV7LQqyAb29BBIDOQrZD6YGBmb4bcA+4QbxA+rQEkQMPR5MDQyMcecHQ3DvFXsNBJIz1DUC
-        hQgiHgwx+w+mhpYWuEsNQ3B/GocNRuABPpRSA2Qr2tSzoamRpQnulgDIBlzjGiA5U0heQfgB7CLU
-        HGdqYoZzPsbIAGQKrnENkJwFJJ2h2IARD6aWeOppQyNwfgCVbkWwFQ2Q2Wew7aByCTWUjLDEA2ja
-        Dee4hiG494q9fgDJobeXIC5CCyULI0vc40sgU0wgfTVMP0D60yh9IJB69PxgZmCIL0+De6/Y6weQ
-        aRjxgKU/bWZmjK9sNQa1iQxAtT02P4AiG6WXBbIVvVwyszDFM4JlCEoYkBSJaQNkChpkOyItgXv4
-        qPFgbmhghLsWBdmAs36AzEGjpiWwi9BtMMHTBwLZgLN+gExCo/oB3MNHswGUp3GnVnDvFUdqhfSn
-        UeMBS3/a3NTYVA/HRLqRgSG4P43DBkh/GpQbEfEAdhGaH8wNDXC3jEE2YF+PAbEdvd0KUo+eH8xB
-        NuDssYN04IwHcH8aPMqI8AOW/rS5hYkBnrQE7r3iqKch/WmU9hLERaihZGFgjHOWz8jAENx7xWED
-        pD+NMpJoCHYRmg2GRhZ4WgJ4+tMg29HHl0Bi6PFgARrRxbG0B+IHnPU0ZDIa1Q9gF6H5wcQYX6kB
-        7r3iaGuYgcossBwiprH0py3MTA3xhBKoGMMxdm+IMSEN9jNGe8nCwgxPPw5kCq7xJZAcRnsJ7CLU
-        ULI0MDDH0xIA917BIYFZtpqD+w+oNRCW/rSlEb7eriG494qjNYOlPw3yF8gbyG0+SxNLUz0Tc5yj
-        xobgHjU452L6AkuPGuImtHAyN7bQs7DAXb6Ce7A4/AGZmUYNKbCb0OywNDPVMzbC6w+crSZIrxq1
-        HgK7CcUOIwMTUE1ngGMhi5GBIXg6GGdYgdpNqDURuKePZoeZqaWegRGOdXVGBoaQ3jPIrZjxYalr
-        YAzJNYi8B3YTmh0WloZ6xma44wPck8XhD0jfGjU+MPvWRoYGZkZ6Zpa4SylwXxa3HRitJ7CbUP1h
-        aGxsrmdhiWOJIDiscI5zGFqCyynUWhXsJjQ7TI1M9SwMccaHEah7gKMFBZJDn5EA2QvSgpQHjQzN
-        jU30jMxwpl2QOSY4evEgOdS1lEYGIDG0OsPI0NTYXM8SZwMEpAVX5Q2SQ+9kg8RALTUkbxhamhhY
-        6Jmb4gsq0DAsKOlgJF0jA3B0oDSjQHagFVdGhoag5qwxjkUuRgZGIH9DOkCYdhiCO3jodqBXHEaG
-        JuaWeqa4syDIDpzRAZm6RklWIPUgZyGFlZGRgYmFngWe+AB3bbE3REDmoXe2QWJo8WFkZG5kpGdq
-        gTMLGkG621iLEpCcoa4RSnMKZAd6fBgbmhvrmVjiTrrg7i32ot0I0uFGtwMjPowtLY30jE1xxzl4
-        whh7RQuyA70qB4mhx4eJsYWRnpkFzklskB5cazpAcuhrOkBi6PFhYmFqqGdhgDt/QLrdoCoCM+0a
-        gfMHKO/Ai3aQHejxYWpmZqxnZIHbDnDHG3uxawSZyEYZ6jICuwm1SDQzNDbSMzHFWeyCzME+BIKy
-        5QHhD7Cb0OwAzMTMVM/CzFSpNraWi4sLAPX5MHxbMQAA
+      string: '{"realtime_start":"1776-07-04","realtime_end":"9999-12-31","observation_start":"1600-01-01","observation_end":"9999-12-31","units":"lin","output_type":4,"file_type":"json","order_by":"observation_date","sort_order":"asc","count":127,"offset":0,"limit":100000,"observations":[{"realtime_start":"1992-01-29","realtime_end":"1992-02-27","date":"1991-10-01","value":"5736.6"},{"realtime_start":"1992-04-28","realtime_end":"1992-05-28","date":"1992-01-01","value":"5809.3"},{"realtime_start":"1992-07-30","realtime_end":"1992-08-26","date":"1992-04-01","value":"5893.6"},{"realtime_start":"1992-10-27","realtime_end":"1992-11-24","date":"1992-07-01","value":"5967.1"},{"realtime_start":"1993-01-28","realtime_end":"1993-02-25","date":"1992-10-01","value":"6061.9"},{"realtime_start":"1993-04-29","realtime_end":"1993-05-27","date":"1993-01-01","value":"6158.8"},{"realtime_start":"1993-07-29","realtime_end":"1993-08-30","date":"1993-04-01","value":"6206.9"},{"realtime_start":"1993-10-28","realtime_end":"1993-11-30","date":"1993-07-01","value":"6396.3"},{"realtime_start":"1994-01-28","realtime_end":"1994-02-28","date":"1993-10-01","value":"6510.8"},{"realtime_start":"1994-04-28","realtime_end":"1994-05-26","date":"1994-01-01","value":"6609.4"},{"realtime_start":"1994-07-29","realtime_end":"1994-08-25","date":"1994-04-01","value":"6683.6"},{"realtime_start":"1994-10-28","realtime_end":"1994-11-29","date":"1994-07-01","value":"6775.9"},{"realtime_start":"1995-01-27","realtime_end":"1995-02-28","date":"1994-10-01","value":"6891.1"},{"realtime_start":"1995-04-28","realtime_end":"1995-05-30","date":"1995-01-01","value":"6982.9"},{"realtime_start":"1995-07-28","realtime_end":"1995-08-29","date":"1995-04-01","value":"7011.8"},{"realtime_start":"1995-10-27","realtime_end":"1996-01-18","date":"1995-07-01","value":"7113.2"},{"realtime_start":"1996-02-23","realtime_end":"1996-04-01","date":"1995-10-01","value":"7348.1"},{"realtime_start":"1996-05-02","realtime_end":"1996-05-29","date":"1996-01-01","value":"7430.7"},{"realtime_start":"1996-08-01","realtime_end":"1996-08-28","date":"1996-04-01","value":"7538.1"},{"realtime_start":"1996-10-30","realtime_end":"1996-11-26","date":"1996-07-01","value":"7616"},{"realtime_start":"1997-01-31","realtime_end":"1997-02-27","date":"1996-10-01","value":"7731.7"},{"realtime_start":"1997-04-30","realtime_end":"1997-05-29","date":"1997-01-01","value":"7866.0"},{"realtime_start":"1997-07-31","realtime_end":"1997-08-27","date":"1997-04-01","value":"8004.8"},{"realtime_start":"1997-10-31","realtime_end":"1997-11-25","date":"1997-07-01","value":"8131.7"},{"realtime_start":"1998-01-30","realtime_end":"1998-02-26","date":"1997-10-01","value":"8241.5"},{"realtime_start":"1998-04-30","realtime_end":"1998-05-27","date":"1998-01-01","value":"8332.2"},{"realtime_start":"1998-07-31","realtime_end":"1998-08-26","date":"1998-04-01","value":"8431.7"},{"realtime_start":"1998-10-30","realtime_end":"1998-11-23","date":"1998-07-01","value":"8526.5"},{"realtime_start":"1999-01-29","realtime_end":"1999-02-25","date":"1998-10-01","value":"8672.8"},{"realtime_start":"1999-04-30","realtime_end":"1999-05-26","date":"1999-01-01","value":"8807.9"},{"realtime_start":"1999-07-29","realtime_end":"1999-08-25","date":"1999-04-01","value":"8893.3"},{"realtime_start":"1999-10-28","realtime_end":"1999-11-23","date":"1999-07-01","value":"9276.3"},{"realtime_start":"2000-01-28","realtime_end":"2000-02-24","date":"1999-10-01","value":"9477.1"},{"realtime_start":"2000-04-27","realtime_end":"2000-05-24","date":"2000-01-01","value":"9697.2"},{"realtime_start":"2000-07-28","realtime_end":"2000-08-24","date":"2000-04-01","value":"9937.3"},{"realtime_start":"2000-10-27","realtime_end":"2000-11-28","date":"2000-07-01","value":"10063.3"},{"realtime_start":"2001-01-31","realtime_end":"2001-02-27","date":"2000-10-01","value":"10125.0"},{"realtime_start":"2001-04-27","realtime_end":"2001-05-24","date":"2001-01-01","value":"10243.6"},{"realtime_start":"2001-07-27","realtime_end":"2001-08-28","date":"2001-04-01","value":"10217.6"},{"realtime_start":"2001-10-31","realtime_end":"2001-11-29","date":"2001-07-01","value":"10247.7"},{"realtime_start":"2002-01-30","realtime_end":"2002-02-27","date":"2001-10-01","value":"10221.6"},{"realtime_start":"2002-04-26","realtime_end":"2002-05-23","date":"2002-01-01","value":"10431.3"},{"realtime_start":"2002-07-31","realtime_end":"2002-08-28","date":"2002-04-01","value":"10369.9"},{"realtime_start":"2002-10-31","realtime_end":"2002-11-25","date":"2002-07-01","value":"10486.1"},{"realtime_start":"2003-01-30","realtime_end":"2003-02-27","date":"2002-10-01","value":"10572.3"},{"realtime_start":"2003-04-25","realtime_end":"2003-05-28","date":"2003-01-01","value":"10697.6"},{"realtime_start":"2003-07-31","realtime_end":"2003-08-27","date":"2003-04-01","value":"10777.3"},{"realtime_start":"2003-10-30","realtime_end":"2003-11-24","date":"2003-07-01","value":"11038.4"},{"realtime_start":"2004-01-30","realtime_end":"2004-02-26","date":"2003-10-01","value":"11246.3"},{"realtime_start":"2004-04-29","realtime_end":"2004-05-26","date":"2004-01-01","value":"11447.8"},{"realtime_start":"2004-07-30","realtime_end":"2004-08-26","date":"2004-04-01","value":"11649.3"},{"realtime_start":"2004-10-29","realtime_end":"2004-11-29","date":"2004-07-01","value":"11803.5"},{"realtime_start":"2005-01-28","realtime_end":"2005-02-24","date":"2004-10-01","value":"11967.0"},{"realtime_start":"2005-04-28","realtime_end":"2005-05-25","date":"2005-01-01","value":"12182.7"},{"realtime_start":"2005-07-29","realtime_end":"2005-08-30","date":"2005-04-01","value":"12376.2"},{"realtime_start":"2005-10-28","realtime_end":"2005-11-29","date":"2005-07-01","value":"12589.6"},{"realtime_start":"2006-01-27","realtime_end":"2006-02-27","date":"2005-10-01","value":"12735.3"},{"realtime_start":"2006-04-28","realtime_end":"2006-05-24","date":"2006-01-01","value":"13020.9"},{"realtime_start":"2006-07-28","realtime_end":"2006-08-29","date":"2006-04-01","value":"13193.9"},{"realtime_start":"2006-10-27","realtime_end":"2006-11-28","date":"2006-07-01","value":"13308.3"},{"realtime_start":"2007-01-31","realtime_end":"2007-02-27","date":"2006-10-01","value":"13487.2"},{"realtime_start":"2007-04-27","realtime_end":"2007-05-30","date":"2007-01-01","value":"13632.6"},{"realtime_start":"2007-07-27","realtime_end":"2007-08-29","date":"2007-04-01","value":"13755.9"},{"realtime_start":"2007-10-31","realtime_end":"2007-11-28","date":"2007-07-01","value":"13926.7"},{"realtime_start":"2008-01-30","realtime_end":"2008-02-27","date":"2007-10-01","value":"14080.8"},{"realtime_start":"2008-04-30","realtime_end":"2008-05-28","date":"2008-01-01","value":"14185.2"},{"realtime_start":"2008-07-31","realtime_end":"2008-08-27","date":"2008-04-01","value":"14256.5"},{"realtime_start":"2008-10-30","realtime_end":"2008-11-24","date":"2008-07-01","value":"14429.2"},{"realtime_start":"2009-01-30","realtime_end":"2009-02-26","date":"2008-10-01","value":"14264.6"},{"realtime_start":"2009-04-29","realtime_end":"2009-05-28","date":"2009-01-01","value":"14075.5"},{"realtime_start":"2009-07-31","realtime_end":"2009-08-26","date":"2009-04-01","value":"14149.8"},{"realtime_start":"2009-10-29","realtime_end":"2009-11-23","date":"2009-07-01","value":"14301.5"},{"realtime_start":"2010-01-29","realtime_end":"2010-02-25","date":"2009-10-01","value":"14463.4"},{"realtime_start":"2010-04-30","realtime_end":"2010-06-24","date":"2010-01-01","value":"14601.4"},{"realtime_start":"2010-07-30","realtime_end":"2010-08-26","date":"2010-04-01","value":"14597.7"},{"realtime_start":"2010-10-29","realtime_end":"2010-11-22","date":"2010-07-01","value":"14730.2"},{"realtime_start":"2011-01-28","realtime_end":"2011-02-24","date":"2010-10-01","value":"14870.4"},{"realtime_start":"2011-04-28","realtime_end":"2011-05-25","date":"2011-01-01","value":"15006.4"},{"realtime_start":"2011-07-29","realtime_end":"2011-08-25","date":"2011-04-01","value":"15003.8"},{"realtime_start":"2011-10-27","realtime_end":"2011-11-21","date":"2011-07-01","value":"15198.6"},{"realtime_start":"2012-01-27","realtime_end":"2012-02-28","date":"2011-10-01","value":"15294.3"},{"realtime_start":"2012-04-27","realtime_end":"2012-05-30","date":"2012-01-01","value":"15461.8"},{"realtime_start":"2012-07-27","realtime_end":"2012-08-28","date":"2012-04-01","value":"15595.9"},{"realtime_start":"2012-10-26","realtime_end":"2012-11-28","date":"2012-07-01","value":"15775.7"},{"realtime_start":"2013-01-30","realtime_end":"2013-02-27","date":"2012-10-01","value":"15829.0"},{"realtime_start":"2013-04-26","realtime_end":"2013-05-29","date":"2013-01-01","value":"16010.2"},{"realtime_start":"2013-07-31","realtime_end":"2013-08-28","date":"2013-04-01","value":"16633.4"},{"realtime_start":"2013-11-07","realtime_end":"2013-12-04","date":"2013-07-01","value":"16857.6"},{"realtime_start":"2014-01-30","realtime_end":"2014-02-27","date":"2013-10-01","value":"17102.5"},{"realtime_start":"2014-04-30","realtime_end":"2014-05-28","date":"2014-01-01","value":"17149.6"},{"realtime_start":"2014-07-30","realtime_end":"2014-08-27","date":"2014-04-01","value":"17294.7"},{"realtime_start":"2014-10-30","realtime_end":"2014-11-24","date":"2014-07-01","value":"17535.4"},{"realtime_start":"2015-01-30","realtime_end":"2015-02-26","date":"2014-10-01","value":"17710.7"},{"realtime_start":"2015-04-29","realtime_end":"2015-05-28","date":"2015-01-01","value":"17710.0"},{"realtime_start":"2015-07-30","realtime_end":"2015-08-26","date":"2015-04-01","value":"17840.5"},{"realtime_start":"2015-10-29","realtime_end":"2015-11-23","date":"2015-07-01","value":"18034.8"},{"realtime_start":"2016-01-29","realtime_end":"2016-02-25","date":"2015-10-01","value":"18128.2"},{"realtime_start":"2016-04-28","realtime_end":"2016-05-26","date":"2016-01-01","value":"18221.1"},{"realtime_start":"2016-07-29","realtime_end":"2016-08-25","date":"2016-04-01","value":"18437.6"},{"realtime_start":"2016-10-28","realtime_end":"2016-11-28","date":"2016-07-01","value":"18651.2"},{"realtime_start":"2017-01-27","realtime_end":"2017-02-27","date":"2016-10-01","value":"18860.8"},{"realtime_start":"2017-04-28","realtime_end":"2017-05-25","date":"2017-01-01","value":"19007.3"},{"realtime_start":"2017-07-28","realtime_end":"2017-08-29","date":"2017-04-01","value":"19226.7"},{"realtime_start":"2017-10-27","realtime_end":"2017-11-28","date":"2017-07-01","value":"19495.476"},{"realtime_start":"2018-01-26","realtime_end":"2018-02-27","date":"2017-10-01","value":"19738.887"},{"realtime_start":"2018-04-27","realtime_end":"2018-05-29","date":"2018-01-01","value":"19965.326"},{"realtime_start":"2018-07-27","realtime_end":"2018-08-28","date":"2018-04-01","value":"20402.502"},{"realtime_start":"2018-10-26","realtime_end":"2018-11-27","date":"2018-07-01","value":"20659.029"},{"realtime_start":"2019-02-28","realtime_end":"2019-03-27","date":"2018-10-01","value":"20891.367"},{"realtime_start":"2019-04-26","realtime_end":"2019-05-29","date":"2019-01-01","value":"21062.691"},{"realtime_start":"2019-07-26","realtime_end":"2019-08-28","date":"2019-04-01","value":"21337.898"},{"realtime_start":"2019-10-30","realtime_end":"2019-11-26","date":"2019-07-01","value":"21525.819"},{"realtime_start":"2020-01-30","realtime_end":"2020-02-26","date":"2019-10-01","value":"21734.266"},{"realtime_start":"2020-04-29","realtime_end":"2020-05-27","date":"2020-01-01","value":"21537.94"},{"realtime_start":"2020-07-30","realtime_end":"2020-08-26","date":"2020-04-01","value":"19408.759"},{"realtime_start":"2020-10-29","realtime_end":"2020-11-24","date":"2020-07-01","value":"21157.635"},{"realtime_start":"2021-01-28","realtime_end":"2021-02-24","date":"2020-10-01","value":"21479.529"},{"realtime_start":"2021-04-29","realtime_end":"2021-05-26","date":"2021-01-01","value":"22048.894"},{"realtime_start":"2021-07-29","realtime_end":"2021-08-25","date":"2021-04-01","value":"22722.581"},{"realtime_start":"2021-10-28","realtime_end":"2021-11-23","date":"2021-07-01","value":"23173.496"},{"realtime_start":"2022-01-27","realtime_end":"2022-02-23","date":"2021-10-01","value":"23992.355"},{"realtime_start":"2022-04-28","realtime_end":"2022-05-25","date":"2022-01-01","value":"24382.683"},{"realtime_start":"2022-07-28","realtime_end":"2022-08-24","date":"2022-04-01","value":"24851.809"},{"realtime_start":"2022-10-27","realtime_end":"2022-11-29","date":"2022-07-01","value":"25663.289"},{"realtime_start":"2023-01-26","realtime_end":"2023-02-22","date":"2022-10-01","value":"26132.458"},{"realtime_start":"2023-04-27","realtime_end":"2023-05-24","date":"2023-01-01","value":"26465.865"},{"realtime_start":"2023-07-27","realtime_end":"2023-08-29","date":"2023-04-01","value":"26834.953"}]}
+
+
+
+        '
     headers:
       Accept-Ranges:
       - bytes
@@ -181,24 +73,21 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '3282'
+      - '3307'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:28 GMT
+      - Sun, 03 Sep 2023 01:30:16 GMT
       Expires:
-      - Fri, 28 Apr 2023 01:30:28 GMT
+      - Sun, 03 Sep 2023 01:31:16 GMT
       Last-Modified:
-      - Thu, 27 Apr 2023 12:53:02 GMT
-      Set-Cookie:
-      - cookiesession1=678A3E1FBAD4F66142727BC12B30073B;Expires=Sat, 27 Apr 2024 01:29:25
-        GMT;Path=/;Secure;HttpOnly
+      - Wed, 30 Aug 2023 12:53:03 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '67'
+      - '94'
     status:
       code: 200
       message: OK
@@ -212,70 +101,16 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/series/observations?file_type=json&output_type=4&realtime_start=1776-07-04&series_id=GDP
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"realtime_start":"1776-07-04","realtime_end":"9999-12-31","observation_start":"1600-01-01","observation_end":"9999-12-31","units":"lin","output_type":4,"file_type":"json","order_by":"observation_date","sort_order":"asc","count":127,"offset":0,"limit":100000,"observations":[{"realtime_start":"1992-01-29","realtime_end":"1992-02-27","date":"1991-10-01","value":"5736.6"},{"realtime_start":"1992-04-28","realtime_end":"1992-05-28","date":"1992-01-01","value":"5809.3"},{"realtime_start":"1992-07-30","realtime_end":"1992-08-26","date":"1992-04-01","value":"5893.6"},{"realtime_start":"1992-10-27","realtime_end":"1992-11-24","date":"1992-07-01","value":"5967.1"},{"realtime_start":"1993-01-28","realtime_end":"1993-02-25","date":"1992-10-01","value":"6061.9"},{"realtime_start":"1993-04-29","realtime_end":"1993-05-27","date":"1993-01-01","value":"6158.8"},{"realtime_start":"1993-07-29","realtime_end":"1993-08-30","date":"1993-04-01","value":"6206.9"},{"realtime_start":"1993-10-28","realtime_end":"1993-11-30","date":"1993-07-01","value":"6396.3"},{"realtime_start":"1994-01-28","realtime_end":"1994-02-28","date":"1993-10-01","value":"6510.8"},{"realtime_start":"1994-04-28","realtime_end":"1994-05-26","date":"1994-01-01","value":"6609.4"},{"realtime_start":"1994-07-29","realtime_end":"1994-08-25","date":"1994-04-01","value":"6683.6"},{"realtime_start":"1994-10-28","realtime_end":"1994-11-29","date":"1994-07-01","value":"6775.9"},{"realtime_start":"1995-01-27","realtime_end":"1995-02-28","date":"1994-10-01","value":"6891.1"},{"realtime_start":"1995-04-28","realtime_end":"1995-05-30","date":"1995-01-01","value":"6982.9"},{"realtime_start":"1995-07-28","realtime_end":"1995-08-29","date":"1995-04-01","value":"7011.8"},{"realtime_start":"1995-10-27","realtime_end":"1996-01-18","date":"1995-07-01","value":"7113.2"},{"realtime_start":"1996-02-23","realtime_end":"1996-04-01","date":"1995-10-01","value":"7348.1"},{"realtime_start":"1996-05-02","realtime_end":"1996-05-29","date":"1996-01-01","value":"7430.7"},{"realtime_start":"1996-08-01","realtime_end":"1996-08-28","date":"1996-04-01","value":"7538.1"},{"realtime_start":"1996-10-30","realtime_end":"1996-11-26","date":"1996-07-01","value":"7616"},{"realtime_start":"1997-01-31","realtime_end":"1997-02-27","date":"1996-10-01","value":"7731.7"},{"realtime_start":"1997-04-30","realtime_end":"1997-05-29","date":"1997-01-01","value":"7866.0"},{"realtime_start":"1997-07-31","realtime_end":"1997-08-27","date":"1997-04-01","value":"8004.8"},{"realtime_start":"1997-10-31","realtime_end":"1997-11-25","date":"1997-07-01","value":"8131.7"},{"realtime_start":"1998-01-30","realtime_end":"1998-02-26","date":"1997-10-01","value":"8241.5"},{"realtime_start":"1998-04-30","realtime_end":"1998-05-27","date":"1998-01-01","value":"8332.2"},{"realtime_start":"1998-07-31","realtime_end":"1998-08-26","date":"1998-04-01","value":"8431.7"},{"realtime_start":"1998-10-30","realtime_end":"1998-11-23","date":"1998-07-01","value":"8526.5"},{"realtime_start":"1999-01-29","realtime_end":"1999-02-25","date":"1998-10-01","value":"8672.8"},{"realtime_start":"1999-04-30","realtime_end":"1999-05-26","date":"1999-01-01","value":"8807.9"},{"realtime_start":"1999-07-29","realtime_end":"1999-08-25","date":"1999-04-01","value":"8893.3"},{"realtime_start":"1999-10-28","realtime_end":"1999-11-23","date":"1999-07-01","value":"9276.3"},{"realtime_start":"2000-01-28","realtime_end":"2000-02-24","date":"1999-10-01","value":"9477.1"},{"realtime_start":"2000-04-27","realtime_end":"2000-05-24","date":"2000-01-01","value":"9697.2"},{"realtime_start":"2000-07-28","realtime_end":"2000-08-24","date":"2000-04-01","value":"9937.3"},{"realtime_start":"2000-10-27","realtime_end":"2000-11-28","date":"2000-07-01","value":"10063.3"},{"realtime_start":"2001-01-31","realtime_end":"2001-02-27","date":"2000-10-01","value":"10125.0"},{"realtime_start":"2001-04-27","realtime_end":"2001-05-24","date":"2001-01-01","value":"10243.6"},{"realtime_start":"2001-07-27","realtime_end":"2001-08-28","date":"2001-04-01","value":"10217.6"},{"realtime_start":"2001-10-31","realtime_end":"2001-11-29","date":"2001-07-01","value":"10247.7"},{"realtime_start":"2002-01-30","realtime_end":"2002-02-27","date":"2001-10-01","value":"10221.6"},{"realtime_start":"2002-04-26","realtime_end":"2002-05-23","date":"2002-01-01","value":"10431.3"},{"realtime_start":"2002-07-31","realtime_end":"2002-08-28","date":"2002-04-01","value":"10369.9"},{"realtime_start":"2002-10-31","realtime_end":"2002-11-25","date":"2002-07-01","value":"10486.1"},{"realtime_start":"2003-01-30","realtime_end":"2003-02-27","date":"2002-10-01","value":"10572.3"},{"realtime_start":"2003-04-25","realtime_end":"2003-05-28","date":"2003-01-01","value":"10697.6"},{"realtime_start":"2003-07-31","realtime_end":"2003-08-27","date":"2003-04-01","value":"10777.3"},{"realtime_start":"2003-10-30","realtime_end":"2003-11-24","date":"2003-07-01","value":"11038.4"},{"realtime_start":"2004-01-30","realtime_end":"2004-02-26","date":"2003-10-01","value":"11246.3"},{"realtime_start":"2004-04-29","realtime_end":"2004-05-26","date":"2004-01-01","value":"11447.8"},{"realtime_start":"2004-07-30","realtime_end":"2004-08-26","date":"2004-04-01","value":"11649.3"},{"realtime_start":"2004-10-29","realtime_end":"2004-11-29","date":"2004-07-01","value":"11803.5"},{"realtime_start":"2005-01-28","realtime_end":"2005-02-24","date":"2004-10-01","value":"11967.0"},{"realtime_start":"2005-04-28","realtime_end":"2005-05-25","date":"2005-01-01","value":"12182.7"},{"realtime_start":"2005-07-29","realtime_end":"2005-08-30","date":"2005-04-01","value":"12376.2"},{"realtime_start":"2005-10-28","realtime_end":"2005-11-29","date":"2005-07-01","value":"12589.6"},{"realtime_start":"2006-01-27","realtime_end":"2006-02-27","date":"2005-10-01","value":"12735.3"},{"realtime_start":"2006-04-28","realtime_end":"2006-05-24","date":"2006-01-01","value":"13020.9"},{"realtime_start":"2006-07-28","realtime_end":"2006-08-29","date":"2006-04-01","value":"13193.9"},{"realtime_start":"2006-10-27","realtime_end":"2006-11-28","date":"2006-07-01","value":"13308.3"},{"realtime_start":"2007-01-31","realtime_end":"2007-02-27","date":"2006-10-01","value":"13487.2"},{"realtime_start":"2007-04-27","realtime_end":"2007-05-30","date":"2007-01-01","value":"13632.6"},{"realtime_start":"2007-07-27","realtime_end":"2007-08-29","date":"2007-04-01","value":"13755.9"},{"realtime_start":"2007-10-31","realtime_end":"2007-11-28","date":"2007-07-01","value":"13926.7"},{"realtime_start":"2008-01-30","realtime_end":"2008-02-27","date":"2007-10-01","value":"14080.8"},{"realtime_start":"2008-04-30","realtime_end":"2008-05-28","date":"2008-01-01","value":"14185.2"},{"realtime_start":"2008-07-31","realtime_end":"2008-08-27","date":"2008-04-01","value":"14256.5"},{"realtime_start":"2008-10-30","realtime_end":"2008-11-24","date":"2008-07-01","value":"14429.2"},{"realtime_start":"2009-01-30","realtime_end":"2009-02-26","date":"2008-10-01","value":"14264.6"},{"realtime_start":"2009-04-29","realtime_end":"2009-05-28","date":"2009-01-01","value":"14075.5"},{"realtime_start":"2009-07-31","realtime_end":"2009-08-26","date":"2009-04-01","value":"14149.8"},{"realtime_start":"2009-10-29","realtime_end":"2009-11-23","date":"2009-07-01","value":"14301.5"},{"realtime_start":"2010-01-29","realtime_end":"2010-02-25","date":"2009-10-01","value":"14463.4"},{"realtime_start":"2010-04-30","realtime_end":"2010-06-24","date":"2010-01-01","value":"14601.4"},{"realtime_start":"2010-07-30","realtime_end":"2010-08-26","date":"2010-04-01","value":"14597.7"},{"realtime_start":"2010-10-29","realtime_end":"2010-11-22","date":"2010-07-01","value":"14730.2"},{"realtime_start":"2011-01-28","realtime_end":"2011-02-24","date":"2010-10-01","value":"14870.4"},{"realtime_start":"2011-04-28","realtime_end":"2011-05-25","date":"2011-01-01","value":"15006.4"},{"realtime_start":"2011-07-29","realtime_end":"2011-08-25","date":"2011-04-01","value":"15003.8"},{"realtime_start":"2011-10-27","realtime_end":"2011-11-21","date":"2011-07-01","value":"15198.6"},{"realtime_start":"2012-01-27","realtime_end":"2012-02-28","date":"2011-10-01","value":"15294.3"},{"realtime_start":"2012-04-27","realtime_end":"2012-05-30","date":"2012-01-01","value":"15461.8"},{"realtime_start":"2012-07-27","realtime_end":"2012-08-28","date":"2012-04-01","value":"15595.9"},{"realtime_start":"2012-10-26","realtime_end":"2012-11-28","date":"2012-07-01","value":"15775.7"},{"realtime_start":"2013-01-30","realtime_end":"2013-02-27","date":"2012-10-01","value":"15829.0"},{"realtime_start":"2013-04-26","realtime_end":"2013-05-29","date":"2013-01-01","value":"16010.2"},{"realtime_start":"2013-07-31","realtime_end":"2013-08-28","date":"2013-04-01","value":"16633.4"},{"realtime_start":"2013-11-07","realtime_end":"2013-12-04","date":"2013-07-01","value":"16857.6"},{"realtime_start":"2014-01-30","realtime_end":"2014-02-27","date":"2013-10-01","value":"17102.5"},{"realtime_start":"2014-04-30","realtime_end":"2014-05-28","date":"2014-01-01","value":"17149.6"},{"realtime_start":"2014-07-30","realtime_end":"2014-08-27","date":"2014-04-01","value":"17294.7"},{"realtime_start":"2014-10-30","realtime_end":"2014-11-24","date":"2014-07-01","value":"17535.4"},{"realtime_start":"2015-01-30","realtime_end":"2015-02-26","date":"2014-10-01","value":"17710.7"},{"realtime_start":"2015-04-29","realtime_end":"2015-05-28","date":"2015-01-01","value":"17710.0"},{"realtime_start":"2015-07-30","realtime_end":"2015-08-26","date":"2015-04-01","value":"17840.5"},{"realtime_start":"2015-10-29","realtime_end":"2015-11-23","date":"2015-07-01","value":"18034.8"},{"realtime_start":"2016-01-29","realtime_end":"2016-02-25","date":"2015-10-01","value":"18128.2"},{"realtime_start":"2016-04-28","realtime_end":"2016-05-26","date":"2016-01-01","value":"18221.1"},{"realtime_start":"2016-07-29","realtime_end":"2016-08-25","date":"2016-04-01","value":"18437.6"},{"realtime_start":"2016-10-28","realtime_end":"2016-11-28","date":"2016-07-01","value":"18651.2"},{"realtime_start":"2017-01-27","realtime_end":"2017-02-27","date":"2016-10-01","value":"18860.8"},{"realtime_start":"2017-04-28","realtime_end":"2017-05-25","date":"2017-01-01","value":"19007.3"},{"realtime_start":"2017-07-28","realtime_end":"2017-08-29","date":"2017-04-01","value":"19226.7"},{"realtime_start":"2017-10-27","realtime_end":"2017-11-28","date":"2017-07-01","value":"19495.476"},{"realtime_start":"2018-01-26","realtime_end":"2018-02-27","date":"2017-10-01","value":"19738.887"},{"realtime_start":"2018-04-27","realtime_end":"2018-05-29","date":"2018-01-01","value":"19965.326"},{"realtime_start":"2018-07-27","realtime_end":"2018-08-28","date":"2018-04-01","value":"20402.502"},{"realtime_start":"2018-10-26","realtime_end":"2018-11-27","date":"2018-07-01","value":"20659.029"},{"realtime_start":"2019-02-28","realtime_end":"2019-03-27","date":"2018-10-01","value":"20891.367"},{"realtime_start":"2019-04-26","realtime_end":"2019-05-29","date":"2019-01-01","value":"21062.691"},{"realtime_start":"2019-07-26","realtime_end":"2019-08-28","date":"2019-04-01","value":"21337.898"},{"realtime_start":"2019-10-30","realtime_end":"2019-11-26","date":"2019-07-01","value":"21525.819"},{"realtime_start":"2020-01-30","realtime_end":"2020-02-26","date":"2019-10-01","value":"21734.266"},{"realtime_start":"2020-04-29","realtime_end":"2020-05-27","date":"2020-01-01","value":"21537.94"},{"realtime_start":"2020-07-30","realtime_end":"2020-08-26","date":"2020-04-01","value":"19408.759"},{"realtime_start":"2020-10-29","realtime_end":"2020-11-24","date":"2020-07-01","value":"21157.635"},{"realtime_start":"2021-01-28","realtime_end":"2021-02-24","date":"2020-10-01","value":"21479.529"},{"realtime_start":"2021-04-29","realtime_end":"2021-05-26","date":"2021-01-01","value":"22048.894"},{"realtime_start":"2021-07-29","realtime_end":"2021-08-25","date":"2021-04-01","value":"22722.581"},{"realtime_start":"2021-10-28","realtime_end":"2021-11-23","date":"2021-07-01","value":"23173.496"},{"realtime_start":"2022-01-27","realtime_end":"2022-02-23","date":"2021-10-01","value":"23992.355"},{"realtime_start":"2022-04-28","realtime_end":"2022-05-25","date":"2022-01-01","value":"24382.683"},{"realtime_start":"2022-07-28","realtime_end":"2022-08-24","date":"2022-04-01","value":"24851.809"},{"realtime_start":"2022-10-27","realtime_end":"2022-11-29","date":"2022-07-01","value":"25663.289"},{"realtime_start":"2023-01-26","realtime_end":"2023-02-22","date":"2022-10-01","value":"26132.458"},{"realtime_start":"2023-04-27","realtime_end":"2023-05-24","date":"2023-01-01","value":"26465.865"},{"realtime_start":"2023-07-27","realtime_end":"2023-08-29","date":"2023-04-01","value":"26834.953"}]}
+
+
+
+        '
     headers:
       Accept-Ranges:
       - bytes
@@ -284,21 +119,21 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '3282'
+      - '3307'
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:34 GMT
+      - Sun, 03 Sep 2023 01:54:37 GMT
       Expires:
-      - Fri, 28 Apr 2023 02:19:34 GMT
+      - Sun, 03 Sep 2023 01:55:37 GMT
       Last-Modified:
-      - Thu, 27 Apr 2023 12:53:02 GMT
+      - Wed, 30 Aug 2023 12:53:03 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '51'
+      - '66'
     status:
       code: 200
       message: OK

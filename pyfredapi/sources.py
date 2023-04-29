@@ -5,15 +5,17 @@ The FRED database contains many sources of data. The sources module provides fun
 
 from typing import Literal, Optional
 
-from frozendict import frozendict
-from pydantic import BaseModel, Extra, PositiveInt
+from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
+from .utils import _convert_pydantic_model_to_frozen_dict
 from .utils._common_type_hints import ApiKeyType, JsonType, KwargsType
 
 
 class SourceApiParameters(BaseModel):
     """Represents the parameters accepted by the FRED Sources endpoints."""
+
+    model_config = ConfigDict(extra="allow")
 
     source_id: Optional[PositiveInt] = None
     realtime_start: Optional[str] = None
@@ -24,9 +26,6 @@ class SourceApiParameters(BaseModel):
         Literal["source_id", "name", "realtime_start", "realtime_end"]
     ] = None
     sort_order: Optional[Literal["asc", "desc"]] = None
-
-    class Config:
-        extra = Extra.allow
 
 
 def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
@@ -43,11 +42,11 @@ def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     -------
     Dictionary representing the Json response
     """
-    params = SourceApiParameters(**kwargs)
+    params = _convert_pydantic_model_to_frozen_dict(SourceApiParameters(**kwargs))
     return _get_request(
         endpoint="sources",
         api_key=api_key,
-        params=frozendict(params.dict(exclude_none=True)),
+        params=params,
     )
 
 
@@ -69,11 +68,13 @@ def get_source(
     -------
     Dictionary representing the Json response
     """
-    params = SourceApiParameters(source_id=source_id, **kwargs)
+    params = _convert_pydantic_model_to_frozen_dict(
+        SourceApiParameters(source_id=source_id, **kwargs)
+    )
     return _get_request(
         endpoint="source",
         api_key=api_key,
-        params=frozendict(params.dict(exclude_none=True)),
+        params=params,
     )
 
 
@@ -96,9 +97,11 @@ def get_source_release(
     -------
     Dictionary representing the Json response
     """
-    params = SourceApiParameters(source_id=source_id, **kwargs)
+    params = _convert_pydantic_model_to_frozen_dict(
+        SourceApiParameters(source_id=source_id, **kwargs)
+    )
     return _get_request(
         endpoint="source/releases",
         api_key=api_key,
-        params=frozendict(params.dict(exclude_none=True)),
+        params=params,
     )

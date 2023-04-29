@@ -9,13 +9,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6tWSk4sSU3PL8pMLVayio6tBQDFInZ5EQAAAA==
+      string: '{"categories":[]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -28,11 +27,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:22 GMT
+      - Sat, 02 Sep 2023 19:57:17 GMT
       ETag:
-      - W/"73f19c6fbc6ebeb7065dc4e99bdbc326-gzip"
+      - W/"2f779a54dcb46ea6371857cffd79108e-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:22 GMT
+      - Sun, 03 Sep 2023 19:57:17 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -52,13 +51,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6tWSk4sSU3PL8pMLVayio6tBQDFInZ5EQAAAA==
+      string: '{"categories":[]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -71,11 +69,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:22 GMT
+      - Sat, 02 Sep 2023 19:57:17 GMT
       ETag:
-      - W/"73f19c6fbc6ebeb7065dc4e99bdbc326-gzip"
+      - W/"2f779a54dcb46ea6371857cffd79108e-gzip"
       Expires:
-      - Fri, 28 Apr 2023 14:58:22 GMT
+      - Sun, 03 Sep 2023 19:57:17 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -95,13 +93,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6tWSk4sSU3PL8pMLVayio6tBQDFInZ5EQAAAA==
+      string: '{"categories":[]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -114,11 +111,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:28:51 GMT
+      - Sun, 03 Sep 2023 01:29:32 GMT
       ETag:
-      - W/"73f19c6fbc6ebeb7065dc4e99bdbc326-gzip"
+      - W/"5d3a79e6689a39072d521b7075b24340-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:28:51 GMT
+      - Mon, 04 Sep 2023 01:29:32 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -138,13 +135,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6tWSk4sSU3PL8pMLVayio6tBQDFInZ5EQAAAA==
+      string: '{"categories":[]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -157,11 +153,11 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:28:51 GMT
+      - Sun, 03 Sep 2023 01:29:32 GMT
       ETag:
-      - W/"73f19c6fbc6ebeb7065dc4e99bdbc326-gzip"
+      - W/"5d3a79e6689a39072d521b7075b24340-gzip"
       Expires:
-      - Sat, 29 Apr 2023 01:28:51 GMT
+      - Mon, 04 Sep 2023 01:29:32 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -181,13 +177,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6tWSk4sSU3PL8pMLVayio6tBQDFInZ5EQAAAA==
+      string: '{"categories":[]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -200,17 +195,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:00 GMT
+      - Sun, 03 Sep 2023 01:53:52 GMT
       ETag:
-      - W/"73f19c6fbc6ebeb7065dc4e99bdbc326-gzip"
+      - W/"5d3a79e6689a39072d521b7075b24340-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:00 GMT
+      - Mon, 04 Sep 2023 01:53:52 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '118'
+      - '114'
     status:
       code: 200
       message: OK
@@ -224,13 +219,12 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6tWSk4sSU3PL8pMLVayio6tBQDFInZ5EQAAAA==
+      string: '{"categories":[]}'
     headers:
       Accept-Ranges:
       - bytes
@@ -243,17 +237,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:01 GMT
+      - Sun, 03 Sep 2023 01:53:53 GMT
       ETag:
-      - W/"73f19c6fbc6ebeb7065dc4e99bdbc326-gzip"
+      - W/"5d3a79e6689a39072d521b7075b24340-gzip"
       Expires:
-      - Sat, 29 Apr 2023 02:18:01 GMT
+      - Mon, 04 Sep 2023 01:53:53 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '116'
+      - '112'
     status:
       code: 200
       message: OK

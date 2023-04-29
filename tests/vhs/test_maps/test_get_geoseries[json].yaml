@@ -9,69 +9,53 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&series_id=WIPCPI&start_date=2019-01-01
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"meta":{"title":"2021 Per Capita Personal Income by State (Dollars)","region":"state","seasonality":"Not
+        Seasonally Adjusted","units":"Dollars","frequency":"Annual","data":{"2019-01-01":[{"region":"Maine","code":"23","value":50728,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":52602,"series_id":"NVPCPI"},{"region":"Michigan","code":"26","value":49142,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":43530,"series_id":"NMPCPI"},{"region":"Minnesota","code":"27","value":58543,"series_id":"MNPCPI"},{"region":"Louisiana","code":"22","value":47668,"series_id":"LAPCPI"},{"region":"New
+        Jersey","code":"34","value":68438,"series_id":"NJPCPI"},{"region":"Missouri","code":"29","value":49001,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":64747,"series_id":"NHPCPI"},{"region":"Mississippi","code":"28","value":39445,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":57110,"series_id":"NDPCPI"},{"region":"Montana","code":"30","value":50289,"series_id":"MTPCPI"},{"region":"Colorado","code":"08","value":62124,"series_id":"COPCPI"},{"region":"Alabama","code":"01","value":43288,"series_id":"ALPCPI"},{"region":"Texas","code":"48","value":54076,"series_id":"TXPCPI"},{"region":"Connecticut","code":"09","value":75533,"series_id":"CTPCPI"},{"region":"Alaska","code":"02","value":61316,"series_id":"AKPCPI"},{"region":"Wyoming","code":"56","value":64117,"series_id":"WYPCPI"},{"region":"District
+        of Columbia","code":"11","value":84671,"series_id":"DCPCPI"},{"region":"Rhode
+        Island","code":"44","value":55830,"series_id":"RIPCPI"},{"region":"West Virginia","code":"54","value":42951,"series_id":"WVPCPI"},{"region":"Delaware","code":"10","value":54217,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":52893,"series_id":"WIPCPI"},{"region":"Florida","code":"12","value":54560,"series_id":"FLPCPI"},{"region":"Washington","code":"53","value":64189,"series_id":"WAPCPI"},{"region":"Georgia","code":"13","value":49083,"series_id":"GAPCPI"},{"region":"Arkansas","code":"05","value":44324,"series_id":"ARPCPI"},{"region":"Vermont","code":"50","value":55442,"series_id":"VTPCPI"},{"region":"Hawaii","code":"15","value":54700,"series_id":"HIPCPI"},{"region":"Utah","code":"49","value":48580,"series_id":"UTPCPI"},{"region":"Virginia","code":"51","value":59073,"series_id":"VAPCPI"},{"region":"Iowa","code":"19","value":50367,"series_id":"IAPCPI"},{"region":"Nebraska","code":"31","value":54182,"series_id":"NEPCPI"},{"region":"Tennessee","code":"47","value":49343,"series_id":"TNPCPI"},{"region":"Idaho","code":"16","value":45924,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":55294,"series_id":"SDPCPI"},{"region":"Illinois","code":"17","value":58438,"series_id":"ILPCPI"},{"region":"South
+        Carolina","code":"45","value":46681,"series_id":"SCPCPI"},{"region":"Indiana","code":"18","value":48749,"series_id":"INPCPI"},{"region":"Arizona","code":"04","value":48124,"series_id":"AZPCPI"},{"region":"Pennsylvania","code":"42","value":56952,"series_id":"PAPCPI"},{"region":"Kansas","code":"20","value":52876,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":52718,"series_id":"ORPCPI"},{"region":"Kentucky","code":"21","value":43875,"series_id":"KYPCPI"},{"region":"North
+        Carolina","code":"37","value":48741,"series_id":"NCPCPI"},{"region":"Oklahoma","code":"40","value":48646,"series_id":"OKPCPI"},{"region":"Massachusetts","code":"25","value":73213,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":50035,"series_id":"OHPCPI"},{"region":"Maryland","code":"24","value":62313,"series_id":"MDPCPI"},{"region":"New
+        York","code":"36","value":67366,"series_id":"NYPCPI"},{"region":"California","code":"06","value":64919,"series_id":"CAPCPI"}],"2020-01-01":[{"region":"Montana","code":"30","value":54062,"series_id":"MTPCPI"},{"region":"Alaska","code":"02","value":62715,"series_id":"AKPCPI"},{"region":"Alabama","code":"01","value":46119,"series_id":"ALPCPI"},{"region":"Arkansas","code":"05","value":47123,"series_id":"ARPCPI"},{"region":"Arizona","code":"04","value":52313,"series_id":"AZPCPI"},{"region":"California","code":"06","value":70643,"series_id":"CAPCPI"},{"region":"Colorado","code":"08","value":65352,"series_id":"COPCPI"},{"region":"Connecticut","code":"09","value":78526,"series_id":"CTPCPI"},{"region":"District
+        of Columbia","code":"11","value":92307,"series_id":"DCPCPI"},{"region":"Delaware","code":"10","value":56311,"series_id":"DEPCPI"},{"region":"Florida","code":"12","value":57240,"series_id":"FLPCPI"},{"region":"Georgia","code":"13","value":51967,"series_id":"GAPCPI"},{"region":"Hawaii","code":"15","value":57276,"series_id":"HIPCPI"},{"region":"Iowa","code":"19","value":53280,"series_id":"IAPCPI"},{"region":"Idaho","code":"16","value":49453,"series_id":"IDPCPI"},{"region":"Illinois","code":"17","value":62132,"series_id":"ILPCPI"},{"region":"Indiana","code":"18","value":52194,"series_id":"INPCPI"},{"region":"Kansas","code":"20","value":55935,"series_id":"KSPCPI"},{"region":"Kentucky","code":"21","value":47489,"series_id":"KYPCPI"},{"region":"Massachusetts","code":"25","value":78685,"series_id":"MAPCPI"},{"region":"Maryland","code":"24","value":65680,"series_id":"MDPCPI"},{"region":"Maine","code":"23","value":54861,"series_id":"MEPCPI"},{"region":"Michigan","code":"26","value":53378,"series_id":"MIPCPI"},{"region":"Minnesota","code":"27","value":62210,"series_id":"MNPCPI"},{"region":"Missouri","code":"29","value":52112,"series_id":"MOPCPI"},{"region":"Mississippi","code":"28","value":42698,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":60821,"series_id":"NDPCPI"},{"region":"New Hampshire","code":"33","value":68505,"series_id":"NHPCPI"},{"region":"New
+        Jersey","code":"34","value":71567,"series_id":"NJPCPI"},{"region":"New Mexico","code":"35","value":46742,"series_id":"NMPCPI"},{"region":"Nevada","code":"32","value":55378,"series_id":"NVPCPI"},{"region":"New
+        York","code":"36","value":71743,"series_id":"NYPCPI"},{"region":"Ohio","code":"39","value":53514,"series_id":"OHPCPI"},{"region":"Oklahoma","code":"40","value":50481,"series_id":"OKPCPI"},{"region":"Oregon","code":"41","value":56962,"series_id":"ORPCPI"},{"region":"Pennsylvania","code":"42","value":60663,"series_id":"PAPCPI"},{"region":"South
+        Carolina","code":"45","value":49095,"series_id":"SCPCPI"},{"region":"South
+        Dakota","code":"46","value":60398,"series_id":"SDPCPI"},{"region":"Tennessee","code":"47","value":52310,"series_id":"TNPCPI"},{"region":"Virginia","code":"51","value":62157,"series_id":"VAPCPI"},{"region":"Vermont","code":"50","value":59260,"series_id":"VTPCPI"},{"region":"Washington","code":"53","value":68304,"series_id":"WAPCPI"},{"region":"Wisconsin","code":"55","value":55904,"series_id":"WIPCPI"},{"region":"West
+        Virginia","code":"54","value":45199,"series_id":"WVPCPI"},{"region":"Wyoming","code":"56","value":65744,"series_id":"WYPCPI"},{"region":"Texas","code":"48","value":55573,"series_id":"TXPCPI"},{"region":"Louisiana","code":"22","value":50804,"series_id":"LAPCPI"},{"region":"North
+        Carolina","code":"37","value":51938,"series_id":"NCPCPI"},{"region":"Nebraska","code":"31","value":57387,"series_id":"NEPCPI"},{"region":"Rhode
+        Island","code":"44","value":59935,"series_id":"RIPCPI"},{"region":"Utah","code":"49","value":52191,"series_id":"UTPCPI"}],"2021-01-01":[{"region":"Kentucky","code":"21","value":51298,"series_id":"KYPCPI"},{"region":"Alaska","code":"02","value":65677,"series_id":"AKPCPI"},{"region":"Florida","code":"12","value":62136,"series_id":"FLPCPI"},{"region":"Illinois","code":"17","value":67165,"series_id":"ILPCPI"},{"region":"Washington","code":"53","value":73755,"series_id":"WAPCPI"},{"region":"Oklahoma","code":"40","value":53808,"series_id":"OKPCPI"},{"region":"South
+        Carolina","code":"45","value":52441,"series_id":"SCPCPI"},{"region":"Delaware","code":"10","value":59846,"series_id":"DEPCPI"},{"region":"Alabama","code":"01","value":49671,"series_id":"ALPCPI"},{"region":"Wisconsin","code":"55","value":59787,"series_id":"WIPCPI"},{"region":"Massachusetts","code":"25","value":83593,"series_id":"MAPCPI"},{"region":"Arizona","code":"04","value":55574,"series_id":"AZPCPI"},{"region":"District
+        of Columbia","code":"11","value":96659,"series_id":"DCPCPI"},{"region":"Utah","code":"49","value":56000,"series_id":"UTPCPI"},{"region":"West
+        Virginia","code":"54","value":48418,"series_id":"WVPCPI"},{"region":"Idaho","code":"16","value":52276,"series_id":"IDPCPI"},{"region":"Arkansas","code":"05","value":50588,"series_id":"ARPCPI"},{"region":"Connecticut","code":"09","value":82885,"series_id":"CTPCPI"},{"region":"Rhode
+        Island","code":"44","value":64296,"series_id":"RIPCPI"},{"region":"Wyoming","code":"56","value":69584,"series_id":"WYPCPI"},{"region":"South
+        Dakota","code":"46","value":64405,"series_id":"SDPCPI"},{"region":"Kansas","code":"20","value":58857,"series_id":"KSPCPI"},{"region":"Colorado","code":"08","value":70715,"series_id":"COPCPI"},{"region":"North
+        Carolina","code":"37","value":56095,"series_id":"NCPCPI"},{"region":"Texas","code":"48","value":59802,"series_id":"TXPCPI"},{"region":"Iowa","code":"19","value":57080,"series_id":"IAPCPI"},{"region":"Montana","code":"30","value":56848,"series_id":"MTPCPI"},{"region":"Oregon","code":"41","value":61449,"series_id":"ORPCPI"},{"region":"Tennessee","code":"47","value":56616,"series_id":"TNPCPI"},{"region":"Mississippi","code":"28","value":45887,"series_id":"MSPCPI"},{"region":"Ohio","code":"39","value":56955,"series_id":"OHPCPI"},{"region":"North
+        Dakota","code":"38","value":64276,"series_id":"NDPCPI"},{"region":"Maryland","code":"24","value":69710,"series_id":"MDPCPI"},{"region":"Hawaii","code":"15","value":60711,"series_id":"HIPCPI"},{"region":"Missouri","code":"29","value":55310,"series_id":"MOPCPI"},{"region":"California","code":"06","value":76800,"series_id":"CAPCPI"},{"region":"New
+        Hampshire","code":"33","value":73279,"series_id":"NHPCPI"},{"region":"Nebraska","code":"31","value":61210,"series_id":"NEPCPI"},{"region":"Virginia","code":"51","value":66190,"series_id":"VAPCPI"},{"region":"Minnesota","code":"27","value":66232,"series_id":"MNPCPI"},{"region":"Indiana","code":"18","value":56435,"series_id":"INPCPI"},{"region":"New
+        Jersey","code":"34","value":77009,"series_id":"NJPCPI"},{"region":"New York","code":"36","value":76753,"series_id":"NYPCPI"},{"region":"Georgia","code":"13","value":55846,"series_id":"GAPCPI"},{"region":"Michigan","code":"26","value":56569,"series_id":"MIPCPI"},{"region":"Louisiana","code":"22","value":54181,"series_id":"LAPCPI"},{"region":"New
+        Mexico","code":"35","value":50292,"series_id":"NMPCPI"},{"region":"Pennsylvania","code":"42","value":64042,"series_id":"PAPCPI"},{"region":"Vermont","code":"50","value":61748,"series_id":"VTPCPI"},{"region":"Maine","code":"23","value":58272,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":60167,"series_id":"NVPCPI"}],"2022-01-01":[{"region":"Louisiana","code":"22","value":54622,"series_id":"LAPCPI"},{"region":"Nevada","code":"32","value":61282,"series_id":"NVPCPI"},{"region":"Maryland","code":"24","value":70730,"series_id":"MDPCPI"},{"region":"Arizona","code":"04","value":56667,"series_id":"AZPCPI"},{"region":"New
+        York","code":"36","value":78089,"series_id":"NYPCPI"},{"region":"Massachusetts","code":"25","value":84945,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":57880,"series_id":"OHPCPI"},{"region":"Kentucky","code":"21","value":52109,"series_id":"KYPCPI"},{"region":"Oklahoma","code":"40","value":54998,"series_id":"OKPCPI"},{"region":"Kansas","code":"20","value":60152,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":62767,"series_id":"ORPCPI"},{"region":"Indiana","code":"18","value":57930,"series_id":"INPCPI"},{"region":"North
+        Carolina","code":"37","value":57416,"series_id":"NCPCPI"},{"region":"Pennsylvania","code":"42","value":65167,"series_id":"PAPCPI"},{"region":"Illinois","code":"17","value":68822,"series_id":"ILPCPI"},{"region":"Arkansas","code":"05","value":51787,"series_id":"ARPCPI"},{"region":"South
+        Carolina","code":"45","value":53320,"series_id":"SCPCPI"},{"region":"Idaho","code":"16","value":54537,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":65806,"series_id":"SDPCPI"},{"region":"Iowa","code":"19","value":58905,"series_id":"IAPCPI"},{"region":"Utah","code":"49","value":57925,"series_id":"UTPCPI"},{"region":"Tennessee","code":"47","value":58279,"series_id":"TNPCPI"},{"region":"Hawaii","code":"15","value":61175,"series_id":"HIPCPI"},{"region":"Virginia","code":"51","value":68211,"series_id":"VAPCPI"},{"region":"Georgia","code":"13","value":57129,"series_id":"GAPCPI"},{"region":"Nebraska","code":"31","value":63321,"series_id":"NEPCPI"},{"region":"Vermont","code":"50","value":63206,"series_id":"VTPCPI"},{"region":"Florida","code":"12","value":63597,"series_id":"FLPCPI"},{"region":"Alabama","code":"01","value":50637,"series_id":"ALPCPI"},{"region":"Washington","code":"53","value":75698,"series_id":"WAPCPI"},{"region":"Delaware","code":"10","value":61387,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":61210,"series_id":"WIPCPI"},{"region":"District
+        of Columbia","code":"11","value":96728,"series_id":"DCPCPI"},{"region":"West
+        Virginia","code":"54","value":49169,"series_id":"WVPCPI"},{"region":"Connecticut","code":"09","value":84972,"series_id":"CTPCPI"},{"region":"Wyoming","code":"56","value":71342,"series_id":"WYPCPI"},{"region":"Colorado","code":"08","value":74167,"series_id":"COPCPI"},{"region":"Rhode
+        Island","code":"44","value":65377,"series_id":"RIPCPI"},{"region":"Texas","code":"48","value":61985,"series_id":"TXPCPI"},{"region":"Montana","code":"30","value":57719,"series_id":"MTPCPI"},{"region":"Mississippi","code":"28","value":46248,"series_id":"MSPCPI"},{"region":"California","code":"06","value":77339,"series_id":"CAPCPI"},{"region":"North
+        Dakota","code":"38","value":66184,"series_id":"NDPCPI"},{"region":"Missouri","code":"29","value":56551,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":74663,"series_id":"NHPCPI"},{"region":"Minnesota","code":"27","value":68010,"series_id":"MNPCPI"},{"region":"Alaska","code":"02","value":68919,"series_id":"AKPCPI"},{"region":"New
+        Jersey","code":"34","value":78700,"series_id":"NJPCPI"},{"region":"Michigan","code":"26","value":56813,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":51500,"series_id":"NMPCPI"},{"region":"Maine","code":"23","value":59463,"series_id":"MEPCPI"}]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -84,17 +68,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:33 GMT
+      - Sat, 02 Sep 2023 19:57:27 GMT
       ETag:
-      - '"5da9af53d30d65c4c0b54b94511f97ce-gzip"'
+      - '"536a9fa47d9cf12d4e37cfd49346749d-gzip"'
       Expires:
-      - Thu, 27 Apr 2023 15:05:12 GMT
+      - Sat, 02 Sep 2023 20:07:27 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '98'
+      - '100'
     status:
       code: 200
       message: OK
@@ -108,69 +92,53 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&return_format=json&series_id=WIPCPI&start_date=2019-01-01
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAEA6pWyk0tSVSyqlYqySzJSVWyUjIyMDJUCEgtUnBOLMgsSQQxi/PzEnMUPPOS83NT
-        FZIqFYJLEktSFTRc8nNyEouKNZV0lIpS0zPz85SslIpBUko6SsWpiWBdmSWVSlZKfvklCsFQkZxK
-        BceUrNLiktQUJR2l0rzMkmIlKyWoWUo6SmlFqYWlqXnJIH2OeXmliTlKOkopiRBHGhkYWuoaGOoa
-        GCpZRVcjrPVNzMxLVdJRSs5PAfvBWElHqSwxpzRVycrUwNzIAuSgoszU4vjMFCUrJV/XAOcAT6Va
-        HSQT/FLLElMSEUYYGyEZYWRmYIRqhF8YphG+mckZmemJeQhDjMwQhphYGpqgGeLriWmIX2q5gm9q
-        RWZyPsIYY1MkY4xNjQ3Q3OKLaYxvZl5eanF+CZKPjMwRpphamJoYo5ri64dpik9+aWZxZmIesilI
-        4WJibmaGFrQ+jpimgLzklVpUnFqJ5CUThGPMLEyM0Yzx88I0xjezuDi/tCgTYYiRJcIQE0sDA0Md
-        peLUIkQ0+2MaAnKLR2JuQXFGZhFSgjFGSjBmJuYm5qgm+XlgmgRyTmZxcWZBAbKLLBAuMrY0MTFF
-        Ncc3GNMcv/yikgwFl8RslMgyRjLI1NzQED3KXTAN8s3PK0GJKmMDhGNMDYwsLNEcE4JphnN+Tn5R
-        YgpS2jNAcoiZkaGRCaohzljC2DEnMSkxFynNGBgiHGJibGSBFtmOPpgOCUmtSCxGxLQJkitMTQzM
-        zVBdERKBaYJzfl5eanJJZnJpCcIcA6QUY25qaoyWB5yxBIljTmJxNrJnkDKAmaGxIZpTHL0xnRJe
-        mZ+bmZeOcIYpUrlgZmJoiJbcwiMxzXDJLC4pykwuUchPU3DOzynNTcpEcpQhUghbmJiZo+UEF2dM
-        A4My8lNSFTyLcxLzQAUxtOQ0QcqXpqYW6EVNEJYSKzy1uEQhLLMoPTMP2UmmSCaZGFmaojkpPAzT
-        SS6pOYnlicj50hA5CZsYoQeUC5aCPDyzODk/rzgTqRg2RSo/TY0sLNFiPRyLp9xy8osykesDQ6Ro
-        NzUxNUPLkG5Y0nB4YnFGZl56ST6yU1AKGkP0PBmOpfh0T80vSkcOWUMkM0wsDSzQvOOOxQzHouzE
-        vGLkHGWAFCYmJsbo+doxCDN6wlKLcvPzkHKTKXLsmJqgV29hWHKTR2J5YiZSgWmI5AxTE3MDtGD1
-        wBI1oSWJGYisZIKUo00sTC3QDAjF4gYsaRUp+5haGpijhWgYlhD1zC9Hzn9IrjA1MDZDy9CeWAzw
-        S00qQi1ZjJFdYWJogdZa8MOS2ENSQdV8cSpSVWaCVM2bWBqjV/MhWKp5z5TEDKQi3xCpdDIxtURP
-        Gp5Y6p7g/NISzErMBMkgU1MjS7S6IxiLQZ45OZl5+ZlIRb8hkn9MMVsKnlgyHsQ1zolF+TmZyG0X
-        E6TEZmJmZoFWJAVjKSU981JQ2z+GSDWRiYW5CVql6okleB2LMqvykd1hgFw0WmDUqY5RmHkvIDUv
-        r7gypywRpYw1QS6UzCxN0VJMAJZk541WDhgh52EjC/Sa1RtLi8W/KDUduUwzQU63RuaGaNW7P5ai
-        xDs1r6Q0ORupQWiEZIiJsYU5WsvJG0uVCGk5YUazMVKKAUURWjT7YYlm/+ycxIx85DaLCVK4mFiY
-        maBV8/5YqnnfxOLixOSM0uLUkhKkBGyElOrMjY0M0QoXXyyR5J+RiZQfjVEKFwNjtKDxx9Y4TSyq
-        RK3YjZDSnJmRMYYrsORFUFs5Mr8oG1HYGiNlaDNzYzO0QPHDEknOiTmZaflFKMnWANkYE0tDtDzk
-        DA2RWB1QZ9QAa38Pb1vXxMAMLSf4YqkG8DbsjMwN0YIZW8MOf0vXzBDdZ9haugSqZnNDI7QEg61q
-        xlvEmGJGN7YihlBMmRuYoVcmsJhC7kgT6EKYGqOXUti6EIQb7xamRmipD1vjnfhWs6WRsQFarY2t
-        1UygiWpmbIhW2mBrouJvXJobmaA1YrA1LvG2Ck0NLdGbINhahXgbY+ZG6HUBtsYYnmaQsRF6Ywxb
-        Mwhf28PSxBQt7WNre+BvMpgZGRqjFQbYmgx463lTI0P0tgu2eh5v1WpqiV5uY6taCdSL5iboHQZs
-        9SIx9ZCFmQVa+YatHvLFX42YmqHHsC+WagTf2JyJhRlafsE2Nod/YM3U2NgcrcmBbWCNwIiYmZER
-        +iALthEx0KgP7kEoUyNDQ7TE5otlgARkCN6hIxMjM0t0L2FpiEEaQPiGjswMLIzQAtgPSxSBanpC
-        o2IWpgZoKQbbqBjIJHxjfeaGpuglE7axPpAxeEdBzczRe5t+WEZB8Q7qmmIkG78wzIY3yCW4G0Hm
-        hubodSK2RhCe9pyxqSFatwhbew5/+9TUwAS9L4OtfYq33W5mid5mwtZuJ9wNMTMwM0MrtLF1Q4jq
-        olkaWKIlOWxdNIhR6LkAue9pZmCMnp2w9T0JdKZBzSi0ihlbZxr/6IKZkaEpWjMD2+gC/qEWSyP0
-        4SdsQy0Eh58sjA3Qkh624SdC42mmlhimYBm0IWaQ0NTQEq0ngG2QEP9gqqm5CbqfsHRK8I0um5qi
-        D/+EYBldJjAzYmpggR4qWGdGwGP/+HuwpoaWGLMjWHqwBIaTzI0t0JIdtuEkIsaELTHaMUFYohv3
-        GB2oLYVWI8HG6CD9PUNs/T387SJTQyP0/I2tXYS3w2dqZo4WQNg6fHhb7qCmJlqfBFvLnUB71dzQ
-        DK3Qw9ZeJZS5zY3NTdGMwZa5CdQrxhYGaM0QbPUKpADGTMXIw22mRiYmaNGOrSwn0L2ytEAfh8HW
-        vcLfK7fEmB3B1isnVOpZmqPnJ2yzCES0xC2MTdHnI7C1xPF38E1NzdFKPWwdfBeip5AszcxM0Ypi
-        bJ1hPLnczAB9KB+Wy5HHCoipFSxM0AcUsdUKeLqRpkYYPVls3Uj84zCmBqYY05ZYxjUJjltYGFmg
-        d7ywjVsQLojNTIws0QobbAUx/trS0tQCLd1gm3qE5G+8DSwTE/TOAbYGFt4OsoUFesMIWwcZ/+iS
-        uQHGsB220SU/YqpdM4zGJ7aBY3wtCUsL9FUj2FoSeEZQzA3Q+9fYRlDwz/ubWZigFeHYxkLxdQ3M
-        DE3QZzmwdQ0ItZ7NzNCnyrG1ngl3jU0t0EtebKsq8PS4zCzRa0ZsPS5IGkFP9MjLMsxMMMoVbH1r
-        AmMoluYYww5YOuj4RurMDMzRBx2xjdSBQhbPyIWpMYY7sIxcEBwjNrNAL/edoaP5yOU+qFNNYLzB
-        3NjIHK0Kwj7egG8W1cwQY1AHW7OXQJfNzNASrd+HrctGaHzJzAh9HBLb+BL+cUgzE/RBRGzjkKDQ
-        xTsGY25ggB60WNZbgYzBM/JhZo4+OItt5AP/MLUpRnsO2zA1geE/M1MzNN9gG/4j1GEzMUQfQsHa
-        YSOwOs/UwMgSbQAQ27gUEcMoJgboA1wBWDIS3nECM0Nz9LIf2zgBvvFZCyNzNO9gG5/FN8xmZmCI
-        MeAHHWaD9PeMsPX3CMaWmRGau7DHVlki8hoe5DWdZoZGGAssoO5CLqnwl97mBuboK6SwjYDjb7yb
-        maEHELbGO4HcaGGAPjOALTcS0x8xscRYtYgl4eGpX80t0Fst2OpXAj16I0P0Igpbj55A99XEEn1Y
-        AFv3FV+r1MzAEH26ElurFG/zycgcPX6xNZ/wF/zmlujpDGvBT0y71twEvR2GrV1LRAllipGxsZVQ
-        BEY7LCzQMzK20Q4CfTNDjM44tjlySDeGwDCFsbERWl2PbZgCX2/TxNQYbSAJW28T4hj05iXKoLWp
-        hQFaBw9bnwpP98HCEr1Thq37gKcTb25phDaGhK0TT6jhb4HRkAvBskgKbwvX0BB9PRC2Fi6BZpyF
-        EXozGVszDn+DxdzQCK2tga3Bgn8s1szYGGNODsvSPvxVu7EReuLAVrXjH640NrVES6nYhivxjqaZ
-        Gpihp3aso2kEVsKam2LMd2IbrcQ/OmhmiDHGjW10kMDIHpYuA7aRPVLG0jD2n2AbSyNmKMzSEL2l
-        i20ojPAYlIkleqsO2xgU3qEjc0Nj9PYptqEjAsM1JhhVCLbhGiIGw0yNzdGSMrbBMDyDNWaGlujj
-        ctgGa/CPtZiboy/4wjbWAuqI45/9NzNCb7djG+Ig2Bc3NzZGK6yw9sXBjQb0mghloMPMEH2YEOtA
-        Rya+/TmmZqboWwCwLY0ANXMJjQyYYMwwYxsZINQftzDAGPDAUi3hnTOywFi6iG3OCOQlvN1xC4xl
-        79iWRBDqBVtgLOnEMi8Hcgu+dRWmhqbo4zfY+q/4uoyWJujz/7AuI2CxtbW1AGVr8ftwOAAA
+      string: '{"meta":{"title":"2021 Per Capita Personal Income by State (Dollars)","region":"state","seasonality":"Not
+        Seasonally Adjusted","units":"Dollars","frequency":"Annual","data":{"2019-01-01":[{"region":"Maine","code":"23","value":50728,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":52602,"series_id":"NVPCPI"},{"region":"Michigan","code":"26","value":49142,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":43530,"series_id":"NMPCPI"},{"region":"Minnesota","code":"27","value":58543,"series_id":"MNPCPI"},{"region":"Louisiana","code":"22","value":47668,"series_id":"LAPCPI"},{"region":"New
+        Jersey","code":"34","value":68438,"series_id":"NJPCPI"},{"region":"Missouri","code":"29","value":49001,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":64747,"series_id":"NHPCPI"},{"region":"Mississippi","code":"28","value":39445,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":57110,"series_id":"NDPCPI"},{"region":"Montana","code":"30","value":50289,"series_id":"MTPCPI"},{"region":"Colorado","code":"08","value":62124,"series_id":"COPCPI"},{"region":"Alabama","code":"01","value":43288,"series_id":"ALPCPI"},{"region":"Texas","code":"48","value":54076,"series_id":"TXPCPI"},{"region":"Connecticut","code":"09","value":75533,"series_id":"CTPCPI"},{"region":"Alaska","code":"02","value":61316,"series_id":"AKPCPI"},{"region":"Wyoming","code":"56","value":64117,"series_id":"WYPCPI"},{"region":"District
+        of Columbia","code":"11","value":84671,"series_id":"DCPCPI"},{"region":"Rhode
+        Island","code":"44","value":55830,"series_id":"RIPCPI"},{"region":"West Virginia","code":"54","value":42951,"series_id":"WVPCPI"},{"region":"Delaware","code":"10","value":54217,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":52893,"series_id":"WIPCPI"},{"region":"Florida","code":"12","value":54560,"series_id":"FLPCPI"},{"region":"Washington","code":"53","value":64189,"series_id":"WAPCPI"},{"region":"Georgia","code":"13","value":49083,"series_id":"GAPCPI"},{"region":"Arkansas","code":"05","value":44324,"series_id":"ARPCPI"},{"region":"Vermont","code":"50","value":55442,"series_id":"VTPCPI"},{"region":"Hawaii","code":"15","value":54700,"series_id":"HIPCPI"},{"region":"Utah","code":"49","value":48580,"series_id":"UTPCPI"},{"region":"Virginia","code":"51","value":59073,"series_id":"VAPCPI"},{"region":"Iowa","code":"19","value":50367,"series_id":"IAPCPI"},{"region":"Nebraska","code":"31","value":54182,"series_id":"NEPCPI"},{"region":"Tennessee","code":"47","value":49343,"series_id":"TNPCPI"},{"region":"Idaho","code":"16","value":45924,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":55294,"series_id":"SDPCPI"},{"region":"Illinois","code":"17","value":58438,"series_id":"ILPCPI"},{"region":"South
+        Carolina","code":"45","value":46681,"series_id":"SCPCPI"},{"region":"Indiana","code":"18","value":48749,"series_id":"INPCPI"},{"region":"Arizona","code":"04","value":48124,"series_id":"AZPCPI"},{"region":"Pennsylvania","code":"42","value":56952,"series_id":"PAPCPI"},{"region":"Kansas","code":"20","value":52876,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":52718,"series_id":"ORPCPI"},{"region":"Kentucky","code":"21","value":43875,"series_id":"KYPCPI"},{"region":"North
+        Carolina","code":"37","value":48741,"series_id":"NCPCPI"},{"region":"Oklahoma","code":"40","value":48646,"series_id":"OKPCPI"},{"region":"Massachusetts","code":"25","value":73213,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":50035,"series_id":"OHPCPI"},{"region":"Maryland","code":"24","value":62313,"series_id":"MDPCPI"},{"region":"New
+        York","code":"36","value":67366,"series_id":"NYPCPI"},{"region":"California","code":"06","value":64919,"series_id":"CAPCPI"}],"2020-01-01":[{"region":"Montana","code":"30","value":54062,"series_id":"MTPCPI"},{"region":"Alaska","code":"02","value":62715,"series_id":"AKPCPI"},{"region":"Alabama","code":"01","value":46119,"series_id":"ALPCPI"},{"region":"Arkansas","code":"05","value":47123,"series_id":"ARPCPI"},{"region":"Arizona","code":"04","value":52313,"series_id":"AZPCPI"},{"region":"California","code":"06","value":70643,"series_id":"CAPCPI"},{"region":"Colorado","code":"08","value":65352,"series_id":"COPCPI"},{"region":"Connecticut","code":"09","value":78526,"series_id":"CTPCPI"},{"region":"District
+        of Columbia","code":"11","value":92307,"series_id":"DCPCPI"},{"region":"Delaware","code":"10","value":56311,"series_id":"DEPCPI"},{"region":"Florida","code":"12","value":57240,"series_id":"FLPCPI"},{"region":"Georgia","code":"13","value":51967,"series_id":"GAPCPI"},{"region":"Hawaii","code":"15","value":57276,"series_id":"HIPCPI"},{"region":"Iowa","code":"19","value":53280,"series_id":"IAPCPI"},{"region":"Idaho","code":"16","value":49453,"series_id":"IDPCPI"},{"region":"Illinois","code":"17","value":62132,"series_id":"ILPCPI"},{"region":"Indiana","code":"18","value":52194,"series_id":"INPCPI"},{"region":"Kansas","code":"20","value":55935,"series_id":"KSPCPI"},{"region":"Kentucky","code":"21","value":47489,"series_id":"KYPCPI"},{"region":"Massachusetts","code":"25","value":78685,"series_id":"MAPCPI"},{"region":"Maryland","code":"24","value":65680,"series_id":"MDPCPI"},{"region":"Maine","code":"23","value":54861,"series_id":"MEPCPI"},{"region":"Michigan","code":"26","value":53378,"series_id":"MIPCPI"},{"region":"Minnesota","code":"27","value":62210,"series_id":"MNPCPI"},{"region":"Missouri","code":"29","value":52112,"series_id":"MOPCPI"},{"region":"Mississippi","code":"28","value":42698,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":60821,"series_id":"NDPCPI"},{"region":"New Hampshire","code":"33","value":68505,"series_id":"NHPCPI"},{"region":"New
+        Jersey","code":"34","value":71567,"series_id":"NJPCPI"},{"region":"New Mexico","code":"35","value":46742,"series_id":"NMPCPI"},{"region":"Nevada","code":"32","value":55378,"series_id":"NVPCPI"},{"region":"New
+        York","code":"36","value":71743,"series_id":"NYPCPI"},{"region":"Ohio","code":"39","value":53514,"series_id":"OHPCPI"},{"region":"Oklahoma","code":"40","value":50481,"series_id":"OKPCPI"},{"region":"Oregon","code":"41","value":56962,"series_id":"ORPCPI"},{"region":"Pennsylvania","code":"42","value":60663,"series_id":"PAPCPI"},{"region":"South
+        Carolina","code":"45","value":49095,"series_id":"SCPCPI"},{"region":"South
+        Dakota","code":"46","value":60398,"series_id":"SDPCPI"},{"region":"Tennessee","code":"47","value":52310,"series_id":"TNPCPI"},{"region":"Virginia","code":"51","value":62157,"series_id":"VAPCPI"},{"region":"Vermont","code":"50","value":59260,"series_id":"VTPCPI"},{"region":"Washington","code":"53","value":68304,"series_id":"WAPCPI"},{"region":"Wisconsin","code":"55","value":55904,"series_id":"WIPCPI"},{"region":"West
+        Virginia","code":"54","value":45199,"series_id":"WVPCPI"},{"region":"Wyoming","code":"56","value":65744,"series_id":"WYPCPI"},{"region":"Texas","code":"48","value":55573,"series_id":"TXPCPI"},{"region":"Louisiana","code":"22","value":50804,"series_id":"LAPCPI"},{"region":"North
+        Carolina","code":"37","value":51938,"series_id":"NCPCPI"},{"region":"Nebraska","code":"31","value":57387,"series_id":"NEPCPI"},{"region":"Rhode
+        Island","code":"44","value":59935,"series_id":"RIPCPI"},{"region":"Utah","code":"49","value":52191,"series_id":"UTPCPI"}],"2021-01-01":[{"region":"Kentucky","code":"21","value":51298,"series_id":"KYPCPI"},{"region":"Alaska","code":"02","value":65677,"series_id":"AKPCPI"},{"region":"Florida","code":"12","value":62136,"series_id":"FLPCPI"},{"region":"Illinois","code":"17","value":67165,"series_id":"ILPCPI"},{"region":"Washington","code":"53","value":73755,"series_id":"WAPCPI"},{"region":"Oklahoma","code":"40","value":53808,"series_id":"OKPCPI"},{"region":"South
+        Carolina","code":"45","value":52441,"series_id":"SCPCPI"},{"region":"Delaware","code":"10","value":59846,"series_id":"DEPCPI"},{"region":"Alabama","code":"01","value":49671,"series_id":"ALPCPI"},{"region":"Wisconsin","code":"55","value":59787,"series_id":"WIPCPI"},{"region":"Massachusetts","code":"25","value":83593,"series_id":"MAPCPI"},{"region":"Arizona","code":"04","value":55574,"series_id":"AZPCPI"},{"region":"District
+        of Columbia","code":"11","value":96659,"series_id":"DCPCPI"},{"region":"Utah","code":"49","value":56000,"series_id":"UTPCPI"},{"region":"West
+        Virginia","code":"54","value":48418,"series_id":"WVPCPI"},{"region":"Idaho","code":"16","value":52276,"series_id":"IDPCPI"},{"region":"Arkansas","code":"05","value":50588,"series_id":"ARPCPI"},{"region":"Connecticut","code":"09","value":82885,"series_id":"CTPCPI"},{"region":"Rhode
+        Island","code":"44","value":64296,"series_id":"RIPCPI"},{"region":"Wyoming","code":"56","value":69584,"series_id":"WYPCPI"},{"region":"South
+        Dakota","code":"46","value":64405,"series_id":"SDPCPI"},{"region":"Kansas","code":"20","value":58857,"series_id":"KSPCPI"},{"region":"Colorado","code":"08","value":70715,"series_id":"COPCPI"},{"region":"North
+        Carolina","code":"37","value":56095,"series_id":"NCPCPI"},{"region":"Texas","code":"48","value":59802,"series_id":"TXPCPI"},{"region":"Iowa","code":"19","value":57080,"series_id":"IAPCPI"},{"region":"Montana","code":"30","value":56848,"series_id":"MTPCPI"},{"region":"Oregon","code":"41","value":61449,"series_id":"ORPCPI"},{"region":"Tennessee","code":"47","value":56616,"series_id":"TNPCPI"},{"region":"Mississippi","code":"28","value":45887,"series_id":"MSPCPI"},{"region":"Ohio","code":"39","value":56955,"series_id":"OHPCPI"},{"region":"North
+        Dakota","code":"38","value":64276,"series_id":"NDPCPI"},{"region":"Maryland","code":"24","value":69710,"series_id":"MDPCPI"},{"region":"Hawaii","code":"15","value":60711,"series_id":"HIPCPI"},{"region":"Missouri","code":"29","value":55310,"series_id":"MOPCPI"},{"region":"California","code":"06","value":76800,"series_id":"CAPCPI"},{"region":"New
+        Hampshire","code":"33","value":73279,"series_id":"NHPCPI"},{"region":"Nebraska","code":"31","value":61210,"series_id":"NEPCPI"},{"region":"Virginia","code":"51","value":66190,"series_id":"VAPCPI"},{"region":"Minnesota","code":"27","value":66232,"series_id":"MNPCPI"},{"region":"Indiana","code":"18","value":56435,"series_id":"INPCPI"},{"region":"New
+        Jersey","code":"34","value":77009,"series_id":"NJPCPI"},{"region":"New York","code":"36","value":76753,"series_id":"NYPCPI"},{"region":"Georgia","code":"13","value":55846,"series_id":"GAPCPI"},{"region":"Michigan","code":"26","value":56569,"series_id":"MIPCPI"},{"region":"Louisiana","code":"22","value":54181,"series_id":"LAPCPI"},{"region":"New
+        Mexico","code":"35","value":50292,"series_id":"NMPCPI"},{"region":"Pennsylvania","code":"42","value":64042,"series_id":"PAPCPI"},{"region":"Vermont","code":"50","value":61748,"series_id":"VTPCPI"},{"region":"Maine","code":"23","value":58272,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":60167,"series_id":"NVPCPI"}],"2022-01-01":[{"region":"Louisiana","code":"22","value":54622,"series_id":"LAPCPI"},{"region":"Nevada","code":"32","value":61282,"series_id":"NVPCPI"},{"region":"Maryland","code":"24","value":70730,"series_id":"MDPCPI"},{"region":"Arizona","code":"04","value":56667,"series_id":"AZPCPI"},{"region":"New
+        York","code":"36","value":78089,"series_id":"NYPCPI"},{"region":"Massachusetts","code":"25","value":84945,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":57880,"series_id":"OHPCPI"},{"region":"Kentucky","code":"21","value":52109,"series_id":"KYPCPI"},{"region":"Oklahoma","code":"40","value":54998,"series_id":"OKPCPI"},{"region":"Kansas","code":"20","value":60152,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":62767,"series_id":"ORPCPI"},{"region":"Indiana","code":"18","value":57930,"series_id":"INPCPI"},{"region":"North
+        Carolina","code":"37","value":57416,"series_id":"NCPCPI"},{"region":"Pennsylvania","code":"42","value":65167,"series_id":"PAPCPI"},{"region":"Illinois","code":"17","value":68822,"series_id":"ILPCPI"},{"region":"Arkansas","code":"05","value":51787,"series_id":"ARPCPI"},{"region":"South
+        Carolina","code":"45","value":53320,"series_id":"SCPCPI"},{"region":"Idaho","code":"16","value":54537,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":65806,"series_id":"SDPCPI"},{"region":"Iowa","code":"19","value":58905,"series_id":"IAPCPI"},{"region":"Utah","code":"49","value":57925,"series_id":"UTPCPI"},{"region":"Tennessee","code":"47","value":58279,"series_id":"TNPCPI"},{"region":"Hawaii","code":"15","value":61175,"series_id":"HIPCPI"},{"region":"Virginia","code":"51","value":68211,"series_id":"VAPCPI"},{"region":"Georgia","code":"13","value":57129,"series_id":"GAPCPI"},{"region":"Nebraska","code":"31","value":63321,"series_id":"NEPCPI"},{"region":"Vermont","code":"50","value":63206,"series_id":"VTPCPI"},{"region":"Florida","code":"12","value":63597,"series_id":"FLPCPI"},{"region":"Alabama","code":"01","value":50637,"series_id":"ALPCPI"},{"region":"Washington","code":"53","value":75698,"series_id":"WAPCPI"},{"region":"Delaware","code":"10","value":61387,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":61210,"series_id":"WIPCPI"},{"region":"District
+        of Columbia","code":"11","value":96728,"series_id":"DCPCPI"},{"region":"West
+        Virginia","code":"54","value":49169,"series_id":"WVPCPI"},{"region":"Connecticut","code":"09","value":84972,"series_id":"CTPCPI"},{"region":"Wyoming","code":"56","value":71342,"series_id":"WYPCPI"},{"region":"Colorado","code":"08","value":74167,"series_id":"COPCPI"},{"region":"Rhode
+        Island","code":"44","value":65377,"series_id":"RIPCPI"},{"region":"Texas","code":"48","value":61985,"series_id":"TXPCPI"},{"region":"Montana","code":"30","value":57719,"series_id":"MTPCPI"},{"region":"Mississippi","code":"28","value":46248,"series_id":"MSPCPI"},{"region":"California","code":"06","value":77339,"series_id":"CAPCPI"},{"region":"North
+        Dakota","code":"38","value":66184,"series_id":"NDPCPI"},{"region":"Missouri","code":"29","value":56551,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":74663,"series_id":"NHPCPI"},{"region":"Minnesota","code":"27","value":68010,"series_id":"MNPCPI"},{"region":"Alaska","code":"02","value":68919,"series_id":"AKPCPI"},{"region":"New
+        Jersey","code":"34","value":78700,"series_id":"NJPCPI"},{"region":"Michigan","code":"26","value":56813,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":51500,"series_id":"NMPCPI"},{"region":"Maine","code":"23","value":59463,"series_id":"MEPCPI"}]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -183,17 +151,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 27 Apr 2023 14:58:33 GMT
+      - Sat, 02 Sep 2023 19:57:28 GMT
       ETag:
-      - '"b6ac81c9387b1287fc22e58d47a8485f-gzip"'
+      - '"7394c16eb42fcea4801137bd74e6eca0-gzip"'
       Expires:
-      - Thu, 27 Apr 2023 15:05:47 GMT
+      - Sat, 02 Sep 2023 20:07:28 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '77'
+      - '99'
     status:
       code: 200
       message: OK
@@ -207,69 +175,53 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&series_id=WIPCPI&start_date=2019-01-01
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"meta":{"title":"2021 Per Capita Personal Income by State (Dollars)","region":"state","seasonality":"Not
+        Seasonally Adjusted","units":"Dollars","frequency":"Annual","data":{"2019-01-01":[{"region":"Maine","code":"23","value":50728,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":52602,"series_id":"NVPCPI"},{"region":"Michigan","code":"26","value":49142,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":43530,"series_id":"NMPCPI"},{"region":"Minnesota","code":"27","value":58543,"series_id":"MNPCPI"},{"region":"Louisiana","code":"22","value":47668,"series_id":"LAPCPI"},{"region":"New
+        Jersey","code":"34","value":68438,"series_id":"NJPCPI"},{"region":"Missouri","code":"29","value":49001,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":64747,"series_id":"NHPCPI"},{"region":"Mississippi","code":"28","value":39445,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":57110,"series_id":"NDPCPI"},{"region":"Montana","code":"30","value":50289,"series_id":"MTPCPI"},{"region":"Colorado","code":"08","value":62124,"series_id":"COPCPI"},{"region":"Alabama","code":"01","value":43288,"series_id":"ALPCPI"},{"region":"Texas","code":"48","value":54076,"series_id":"TXPCPI"},{"region":"Connecticut","code":"09","value":75533,"series_id":"CTPCPI"},{"region":"Alaska","code":"02","value":61316,"series_id":"AKPCPI"},{"region":"Wyoming","code":"56","value":64117,"series_id":"WYPCPI"},{"region":"District
+        of Columbia","code":"11","value":84671,"series_id":"DCPCPI"},{"region":"Rhode
+        Island","code":"44","value":55830,"series_id":"RIPCPI"},{"region":"West Virginia","code":"54","value":42951,"series_id":"WVPCPI"},{"region":"Delaware","code":"10","value":54217,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":52893,"series_id":"WIPCPI"},{"region":"Florida","code":"12","value":54560,"series_id":"FLPCPI"},{"region":"Washington","code":"53","value":64189,"series_id":"WAPCPI"},{"region":"Georgia","code":"13","value":49083,"series_id":"GAPCPI"},{"region":"Arkansas","code":"05","value":44324,"series_id":"ARPCPI"},{"region":"Vermont","code":"50","value":55442,"series_id":"VTPCPI"},{"region":"Hawaii","code":"15","value":54700,"series_id":"HIPCPI"},{"region":"Utah","code":"49","value":48580,"series_id":"UTPCPI"},{"region":"Virginia","code":"51","value":59073,"series_id":"VAPCPI"},{"region":"Iowa","code":"19","value":50367,"series_id":"IAPCPI"},{"region":"Nebraska","code":"31","value":54182,"series_id":"NEPCPI"},{"region":"Tennessee","code":"47","value":49343,"series_id":"TNPCPI"},{"region":"Idaho","code":"16","value":45924,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":55294,"series_id":"SDPCPI"},{"region":"Illinois","code":"17","value":58438,"series_id":"ILPCPI"},{"region":"South
+        Carolina","code":"45","value":46681,"series_id":"SCPCPI"},{"region":"Indiana","code":"18","value":48749,"series_id":"INPCPI"},{"region":"Arizona","code":"04","value":48124,"series_id":"AZPCPI"},{"region":"Pennsylvania","code":"42","value":56952,"series_id":"PAPCPI"},{"region":"Kansas","code":"20","value":52876,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":52718,"series_id":"ORPCPI"},{"region":"Kentucky","code":"21","value":43875,"series_id":"KYPCPI"},{"region":"North
+        Carolina","code":"37","value":48741,"series_id":"NCPCPI"},{"region":"Oklahoma","code":"40","value":48646,"series_id":"OKPCPI"},{"region":"Massachusetts","code":"25","value":73213,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":50035,"series_id":"OHPCPI"},{"region":"Maryland","code":"24","value":62313,"series_id":"MDPCPI"},{"region":"New
+        York","code":"36","value":67366,"series_id":"NYPCPI"},{"region":"California","code":"06","value":64919,"series_id":"CAPCPI"}],"2020-01-01":[{"region":"Montana","code":"30","value":54062,"series_id":"MTPCPI"},{"region":"Alaska","code":"02","value":62715,"series_id":"AKPCPI"},{"region":"Alabama","code":"01","value":46119,"series_id":"ALPCPI"},{"region":"Arkansas","code":"05","value":47123,"series_id":"ARPCPI"},{"region":"Arizona","code":"04","value":52313,"series_id":"AZPCPI"},{"region":"California","code":"06","value":70643,"series_id":"CAPCPI"},{"region":"Colorado","code":"08","value":65352,"series_id":"COPCPI"},{"region":"Connecticut","code":"09","value":78526,"series_id":"CTPCPI"},{"region":"District
+        of Columbia","code":"11","value":92307,"series_id":"DCPCPI"},{"region":"Delaware","code":"10","value":56311,"series_id":"DEPCPI"},{"region":"Florida","code":"12","value":57240,"series_id":"FLPCPI"},{"region":"Georgia","code":"13","value":51967,"series_id":"GAPCPI"},{"region":"Hawaii","code":"15","value":57276,"series_id":"HIPCPI"},{"region":"Iowa","code":"19","value":53280,"series_id":"IAPCPI"},{"region":"Idaho","code":"16","value":49453,"series_id":"IDPCPI"},{"region":"Illinois","code":"17","value":62132,"series_id":"ILPCPI"},{"region":"Indiana","code":"18","value":52194,"series_id":"INPCPI"},{"region":"Kansas","code":"20","value":55935,"series_id":"KSPCPI"},{"region":"Kentucky","code":"21","value":47489,"series_id":"KYPCPI"},{"region":"Massachusetts","code":"25","value":78685,"series_id":"MAPCPI"},{"region":"Maryland","code":"24","value":65680,"series_id":"MDPCPI"},{"region":"Maine","code":"23","value":54861,"series_id":"MEPCPI"},{"region":"Michigan","code":"26","value":53378,"series_id":"MIPCPI"},{"region":"Minnesota","code":"27","value":62210,"series_id":"MNPCPI"},{"region":"Missouri","code":"29","value":52112,"series_id":"MOPCPI"},{"region":"Mississippi","code":"28","value":42698,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":60821,"series_id":"NDPCPI"},{"region":"New Hampshire","code":"33","value":68505,"series_id":"NHPCPI"},{"region":"New
+        Jersey","code":"34","value":71567,"series_id":"NJPCPI"},{"region":"New Mexico","code":"35","value":46742,"series_id":"NMPCPI"},{"region":"Nevada","code":"32","value":55378,"series_id":"NVPCPI"},{"region":"New
+        York","code":"36","value":71743,"series_id":"NYPCPI"},{"region":"Ohio","code":"39","value":53514,"series_id":"OHPCPI"},{"region":"Oklahoma","code":"40","value":50481,"series_id":"OKPCPI"},{"region":"Oregon","code":"41","value":56962,"series_id":"ORPCPI"},{"region":"Pennsylvania","code":"42","value":60663,"series_id":"PAPCPI"},{"region":"South
+        Carolina","code":"45","value":49095,"series_id":"SCPCPI"},{"region":"South
+        Dakota","code":"46","value":60398,"series_id":"SDPCPI"},{"region":"Tennessee","code":"47","value":52310,"series_id":"TNPCPI"},{"region":"Virginia","code":"51","value":62157,"series_id":"VAPCPI"},{"region":"Vermont","code":"50","value":59260,"series_id":"VTPCPI"},{"region":"Washington","code":"53","value":68304,"series_id":"WAPCPI"},{"region":"Wisconsin","code":"55","value":55904,"series_id":"WIPCPI"},{"region":"West
+        Virginia","code":"54","value":45199,"series_id":"WVPCPI"},{"region":"Wyoming","code":"56","value":65744,"series_id":"WYPCPI"},{"region":"Texas","code":"48","value":55573,"series_id":"TXPCPI"},{"region":"Louisiana","code":"22","value":50804,"series_id":"LAPCPI"},{"region":"North
+        Carolina","code":"37","value":51938,"series_id":"NCPCPI"},{"region":"Nebraska","code":"31","value":57387,"series_id":"NEPCPI"},{"region":"Rhode
+        Island","code":"44","value":59935,"series_id":"RIPCPI"},{"region":"Utah","code":"49","value":52191,"series_id":"UTPCPI"}],"2021-01-01":[{"region":"Kentucky","code":"21","value":51298,"series_id":"KYPCPI"},{"region":"Alaska","code":"02","value":65677,"series_id":"AKPCPI"},{"region":"Florida","code":"12","value":62136,"series_id":"FLPCPI"},{"region":"Illinois","code":"17","value":67165,"series_id":"ILPCPI"},{"region":"Washington","code":"53","value":73755,"series_id":"WAPCPI"},{"region":"Oklahoma","code":"40","value":53808,"series_id":"OKPCPI"},{"region":"South
+        Carolina","code":"45","value":52441,"series_id":"SCPCPI"},{"region":"Delaware","code":"10","value":59846,"series_id":"DEPCPI"},{"region":"Alabama","code":"01","value":49671,"series_id":"ALPCPI"},{"region":"Wisconsin","code":"55","value":59787,"series_id":"WIPCPI"},{"region":"Massachusetts","code":"25","value":83593,"series_id":"MAPCPI"},{"region":"Arizona","code":"04","value":55574,"series_id":"AZPCPI"},{"region":"District
+        of Columbia","code":"11","value":96659,"series_id":"DCPCPI"},{"region":"Utah","code":"49","value":56000,"series_id":"UTPCPI"},{"region":"West
+        Virginia","code":"54","value":48418,"series_id":"WVPCPI"},{"region":"Idaho","code":"16","value":52276,"series_id":"IDPCPI"},{"region":"Arkansas","code":"05","value":50588,"series_id":"ARPCPI"},{"region":"Connecticut","code":"09","value":82885,"series_id":"CTPCPI"},{"region":"Rhode
+        Island","code":"44","value":64296,"series_id":"RIPCPI"},{"region":"Wyoming","code":"56","value":69584,"series_id":"WYPCPI"},{"region":"South
+        Dakota","code":"46","value":64405,"series_id":"SDPCPI"},{"region":"Kansas","code":"20","value":58857,"series_id":"KSPCPI"},{"region":"Colorado","code":"08","value":70715,"series_id":"COPCPI"},{"region":"North
+        Carolina","code":"37","value":56095,"series_id":"NCPCPI"},{"region":"Texas","code":"48","value":59802,"series_id":"TXPCPI"},{"region":"Iowa","code":"19","value":57080,"series_id":"IAPCPI"},{"region":"Montana","code":"30","value":56848,"series_id":"MTPCPI"},{"region":"Oregon","code":"41","value":61449,"series_id":"ORPCPI"},{"region":"Tennessee","code":"47","value":56616,"series_id":"TNPCPI"},{"region":"Mississippi","code":"28","value":45887,"series_id":"MSPCPI"},{"region":"Ohio","code":"39","value":56955,"series_id":"OHPCPI"},{"region":"North
+        Dakota","code":"38","value":64276,"series_id":"NDPCPI"},{"region":"Maryland","code":"24","value":69710,"series_id":"MDPCPI"},{"region":"Hawaii","code":"15","value":60711,"series_id":"HIPCPI"},{"region":"Missouri","code":"29","value":55310,"series_id":"MOPCPI"},{"region":"California","code":"06","value":76800,"series_id":"CAPCPI"},{"region":"New
+        Hampshire","code":"33","value":73279,"series_id":"NHPCPI"},{"region":"Nebraska","code":"31","value":61210,"series_id":"NEPCPI"},{"region":"Virginia","code":"51","value":66190,"series_id":"VAPCPI"},{"region":"Minnesota","code":"27","value":66232,"series_id":"MNPCPI"},{"region":"Indiana","code":"18","value":56435,"series_id":"INPCPI"},{"region":"New
+        Jersey","code":"34","value":77009,"series_id":"NJPCPI"},{"region":"New York","code":"36","value":76753,"series_id":"NYPCPI"},{"region":"Georgia","code":"13","value":55846,"series_id":"GAPCPI"},{"region":"Michigan","code":"26","value":56569,"series_id":"MIPCPI"},{"region":"Louisiana","code":"22","value":54181,"series_id":"LAPCPI"},{"region":"New
+        Mexico","code":"35","value":50292,"series_id":"NMPCPI"},{"region":"Pennsylvania","code":"42","value":64042,"series_id":"PAPCPI"},{"region":"Vermont","code":"50","value":61748,"series_id":"VTPCPI"},{"region":"Maine","code":"23","value":58272,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":60167,"series_id":"NVPCPI"}],"2022-01-01":[{"region":"Louisiana","code":"22","value":54622,"series_id":"LAPCPI"},{"region":"Nevada","code":"32","value":61282,"series_id":"NVPCPI"},{"region":"Maryland","code":"24","value":70730,"series_id":"MDPCPI"},{"region":"Arizona","code":"04","value":56667,"series_id":"AZPCPI"},{"region":"New
+        York","code":"36","value":78089,"series_id":"NYPCPI"},{"region":"Massachusetts","code":"25","value":84945,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":57880,"series_id":"OHPCPI"},{"region":"Kentucky","code":"21","value":52109,"series_id":"KYPCPI"},{"region":"Oklahoma","code":"40","value":54998,"series_id":"OKPCPI"},{"region":"Kansas","code":"20","value":60152,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":62767,"series_id":"ORPCPI"},{"region":"Indiana","code":"18","value":57930,"series_id":"INPCPI"},{"region":"North
+        Carolina","code":"37","value":57416,"series_id":"NCPCPI"},{"region":"Pennsylvania","code":"42","value":65167,"series_id":"PAPCPI"},{"region":"Illinois","code":"17","value":68822,"series_id":"ILPCPI"},{"region":"Arkansas","code":"05","value":51787,"series_id":"ARPCPI"},{"region":"South
+        Carolina","code":"45","value":53320,"series_id":"SCPCPI"},{"region":"Idaho","code":"16","value":54537,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":65806,"series_id":"SDPCPI"},{"region":"Iowa","code":"19","value":58905,"series_id":"IAPCPI"},{"region":"Utah","code":"49","value":57925,"series_id":"UTPCPI"},{"region":"Tennessee","code":"47","value":58279,"series_id":"TNPCPI"},{"region":"Hawaii","code":"15","value":61175,"series_id":"HIPCPI"},{"region":"Virginia","code":"51","value":68211,"series_id":"VAPCPI"},{"region":"Georgia","code":"13","value":57129,"series_id":"GAPCPI"},{"region":"Nebraska","code":"31","value":63321,"series_id":"NEPCPI"},{"region":"Vermont","code":"50","value":63206,"series_id":"VTPCPI"},{"region":"Florida","code":"12","value":63597,"series_id":"FLPCPI"},{"region":"Alabama","code":"01","value":50637,"series_id":"ALPCPI"},{"region":"Washington","code":"53","value":75698,"series_id":"WAPCPI"},{"region":"Delaware","code":"10","value":61387,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":61210,"series_id":"WIPCPI"},{"region":"District
+        of Columbia","code":"11","value":96728,"series_id":"DCPCPI"},{"region":"West
+        Virginia","code":"54","value":49169,"series_id":"WVPCPI"},{"region":"Connecticut","code":"09","value":84972,"series_id":"CTPCPI"},{"region":"Wyoming","code":"56","value":71342,"series_id":"WYPCPI"},{"region":"Colorado","code":"08","value":74167,"series_id":"COPCPI"},{"region":"Rhode
+        Island","code":"44","value":65377,"series_id":"RIPCPI"},{"region":"Texas","code":"48","value":61985,"series_id":"TXPCPI"},{"region":"Montana","code":"30","value":57719,"series_id":"MTPCPI"},{"region":"Mississippi","code":"28","value":46248,"series_id":"MSPCPI"},{"region":"California","code":"06","value":77339,"series_id":"CAPCPI"},{"region":"North
+        Dakota","code":"38","value":66184,"series_id":"NDPCPI"},{"region":"Missouri","code":"29","value":56551,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":74663,"series_id":"NHPCPI"},{"region":"Minnesota","code":"27","value":68010,"series_id":"MNPCPI"},{"region":"Alaska","code":"02","value":68919,"series_id":"AKPCPI"},{"region":"New
+        Jersey","code":"34","value":78700,"series_id":"NJPCPI"},{"region":"Michigan","code":"26","value":56813,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":51500,"series_id":"NMPCPI"},{"region":"Maine","code":"23","value":59463,"series_id":"MEPCPI"}]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -282,17 +234,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:00 GMT
+      - Sun, 03 Sep 2023 01:29:42 GMT
       ETag:
-      - '"8c809a0d993863065ef28a166962e68d-gzip"'
+      - '"e82023e6cb476e42d6236ebbe6fd813a-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 01:39:00 GMT
+      - Sun, 03 Sep 2023 01:39:42 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '120'
+      - '100'
     status:
       code: 200
       message: OK
@@ -306,69 +258,53 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.2
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&return_format=json&series_id=WIPCPI&start_date=2019-01-01
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"meta":{"title":"2021 Per Capita Personal Income by State (Dollars)","region":"state","seasonality":"Not
+        Seasonally Adjusted","units":"Dollars","frequency":"Annual","data":{"2019-01-01":[{"region":"Maine","code":"23","value":50728,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":52602,"series_id":"NVPCPI"},{"region":"Michigan","code":"26","value":49142,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":43530,"series_id":"NMPCPI"},{"region":"Minnesota","code":"27","value":58543,"series_id":"MNPCPI"},{"region":"Louisiana","code":"22","value":47668,"series_id":"LAPCPI"},{"region":"New
+        Jersey","code":"34","value":68438,"series_id":"NJPCPI"},{"region":"Missouri","code":"29","value":49001,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":64747,"series_id":"NHPCPI"},{"region":"Mississippi","code":"28","value":39445,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":57110,"series_id":"NDPCPI"},{"region":"Montana","code":"30","value":50289,"series_id":"MTPCPI"},{"region":"Colorado","code":"08","value":62124,"series_id":"COPCPI"},{"region":"Alabama","code":"01","value":43288,"series_id":"ALPCPI"},{"region":"Texas","code":"48","value":54076,"series_id":"TXPCPI"},{"region":"Connecticut","code":"09","value":75533,"series_id":"CTPCPI"},{"region":"Alaska","code":"02","value":61316,"series_id":"AKPCPI"},{"region":"Wyoming","code":"56","value":64117,"series_id":"WYPCPI"},{"region":"District
+        of Columbia","code":"11","value":84671,"series_id":"DCPCPI"},{"region":"Rhode
+        Island","code":"44","value":55830,"series_id":"RIPCPI"},{"region":"West Virginia","code":"54","value":42951,"series_id":"WVPCPI"},{"region":"Delaware","code":"10","value":54217,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":52893,"series_id":"WIPCPI"},{"region":"Florida","code":"12","value":54560,"series_id":"FLPCPI"},{"region":"Washington","code":"53","value":64189,"series_id":"WAPCPI"},{"region":"Georgia","code":"13","value":49083,"series_id":"GAPCPI"},{"region":"Arkansas","code":"05","value":44324,"series_id":"ARPCPI"},{"region":"Vermont","code":"50","value":55442,"series_id":"VTPCPI"},{"region":"Hawaii","code":"15","value":54700,"series_id":"HIPCPI"},{"region":"Utah","code":"49","value":48580,"series_id":"UTPCPI"},{"region":"Virginia","code":"51","value":59073,"series_id":"VAPCPI"},{"region":"Iowa","code":"19","value":50367,"series_id":"IAPCPI"},{"region":"Nebraska","code":"31","value":54182,"series_id":"NEPCPI"},{"region":"Tennessee","code":"47","value":49343,"series_id":"TNPCPI"},{"region":"Idaho","code":"16","value":45924,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":55294,"series_id":"SDPCPI"},{"region":"Illinois","code":"17","value":58438,"series_id":"ILPCPI"},{"region":"South
+        Carolina","code":"45","value":46681,"series_id":"SCPCPI"},{"region":"Indiana","code":"18","value":48749,"series_id":"INPCPI"},{"region":"Arizona","code":"04","value":48124,"series_id":"AZPCPI"},{"region":"Pennsylvania","code":"42","value":56952,"series_id":"PAPCPI"},{"region":"Kansas","code":"20","value":52876,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":52718,"series_id":"ORPCPI"},{"region":"Kentucky","code":"21","value":43875,"series_id":"KYPCPI"},{"region":"North
+        Carolina","code":"37","value":48741,"series_id":"NCPCPI"},{"region":"Oklahoma","code":"40","value":48646,"series_id":"OKPCPI"},{"region":"Massachusetts","code":"25","value":73213,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":50035,"series_id":"OHPCPI"},{"region":"Maryland","code":"24","value":62313,"series_id":"MDPCPI"},{"region":"New
+        York","code":"36","value":67366,"series_id":"NYPCPI"},{"region":"California","code":"06","value":64919,"series_id":"CAPCPI"}],"2020-01-01":[{"region":"Montana","code":"30","value":54062,"series_id":"MTPCPI"},{"region":"Alaska","code":"02","value":62715,"series_id":"AKPCPI"},{"region":"Alabama","code":"01","value":46119,"series_id":"ALPCPI"},{"region":"Arkansas","code":"05","value":47123,"series_id":"ARPCPI"},{"region":"Arizona","code":"04","value":52313,"series_id":"AZPCPI"},{"region":"California","code":"06","value":70643,"series_id":"CAPCPI"},{"region":"Colorado","code":"08","value":65352,"series_id":"COPCPI"},{"region":"Connecticut","code":"09","value":78526,"series_id":"CTPCPI"},{"region":"District
+        of Columbia","code":"11","value":92307,"series_id":"DCPCPI"},{"region":"Delaware","code":"10","value":56311,"series_id":"DEPCPI"},{"region":"Florida","code":"12","value":57240,"series_id":"FLPCPI"},{"region":"Georgia","code":"13","value":51967,"series_id":"GAPCPI"},{"region":"Hawaii","code":"15","value":57276,"series_id":"HIPCPI"},{"region":"Iowa","code":"19","value":53280,"series_id":"IAPCPI"},{"region":"Idaho","code":"16","value":49453,"series_id":"IDPCPI"},{"region":"Illinois","code":"17","value":62132,"series_id":"ILPCPI"},{"region":"Indiana","code":"18","value":52194,"series_id":"INPCPI"},{"region":"Kansas","code":"20","value":55935,"series_id":"KSPCPI"},{"region":"Kentucky","code":"21","value":47489,"series_id":"KYPCPI"},{"region":"Massachusetts","code":"25","value":78685,"series_id":"MAPCPI"},{"region":"Maryland","code":"24","value":65680,"series_id":"MDPCPI"},{"region":"Maine","code":"23","value":54861,"series_id":"MEPCPI"},{"region":"Michigan","code":"26","value":53378,"series_id":"MIPCPI"},{"region":"Minnesota","code":"27","value":62210,"series_id":"MNPCPI"},{"region":"Missouri","code":"29","value":52112,"series_id":"MOPCPI"},{"region":"Mississippi","code":"28","value":42698,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":60821,"series_id":"NDPCPI"},{"region":"New Hampshire","code":"33","value":68505,"series_id":"NHPCPI"},{"region":"New
+        Jersey","code":"34","value":71567,"series_id":"NJPCPI"},{"region":"New Mexico","code":"35","value":46742,"series_id":"NMPCPI"},{"region":"Nevada","code":"32","value":55378,"series_id":"NVPCPI"},{"region":"New
+        York","code":"36","value":71743,"series_id":"NYPCPI"},{"region":"Ohio","code":"39","value":53514,"series_id":"OHPCPI"},{"region":"Oklahoma","code":"40","value":50481,"series_id":"OKPCPI"},{"region":"Oregon","code":"41","value":56962,"series_id":"ORPCPI"},{"region":"Pennsylvania","code":"42","value":60663,"series_id":"PAPCPI"},{"region":"South
+        Carolina","code":"45","value":49095,"series_id":"SCPCPI"},{"region":"South
+        Dakota","code":"46","value":60398,"series_id":"SDPCPI"},{"region":"Tennessee","code":"47","value":52310,"series_id":"TNPCPI"},{"region":"Virginia","code":"51","value":62157,"series_id":"VAPCPI"},{"region":"Vermont","code":"50","value":59260,"series_id":"VTPCPI"},{"region":"Washington","code":"53","value":68304,"series_id":"WAPCPI"},{"region":"Wisconsin","code":"55","value":55904,"series_id":"WIPCPI"},{"region":"West
+        Virginia","code":"54","value":45199,"series_id":"WVPCPI"},{"region":"Wyoming","code":"56","value":65744,"series_id":"WYPCPI"},{"region":"Texas","code":"48","value":55573,"series_id":"TXPCPI"},{"region":"Louisiana","code":"22","value":50804,"series_id":"LAPCPI"},{"region":"North
+        Carolina","code":"37","value":51938,"series_id":"NCPCPI"},{"region":"Nebraska","code":"31","value":57387,"series_id":"NEPCPI"},{"region":"Rhode
+        Island","code":"44","value":59935,"series_id":"RIPCPI"},{"region":"Utah","code":"49","value":52191,"series_id":"UTPCPI"}],"2021-01-01":[{"region":"Kentucky","code":"21","value":51298,"series_id":"KYPCPI"},{"region":"Alaska","code":"02","value":65677,"series_id":"AKPCPI"},{"region":"Florida","code":"12","value":62136,"series_id":"FLPCPI"},{"region":"Illinois","code":"17","value":67165,"series_id":"ILPCPI"},{"region":"Washington","code":"53","value":73755,"series_id":"WAPCPI"},{"region":"Oklahoma","code":"40","value":53808,"series_id":"OKPCPI"},{"region":"South
+        Carolina","code":"45","value":52441,"series_id":"SCPCPI"},{"region":"Delaware","code":"10","value":59846,"series_id":"DEPCPI"},{"region":"Alabama","code":"01","value":49671,"series_id":"ALPCPI"},{"region":"Wisconsin","code":"55","value":59787,"series_id":"WIPCPI"},{"region":"Massachusetts","code":"25","value":83593,"series_id":"MAPCPI"},{"region":"Arizona","code":"04","value":55574,"series_id":"AZPCPI"},{"region":"District
+        of Columbia","code":"11","value":96659,"series_id":"DCPCPI"},{"region":"Utah","code":"49","value":56000,"series_id":"UTPCPI"},{"region":"West
+        Virginia","code":"54","value":48418,"series_id":"WVPCPI"},{"region":"Idaho","code":"16","value":52276,"series_id":"IDPCPI"},{"region":"Arkansas","code":"05","value":50588,"series_id":"ARPCPI"},{"region":"Connecticut","code":"09","value":82885,"series_id":"CTPCPI"},{"region":"Rhode
+        Island","code":"44","value":64296,"series_id":"RIPCPI"},{"region":"Wyoming","code":"56","value":69584,"series_id":"WYPCPI"},{"region":"South
+        Dakota","code":"46","value":64405,"series_id":"SDPCPI"},{"region":"Kansas","code":"20","value":58857,"series_id":"KSPCPI"},{"region":"Colorado","code":"08","value":70715,"series_id":"COPCPI"},{"region":"North
+        Carolina","code":"37","value":56095,"series_id":"NCPCPI"},{"region":"Texas","code":"48","value":59802,"series_id":"TXPCPI"},{"region":"Iowa","code":"19","value":57080,"series_id":"IAPCPI"},{"region":"Montana","code":"30","value":56848,"series_id":"MTPCPI"},{"region":"Oregon","code":"41","value":61449,"series_id":"ORPCPI"},{"region":"Tennessee","code":"47","value":56616,"series_id":"TNPCPI"},{"region":"Mississippi","code":"28","value":45887,"series_id":"MSPCPI"},{"region":"Ohio","code":"39","value":56955,"series_id":"OHPCPI"},{"region":"North
+        Dakota","code":"38","value":64276,"series_id":"NDPCPI"},{"region":"Maryland","code":"24","value":69710,"series_id":"MDPCPI"},{"region":"Hawaii","code":"15","value":60711,"series_id":"HIPCPI"},{"region":"Missouri","code":"29","value":55310,"series_id":"MOPCPI"},{"region":"California","code":"06","value":76800,"series_id":"CAPCPI"},{"region":"New
+        Hampshire","code":"33","value":73279,"series_id":"NHPCPI"},{"region":"Nebraska","code":"31","value":61210,"series_id":"NEPCPI"},{"region":"Virginia","code":"51","value":66190,"series_id":"VAPCPI"},{"region":"Minnesota","code":"27","value":66232,"series_id":"MNPCPI"},{"region":"Indiana","code":"18","value":56435,"series_id":"INPCPI"},{"region":"New
+        Jersey","code":"34","value":77009,"series_id":"NJPCPI"},{"region":"New York","code":"36","value":76753,"series_id":"NYPCPI"},{"region":"Georgia","code":"13","value":55846,"series_id":"GAPCPI"},{"region":"Michigan","code":"26","value":56569,"series_id":"MIPCPI"},{"region":"Louisiana","code":"22","value":54181,"series_id":"LAPCPI"},{"region":"New
+        Mexico","code":"35","value":50292,"series_id":"NMPCPI"},{"region":"Pennsylvania","code":"42","value":64042,"series_id":"PAPCPI"},{"region":"Vermont","code":"50","value":61748,"series_id":"VTPCPI"},{"region":"Maine","code":"23","value":58272,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":60167,"series_id":"NVPCPI"}],"2022-01-01":[{"region":"Louisiana","code":"22","value":54622,"series_id":"LAPCPI"},{"region":"Nevada","code":"32","value":61282,"series_id":"NVPCPI"},{"region":"Maryland","code":"24","value":70730,"series_id":"MDPCPI"},{"region":"Arizona","code":"04","value":56667,"series_id":"AZPCPI"},{"region":"New
+        York","code":"36","value":78089,"series_id":"NYPCPI"},{"region":"Massachusetts","code":"25","value":84945,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":57880,"series_id":"OHPCPI"},{"region":"Kentucky","code":"21","value":52109,"series_id":"KYPCPI"},{"region":"Oklahoma","code":"40","value":54998,"series_id":"OKPCPI"},{"region":"Kansas","code":"20","value":60152,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":62767,"series_id":"ORPCPI"},{"region":"Indiana","code":"18","value":57930,"series_id":"INPCPI"},{"region":"North
+        Carolina","code":"37","value":57416,"series_id":"NCPCPI"},{"region":"Pennsylvania","code":"42","value":65167,"series_id":"PAPCPI"},{"region":"Illinois","code":"17","value":68822,"series_id":"ILPCPI"},{"region":"Arkansas","code":"05","value":51787,"series_id":"ARPCPI"},{"region":"South
+        Carolina","code":"45","value":53320,"series_id":"SCPCPI"},{"region":"Idaho","code":"16","value":54537,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":65806,"series_id":"SDPCPI"},{"region":"Iowa","code":"19","value":58905,"series_id":"IAPCPI"},{"region":"Utah","code":"49","value":57925,"series_id":"UTPCPI"},{"region":"Tennessee","code":"47","value":58279,"series_id":"TNPCPI"},{"region":"Hawaii","code":"15","value":61175,"series_id":"HIPCPI"},{"region":"Virginia","code":"51","value":68211,"series_id":"VAPCPI"},{"region":"Georgia","code":"13","value":57129,"series_id":"GAPCPI"},{"region":"Nebraska","code":"31","value":63321,"series_id":"NEPCPI"},{"region":"Vermont","code":"50","value":63206,"series_id":"VTPCPI"},{"region":"Florida","code":"12","value":63597,"series_id":"FLPCPI"},{"region":"Alabama","code":"01","value":50637,"series_id":"ALPCPI"},{"region":"Washington","code":"53","value":75698,"series_id":"WAPCPI"},{"region":"Delaware","code":"10","value":61387,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":61210,"series_id":"WIPCPI"},{"region":"District
+        of Columbia","code":"11","value":96728,"series_id":"DCPCPI"},{"region":"West
+        Virginia","code":"54","value":49169,"series_id":"WVPCPI"},{"region":"Connecticut","code":"09","value":84972,"series_id":"CTPCPI"},{"region":"Wyoming","code":"56","value":71342,"series_id":"WYPCPI"},{"region":"Colorado","code":"08","value":74167,"series_id":"COPCPI"},{"region":"Rhode
+        Island","code":"44","value":65377,"series_id":"RIPCPI"},{"region":"Texas","code":"48","value":61985,"series_id":"TXPCPI"},{"region":"Montana","code":"30","value":57719,"series_id":"MTPCPI"},{"region":"Mississippi","code":"28","value":46248,"series_id":"MSPCPI"},{"region":"California","code":"06","value":77339,"series_id":"CAPCPI"},{"region":"North
+        Dakota","code":"38","value":66184,"series_id":"NDPCPI"},{"region":"Missouri","code":"29","value":56551,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":74663,"series_id":"NHPCPI"},{"region":"Minnesota","code":"27","value":68010,"series_id":"MNPCPI"},{"region":"Alaska","code":"02","value":68919,"series_id":"AKPCPI"},{"region":"New
+        Jersey","code":"34","value":78700,"series_id":"NJPCPI"},{"region":"Michigan","code":"26","value":56813,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":51500,"series_id":"NMPCPI"},{"region":"Maine","code":"23","value":59463,"series_id":"MEPCPI"}]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -381,11 +317,94 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 01:29:00 GMT
+      - Sun, 03 Sep 2023 01:29:43 GMT
       ETag:
-      - '"db6824b7bef5cead0771a4bd34d68b83-gzip"'
+      - '"a6d40a25558d368f85de625775b80b4c-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 01:39:00 GMT
+      - Sun, 03 Sep 2023 01:39:43 GMT
+      Vary:
+      - Accept-Encoding
+      x-rate-limit-limit:
+      - '120'
+      x-rate-limit-remaining:
+      - '99'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&series_id=WIPCPI&start_date=2019-01-01
+  response:
+    body:
+      string: '{"meta":{"title":"2021 Per Capita Personal Income by State (Dollars)","region":"state","seasonality":"Not
+        Seasonally Adjusted","units":"Dollars","frequency":"Annual","data":{"2019-01-01":[{"region":"Maine","code":"23","value":50728,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":52602,"series_id":"NVPCPI"},{"region":"Michigan","code":"26","value":49142,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":43530,"series_id":"NMPCPI"},{"region":"Minnesota","code":"27","value":58543,"series_id":"MNPCPI"},{"region":"Louisiana","code":"22","value":47668,"series_id":"LAPCPI"},{"region":"New
+        Jersey","code":"34","value":68438,"series_id":"NJPCPI"},{"region":"Missouri","code":"29","value":49001,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":64747,"series_id":"NHPCPI"},{"region":"Mississippi","code":"28","value":39445,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":57110,"series_id":"NDPCPI"},{"region":"Montana","code":"30","value":50289,"series_id":"MTPCPI"},{"region":"Colorado","code":"08","value":62124,"series_id":"COPCPI"},{"region":"Alabama","code":"01","value":43288,"series_id":"ALPCPI"},{"region":"Texas","code":"48","value":54076,"series_id":"TXPCPI"},{"region":"Connecticut","code":"09","value":75533,"series_id":"CTPCPI"},{"region":"Alaska","code":"02","value":61316,"series_id":"AKPCPI"},{"region":"Wyoming","code":"56","value":64117,"series_id":"WYPCPI"},{"region":"District
+        of Columbia","code":"11","value":84671,"series_id":"DCPCPI"},{"region":"Rhode
+        Island","code":"44","value":55830,"series_id":"RIPCPI"},{"region":"West Virginia","code":"54","value":42951,"series_id":"WVPCPI"},{"region":"Delaware","code":"10","value":54217,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":52893,"series_id":"WIPCPI"},{"region":"Florida","code":"12","value":54560,"series_id":"FLPCPI"},{"region":"Washington","code":"53","value":64189,"series_id":"WAPCPI"},{"region":"Georgia","code":"13","value":49083,"series_id":"GAPCPI"},{"region":"Arkansas","code":"05","value":44324,"series_id":"ARPCPI"},{"region":"Vermont","code":"50","value":55442,"series_id":"VTPCPI"},{"region":"Hawaii","code":"15","value":54700,"series_id":"HIPCPI"},{"region":"Utah","code":"49","value":48580,"series_id":"UTPCPI"},{"region":"Virginia","code":"51","value":59073,"series_id":"VAPCPI"},{"region":"Iowa","code":"19","value":50367,"series_id":"IAPCPI"},{"region":"Nebraska","code":"31","value":54182,"series_id":"NEPCPI"},{"region":"Tennessee","code":"47","value":49343,"series_id":"TNPCPI"},{"region":"Idaho","code":"16","value":45924,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":55294,"series_id":"SDPCPI"},{"region":"Illinois","code":"17","value":58438,"series_id":"ILPCPI"},{"region":"South
+        Carolina","code":"45","value":46681,"series_id":"SCPCPI"},{"region":"Indiana","code":"18","value":48749,"series_id":"INPCPI"},{"region":"Arizona","code":"04","value":48124,"series_id":"AZPCPI"},{"region":"Pennsylvania","code":"42","value":56952,"series_id":"PAPCPI"},{"region":"Kansas","code":"20","value":52876,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":52718,"series_id":"ORPCPI"},{"region":"Kentucky","code":"21","value":43875,"series_id":"KYPCPI"},{"region":"North
+        Carolina","code":"37","value":48741,"series_id":"NCPCPI"},{"region":"Oklahoma","code":"40","value":48646,"series_id":"OKPCPI"},{"region":"Massachusetts","code":"25","value":73213,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":50035,"series_id":"OHPCPI"},{"region":"Maryland","code":"24","value":62313,"series_id":"MDPCPI"},{"region":"New
+        York","code":"36","value":67366,"series_id":"NYPCPI"},{"region":"California","code":"06","value":64919,"series_id":"CAPCPI"}],"2020-01-01":[{"region":"Montana","code":"30","value":54062,"series_id":"MTPCPI"},{"region":"Alaska","code":"02","value":62715,"series_id":"AKPCPI"},{"region":"Alabama","code":"01","value":46119,"series_id":"ALPCPI"},{"region":"Arkansas","code":"05","value":47123,"series_id":"ARPCPI"},{"region":"Arizona","code":"04","value":52313,"series_id":"AZPCPI"},{"region":"California","code":"06","value":70643,"series_id":"CAPCPI"},{"region":"Colorado","code":"08","value":65352,"series_id":"COPCPI"},{"region":"Connecticut","code":"09","value":78526,"series_id":"CTPCPI"},{"region":"District
+        of Columbia","code":"11","value":92307,"series_id":"DCPCPI"},{"region":"Delaware","code":"10","value":56311,"series_id":"DEPCPI"},{"region":"Florida","code":"12","value":57240,"series_id":"FLPCPI"},{"region":"Georgia","code":"13","value":51967,"series_id":"GAPCPI"},{"region":"Hawaii","code":"15","value":57276,"series_id":"HIPCPI"},{"region":"Iowa","code":"19","value":53280,"series_id":"IAPCPI"},{"region":"Idaho","code":"16","value":49453,"series_id":"IDPCPI"},{"region":"Illinois","code":"17","value":62132,"series_id":"ILPCPI"},{"region":"Indiana","code":"18","value":52194,"series_id":"INPCPI"},{"region":"Kansas","code":"20","value":55935,"series_id":"KSPCPI"},{"region":"Kentucky","code":"21","value":47489,"series_id":"KYPCPI"},{"region":"Massachusetts","code":"25","value":78685,"series_id":"MAPCPI"},{"region":"Maryland","code":"24","value":65680,"series_id":"MDPCPI"},{"region":"Maine","code":"23","value":54861,"series_id":"MEPCPI"},{"region":"Michigan","code":"26","value":53378,"series_id":"MIPCPI"},{"region":"Minnesota","code":"27","value":62210,"series_id":"MNPCPI"},{"region":"Missouri","code":"29","value":52112,"series_id":"MOPCPI"},{"region":"Mississippi","code":"28","value":42698,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":60821,"series_id":"NDPCPI"},{"region":"New Hampshire","code":"33","value":68505,"series_id":"NHPCPI"},{"region":"New
+        Jersey","code":"34","value":71567,"series_id":"NJPCPI"},{"region":"New Mexico","code":"35","value":46742,"series_id":"NMPCPI"},{"region":"Nevada","code":"32","value":55378,"series_id":"NVPCPI"},{"region":"New
+        York","code":"36","value":71743,"series_id":"NYPCPI"},{"region":"Ohio","code":"39","value":53514,"series_id":"OHPCPI"},{"region":"Oklahoma","code":"40","value":50481,"series_id":"OKPCPI"},{"region":"Oregon","code":"41","value":56962,"series_id":"ORPCPI"},{"region":"Pennsylvania","code":"42","value":60663,"series_id":"PAPCPI"},{"region":"South
+        Carolina","code":"45","value":49095,"series_id":"SCPCPI"},{"region":"South
+        Dakota","code":"46","value":60398,"series_id":"SDPCPI"},{"region":"Tennessee","code":"47","value":52310,"series_id":"TNPCPI"},{"region":"Virginia","code":"51","value":62157,"series_id":"VAPCPI"},{"region":"Vermont","code":"50","value":59260,"series_id":"VTPCPI"},{"region":"Washington","code":"53","value":68304,"series_id":"WAPCPI"},{"region":"Wisconsin","code":"55","value":55904,"series_id":"WIPCPI"},{"region":"West
+        Virginia","code":"54","value":45199,"series_id":"WVPCPI"},{"region":"Wyoming","code":"56","value":65744,"series_id":"WYPCPI"},{"region":"Texas","code":"48","value":55573,"series_id":"TXPCPI"},{"region":"Louisiana","code":"22","value":50804,"series_id":"LAPCPI"},{"region":"North
+        Carolina","code":"37","value":51938,"series_id":"NCPCPI"},{"region":"Nebraska","code":"31","value":57387,"series_id":"NEPCPI"},{"region":"Rhode
+        Island","code":"44","value":59935,"series_id":"RIPCPI"},{"region":"Utah","code":"49","value":52191,"series_id":"UTPCPI"}],"2021-01-01":[{"region":"Kentucky","code":"21","value":51298,"series_id":"KYPCPI"},{"region":"Alaska","code":"02","value":65677,"series_id":"AKPCPI"},{"region":"Florida","code":"12","value":62136,"series_id":"FLPCPI"},{"region":"Illinois","code":"17","value":67165,"series_id":"ILPCPI"},{"region":"Washington","code":"53","value":73755,"series_id":"WAPCPI"},{"region":"Oklahoma","code":"40","value":53808,"series_id":"OKPCPI"},{"region":"South
+        Carolina","code":"45","value":52441,"series_id":"SCPCPI"},{"region":"Delaware","code":"10","value":59846,"series_id":"DEPCPI"},{"region":"Alabama","code":"01","value":49671,"series_id":"ALPCPI"},{"region":"Wisconsin","code":"55","value":59787,"series_id":"WIPCPI"},{"region":"Massachusetts","code":"25","value":83593,"series_id":"MAPCPI"},{"region":"Arizona","code":"04","value":55574,"series_id":"AZPCPI"},{"region":"District
+        of Columbia","code":"11","value":96659,"series_id":"DCPCPI"},{"region":"Utah","code":"49","value":56000,"series_id":"UTPCPI"},{"region":"West
+        Virginia","code":"54","value":48418,"series_id":"WVPCPI"},{"region":"Idaho","code":"16","value":52276,"series_id":"IDPCPI"},{"region":"Arkansas","code":"05","value":50588,"series_id":"ARPCPI"},{"region":"Connecticut","code":"09","value":82885,"series_id":"CTPCPI"},{"region":"Rhode
+        Island","code":"44","value":64296,"series_id":"RIPCPI"},{"region":"Wyoming","code":"56","value":69584,"series_id":"WYPCPI"},{"region":"South
+        Dakota","code":"46","value":64405,"series_id":"SDPCPI"},{"region":"Kansas","code":"20","value":58857,"series_id":"KSPCPI"},{"region":"Colorado","code":"08","value":70715,"series_id":"COPCPI"},{"region":"North
+        Carolina","code":"37","value":56095,"series_id":"NCPCPI"},{"region":"Texas","code":"48","value":59802,"series_id":"TXPCPI"},{"region":"Iowa","code":"19","value":57080,"series_id":"IAPCPI"},{"region":"Montana","code":"30","value":56848,"series_id":"MTPCPI"},{"region":"Oregon","code":"41","value":61449,"series_id":"ORPCPI"},{"region":"Tennessee","code":"47","value":56616,"series_id":"TNPCPI"},{"region":"Mississippi","code":"28","value":45887,"series_id":"MSPCPI"},{"region":"Ohio","code":"39","value":56955,"series_id":"OHPCPI"},{"region":"North
+        Dakota","code":"38","value":64276,"series_id":"NDPCPI"},{"region":"Maryland","code":"24","value":69710,"series_id":"MDPCPI"},{"region":"Hawaii","code":"15","value":60711,"series_id":"HIPCPI"},{"region":"Missouri","code":"29","value":55310,"series_id":"MOPCPI"},{"region":"California","code":"06","value":76800,"series_id":"CAPCPI"},{"region":"New
+        Hampshire","code":"33","value":73279,"series_id":"NHPCPI"},{"region":"Nebraska","code":"31","value":61210,"series_id":"NEPCPI"},{"region":"Virginia","code":"51","value":66190,"series_id":"VAPCPI"},{"region":"Minnesota","code":"27","value":66232,"series_id":"MNPCPI"},{"region":"Indiana","code":"18","value":56435,"series_id":"INPCPI"},{"region":"New
+        Jersey","code":"34","value":77009,"series_id":"NJPCPI"},{"region":"New York","code":"36","value":76753,"series_id":"NYPCPI"},{"region":"Georgia","code":"13","value":55846,"series_id":"GAPCPI"},{"region":"Michigan","code":"26","value":56569,"series_id":"MIPCPI"},{"region":"Louisiana","code":"22","value":54181,"series_id":"LAPCPI"},{"region":"New
+        Mexico","code":"35","value":50292,"series_id":"NMPCPI"},{"region":"Pennsylvania","code":"42","value":64042,"series_id":"PAPCPI"},{"region":"Vermont","code":"50","value":61748,"series_id":"VTPCPI"},{"region":"Maine","code":"23","value":58272,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":60167,"series_id":"NVPCPI"}],"2022-01-01":[{"region":"Louisiana","code":"22","value":54622,"series_id":"LAPCPI"},{"region":"Nevada","code":"32","value":61282,"series_id":"NVPCPI"},{"region":"Maryland","code":"24","value":70730,"series_id":"MDPCPI"},{"region":"Arizona","code":"04","value":56667,"series_id":"AZPCPI"},{"region":"New
+        York","code":"36","value":78089,"series_id":"NYPCPI"},{"region":"Massachusetts","code":"25","value":84945,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":57880,"series_id":"OHPCPI"},{"region":"Kentucky","code":"21","value":52109,"series_id":"KYPCPI"},{"region":"Oklahoma","code":"40","value":54998,"series_id":"OKPCPI"},{"region":"Kansas","code":"20","value":60152,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":62767,"series_id":"ORPCPI"},{"region":"Indiana","code":"18","value":57930,"series_id":"INPCPI"},{"region":"North
+        Carolina","code":"37","value":57416,"series_id":"NCPCPI"},{"region":"Pennsylvania","code":"42","value":65167,"series_id":"PAPCPI"},{"region":"Illinois","code":"17","value":68822,"series_id":"ILPCPI"},{"region":"Arkansas","code":"05","value":51787,"series_id":"ARPCPI"},{"region":"South
+        Carolina","code":"45","value":53320,"series_id":"SCPCPI"},{"region":"Idaho","code":"16","value":54537,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":65806,"series_id":"SDPCPI"},{"region":"Iowa","code":"19","value":58905,"series_id":"IAPCPI"},{"region":"Utah","code":"49","value":57925,"series_id":"UTPCPI"},{"region":"Tennessee","code":"47","value":58279,"series_id":"TNPCPI"},{"region":"Hawaii","code":"15","value":61175,"series_id":"HIPCPI"},{"region":"Virginia","code":"51","value":68211,"series_id":"VAPCPI"},{"region":"Georgia","code":"13","value":57129,"series_id":"GAPCPI"},{"region":"Nebraska","code":"31","value":63321,"series_id":"NEPCPI"},{"region":"Vermont","code":"50","value":63206,"series_id":"VTPCPI"},{"region":"Florida","code":"12","value":63597,"series_id":"FLPCPI"},{"region":"Alabama","code":"01","value":50637,"series_id":"ALPCPI"},{"region":"Washington","code":"53","value":75698,"series_id":"WAPCPI"},{"region":"Delaware","code":"10","value":61387,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":61210,"series_id":"WIPCPI"},{"region":"District
+        of Columbia","code":"11","value":96728,"series_id":"DCPCPI"},{"region":"West
+        Virginia","code":"54","value":49169,"series_id":"WVPCPI"},{"region":"Connecticut","code":"09","value":84972,"series_id":"CTPCPI"},{"region":"Wyoming","code":"56","value":71342,"series_id":"WYPCPI"},{"region":"Colorado","code":"08","value":74167,"series_id":"COPCPI"},{"region":"Rhode
+        Island","code":"44","value":65377,"series_id":"RIPCPI"},{"region":"Texas","code":"48","value":61985,"series_id":"TXPCPI"},{"region":"Montana","code":"30","value":57719,"series_id":"MTPCPI"},{"region":"Mississippi","code":"28","value":46248,"series_id":"MSPCPI"},{"region":"California","code":"06","value":77339,"series_id":"CAPCPI"},{"region":"North
+        Dakota","code":"38","value":66184,"series_id":"NDPCPI"},{"region":"Missouri","code":"29","value":56551,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":74663,"series_id":"NHPCPI"},{"region":"Minnesota","code":"27","value":68010,"series_id":"MNPCPI"},{"region":"Alaska","code":"02","value":68919,"series_id":"AKPCPI"},{"region":"New
+        Jersey","code":"34","value":78700,"series_id":"NJPCPI"},{"region":"Michigan","code":"26","value":56813,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":51500,"series_id":"NMPCPI"},{"region":"Maine","code":"23","value":59463,"series_id":"MEPCPI"}]}}}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '3246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 03 Sep 2023 01:54:04 GMT
+      ETag:
+      - '"17209b3a99f75fbd16b4d573645adc88-gzip"'
+      Expires:
+      - Sun, 03 Sep 2023 02:04:04 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
@@ -405,168 +424,53 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.29.0
-    method: GET
-    uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&series_id=WIPCPI&start_date=2019-01-01
-  response:
-    body:
-      string: !!binary |
-        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
-    headers:
-      Accept-Ranges:
-      - bytes
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Length:
-      - '3246'
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Fri, 28 Apr 2023 02:18:08 GMT
-      ETag:
-      - '"e7365940c94ed53eed1edfef2daf39d9-gzip"'
-      Expires:
-      - Fri, 28 Apr 2023 02:28:08 GMT
-      Vary:
-      - Accept-Encoding
-      x-rate-limit-limit:
-      - '120'
-      x-rate-limit-remaining:
-      - '104'
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - '*/*'
-      Accept-Encoding:
-      - gzip, deflate
-      Connection:
-      - keep-alive
-      User-Agent:
-      - python-requests/2.29.0
+      - python-requests/2.31.0
     method: GET
     uri: https://api.stlouisfed.org/geofred//series/data?date=2021-01-01&file_type=json&return_format=json&series_id=WIPCPI&start_date=2019-01-01
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"meta":{"title":"2021 Per Capita Personal Income by State (Dollars)","region":"state","seasonality":"Not
+        Seasonally Adjusted","units":"Dollars","frequency":"Annual","data":{"2019-01-01":[{"region":"Maine","code":"23","value":50728,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":52602,"series_id":"NVPCPI"},{"region":"Michigan","code":"26","value":49142,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":43530,"series_id":"NMPCPI"},{"region":"Minnesota","code":"27","value":58543,"series_id":"MNPCPI"},{"region":"Louisiana","code":"22","value":47668,"series_id":"LAPCPI"},{"region":"New
+        Jersey","code":"34","value":68438,"series_id":"NJPCPI"},{"region":"Missouri","code":"29","value":49001,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":64747,"series_id":"NHPCPI"},{"region":"Mississippi","code":"28","value":39445,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":57110,"series_id":"NDPCPI"},{"region":"Montana","code":"30","value":50289,"series_id":"MTPCPI"},{"region":"Colorado","code":"08","value":62124,"series_id":"COPCPI"},{"region":"Alabama","code":"01","value":43288,"series_id":"ALPCPI"},{"region":"Texas","code":"48","value":54076,"series_id":"TXPCPI"},{"region":"Connecticut","code":"09","value":75533,"series_id":"CTPCPI"},{"region":"Alaska","code":"02","value":61316,"series_id":"AKPCPI"},{"region":"Wyoming","code":"56","value":64117,"series_id":"WYPCPI"},{"region":"District
+        of Columbia","code":"11","value":84671,"series_id":"DCPCPI"},{"region":"Rhode
+        Island","code":"44","value":55830,"series_id":"RIPCPI"},{"region":"West Virginia","code":"54","value":42951,"series_id":"WVPCPI"},{"region":"Delaware","code":"10","value":54217,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":52893,"series_id":"WIPCPI"},{"region":"Florida","code":"12","value":54560,"series_id":"FLPCPI"},{"region":"Washington","code":"53","value":64189,"series_id":"WAPCPI"},{"region":"Georgia","code":"13","value":49083,"series_id":"GAPCPI"},{"region":"Arkansas","code":"05","value":44324,"series_id":"ARPCPI"},{"region":"Vermont","code":"50","value":55442,"series_id":"VTPCPI"},{"region":"Hawaii","code":"15","value":54700,"series_id":"HIPCPI"},{"region":"Utah","code":"49","value":48580,"series_id":"UTPCPI"},{"region":"Virginia","code":"51","value":59073,"series_id":"VAPCPI"},{"region":"Iowa","code":"19","value":50367,"series_id":"IAPCPI"},{"region":"Nebraska","code":"31","value":54182,"series_id":"NEPCPI"},{"region":"Tennessee","code":"47","value":49343,"series_id":"TNPCPI"},{"region":"Idaho","code":"16","value":45924,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":55294,"series_id":"SDPCPI"},{"region":"Illinois","code":"17","value":58438,"series_id":"ILPCPI"},{"region":"South
+        Carolina","code":"45","value":46681,"series_id":"SCPCPI"},{"region":"Indiana","code":"18","value":48749,"series_id":"INPCPI"},{"region":"Arizona","code":"04","value":48124,"series_id":"AZPCPI"},{"region":"Pennsylvania","code":"42","value":56952,"series_id":"PAPCPI"},{"region":"Kansas","code":"20","value":52876,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":52718,"series_id":"ORPCPI"},{"region":"Kentucky","code":"21","value":43875,"series_id":"KYPCPI"},{"region":"North
+        Carolina","code":"37","value":48741,"series_id":"NCPCPI"},{"region":"Oklahoma","code":"40","value":48646,"series_id":"OKPCPI"},{"region":"Massachusetts","code":"25","value":73213,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":50035,"series_id":"OHPCPI"},{"region":"Maryland","code":"24","value":62313,"series_id":"MDPCPI"},{"region":"New
+        York","code":"36","value":67366,"series_id":"NYPCPI"},{"region":"California","code":"06","value":64919,"series_id":"CAPCPI"}],"2020-01-01":[{"region":"Montana","code":"30","value":54062,"series_id":"MTPCPI"},{"region":"Alaska","code":"02","value":62715,"series_id":"AKPCPI"},{"region":"Alabama","code":"01","value":46119,"series_id":"ALPCPI"},{"region":"Arkansas","code":"05","value":47123,"series_id":"ARPCPI"},{"region":"Arizona","code":"04","value":52313,"series_id":"AZPCPI"},{"region":"California","code":"06","value":70643,"series_id":"CAPCPI"},{"region":"Colorado","code":"08","value":65352,"series_id":"COPCPI"},{"region":"Connecticut","code":"09","value":78526,"series_id":"CTPCPI"},{"region":"District
+        of Columbia","code":"11","value":92307,"series_id":"DCPCPI"},{"region":"Delaware","code":"10","value":56311,"series_id":"DEPCPI"},{"region":"Florida","code":"12","value":57240,"series_id":"FLPCPI"},{"region":"Georgia","code":"13","value":51967,"series_id":"GAPCPI"},{"region":"Hawaii","code":"15","value":57276,"series_id":"HIPCPI"},{"region":"Iowa","code":"19","value":53280,"series_id":"IAPCPI"},{"region":"Idaho","code":"16","value":49453,"series_id":"IDPCPI"},{"region":"Illinois","code":"17","value":62132,"series_id":"ILPCPI"},{"region":"Indiana","code":"18","value":52194,"series_id":"INPCPI"},{"region":"Kansas","code":"20","value":55935,"series_id":"KSPCPI"},{"region":"Kentucky","code":"21","value":47489,"series_id":"KYPCPI"},{"region":"Massachusetts","code":"25","value":78685,"series_id":"MAPCPI"},{"region":"Maryland","code":"24","value":65680,"series_id":"MDPCPI"},{"region":"Maine","code":"23","value":54861,"series_id":"MEPCPI"},{"region":"Michigan","code":"26","value":53378,"series_id":"MIPCPI"},{"region":"Minnesota","code":"27","value":62210,"series_id":"MNPCPI"},{"region":"Missouri","code":"29","value":52112,"series_id":"MOPCPI"},{"region":"Mississippi","code":"28","value":42698,"series_id":"MSPCPI"},{"region":"North
+        Dakota","code":"38","value":60821,"series_id":"NDPCPI"},{"region":"New Hampshire","code":"33","value":68505,"series_id":"NHPCPI"},{"region":"New
+        Jersey","code":"34","value":71567,"series_id":"NJPCPI"},{"region":"New Mexico","code":"35","value":46742,"series_id":"NMPCPI"},{"region":"Nevada","code":"32","value":55378,"series_id":"NVPCPI"},{"region":"New
+        York","code":"36","value":71743,"series_id":"NYPCPI"},{"region":"Ohio","code":"39","value":53514,"series_id":"OHPCPI"},{"region":"Oklahoma","code":"40","value":50481,"series_id":"OKPCPI"},{"region":"Oregon","code":"41","value":56962,"series_id":"ORPCPI"},{"region":"Pennsylvania","code":"42","value":60663,"series_id":"PAPCPI"},{"region":"South
+        Carolina","code":"45","value":49095,"series_id":"SCPCPI"},{"region":"South
+        Dakota","code":"46","value":60398,"series_id":"SDPCPI"},{"region":"Tennessee","code":"47","value":52310,"series_id":"TNPCPI"},{"region":"Virginia","code":"51","value":62157,"series_id":"VAPCPI"},{"region":"Vermont","code":"50","value":59260,"series_id":"VTPCPI"},{"region":"Washington","code":"53","value":68304,"series_id":"WAPCPI"},{"region":"Wisconsin","code":"55","value":55904,"series_id":"WIPCPI"},{"region":"West
+        Virginia","code":"54","value":45199,"series_id":"WVPCPI"},{"region":"Wyoming","code":"56","value":65744,"series_id":"WYPCPI"},{"region":"Texas","code":"48","value":55573,"series_id":"TXPCPI"},{"region":"Louisiana","code":"22","value":50804,"series_id":"LAPCPI"},{"region":"North
+        Carolina","code":"37","value":51938,"series_id":"NCPCPI"},{"region":"Nebraska","code":"31","value":57387,"series_id":"NEPCPI"},{"region":"Rhode
+        Island","code":"44","value":59935,"series_id":"RIPCPI"},{"region":"Utah","code":"49","value":52191,"series_id":"UTPCPI"}],"2021-01-01":[{"region":"Kentucky","code":"21","value":51298,"series_id":"KYPCPI"},{"region":"Alaska","code":"02","value":65677,"series_id":"AKPCPI"},{"region":"Florida","code":"12","value":62136,"series_id":"FLPCPI"},{"region":"Illinois","code":"17","value":67165,"series_id":"ILPCPI"},{"region":"Washington","code":"53","value":73755,"series_id":"WAPCPI"},{"region":"Oklahoma","code":"40","value":53808,"series_id":"OKPCPI"},{"region":"South
+        Carolina","code":"45","value":52441,"series_id":"SCPCPI"},{"region":"Delaware","code":"10","value":59846,"series_id":"DEPCPI"},{"region":"Alabama","code":"01","value":49671,"series_id":"ALPCPI"},{"region":"Wisconsin","code":"55","value":59787,"series_id":"WIPCPI"},{"region":"Massachusetts","code":"25","value":83593,"series_id":"MAPCPI"},{"region":"Arizona","code":"04","value":55574,"series_id":"AZPCPI"},{"region":"District
+        of Columbia","code":"11","value":96659,"series_id":"DCPCPI"},{"region":"Utah","code":"49","value":56000,"series_id":"UTPCPI"},{"region":"West
+        Virginia","code":"54","value":48418,"series_id":"WVPCPI"},{"region":"Idaho","code":"16","value":52276,"series_id":"IDPCPI"},{"region":"Arkansas","code":"05","value":50588,"series_id":"ARPCPI"},{"region":"Connecticut","code":"09","value":82885,"series_id":"CTPCPI"},{"region":"Rhode
+        Island","code":"44","value":64296,"series_id":"RIPCPI"},{"region":"Wyoming","code":"56","value":69584,"series_id":"WYPCPI"},{"region":"South
+        Dakota","code":"46","value":64405,"series_id":"SDPCPI"},{"region":"Kansas","code":"20","value":58857,"series_id":"KSPCPI"},{"region":"Colorado","code":"08","value":70715,"series_id":"COPCPI"},{"region":"North
+        Carolina","code":"37","value":56095,"series_id":"NCPCPI"},{"region":"Texas","code":"48","value":59802,"series_id":"TXPCPI"},{"region":"Iowa","code":"19","value":57080,"series_id":"IAPCPI"},{"region":"Montana","code":"30","value":56848,"series_id":"MTPCPI"},{"region":"Oregon","code":"41","value":61449,"series_id":"ORPCPI"},{"region":"Tennessee","code":"47","value":56616,"series_id":"TNPCPI"},{"region":"Mississippi","code":"28","value":45887,"series_id":"MSPCPI"},{"region":"Ohio","code":"39","value":56955,"series_id":"OHPCPI"},{"region":"North
+        Dakota","code":"38","value":64276,"series_id":"NDPCPI"},{"region":"Maryland","code":"24","value":69710,"series_id":"MDPCPI"},{"region":"Hawaii","code":"15","value":60711,"series_id":"HIPCPI"},{"region":"Missouri","code":"29","value":55310,"series_id":"MOPCPI"},{"region":"California","code":"06","value":76800,"series_id":"CAPCPI"},{"region":"New
+        Hampshire","code":"33","value":73279,"series_id":"NHPCPI"},{"region":"Nebraska","code":"31","value":61210,"series_id":"NEPCPI"},{"region":"Virginia","code":"51","value":66190,"series_id":"VAPCPI"},{"region":"Minnesota","code":"27","value":66232,"series_id":"MNPCPI"},{"region":"Indiana","code":"18","value":56435,"series_id":"INPCPI"},{"region":"New
+        Jersey","code":"34","value":77009,"series_id":"NJPCPI"},{"region":"New York","code":"36","value":76753,"series_id":"NYPCPI"},{"region":"Georgia","code":"13","value":55846,"series_id":"GAPCPI"},{"region":"Michigan","code":"26","value":56569,"series_id":"MIPCPI"},{"region":"Louisiana","code":"22","value":54181,"series_id":"LAPCPI"},{"region":"New
+        Mexico","code":"35","value":50292,"series_id":"NMPCPI"},{"region":"Pennsylvania","code":"42","value":64042,"series_id":"PAPCPI"},{"region":"Vermont","code":"50","value":61748,"series_id":"VTPCPI"},{"region":"Maine","code":"23","value":58272,"series_id":"MEPCPI"},{"region":"Nevada","code":"32","value":60167,"series_id":"NVPCPI"}],"2022-01-01":[{"region":"Louisiana","code":"22","value":54622,"series_id":"LAPCPI"},{"region":"Nevada","code":"32","value":61282,"series_id":"NVPCPI"},{"region":"Maryland","code":"24","value":70730,"series_id":"MDPCPI"},{"region":"Arizona","code":"04","value":56667,"series_id":"AZPCPI"},{"region":"New
+        York","code":"36","value":78089,"series_id":"NYPCPI"},{"region":"Massachusetts","code":"25","value":84945,"series_id":"MAPCPI"},{"region":"Ohio","code":"39","value":57880,"series_id":"OHPCPI"},{"region":"Kentucky","code":"21","value":52109,"series_id":"KYPCPI"},{"region":"Oklahoma","code":"40","value":54998,"series_id":"OKPCPI"},{"region":"Kansas","code":"20","value":60152,"series_id":"KSPCPI"},{"region":"Oregon","code":"41","value":62767,"series_id":"ORPCPI"},{"region":"Indiana","code":"18","value":57930,"series_id":"INPCPI"},{"region":"North
+        Carolina","code":"37","value":57416,"series_id":"NCPCPI"},{"region":"Pennsylvania","code":"42","value":65167,"series_id":"PAPCPI"},{"region":"Illinois","code":"17","value":68822,"series_id":"ILPCPI"},{"region":"Arkansas","code":"05","value":51787,"series_id":"ARPCPI"},{"region":"South
+        Carolina","code":"45","value":53320,"series_id":"SCPCPI"},{"region":"Idaho","code":"16","value":54537,"series_id":"IDPCPI"},{"region":"South
+        Dakota","code":"46","value":65806,"series_id":"SDPCPI"},{"region":"Iowa","code":"19","value":58905,"series_id":"IAPCPI"},{"region":"Utah","code":"49","value":57925,"series_id":"UTPCPI"},{"region":"Tennessee","code":"47","value":58279,"series_id":"TNPCPI"},{"region":"Hawaii","code":"15","value":61175,"series_id":"HIPCPI"},{"region":"Virginia","code":"51","value":68211,"series_id":"VAPCPI"},{"region":"Georgia","code":"13","value":57129,"series_id":"GAPCPI"},{"region":"Nebraska","code":"31","value":63321,"series_id":"NEPCPI"},{"region":"Vermont","code":"50","value":63206,"series_id":"VTPCPI"},{"region":"Florida","code":"12","value":63597,"series_id":"FLPCPI"},{"region":"Alabama","code":"01","value":50637,"series_id":"ALPCPI"},{"region":"Washington","code":"53","value":75698,"series_id":"WAPCPI"},{"region":"Delaware","code":"10","value":61387,"series_id":"DEPCPI"},{"region":"Wisconsin","code":"55","value":61210,"series_id":"WIPCPI"},{"region":"District
+        of Columbia","code":"11","value":96728,"series_id":"DCPCPI"},{"region":"West
+        Virginia","code":"54","value":49169,"series_id":"WVPCPI"},{"region":"Connecticut","code":"09","value":84972,"series_id":"CTPCPI"},{"region":"Wyoming","code":"56","value":71342,"series_id":"WYPCPI"},{"region":"Colorado","code":"08","value":74167,"series_id":"COPCPI"},{"region":"Rhode
+        Island","code":"44","value":65377,"series_id":"RIPCPI"},{"region":"Texas","code":"48","value":61985,"series_id":"TXPCPI"},{"region":"Montana","code":"30","value":57719,"series_id":"MTPCPI"},{"region":"Mississippi","code":"28","value":46248,"series_id":"MSPCPI"},{"region":"California","code":"06","value":77339,"series_id":"CAPCPI"},{"region":"North
+        Dakota","code":"38","value":66184,"series_id":"NDPCPI"},{"region":"Missouri","code":"29","value":56551,"series_id":"MOPCPI"},{"region":"New
+        Hampshire","code":"33","value":74663,"series_id":"NHPCPI"},{"region":"Minnesota","code":"27","value":68010,"series_id":"MNPCPI"},{"region":"Alaska","code":"02","value":68919,"series_id":"AKPCPI"},{"region":"New
+        Jersey","code":"34","value":78700,"series_id":"NJPCPI"},{"region":"Michigan","code":"26","value":56813,"series_id":"MIPCPI"},{"region":"New
+        Mexico","code":"35","value":51500,"series_id":"NMPCPI"},{"region":"Maine","code":"23","value":59463,"series_id":"MEPCPI"}]}}}'
     headers:
       Accept-Ranges:
       - bytes
@@ -579,17 +483,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 28 Apr 2023 02:18:08 GMT
+      - Sun, 03 Sep 2023 01:54:05 GMT
       ETag:
-      - '"68d3bc15ac68c7acdb427eea8865d0c9-gzip"'
+      - '"fbc6cf3d8cd6c530513711decd02cc07-gzip"'
       Expires:
-      - Fri, 28 Apr 2023 02:28:08 GMT
+      - Sun, 03 Sep 2023 02:04:05 GMT
       Vary:
       - Accept-Encoding
       x-rate-limit-limit:
       - '120'
       x-rate-limit-remaining:
-      - '103'
+      - '118'
     status:
       code: 200
       message: OK

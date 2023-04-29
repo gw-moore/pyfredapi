@@ -23,14 +23,14 @@ master_doc = "index"
 # -- General configuration ---------------------------------------------------
 
 extensions = [
+    "nbsphinx",
+    "myst_parser",
+    "sphinx_copybutton",
+    "sphinxcontrib.autodoc_pydantic",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
-    "myst_parser",
-    "nbsphinx",
-    "sphinx_copybutton",
-    "sphinxcontrib.autodoc_pydantic",
 ]
 
 nbsphinx_execute = "never"
@@ -53,31 +53,71 @@ autodoc_typehints = "description"
 
 # -- HTML theme settings ------------------------------------------------
 
-# Material theme options
-extensions.append("sphinx_material")
-html_theme_path = sphinx_material.html_theme_path()
-html_context = sphinx_material.get_html_context()
-html_theme = "sphinx_material"
-html_show_sourcelink = False
-html_sidebars = {
-    "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
-}
+# Sphinx-Immaterial theme options
+extensions.append("sphinx_immaterial")
+html_theme = "sphinx_immaterial"
 html_theme_options = {
-    "base_url": "https://pyfredapi.readthedocs.io/en/latest/",
-    "repo_url": "https://github.com/gw-moore/pyfredapi/",
-    "repo_name": project,
-    "repo_type": "github",
-    "nav_title": f"{project} v{release}",
-    "color_primary": "indigo",
-    "color_accent": "blue",
-    "globaltoc_depth": 2,
-    "master_doc": True,
-    "heroes": {
-        "index": "Python library to make retrieving data from FRED easy",
+    "icon": {
+        "repo": "fontawesome/brands/github",
+        "edit": "material/file-edit-outline",
     },
-    # setting the logo icon so as to not have broken element on the page
-    # considering adding a custom svg to the project and assigning it to 'html_logo'
-    "logo_icon": "&#xE1AF",
+    "site_url": "https://pyfredapi.readthedocs.io",
+    "repo_url": "https://github.com/gw-moore/pyfredapi/",
+    "repo_name": "pyfredapi",
+    "edit_uri": "blob/main/docs",
+    "globaltoc_collapse": True,
+    "features": [
+        "navigation.expand",
+        # "navigation.tabs",
+        # "toc.integrate",
+        "navigation.sections",
+        # "navigation.instant",
+        # "header.autohide",
+        "navigation.top",
+        # "navigation.tracking",
+        # "search.highlight",
+        "search.share",
+        "toc.follow",
+        "toc.sticky",
+        "content.tabs.link",
+        "announce.dismiss",
+    ],
+    "palette": [
+        {
+            "media": "(prefers-color-scheme: light)",
+            "scheme": "default",
+            "primary": "indigo",
+            "accent": "light-blue",
+            "toggle": {
+                "icon": "material/lightbulb-outline",
+                "name": "Switch to dark mode",
+            },
+        },
+        {
+            "media": "(prefers-color-scheme: dark)",
+            "scheme": "slate",
+            "primary": "indigo",
+            "accent": "light-blue",
+            "toggle": {
+                "icon": "material/lightbulb",
+                "name": "Switch to light mode",
+            },
+        },
+    ],
+    "toc_title_is_page_title": True,
+    # BEGIN: social icons
+    "social": [
+        {
+            "icon": "fontawesome/brands/github",
+            "link": "https://github.com/gw-moore/pyfredapi",
+            "name": "Source on github.com",
+        },
+        {
+            "icon": "fontawesome/brands/python",
+            "link": "https://pypi.org/project/pyfredapi/",
+        },
+    ],
+    # END: social icons
 }
 
 html_static_path = ["_static"]
