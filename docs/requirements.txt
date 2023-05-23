@@ -312,7 +312,7 @@ qtconsole==5.4.2
     # via jupyter
 qtpy==2.3.1
     # via qtconsole
-requests==2.28.2
+requests==2.31.0
     # via
     #   pyfredapi (pyproject.toml)
     #   sphinx
