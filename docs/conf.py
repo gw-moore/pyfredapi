@@ -1,6 +1,5 @@
 """Sphinx configuration."""
 import plotly.io as pio
-import sphinx_material
 
 from pyfredapi import __version__
 

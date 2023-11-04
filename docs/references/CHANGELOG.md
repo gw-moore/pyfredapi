@@ -4,7 +4,7 @@
 
 ### Added
 
-- Support for Python 3.12
+- Official support for Python 3.12.
 
 ### Changed
 
