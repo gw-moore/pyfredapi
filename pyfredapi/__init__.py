@@ -21,6 +21,7 @@ from .category import (
 )
 from .maps import MapApiParameters, get_geoseries, get_geoseries_info, get_shape_files
 from .releases import (
+    ReleaseApiParameters,
     get_release,
     get_release_dates,
     get_release_related_tags,
@@ -50,5 +51,10 @@ from .series import (
     search_series_tags,
 )
 from .series_collection import SeriesCollection, SeriesData
-from .sources import get_source, get_source_release, get_sources
-from .tags import get_related_tags, get_series_matching_tags, get_tags
+from .sources import SourceApiParameters, get_source, get_source_release, get_sources
+from .tags import (
+    TagsApiParameters,
+    get_related_tags,
+    get_series_matching_tags,
+    get_tags,
+)
