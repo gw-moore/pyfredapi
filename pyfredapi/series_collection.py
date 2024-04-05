@@ -34,8 +34,9 @@ class SeriesData:
     ----------
     info : SeriesInfo
         A series info object.
-    data : pd.DataFrame
+    df : pd.DataFrame
         Series data in a pandas dataframe.
+
     """
 
     info: SeriesInfo
@@ -53,6 +54,7 @@ class SeriesData:
         -------
         Figure
             A `plotly figure <https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html>`_.
+
         """
         if not isinstance(self.df, pd.DataFrame):
             raise ValueError(
@@ -150,6 +152,7 @@ class SeriesCollection:
         **kwargs : dict, optional
             Additional parameters to FRED API `series/` endpoint.
             Refer to the FRED documentation for a list of all possible parameters.
+
         """
         self._data: List[SeriesData] = []
         self.sleep = sleep
@@ -231,6 +234,7 @@ class SeriesCollection:
         **kwargs : dict, optional
             Additional parameters to FRED API `series/` endpoint.
             Refer to the FRED documentation for a list of all possible parameters.
+
         """
         if isinstance(series_id, str):
             series_id = [series_id]
@@ -269,6 +273,7 @@ class SeriesCollection:
         ----------
         series_id : Union[str, Sequence[str]]
             Series ids to remove from collection.
+
         """
         if isinstance(series_id, str):
             series_id = [series_id]
@@ -295,6 +300,7 @@ class SeriesCollection:
         -------
         pd.DataFrame
             Long pandas dataframe.
+
         """
         if col_name is None:
             col_name = "series"
@@ -318,6 +324,7 @@ class SeriesCollection:
         -------
         pd.DataFrame
             Wide pandas dataframe.
+
         """
         wide_df_prep = [series.df.copy().set_index("date") for series in self._data]
         wide_df = pd.concat(wide_df_prep, axis=1)
@@ -337,6 +344,7 @@ class SeriesCollection:
         -------
         pd.DataFrame
             Wide pandas dataframe.
+
         """
         base_series = [
             series_info

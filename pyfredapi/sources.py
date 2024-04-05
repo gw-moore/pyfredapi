@@ -41,6 +41,7 @@ def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     Returns
     -------
     Dictionary representing the Json response
+
     """
     params = _convert_pydantic_model_to_frozen_dict(SourceApiParameters(**kwargs))
     return _get_request(
@@ -67,6 +68,7 @@ def get_source(
     Returns
     -------
     Dictionary representing the Json response
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SourceApiParameters(source_id=source_id, **kwargs)
@@ -96,6 +98,7 @@ def get_source_release(
     Returns
     -------
     Dictionary representing the Json response
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SourceApiParameters(source_id=source_id, **kwargs)

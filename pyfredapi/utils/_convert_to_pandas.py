@@ -28,6 +28,7 @@ def _convert_to_pandas(data: dict) -> pd.DataFrame:
     Returns
     -------
     Pandas dataframe.
+
     """
     df = pd.DataFrame.from_dict(data)
     date_cols = [c for c in list(df.columns) if c in FRED_DATE_COLS]

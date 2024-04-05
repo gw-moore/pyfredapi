@@ -1,6 +1,5 @@
 """The enum module contains enum definitions."""
 
-
 from enum import Enum
 
 

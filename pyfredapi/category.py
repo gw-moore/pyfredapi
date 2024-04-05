@@ -1,6 +1,5 @@
 """The category module provides functions to request data from the `FRED API Categories endpoints <https://fred.stlouisfed.org/docs/api/fred/#Categories>`_."""
 
-
 from typing import Dict, Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, PositiveInt
@@ -46,9 +45,9 @@ class CategoryApiParameters(BaseModel):
         ]
     ] = None
     sort_order: Optional[Literal["acs", "desc"]] = None
-    filter_variable: Optional[
-        Literal["frequency", "units", "seasonal_adjustment"]
-    ] = None
+    filter_variable: Optional[Literal["frequency", "units", "seasonal_adjustment"]] = (
+        None
+    )
     filter_value: Optional[str] = None
     tag_names: Optional[str] = None
     exclude_tag_names: Optional[str] = None
@@ -77,6 +76,7 @@ def get_category(
     --------
     >>> import pyfredapi as pf
     >>> pf.get_category(category_id=125)
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         CategoryApiParameters(category_id=category_id, **kwargs)
@@ -111,6 +111,7 @@ def get_category_children(
     --------
     >>> import pyfredapi as pf
     >>> pf.get_category_children(category_id=13)
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         CategoryApiParameters(category_id=category_id, **kwargs)
@@ -141,6 +142,7 @@ def get_category_related(
     -------
     dict
         Dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         CategoryApiParameters(category_id=category_id, **kwargs)
@@ -170,6 +172,7 @@ def get_category_series(
     -------
     dict
         A dictionary where the keys are series ids and the values for SeriesInfo objects.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         CategoryApiParameters(category_id=category_id, **kwargs)
@@ -206,6 +209,7 @@ def get_category_tags(
     -------
     dict | pd.DataFrame
         Either a dictionary representing the json response or a pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -246,6 +250,7 @@ def get_category_related_tags(
     -------
     dict | pd.DataFrame
         Either a dictionary representing the json response or a pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 

@@ -42,6 +42,7 @@ def _get_api_key(api_key: Optional[str] = None) -> str:
     ------
     APIKeyNotFound
         If the api_key is None and FRED_API_KEY is not in the environment.
+
     """
     if api_key is None:
         api_key = environ.get("FRED_API_KEY", None)
@@ -84,6 +85,7 @@ def _get_request(
     ------
     FredAPIRequestError
         If the request fails.
+
     """
     api_key = _get_api_key(api_key)
     _base_params = BaseApiParameters(api_key=api_key)

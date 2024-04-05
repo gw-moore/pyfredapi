@@ -103,9 +103,9 @@ class SeriesSearchParameters(BaseModel):
         ]
     ] = None
     sort_order: Optional[Literal["asc", "desc"]] = None
-    filter_variable: Optional[
-        Literal["frequency", "units", "seasonal_adjustment"]
-    ] = None
+    filter_variable: Optional[Literal["frequency", "units", "seasonal_adjustment"]] = (
+        None
+    )
     filter_value: Optional[str] = None
     tag_names: Optional[str] = None
     exclude_tag_names: Optional[str] = None
@@ -156,6 +156,7 @@ def get_series_info(
     -------
     SeriesInfo
         An instance of SeriesInfo.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SeriesApiParameters(series_id=series_id, **kwargs)
@@ -186,6 +187,7 @@ def get_series_categories(
     -------
     dict
         Dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SeriesApiParameters(series_id=series_id, **kwargs)
@@ -220,6 +222,7 @@ def get_series(
     -------
     dict | pd.DataFrame
         Either a dictionary representing the json response or a pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -256,6 +259,7 @@ def get_series_releases(
     -------
     dict
         Dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SeriesApiParameters(series_id=series_id, **kwargs)
@@ -285,6 +289,7 @@ def get_series_tags(
     -------
     dict
         Dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SeriesApiParameters(series_id=series_id, **kwargs)
@@ -314,6 +319,7 @@ def get_series_updates(
     -------
     dict
         Dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SeriesApiParameters(series_id=series_id, **kwargs)
@@ -345,6 +351,7 @@ def get_series_vintagedates(
     -------
     List[str]
         List of strings representing the the available vintage dates
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         SeriesApiParameters(series_id=series_id, **kwargs)
@@ -380,6 +387,7 @@ def get_series_all_releases(
     -------
     dict | pd.DataFrame
         Either a dictionary representing the json response or a pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -428,6 +436,7 @@ def get_series_initial_release(
     -------
     dict | pd.DataFrame
         Either a dictionary representing the json response or a pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -478,6 +487,7 @@ def get_series_asof_date(
     -------
     dict | pd.DataFrame
         Either a dictionary representing the json response or a pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -526,6 +536,7 @@ def search_series(
     -------
     dict | pd.DataFrame
         Either a pandas dataframe or json. Defaults to pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -570,6 +581,7 @@ def search_series_tags(
     -------
     dict | pd.DataFrame
         Either a pandas dataframe or json. Defaults to pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 
@@ -616,6 +628,7 @@ def search_series_related_tags(
     -------
     dict | pd.DataFrame
         Either a pandas dataframe or json. Defaults to pandas dataframe.
+
     """
     return_format = ReturnFormat(return_format)
 

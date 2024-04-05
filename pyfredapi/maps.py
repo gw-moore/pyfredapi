@@ -78,6 +78,7 @@ def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesI
     -------
     GeoseriesInfo
         An instance of GeoseriesInfo.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         MapApiParameters(series_id=series_id)
@@ -118,6 +119,7 @@ def get_shape_files(
     -------
     dict
         Dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(MapApiParameters(shape=shape))
     return _get_request(
@@ -157,6 +159,7 @@ def get_geoseries(
     -------
     GeoseriesData
         GeoseriesData object containing the geoseries data and metadata.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         MapApiParameters(series_id=series_id, date=end_date, start_date=start_date)

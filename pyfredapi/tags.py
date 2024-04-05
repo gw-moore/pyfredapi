@@ -9,7 +9,6 @@ FRED tags are assigned to series. Tags define a characteristic about the series.
 Categories are organized in a hierarchical structure where parent categories contain children categories. All categories are children of the root category (category_id = 0).
 """
 
-
 from typing import Literal, Optional
 
 from frozendict import frozendict
@@ -55,6 +54,7 @@ def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     -------
     dict
         A dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(TagsApiParameters(**kwargs))
     return _get_request(
@@ -82,6 +82,7 @@ def get_related_tags(
     -------
     dict
         A dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(
         TagsApiParameters(tag_names=tag_names, **kwargs)
@@ -111,6 +112,7 @@ def get_series_matching_tags(
     -------
     dict
         A dictionary representing the json response.
+
     """
     params = _convert_pydantic_model_to_frozen_dict(TagsApiParameters(**kwargs))
     return _get_request(
