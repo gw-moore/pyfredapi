@@ -25,7 +25,7 @@ jobs:
         run: |
           pip install '.[test]'
       - name: Test with Coverage
-        run: pytest --cov=pyfredapi --cov-report=xml --vcr-record=none
+        run: pytest --cov=pyfredapi --cov-report=xml --record-mode=none
       - uses: actions/upload-artifact@v3
         with:
           name: coverage-xml
