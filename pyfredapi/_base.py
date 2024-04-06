@@ -7,7 +7,7 @@ functions in pyfredapi.
 from functools import lru_cache
 from http import HTTPStatus
 from os import environ
-from typing import Any, Dict, Optional, Union
+from typing import Any, Dict, Union
 
 import requests
 from frozendict import frozendict
@@ -27,7 +27,7 @@ class BaseApiParameters(BaseModel):
 
 
 @lru_cache
-def _get_api_key(api_key: Optional[str] = None) -> str:
+def _get_api_key(api_key: Union[str, None] = None) -> str:
     """Get FRED_API_KEY from the environment.
 
     api_key : str | None
@@ -59,7 +59,7 @@ def _get_api_key(api_key: Optional[str] = None) -> str:
 def _get_request(
     endpoint: str,
     api_key: Union[str, None] = None,
-    params: Optional[Dict[str, Any]] = None,
+    params: Union[Dict[str, Any], None] = None,
     base_url: str = "https://api.stlouisfed.org/fred",
 ) -> JsonType:
     """Make a get request to a FRED web service endpoint and return the response as Json.
