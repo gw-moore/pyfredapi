@@ -67,7 +67,10 @@ Quick start example:
    FRED Series <tutorials/series.ipynb>
    Series Collection <tutorials/series_collection.ipynb>
    FRED Categories <tutorials/category.ipynb>
-   FRED Maps <tutorials/maps.ipynb>
+   FRED Sources <tutorials/sources.ipynb>
+   FRED Release <tutorials/releases.ipynb>
+   FRED Tags <tutorials/tags.ipynb>
+.. FRED Maps <tutorials/maps.ipynb>
 
 .. toctree::
    :caption: Reference
