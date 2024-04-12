@@ -12,7 +12,7 @@ charset-normalizer==3.3.2
     # via requests
 frozendict==2.3.8
     # via pyfredapi (pyproject.toml)
-idna==3.4
+idna==3.7
     # via requests
 markdown-it-py==3.0.0
     # via rich

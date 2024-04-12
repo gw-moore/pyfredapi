@@ -75,7 +75,7 @@ fqdn==1.5.1
     # via jsonschema
 frozendict==2.3.8
     # via pyfredapi (pyproject.toml)
-idna==3.4
+idna==3.7
     # via
     #   anyio
     #   jsonschema
