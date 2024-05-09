@@ -1,4 +1,5 @@
 """Sphinx configuration."""
+
 import plotly.io as pio
 
 from pyfredapi import __version__
