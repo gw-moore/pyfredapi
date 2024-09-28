@@ -1,0 +1,3 @@
+# `category` module
+
+::: pyfredapi.category

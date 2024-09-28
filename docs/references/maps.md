@@ -1,0 +1,3 @@
+# `maps` module
+
+::: pyfredapi.maps

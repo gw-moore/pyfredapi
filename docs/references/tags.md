@@ -1,0 +1,3 @@
+# `tags` module
+
+::: pyfredapi.tags

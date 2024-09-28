@@ -1,0 +1,3 @@
+# `series` module
+
+::: pyfredapi.series

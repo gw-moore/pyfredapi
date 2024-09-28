@@ -1,0 +1,81 @@
+site_name: pyfredapi
+site_url: https://pyfredapi.readthedocs.io/en/latest/
+repo_url: https://github.com/gw-moore/pyfredapi
+repo_name: "GitHub"
+
+nav:
+  - Welcome to pyfedapi: index.md
+  - Tutorials:
+      - tutorials/category.ipynb
+      # - tutorials/maps.ipynb
+      - tutorials/releases.ipynb
+      - tutorials/series_collection.ipynb
+      - tutorials/series.ipynb
+      - tutorials/sources.ipynb
+      - tutorials/tags.ipynb
+  - API Documentation:
+      - references/base.md
+      - references/category.md
+      - references/maps.md
+      - references/releases.md
+      - references/series.md
+      - references/series_collection.md
+      - references/sources.md
+      - references/tags.md
+  - Changelog: references/CHANGELOG.md
+  - Contributing: references/CONTRIBUTING.md
+
+theme:
+  name: material
+  icon:
+    logo: material/chart-line
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: "Switch to dark mode"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: "Switch to light mode"
+  features:
+    - search.suggest
+
+plugins:
+  - mkdocs-jupyter
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: false
+            show_root_heading: false
+            show_if_no_docstring: false
+            inherited_members: true
+            member_order: alphabetical
+            separate_signature: true
+            unwrap_annotated: true
+            merge_init_into_class: false
+            show_signature_annotations: true
+            signature_cross_refs: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            docstring_style: numpy
+          # rendering:
+          #   show_root_toc_entry: true
+          # extensions:
+          #   - griffe_pydantic:
+          #     schema: true
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  #     line_spans: __span
+  #     pygments_lang_class: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.snippets
+  # - pymdownx.superfences

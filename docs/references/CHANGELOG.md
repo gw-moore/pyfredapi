@@ -1,15 +1,18 @@
 # Changelog
 
-## UNRELEASED
+## Version 0.9.0 - UNRELEASED
 
 ### Added
 
+- Added `.data` attribute to `SeriesCollection`.
+- Added `series_info_to_df()` method to `SeriesCollection`.
 - Official support for Python 3.12.
 
 ### Changed
 
 - Bumped `pydantic` version to >=2.
 - Updated `pandas` version to >=1.0.0,<3.0.0.
+- Updated `numpy` version to >=1.0.0,<2.0.0.
 
 ## Version 0.8.0 - 2023-04-27
 

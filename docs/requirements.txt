@@ -4,16 +4,12 @@
 #
 #    pip-compile --extra=docs --output-file=docs/requirements.txt pyproject.toml
 #
-alabaster==0.7.16
-    # via sphinx
-annotated-types==0.6.0
+annotated-types==0.7.0
     # via pydantic
-anyio==4.3.0
+anyio==4.6.0
     # via
     #   httpx
     #   jupyter-server
-appdirs==1.4.4
-    # via sphinx-immaterial
 appnope==0.1.4
     # via ipykernel
 argon2-cffi==23.1.0
@@ -26,84 +22,88 @@ asttokens==2.4.1
     # via stack-data
 async-lru==2.0.4
     # via jupyterlab
-attrs==23.2.0
+attrs==24.2.0
     # via
     #   jsonschema
     #   referencing
-autodoc-pydantic==2.1.0
-    # via pyfredapi (pyproject.toml)
-babel==2.15.0
+babel==2.16.0
     # via
     #   jupyterlab-server
-    #   sphinx
+    #   mkdocs-material
 beautifulsoup4==4.12.3
     # via nbconvert
 bleach==6.1.0
     # via nbconvert
-certifi==2024.2.2
+certifi==2024.8.30
     # via
     #   httpcore
     #   httpx
     #   requests
-cffi==1.16.0
+cffi==1.17.1
     # via argon2-cffi-bindings
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via
+    #   mkdocs
+    #   mkdocstrings
+colorama==0.4.6
+    # via
+    #   griffe
+    #   mkdocs-material
 comm==0.2.2
     # via
     #   ipykernel
     #   ipywidgets
-contourpy==1.2.1
+contourpy==1.3.0
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
-debugpy==1.8.1
+debugpy==1.8.6
     # via ipykernel
 decorator==5.1.1
     # via ipython
 defusedxml==0.7.1
     # via nbconvert
-docutils==0.20.1
-    # via
-    #   myst-parser
-    #   nbsphinx
-    #   sphinx
-executing==2.0.1
+executing==2.1.0
     # via stack-data
-fastjsonschema==2.19.1
+fastjsonschema==2.20.0
     # via nbformat
-fonttools==4.51.0
+fonttools==4.54.1
     # via matplotlib
 fqdn==1.5.1
     # via jsonschema
 frozendict==2.4.4
     # via pyfredapi (pyproject.toml)
+ghp-import==2.1.0
+    # via mkdocs
+griffe==1.3.1
+    # via mkdocstrings-python
 h11==0.14.0
     # via httpcore
 httpcore==1.0.5
     # via httpx
-httpx==0.27.0
+httpx==0.27.2
     # via jupyterlab
-idna==3.7
+idna==3.10
     # via
     #   anyio
     #   httpx
     #   jsonschema
     #   requests
-imagesize==1.4.1
-    # via sphinx
-ipykernel==6.29.4
+ipykernel==6.29.5
     # via
     #   jupyter
     #   jupyter-console
     #   jupyterlab
+    #   mkdocs-jupyter
     #   qtconsole
-ipython==8.24.0
+ipython==8.27.0
     # via
     #   ipykernel
     #   ipywidgets
     #   jupyter-console
-ipywidgets==8.1.2
+ipywidgets==8.1.5
     # via jupyter
 isoduration==20.11.0
     # via jsonschema
@@ -114,15 +114,15 @@ jinja2==3.1.4
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
-    #   myst-parser
+    #   mkdocs
+    #   mkdocs-material
+    #   mkdocstrings
     #   nbconvert
-    #   nbsphinx
-    #   sphinx
 json5==0.9.25
     # via jupyterlab-server
-jsonpointer==2.4
+jsonpointer==3.0.0
     # via jsonschema
-jsonschema[format-nongpl]==4.22.0
+jsonschema[format-nongpl]==4.23.0
     # via
     #   jupyter-events
     #   jupyterlab-server
@@ -131,7 +131,7 @@ jsonschema-specifications==2023.12.1
     # via jsonschema
 jupyter==1.0.0
     # via pyfredapi (pyproject.toml)
-jupyter-client==8.6.1
+jupyter-client==8.6.3
     # via
     #   ipykernel
     #   jupyter-console
@@ -155,7 +155,7 @@ jupyter-events==0.10.0
     # via jupyter-server
 jupyter-lsp==2.2.5
     # via jupyterlab
-jupyter-server==2.14.0
+jupyter-server==2.14.2
     # via
     #   jupyter-lsp
     #   jupyterlab
@@ -164,41 +164,79 @@ jupyter-server==2.14.0
     #   notebook-shim
 jupyter-server-terminals==0.5.3
     # via jupyter-server
-jupyterlab==4.1.8
+jupyterlab==4.2.5
     # via notebook
 jupyterlab-pygments==0.3.0
     # via nbconvert
-jupyterlab-server==2.27.1
+jupyterlab-server==2.27.3
     # via
     #   jupyterlab
     #   notebook
-jupyterlab-widgets==3.0.10
+jupyterlab-widgets==3.0.13
     # via ipywidgets
-kiwisolver==1.4.5
+jupytext==1.16.4
+    # via mkdocs-jupyter
+kiwisolver==1.4.7
     # via matplotlib
+markdown==3.7
+    # via
+    #   mkdocs
+    #   mkdocs-autorefs
+    #   mkdocs-material
+    #   mkdocstrings
+    #   pymdown-extensions
 markdown-it-py==3.0.0
     # via
+    #   jupytext
     #   mdit-py-plugins
-    #   myst-parser
     #   rich
 markupsafe==2.1.5
     # via
     #   jinja2
+    #   mkdocs
+    #   mkdocs-autorefs
+    #   mkdocstrings
     #   nbconvert
-    #   sphinx-immaterial
-matplotlib==3.8.4
+matplotlib==3.9.2
     # via seaborn
 matplotlib-inline==0.1.7
     # via
     #   ipykernel
     #   ipython
-mdit-py-plugins==0.4.0
-    # via myst-parser
+mdit-py-plugins==0.4.2
+    # via jupytext
 mdurl==0.1.2
     # via markdown-it-py
+mergedeep==1.3.4
+    # via
+    #   mkdocs
+    #   mkdocs-get-deps
 mistune==3.0.2
     # via nbconvert
-myst-parser==2.0.0
+mkdocs==1.6.1
+    # via
+    #   mkdocs-autorefs
+    #   mkdocs-jupyter
+    #   mkdocs-material
+    #   mkdocstrings
+    #   pyfredapi (pyproject.toml)
+mkdocs-autorefs==1.2.0
+    # via
+    #   mkdocstrings
+    #   mkdocstrings-python
+mkdocs-get-deps==0.2.0
+    # via mkdocs
+mkdocs-jupyter==0.25.0
+    # via pyfredapi (pyproject.toml)
+mkdocs-material==9.5.38
+    # via
+    #   mkdocs-jupyter
+    #   pyfredapi (pyproject.toml)
+mkdocs-material-extensions==1.3.1
+    # via mkdocs-material
+mkdocstrings==0.26.1
+    # via mkdocstrings-python
+mkdocstrings-python==1.11.1
     # via pyfredapi (pyproject.toml)
 nbclient==0.10.0
     # via nbconvert
@@ -206,18 +244,16 @@ nbconvert==7.16.4
     # via
     #   jupyter
     #   jupyter-server
-    #   nbsphinx
+    #   mkdocs-jupyter
 nbformat==5.10.4
     # via
     #   jupyter-server
+    #   jupytext
     #   nbclient
     #   nbconvert
-    #   nbsphinx
-nbsphinx==0.9.3
-    # via pyfredapi (pyproject.toml)
 nest-asyncio==1.6.0
     # via ipykernel
-notebook==7.1.3
+notebook==7.2.2
     # via jupyter
 notebook-shim==0.2.4
     # via
@@ -228,22 +264,26 @@ numpy==1.26.4
     #   contourpy
     #   matplotlib
     #   pandas
+    #   pyfredapi (pyproject.toml)
     #   seaborn
 overrides==7.7.0
     # via jupyter-server
-packaging==24.0
+packaging==24.1
     # via
     #   ipykernel
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
+    #   jupytext
     #   matplotlib
+    #   mkdocs
     #   nbconvert
     #   plotly
     #   qtconsole
     #   qtpy
-    #   sphinx
-pandas==2.2.2
+paginate==0.5.7
+    # via mkdocs-material
+pandas==2.2.3
     # via
     #   pyfredapi (pyproject.toml)
     #   seaborn
@@ -251,79 +291,82 @@ pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.4
     # via jedi
+pathspec==0.12.1
+    # via mkdocs
 pexpect==4.9.0
     # via ipython
-pillow==10.3.0
+pillow==10.4.0
     # via matplotlib
-platformdirs==4.2.1
-    # via jupyter-core
+platformdirs==4.3.6
+    # via
+    #   jupyter-core
+    #   mkdocs-get-deps
+    #   mkdocstrings
 plotly==5.18.0
     # via pyfredapi (pyproject.toml)
-pockets==0.9.1
-    # via sphinxcontrib-napoleon
-prometheus-client==0.20.0
+prometheus-client==0.21.0
     # via jupyter-server
-prompt-toolkit==3.0.43
+prompt-toolkit==3.0.48
     # via
     #   ipython
     #   jupyter-console
-psutil==5.9.8
+psutil==6.0.0
     # via ipykernel
 ptyprocess==0.7.0
     # via
     #   pexpect
     #   terminado
-pure-eval==0.2.2
+pure-eval==0.2.3
     # via stack-data
 pycparser==2.22
     # via cffi
-pydantic==2.7.1
-    # via
-    #   autodoc-pydantic
-    #   pydantic-extra-types
-    #   pydantic-settings
-    #   pyfredapi (pyproject.toml)
-    #   sphinx-immaterial
-pydantic-core==2.18.2
+pydantic==2.9.2
+    # via pyfredapi (pyproject.toml)
+pydantic-core==2.23.4
     # via pydantic
-pydantic-extra-types==2.7.0
-    # via sphinx-immaterial
-pydantic-settings==2.2.1
-    # via autodoc-pydantic
 pygments==2.18.0
     # via
     #   ipython
     #   jupyter-console
+    #   mkdocs-jupyter
+    #   mkdocs-material
     #   nbconvert
     #   qtconsole
     #   rich
-    #   sphinx
-pyparsing==3.1.2
+pymdown-extensions==10.11
+    # via
+    #   mkdocs-material
+    #   mkdocstrings
+pyparsing==3.1.4
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via
     #   arrow
+    #   ghp-import
     #   jupyter-client
     #   matplotlib
     #   pandas
-python-dotenv==1.0.1
-    # via pydantic-settings
 python-json-logger==2.0.7
     # via jupyter-events
-pytz==2024.1
+pytz==2024.2
     # via pandas
-pyyaml==6.0.1
+pyyaml==6.0.2
     # via
     #   jupyter-events
-    #   myst-parser
-pyzmq==26.0.3
+    #   jupytext
+    #   mkdocs
+    #   mkdocs-get-deps
+    #   pymdown-extensions
+    #   pyyaml-env-tag
+pyyaml-env-tag==0.1
+    # via mkdocs
+pyzmq==26.2.0
     # via
     #   ipykernel
     #   jupyter-client
     #   jupyter-console
     #   jupyter-server
-    #   qtconsole
-qtconsole==5.5.2
+qtconsole==5.6.0
     # via jupyter
 qtpy==2.4.1
     # via qtconsole
@@ -332,12 +375,13 @@ referencing==0.35.1
     #   jsonschema
     #   jsonschema-specifications
     #   jupyter-events
-requests==2.31.0
+regex==2024.9.11
+    # via mkdocs-material
+requests==2.32.3
     # via
     #   jupyterlab-server
+    #   mkdocs-material
     #   pyfredapi (pyproject.toml)
-    #   sphinx
-    #   sphinx-immaterial
 rfc3339-validator==0.1.4
     # via
     #   jsonschema
@@ -346,9 +390,9 @@ rfc3986-validator==0.1.1
     # via
     #   jsonschema
     #   jupyter-events
-rich==13.7.1
+rich==13.8.1
     # via pyfredapi (pyproject.toml)
-rpds-py==0.18.1
+rpds-py==0.20.0
     # via
     #   jsonschema
     #   referencing
@@ -360,47 +404,17 @@ six==1.16.0
     # via
     #   asttokens
     #   bleach
-    #   pockets
     #   python-dateutil
     #   rfc3339-validator
-    #   sphinxcontrib-napoleon
 sniffio==1.3.1
     # via
     #   anyio
     #   httpx
-snowballstemmer==2.2.0
-    # via sphinx
-soupsieve==2.5
+soupsieve==2.6
     # via beautifulsoup4
-sphinx==7.2.6
-    # via
-    #   autodoc-pydantic
-    #   myst-parser
-    #   nbsphinx
-    #   pyfredapi (pyproject.toml)
-    #   sphinx-copybutton
-    #   sphinx-immaterial
-sphinx-copybutton==0.5.1
-    # via pyfredapi (pyproject.toml)
-sphinx-immaterial==0.11.11
-    # via pyfredapi (pyproject.toml)
-sphinxcontrib-applehelp==1.0.8
-    # via sphinx
-sphinxcontrib-devhelp==1.0.6
-    # via sphinx
-sphinxcontrib-htmlhelp==2.0.5
-    # via sphinx
-sphinxcontrib-jsmath==1.0.1
-    # via sphinx
-sphinxcontrib-napoleon==0.7
-    # via pyfredapi (pyproject.toml)
-sphinxcontrib-qthelp==1.0.7
-    # via sphinx
-sphinxcontrib-serializinghtml==1.1.10
-    # via sphinx
 stack-data==0.6.3
     # via ipython
-tenacity==8.3.0
+tenacity==9.0.0
     # via plotly
 terminado==0.18.1
     # via
@@ -408,7 +422,7 @@ terminado==0.18.1
     #   jupyter-server-terminals
 tinycss2==1.3.0
     # via nbconvert
-tornado==6.4
+tornado==6.4.1
     # via
     #   ipykernel
     #   jupyter-client
@@ -432,25 +446,25 @@ traitlets==5.14.3
     #   nbclient
     #   nbconvert
     #   nbformat
-    #   nbsphinx
     #   qtconsole
-types-python-dateutil==2.9.0.20240316
+types-python-dateutil==2.9.0.20240906
     # via arrow
-typing-extensions==4.11.0
+typing-extensions==4.12.2
     # via
     #   ipython
     #   pydantic
     #   pydantic-core
-    #   sphinx-immaterial
-tzdata==2024.1
+tzdata==2024.2
     # via pandas
 uri-template==1.3.0
     # via jsonschema
-urllib3==2.2.1
+urllib3==2.2.3
     # via requests
+watchdog==5.0.3
+    # via mkdocs
 wcwidth==0.2.13
     # via prompt-toolkit
-webcolors==1.13
+webcolors==24.8.0
     # via jsonschema
 webencodings==0.5.1
     # via
@@ -458,5 +472,8 @@ webencodings==0.5.1
     #   tinycss2
 websocket-client==1.8.0
     # via jupyter-server
-widgetsnbextension==4.0.10
+widgetsnbextension==4.0.13
     # via ipywidgets
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
