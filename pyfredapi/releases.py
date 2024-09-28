@@ -1,4 +1,4 @@
-"""The releases provides functions to request data from the `FRED API Releases endpoints <https://fred.stlouisfed.org/docs/api/fred/#Releases>`_."""
+"""The `releases` module provides functions to request data from the [FRED API Releases endpoints](https://fred.stlouisfed.org/docs/api/fred/#Releases)."""
 
 from typing import Literal, Optional
 
@@ -43,7 +43,7 @@ class ReleaseApiParameters(BaseModel):
 
 
 def get_releases(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
-    """Get all releases of economic data. https://fred.stlouisfed.org/docs/api/fred/releases.html.
+    """Get all releases of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/releases.html).
 
     Parameters
     ----------
@@ -66,7 +66,7 @@ def get_releases(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
 
 
 def get_releases_dates(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
-    """Get release dates for all releases of economic data. https://fred.stlouisfed.org/docs/api/fred/releases_dates.html.
+    """Get release dates for all releases of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/releases_dates.html).
 
     Parameters
     ----------
@@ -91,7 +91,7 @@ def get_releases_dates(api_key: ApiKeyType = None, **kwargs: KwargsType) -> Json
 def get_release(
     release_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get a release of economic data. https://fred.stlouisfed.org/docs/api/fred/release.html.
+    """Get a release of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release.html).
 
     Parameters
     ----------
@@ -124,7 +124,7 @@ def get_release(
 def get_release_dates(
     release_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get release dates for a release of economic data. https://fred.stlouisfed.org/docs/api/fred/release_dates.html.
+    """Get release dates for a release of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_dates.html).
 
     Parameters
     ----------
@@ -153,7 +153,7 @@ def get_release_dates(
 def get_release_series(
     release_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the series on a release of economic data. https://fred.stlouisfed.org/docs/api/fred/release_series.html.
+    """Get the series on a release of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_series.html).
 
     Parameters
     ----------
@@ -182,7 +182,7 @@ def get_release_series(
 def get_release_sources(
     release_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the sources for a release of economic data. https://fred.stlouisfed.org/docs/api/fred/release_sources.html.
+    """Get the sources for a release of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_sources.html).
 
     Parameters
     ----------
@@ -211,7 +211,7 @@ def get_release_sources(
 def get_release_tags(
     release_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the FRED tags for a release. https://fred.stlouisfed.org/docs/api/fred/release_tags.html.
+    """Get the FRED tags for a release. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_tags.html).
 
     Parameters
     ----------
@@ -240,7 +240,7 @@ def get_release_tags(
 def get_release_related_tags(
     release_id: int, tag_names: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the related FRED tags for one or more FRED tags within a release. https://fred.stlouisfed.org/docs/api/fred/release_related_tags.html.
+    """Get the related FRED tags for one or more FRED tags within a release. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_related_tags.html).
 
     Parameters
     ----------
@@ -271,7 +271,7 @@ def get_release_related_tags(
 def get_release_tables(
     release_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get release table trees for a given release. https://fred.stlouisfed.org/docs/api/fred/release_tables.html.
+    """Get release table trees for a given release. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_tables.htm).
 
     Parameters
     ----------

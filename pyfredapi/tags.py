@@ -1,4 +1,4 @@
-"""The tags module provides functions to request data from the `FRED API Tags endpoints <https://fred.stlouisfed.org/docs/api/fred/#Tags>`_.
+"""The `tags` module provides functions to request data from the [FRED API Tags endpoints](https://fred.stlouisfed.org/docs/api/fred/#Tags).
 
 FRED tags are assigned to series. Tags define a characteristic about the series. Each tag is a unique character identifier. For example:
 
@@ -41,7 +41,7 @@ class TagsApiParameters(BaseModel):
 
 
 def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
-    """Get FRED tags. https://fred.stlouisfed.org/docs/api/fred/tags.html.
+    """Get FRED tags.[Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/tags.html).
 
     Parameters
     ----------
@@ -67,7 +67,7 @@ def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
 def get_related_tags(
     tag_names: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get related FRED tags for one or more FRED tags. https://fred.stlouisfed.org/docs/api/fred/related_tags.html.
+    """Get related FRED tags for one or more FRED tags. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/related_tags.html).
 
     Parameters
     ----------
@@ -97,7 +97,7 @@ def get_related_tags(
 def get_series_matching_tags(
     tag_names: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the series matching all tags in the tag_names parameter. https://fred.stlouisfed.org/docs/api/fred/tags_series.html.
+    """Get the series matching all tags in the tag_names parameter. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/tags_series.html).
 
     Parameters
     ----------

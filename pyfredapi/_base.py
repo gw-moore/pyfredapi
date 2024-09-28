@@ -1,6 +1,6 @@
-"""The _base module contains the get request functions used in the pyfredapi modules.
+"""The `_base` module contains the get request functions used in the pyfredapi modules.
 
-The _base module is not intended to be used directly by the user. It is used by the other
+The `_base` module is not intended to be used directly by the user. It is used by the other
 functions in pyfredapi.
 """
 

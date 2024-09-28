@@ -1,4 +1,4 @@
-"""The maps module provides functions to request data from the `FRED API Maps endpoints <https://fred.stlouisfed.org/docs/api/fred/#Maps>`_.
+"""The `maps` module provides functions to request data from the [FRED API Maps endpoints](https://fred.stlouisfed.org/docs/api/fred/#Maps).
 
 The FRED Maps API is a web service that allows developers to write programs and build applications to harvest data and shape files of series available on the maps found
 in the FRED website hosted by the Economic Research Division of the Federal Reserve Bank of St. Louis. Not all series that are in FRED have geographical data.
@@ -41,7 +41,7 @@ class MapApiParameters(BaseModel):
 
 
 class GeoseriesInfo(BaseModel):
-    """Represents geo series information. https://fred.stlouisfed.org/docs/api/geofred/series_group.html."""
+    """Represents geo series information. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/geofred/series_group.html)."""
 
     model_config = ConfigDict(extra="allow")
 
@@ -56,7 +56,7 @@ class GeoseriesInfo(BaseModel):
 
 
 class GeoseriesData(BaseModel):
-    """Represents metadata about an economics data series. https://fred.stlouisfed.org/docs/api/fred/series.html."""
+    """Represents metadata about an economics data series. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series.html)."""
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
@@ -65,7 +65,7 @@ class GeoseriesData(BaseModel):
 
 
 def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesInfo:
-    """Request the metadata for a given geo series id. https://fred.stlouisfed.org/docs/api/geofred/series_group.html.
+    """Request the metadata for a given geo series id. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/geofred/series_group.html).
 
     Parameters
     ----------
@@ -140,7 +140,7 @@ def get_geoseries(
     """Request a cross section of regional data for a specified release date. If no date is specified, the most recent data available are returned.
 
     For example, you can request Per Capita Personal Income by State (series_id: WIPCPI) over a specific time period.
-    https://fred.stlouisfed.org/docs/api/geofred/series_data.html.
+    [Endpoint documentation](https://fred.stlouisfed.org/docs/api/geofred/series_data.html).
 
     Parameters
     ----------

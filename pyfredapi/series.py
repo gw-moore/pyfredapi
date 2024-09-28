@@ -1,4 +1,4 @@
-"""The series module provides functions to request data from the `FRED API Sources endpoints <https://fred.stlouisfed.org/docs/api/fred/#Series>'_."""
+"""The `series` module provides functions to request data from the [FRED API Sources endpoints](https://fred.stlouisfed.org/docs/api/fred/#Series)."""
 
 import webbrowser
 from typing import List, Literal, Optional
@@ -112,7 +112,7 @@ class SeriesSearchParameters(BaseModel):
 
 
 class SeriesInfo(BaseModel):
-    """Represents metadata about an economics data series. https://fred.stlouisfed.org/docs/api/fred/series.html."""
+    """Represents metadata about an economics data series. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series.html)."""
 
     model_config = ConfigDict(extra="allow")
 
@@ -141,7 +141,7 @@ class SeriesInfo(BaseModel):
 def get_series_info(
     series_id: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> SeriesInfo:
-    """Get an economic data series information by ID. https://fred.stlouisfed.org/docs/api/fred/series.html.
+    """Get an economic data series information by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series.html).
 
     Parameters
     ----------
@@ -172,7 +172,7 @@ def get_series_info(
 def get_series_categories(
     series_id: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the categories for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_categories.html.
+    """Get the categories for an economic data series by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_categories.html).
 
     Parameters
     ----------
@@ -205,7 +205,7 @@ def get_series(
     return_format: ReturnFmtType = "pandas",
     **kwargs: KwargsType,
 ) -> JsonOrPdType:
-    """Get the observations or data values for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_observations.html.
+    """Get the observations or data values for an economic data series by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_observations.html).
 
     Parameters
     ----------
@@ -244,7 +244,7 @@ def get_series(
 def get_series_releases(
     series_id: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the FRED release for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_release.html.
+    """Get the FRED release for an economic data series by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_release.html).
 
     Parameters
     ----------
@@ -274,7 +274,7 @@ def get_series_releases(
 def get_series_tags(
     series_id: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the FRED tags for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_tags.html.
+    """Get the FRED tags for an economic data series by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_tags.html).
 
     Parameters
     ----------
@@ -304,7 +304,7 @@ def get_series_tags(
 def get_series_updates(
     series_id: str, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get the FRED updates for an economic data series by ID. https://fred.stlouisfed.org/docs/api/fred/series_updates.html.
+    """Get the FRED updates for an economic data series by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_updates.html).
 
     Parameters
     ----------
@@ -336,7 +336,7 @@ def get_series_vintagedates(
 ) -> List[str]:
     """Get the dates in history when a series' data values were revised or new data values were released.
 
-    Vintage dates are the release dates for a series excluding release dates when the data did not change. https://fred.stlouisfed.org/docs/api/fred/series_vintagesdates.html.
+    Vintage dates are the release dates for a series excluding release dates when the data did not change. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_vintagesdates.html).
 
     Parameters
     ----------
@@ -516,7 +516,7 @@ def search_series(
     return_format: ReturnFmtType = "pandas",
     **kwargs: KwargsType,
 ) -> JsonOrPdType:
-    """Get economic data series that match search text. `FRED docs <https://fred.stlouisfed.org/docs/api/fred/series_search.html>`_.
+    """Get economic data series that match search text. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_search.html).
 
     Parameters
     ----------
@@ -526,7 +526,7 @@ def search_series(
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
     search_type : Literal["full_text", "series_id"]
         Defines which type of search to preform. One of the following strings: 'full_text', 'series_id'.
-        Parameter docs: https://fred.stlouisfed.org/docs/api/fred/series_search.html#search_type.
+        [Parameter docs](https://fred.stlouisfed.org/docs/api/fred/series_search.html#search_type).
     return_format : : Literal["json", "pandas"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
     **kwargs : dict, optional
@@ -564,7 +564,7 @@ def search_series_tags(
     return_format: ReturnFmtType = "pandas",
     **kwargs: KwargsType,
 ) -> JsonOrPdType:
-    """Get the FRED tags for a series search. https://fred.stlouisfed.org/docs/api/fred/release_related_tags.html.
+    """Get the FRED tags for a series search. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_related_tags.html).
 
     Parameters
     ----------
@@ -609,7 +609,7 @@ def search_series_related_tags(
     return_format: ReturnFmtType = "pandas",
     **kwargs,
 ) -> JsonOrPdType:
-    """Get the related FRED tags for one or more FRED tags matching a series search. https://fred.stlouisfed.org/docs/api/fred/series_search_related_tags.html.
+    """Get the related FRED tags for one or more FRED tags matching a series search. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_search_related_tags.html).
 
     Parameters
     ----------

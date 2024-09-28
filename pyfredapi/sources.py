@@ -1,4 +1,4 @@
-"""The sources module provides functions to request data from the `FRED API Sources endpoints. <https://fred.stlouisfed.org/docs/api/fred/#Sources>`_.
+"""The `sources` module provides functions to request data from the [FRED API Sources endpoints](https://fred.stlouisfed.org/docs/api/fred/#Sources).
 
 The FRED database contains many sources of data. The sources module provides functions to query the FRED database for information about the available sources.
 """
@@ -29,7 +29,7 @@ class SourceApiParameters(BaseModel):
 
 
 def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
-    """Get all sources of economic data. https://fred.stlouisfed.org/docs/api/fred/sources.html.
+    """Get all sources of economic data. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/sources.html).
 
     Parameters
     ----------
@@ -83,7 +83,7 @@ def get_source(
 def get_source_release(
     source_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ):
-    """Get the releases for a source. https://fred.stlouisfed.org/docs/api/fred/source.html.
+    """Get the releases for a source. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/source.html).
 
     Parameters
     ----------

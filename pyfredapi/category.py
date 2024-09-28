@@ -1,4 +1,4 @@
-"""The category module provides functions to request data from the `FRED API Categories endpoints <https://fred.stlouisfed.org/docs/api/fred/#Categories>`_."""
+"""The category module provides functions to request data from the [FRED API Categories endpoints](https://fred.stlouisfed.org/docs/api/fred/#Categories)."""
 
 from typing import Dict, Literal, Optional
 
@@ -56,7 +56,7 @@ class CategoryApiParameters(BaseModel):
 def get_category(
     category_id: Optional[int] = None, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get category by ID. https://fred.stlouisfed.org/docs/api/fred/category.html.
+    """Get category by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category.html).
 
     Parameters
     ----------
@@ -91,7 +91,7 @@ def get_category(
 def get_category_children(
     category_id: Optional[int] = None, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get category children by category ID. https://fred.stlouisfed.org/docs/api/fred/category_children.html.
+    """Get category children by category ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_children.html).
 
     Parameters
     ----------
@@ -126,7 +126,7 @@ def get_category_children(
 def get_category_related(
     category_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> JsonType:
-    """Get related categories by category ID. https://fred.stlouisfed.org/docs/api/fred/category_related.html.
+    """Get related categories by category ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_related.html).
 
     Parameters
     ----------
@@ -157,7 +157,7 @@ def get_category_related(
 def get_category_series(
     category_id: int, api_key: ApiKeyType = None, **kwargs: KwargsType
 ) -> Dict[str, SeriesInfo]:
-    """Get the series info for each series in a category by category ID. https://fred.stlouisfed.org/docs/api/fred/category_series.html.
+    """Get the series info for each series in a category by category ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_series.html).
 
     Parameters
     ----------
@@ -192,7 +192,7 @@ def get_category_tags(
     return_format: ReturnFmtType = "json",
     **kwargs: KwargsType,
 ) -> JsonOrPdType:
-    """Get the FRED tags for a category by category ID. https://fred.stlouisfed.org/docs/api/fred/category_tags.html.
+    """Get the FRED tags for a category by category ID.  [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_tags.html).
 
     Parameters
     ----------
@@ -233,7 +233,7 @@ def get_category_related_tags(
     return_format: ReturnFmtType = "json",
     **kwargs: KwargsType,
 ) -> JsonOrPdType:
-    """Get the related FRED tags for a category by category ID. https://fred.stlouisfed.org/docs/api/fred/category_related_tags.html.
+    """Get the related FRED tags for a category by category ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_related_tags.html).
 
     Parameters
     ----------
