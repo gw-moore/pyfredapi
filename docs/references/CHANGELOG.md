@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 0.9.0 - UNRELEASED
+## Version 0.9.0 - 2024-09-28
 
 ### Added
 
