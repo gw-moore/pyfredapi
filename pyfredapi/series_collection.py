@@ -1,4 +1,4 @@
-"""The series_collection module contains the SeriesCollection implementation.
+"""The `series_collection` module contains the SeriesCollection implementation.
 
 SeriesCollection is meant to make handling multiple series easier. Often users of the FRED API will want analyze multiple economic series. This can be done with `FredSeries` alone, but can be tedious and cumbersome.
 `pyfredapi` offers the `SeriesCollection` class to streamline the process of collecting and munging the data for plotting and analysis.
@@ -207,6 +207,17 @@ class SeriesCollection:
     def __rich_repr__(self):
         yield self._data
 
+    @property
+    def data(self) -> list[SeriesData]:
+        """Returns data in the `SeriesCollection`.
+
+        Returns
+        -------
+        list[SeriesData]
+
+        """
+        return self._data
+
     def rename_series(self, rename):
         """Rename series columns."""
         for series_data in self._data:
@@ -288,13 +299,18 @@ class SeriesCollection:
             delattr(self, sid)
             print(f"Removed series {sid}")
 
-    def merge_long(self, col_name: Union[str, None] = None) -> pd.DataFrame:
+    def merge_long(
+        self, col_name: Union[str, None] = None, include_info_attrs: bool = False
+    ) -> pd.DataFrame:
         """Merge the series in the collection into a long pandas dataframe.
 
         Parameters
         ----------
         col_name : str | None
             Name to give columns holding the series id/label.
+        include_info_attrs : bool, optional
+            If `True`, all the attributes from the `SeriesInfo` will be included
+            on the dataframe.
 
         Returns
         -------
@@ -313,6 +329,20 @@ class SeriesCollection:
             long_df = series.df.copy()
             long_df = long_df.rename(columns={series_name: "value"})
             long_df[col_name] = series_name
+
+            if include_info_attrs:
+                # info = series.info.model_dump()
+                series_info = series.info.dict()
+                series_info_df = pd.DataFrame({k: [v] for k, v in series_info.items()})
+
+                # Add a constant column to both DataFrames for cross join
+                long_df["key"] = 1
+                series_info_df["key"] = 1
+
+                # Perform the cross join using pd.merge()
+                long_df = pd.merge(long_df, series_info_df, on="key")
+                long_df = long_df.drop("key", axis=1)
+
             long_df_prep.append(long_df)
 
         return pd.concat(long_df_prep, axis=0).reset_index(drop=True)
@@ -359,6 +389,17 @@ class SeriesCollection:
             base_df = pd.merge_asof(left=base_df, right=df, on="date")
 
         return base_df
+
+    def series_info_to_df(self) -> pd.DataFrame:
+        """Concatenate `SeriesInfo` into pandas DataFrame."""
+        dfs = []
+        for series in self.data:
+            # info = series.info.model_dump()
+            series_info = series.info.dict()
+            series_info_df = pd.DataFrame({k: [v] for k, v in series_info.items()})
+            dfs.append(series_info_df)
+
+        return pd.concat(dfs, ignore_index=True)
 
     def list_series(self) -> None:
         """List the series' id and title."""
