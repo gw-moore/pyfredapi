@@ -7,7 +7,7 @@ functions in pyfredapi.
 from functools import lru_cache
 from http import HTTPStatus
 from os import environ
-from typing import Any, Dict, Union
+from typing import Union
 
 import requests
 from pydantic import BaseModel, ConfigDict
