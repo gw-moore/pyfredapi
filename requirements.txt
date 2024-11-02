@@ -4,45 +4,45 @@
 #
 #    pip-compile --output-file=requirements.txt pyproject.toml
 #
-annotated-types==0.6.0
+annotated-types==0.7.0
     # via pydantic
-certifi==2024.2.2
+certifi==2024.8.30
     # via requests
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
-frozendict==2.4.4
-    # via pyfredapi (pyproject.toml)
-idna==3.7
+idna==3.10
     # via requests
 markdown-it-py==3.0.0
     # via rich
 mdurl==0.1.2
     # via markdown-it-py
 numpy==1.26.4
-    # via pandas
-pandas==2.2.2
+    # via
+    #   pandas
+    #   pyfredapi (pyproject.toml)
+pandas==2.2.3
     # via pyfredapi (pyproject.toml)
-pydantic==2.7.1
+pydantic==2.9.2
     # via pyfredapi (pyproject.toml)
-pydantic-core==2.18.2
+pydantic-core==2.23.4
     # via pydantic
 pygments==2.18.0
     # via rich
 python-dateutil==2.9.0.post0
     # via pandas
-pytz==2024.1
+pytz==2024.2
     # via pandas
-requests==2.31.0
+requests==2.32.3
     # via pyfredapi (pyproject.toml)
-rich==13.7.1
+rich==13.9.4
     # via pyfredapi (pyproject.toml)
 six==1.16.0
     # via python-dateutil
-typing-extensions==4.11.0
+typing-extensions==4.12.2
     # via
     #   pydantic
     #   pydantic-core
-tzdata==2024.1
+tzdata==2024.2
     # via pandas
-urllib3==2.2.1
+urllib3==2.2.3
     # via requests
