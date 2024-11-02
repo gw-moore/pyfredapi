@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 0.9.1 - UNRELEASED
+## Version 0.9.1 - 2024-11-02
 
 ### Removed
 
