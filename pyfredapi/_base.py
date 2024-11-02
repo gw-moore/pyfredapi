@@ -58,7 +58,7 @@ def _get_api_key(api_key: Union[str, None] = None) -> str:
 def _get_request(
     endpoint: str,
     api_key: Union[str, None] = None,
-    params: Union[Dict[str, Any], None] = None,
+    params: Union[frozenset, None] = None,
     base_url: str = "https://api.stlouisfed.org/fred",
 ) -> JsonType:
     """Make a get request to a FRED web service endpoint and return the response as Json.
@@ -90,14 +90,14 @@ def _get_request(
     _base_params = BaseApiParameters(api_key=api_key)
 
     if not params:
-        params = {}
+        params = frozenset({}.items())
 
-    params = dict(params)
+    fparams = dict(params)
 
     try:
         response = requests.get(
             f"{base_url}/{endpoint}",
-            params={**_base_params.model_dump(), **params},
+            params={**_base_params.model_dump(), **fparams},
             timeout=30,
         )
     except requests.exceptions.RequestException as e:

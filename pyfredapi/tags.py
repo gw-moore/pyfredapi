@@ -114,7 +114,7 @@ def get_series_matching_tags(
 
     """
     params = _convert_pydantic_model_to_dict(TagsApiParameters(**kwargs))
-    params = frozenset(
+    fparams = frozenset(
         {
             "tag_names": tag_names,
             **params,
@@ -124,5 +124,5 @@ def get_series_matching_tags(
     return _get_request(
         endpoint="tags/series",
         api_key=api_key,
-        params=params,
+        params=fparams,
     )

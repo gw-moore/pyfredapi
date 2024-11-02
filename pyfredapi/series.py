@@ -589,7 +589,7 @@ def search_series_tags(
     return_format = ReturnFormat(return_format)
 
     params = _convert_pydantic_model_to_dict(SeriesSearchParameters(**kwargs))
-    params = frozenset(
+    fparams = frozenset(
         {
             "series_search_text": search_text,
             **params,
@@ -599,7 +599,7 @@ def search_series_tags(
     response = _get_request(
         endpoint="series/search/tags",
         api_key=api_key,
-        params=params,
+        params=fparams,
     )
 
     if return_format == ReturnFormat.pandas:
@@ -639,7 +639,7 @@ def search_series_related_tags(
     return_format = ReturnFormat(return_format)
 
     params = _convert_pydantic_model_to_dict(SeriesSearchParameters(**kwargs))
-    params = frozenset(
+    fparams = frozenset(
         {
             "series_search_text": search_text,
             "tag_names": tag_names,
@@ -650,7 +650,7 @@ def search_series_related_tags(
     response = _get_request(
         endpoint="series/search/related_tags",
         api_key=api_key,
-        params=params,
+        params=fparams,
     )
 
     if return_format == ReturnFormat.pandas:
