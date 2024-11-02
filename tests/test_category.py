@@ -10,7 +10,7 @@ from pyfredapi.category import (
     get_category_tags,
 )
 from pyfredapi.series import SeriesInfo
-from pyfredapi.utils import _convert_to_pandas
+from pyfredapi.utils._convert_to_pandas import _convert_to_pandas
 
 from .conftest import get_request as category_request
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.9.1 - UNRELEASED
+
+### Removed
+
+- Dependency on `frozendict` package.
+
 ## Version 0.9.0 - 2024-09-28
 
 ### Added

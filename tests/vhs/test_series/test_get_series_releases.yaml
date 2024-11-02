@@ -257,4 +257,724 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:43:10 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:43:10 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:43:11 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:43:11 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:44:14 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:44:14 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:44:14 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:44:14 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:47:54 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:47:54 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:47:54 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:47:54 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:48:37 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:48:37 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:48:37 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:48:37 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:53:54 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:53:54 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:53:54 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:53:54 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:55:20 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:55:20 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:55:21 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:55:21 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:59:01 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:59:01 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","releases":[{"id":53,"realtime_start":"2024-11-02","realtime_end":"2024-11-02","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:59:01 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:59:01 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:36 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

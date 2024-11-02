@@ -10,7 +10,6 @@ from os import environ
 from typing import Any, Dict, Union
 
 import requests
-from frozendict import frozendict
 from pydantic import BaseModel, ConfigDict
 
 from .exceptions import APIKeyNotFound, FredAPIRequestError, InvalidAPIKey
@@ -92,10 +91,13 @@ def _get_request(
 
     if not params:
         params = {}
+
+    params = dict(params)
+
     try:
         response = requests.get(
             f"{base_url}/{endpoint}",
-            params=frozendict({**_base_params.model_dump(), **params}),
+            params={**_base_params.model_dump(), **params},
             timeout=30,
         )
     except requests.exceptions.RequestException as e:

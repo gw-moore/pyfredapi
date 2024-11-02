@@ -11,11 +11,10 @@ Categories are organized in a hierarchical structure where parent categories con
 
 from typing import Literal, Optional
 
-from frozendict import frozendict
 from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
-from .utils import _convert_pydantic_model_to_frozen_dict
+from .utils import _convert_pydantic_model_to_dict, _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import ApiKeyType, JsonType, KwargsType
 
 
@@ -56,7 +55,7 @@ def get_tags(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
         A dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(TagsApiParameters(**kwargs))
+    params = _convert_pydantic_model_to_frozenset(TagsApiParameters(**kwargs))
     return _get_request(
         endpoint="tags",
         api_key=api_key,
@@ -84,7 +83,7 @@ def get_related_tags(
         A dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         TagsApiParameters(tag_names=tag_names, **kwargs)
     )
     return _get_request(
@@ -114,14 +113,16 @@ def get_series_matching_tags(
         A dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(TagsApiParameters(**kwargs))
+    params = _convert_pydantic_model_to_dict(TagsApiParameters(**kwargs))
+    params = frozenset(
+        {
+            "tag_names": tag_names,
+            **params,
+        }.items()
+    )
+
     return _get_request(
         endpoint="tags/series",
         api_key=api_key,
-        params=frozendict(
-            {
-                "tag_names": tag_names,
-                **params,
-            }
-        ),
+        params=params,
     )

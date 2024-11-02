@@ -251,4 +251,620 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:54:51 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:54:51 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:54:51 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:54:51 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:42:03 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:42:03 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:42:03 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:42:03 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:48:09 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:48:09 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:48:09 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:48:09 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:48:50 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:48:50 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:48:51 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:48:51 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:54:08 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:54:08 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:54:09 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:54:09 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:55:36 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:55:36 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:55:36 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:55:36 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:59:15 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:59:15 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/search/related_tags?file_type=json&series_search_text=monetary%2Bservice%2Bindex&tag_names=30-year%3Bfrb
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":0,"offset":0,"limit":1000,"tags":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '138'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:59:15 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:59:15 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:54:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

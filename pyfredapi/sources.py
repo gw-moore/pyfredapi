@@ -8,7 +8,7 @@ from typing import Literal, Optional
 from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
-from .utils import _convert_pydantic_model_to_frozen_dict
+from .utils import _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import ApiKeyType, JsonType, KwargsType
 
 
@@ -43,7 +43,7 @@ def get_sources(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     Dictionary representing the Json response
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(SourceApiParameters(**kwargs))
+    params = _convert_pydantic_model_to_frozenset(SourceApiParameters(**kwargs))
     return _get_request(
         endpoint="sources",
         api_key=api_key,
@@ -70,7 +70,7 @@ def get_source(
     Dictionary representing the Json response
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SourceApiParameters(source_id=source_id, **kwargs)
     )
     return _get_request(
@@ -100,7 +100,7 @@ def get_source_release(
     Dictionary representing the Json response
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SourceApiParameters(source_id=source_id, **kwargs)
     )
     return _get_request(

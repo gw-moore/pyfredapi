@@ -17,7 +17,7 @@ from pyfredapi.series import (
     search_series_related_tags,
     search_series_tags,
 )
-from pyfredapi.utils import _convert_to_pandas
+from pyfredapi.utils._convert_to_pandas import _convert_to_pandas
 
 from .conftest import get_request
 

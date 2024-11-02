@@ -401,4 +401,1364 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:53:44 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:53:44 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:54:14 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:54:14 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:54:15 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:54:15 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:39:09 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:39:09 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:39:09 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:39:09 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:40:39 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:40:39 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:40:39 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:40:39 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:41:02 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:41:02 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:41:02 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:41:02 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:41:40 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:41:40 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:41:41 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:41:41 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:42:46 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:42:46 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:42:47 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:42:47 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:53:31 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:53:31 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:53:31 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:53:31 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:54:57 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:54:57 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:54:57 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:54:57 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:58:40 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:58:40 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/tags?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_count","sort_order":"desc","count":24,"offset":0,"limit":1000,"tags":[{"name":"bea","group_id":"src","notes":"Bureau
+        of Economic Analysis","created":"2012-02-27 10:18:19-06","popularity":78,"series_count":54},{"name":"nation","group_id":"geot","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":96,"series_count":54},{"name":"public domain: citation
+        requested","group_id":"cc","notes":null,"created":"2018-12-17 23:33:13-06","popularity":99,"series_count":54},{"name":"usa","group_id":"geo","notes":"United
+        States of America","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":54},{"name":"balance","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":49,"series_count":50},{"name":"quarterly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":83,"series_count":34},{"name":"nsa","group_id":"seas","notes":"Not
+        Seasonally Adjusted","created":"2012-02-27 10:18:19-06","popularity":100,"series_count":32},{"name":"sa","group_id":"seas","notes":"Seasonally
+        Adjusted","created":"2012-02-27 10:18:19-06","popularity":86,"series_count":22},{"name":"annual","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":18},{"name":"discontinued","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":65,"series_count":18},{"name":"bop","group_id":"gen","notes":"Balance
+        of Payments","created":"2013-01-28 14:10:13-06","popularity":45,"series_count":16},{"name":"goods","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":67,"series_count":16},{"name":"services","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":68,"series_count":16},{"name":"income","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":70,"series_count":10},{"name":"capital account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":24,"series_count":8},{"name":"trade","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":54,"series_count":8},{"name":"current account","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":36,"series_count":6},{"name":"merchandise","group_id":"gen","notes":"","created":"2013-11-13
+        16:08:31-06","popularity":22,"series_count":6},{"name":"secondary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":45,"series_count":6},{"name":"net","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":60,"series_count":4},{"name":"primary","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":47,"series_count":4},{"name":"census","group_id":"src","notes":"Census","created":"2012-02-27
+        10:18:19-06","popularity":86,"series_count":2},{"name":"monthly","group_id":"freq","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":92,"series_count":2},{"name":"transfers","group_id":"gen","notes":"","created":"2012-02-27
+        10:18:19-06","popularity":30,"series_count":2}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '835'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:58:40 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:58:40 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:53:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

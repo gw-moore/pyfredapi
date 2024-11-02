@@ -34,7 +34,6 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "frozendict>=2.0.0,<3.0.0",
     "numpy>=1.0.0,<2.0.0",
     "pandas>=1.0.0,<3.0.0",
     "pydantic>=2.0.0,<3.0.0",

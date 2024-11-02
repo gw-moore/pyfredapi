@@ -1,10 +1,11 @@
 """Utilities module."""
 
-from frozendict import frozendict
 from pydantic import BaseModel
 
-from ._convert_to_pandas import _convert_to_pandas
+
+def _convert_pydantic_model_to_frozenset(model: BaseModel) -> frozenset:
+    return frozenset(model.model_dump(exclude_none=True).items())
 
 
-def _convert_pydantic_model_to_frozen_dict(model: BaseModel) -> frozendict:
-    return frozendict(model.model_dump(exclude_none=True))
+def _convert_pydantic_model_to_dict(model: BaseModel) -> dict:
+    return model.model_dump(exclude_none=True)

@@ -1079,4 +1079,1884 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:55:28 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:55:28 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:55:28 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 15:55:28 GMT
+      Expires:
+      - Sat, 02 Nov 2024 15:55:28 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 15:55:28 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:56:38 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:56:38 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:56:39 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:56:39 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:56:58 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:56:58 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:56:58 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:56:58 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:59:35 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:59:35 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/tags/series?file_type=json&tag_names=slovenia%3Bfood%3Boecd
+  response:
+    body:
+      string: '{"realtime_start":"2024-11-02","realtime_end":"2024-11-02","order_by":"series_id","sort_order":"asc","count":18,"offset":0,"limit":1000,"seriess":[{"id":"CPGDFD02SIA657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:10:44-06","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIA659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-03-09
+        15:22:46-06","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":1,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIM659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19
+        14:12:52-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ657N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Previous Period","units_short":"Growth Rate Previous Period","seasonal_adjustment":"Not
+        Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:23-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GP\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"CPGDFD02SIQ659N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Total Food Excluding Restaurants for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Growth
+        Rate Same Period Previous Year","units_short":"Growth Rate Same Period Previous
+        Yr.","seasonal_adjustment":"Not Seasonally Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-17
+        10:11:30-05","popularity":0,"group_popularity":1,"notes":"OECD descriptor
+        ID: CPGDFD02\nOECD unit ID: GY\nOECD country ID: SVN\n\nAll OECD data should
+        be cited as follows: OECD, \"Main Economic Indicators - complete database\",
+        Main Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)\nCopyright, 2016, OECD. Reprinted with permission."},{"id":"PIEAFD01SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:32:37-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:39:34-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD01SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Total for
+        Slovenia","observation_start":"1998-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD01\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIA661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:43:27-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIM661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-12-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:15:03-05","popularity":1,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"PIEAFD02SIQ661N","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Producer
+        Prices Index: Economic Activities: Manufacture of Food Products: Domestic
+        for Slovenia","observation_start":"2000-01-01","observation_end":"2022-10-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2023-03-15 13:35:13-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Descriptor ID: PIEAFD02\nOECD unit ID: IDX\nOECD country ID: SVN\n\nAll OECD
+        data should be cited as follows: OECD, \"Main Economic Indicators - complete
+        database\", Main Economic Indicators (database), https:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date) Copyright, 2016, OECD. Reprinted with permission"},{"id":"SVNCPICORAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2023-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-05-15 14:32:35-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: A\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-09-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:36:19-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: M\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPICORQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: All Items
+        Non-Food Non-Energy for Slovenia","observation_start":"2000-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2015=100","units_short":"Index 2015=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2024-10-15 14:35:06-05","popularity":0,"group_popularity":1,"notes":"OECD
+        Data Filters: \nREF_AREA: SVN\nMEASURE: CPI\nUNIT_MEASURE: IX\nMETHODOLOGY:
+        N\nEXPENDITURE: _TXCP01_NRG\nADJUSTMENT: N\nTRANSFORMATION: _Z\nFREQ: Q\n\nAll
+        OECD data should be cited as follows: OECD (year), (dataset name), (data source)
+        DOI or https:\/\/data-explorer.oecd.org\/ (https:\/\/data-explorer.oecd.org\/).
+        (accessed on (date))."},{"id":"SVNCPIFODAINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2017-01-01","frequency":"Annual","frequency_short":"A","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODMINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-05-01","frequency":"Monthly","frequency_short":"M","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-06-19 14:11:05-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"},{"id":"SVNCPIFODQINMEI","realtime_start":"2024-11-02","realtime_end":"2024-11-02","title":"Consumer
+        Price Index: Food for Slovenia","observation_start":"1996-01-01","observation_end":"2018-01-01","frequency":"Quarterly","frequency_short":"Q","units":"Index
+        2010=100","units_short":"Index 2010=100","seasonal_adjustment":"Not Seasonally
+        Adjusted","seasonal_adjustment_short":"NSA","last_updated":"2018-04-20 10:35:37-05","popularity":1,"group_popularity":1,"notes":"Copyright,
+        2016, OECD. Reprinted with permission.\n\nAll OECD data should be cited as
+        follows: OECD (2010), \"Main Economic Indicators - complete database\", Main
+        Economic Indicators (database),http:\/\/dx.doi.org\/10.1787\/data-00052-en
+        (Accessed on date)"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1817'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 02 Nov 2024 16:59:35 GMT
+      Expires:
+      - Sat, 02 Nov 2024 16:59:35 GMT
+      Last-Modified:
+      - Sat, 02 Nov 2024 16:55:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -5,7 +5,7 @@ from typing import Literal, Optional
 from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
-from .utils import _convert_pydantic_model_to_frozen_dict
+from .utils import _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import ApiKeyType, JsonType, KwargsType
 
 
@@ -57,7 +57,7 @@ def get_releases(api_key: ApiKeyType = None, **kwargs: KwargsType) -> JsonType:
     Dictionary representing the Json response
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(ReleaseApiParameters(**kwargs))
+    params = _convert_pydantic_model_to_frozenset(ReleaseApiParameters(**kwargs))
     return _get_request(
         endpoint="releases",
         api_key=api_key,
@@ -80,7 +80,7 @@ def get_releases_dates(api_key: ApiKeyType = None, **kwargs: KwargsType) -> Json
     Dictionary representing the Json response
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(ReleaseApiParameters(**kwargs))
+    params = _convert_pydantic_model_to_frozenset(ReleaseApiParameters(**kwargs))
     return _get_request(
         endpoint="releases/dates",
         api_key=api_key,
@@ -111,7 +111,7 @@ def get_release(
     >>> release_info = get_release(release_id=53)
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, **kwargs)
     )
     return _get_request(
@@ -140,7 +140,7 @@ def get_release_dates(
     Dictionary representing the Json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, **kwargs)
     )
     return _get_request(
@@ -169,7 +169,7 @@ def get_release_series(
     Dictionary representing the Json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, **kwargs)
     )
     return _get_request(
@@ -198,7 +198,7 @@ def get_release_sources(
     Dictionary representing the Json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, **kwargs)
     )
     return _get_request(
@@ -227,7 +227,7 @@ def get_release_tags(
     Dictionary representing the Json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, **kwargs)
     )
     return _get_request(
@@ -258,7 +258,7 @@ def get_release_related_tags(
     Dictionary representing the Json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, tag_names=tag_names, **kwargs)
     )
     return _get_request(
@@ -287,7 +287,7 @@ def get_release_tables(
     Dictionary representing the Json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         ReleaseApiParameters(release_id=release_id, **kwargs)
     )
     return _get_request(

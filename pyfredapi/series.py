@@ -4,11 +4,10 @@ import webbrowser
 from typing import List, Literal, Optional
 
 import pandas as pd
-from frozendict import frozendict
 from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
-from .utils import _convert_pydantic_model_to_frozen_dict
+from .utils import _convert_pydantic_model_to_dict, _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import (
     ApiKeyType,
     JsonOrPdType,
@@ -158,7 +157,7 @@ def get_series_info(
         An instance of SeriesInfo.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     response = _get_request(
@@ -189,7 +188,7 @@ def get_series_categories(
         Dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     return _get_request(
@@ -226,7 +225,7 @@ def get_series(
     """
     return_format = ReturnFormat(return_format)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     response = _get_request(
@@ -261,7 +260,7 @@ def get_series_releases(
         Dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     return _get_request(
@@ -291,7 +290,7 @@ def get_series_tags(
         Dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     return _get_request(
@@ -321,7 +320,7 @@ def get_series_updates(
         Dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     return _get_request(
@@ -353,7 +352,7 @@ def get_series_vintagedates(
         List of strings representing the the available vintage dates
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesApiParameters(series_id=series_id, **kwargs)
     )
     response = _get_request(
@@ -396,13 +395,14 @@ def get_series_all_releases(
     _ = kwargs.pop("realtime_start", None)
     _ = kwargs.pop("realtime_end", None)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_dict(
         SeriesApiParameters(
             realtime_start=_earliest_realtime_start,
             realtime_end=_latest_realtime_end,
             **kwargs,
         )
     )
+
     return get_series(
         series_id=series_id,
         api_key=api_key,
@@ -445,11 +445,12 @@ def get_series_initial_release(
     _ = kwargs.pop("realtime_start", None)
     _ = kwargs.pop("output_type", None)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_dict(
         SeriesApiParameters(
             realtime_start=_earliest_realtime_start, output_type=4, **kwargs
         )
     )
+
     return get_series(
         series_id=series_id,
         api_key=api_key,
@@ -496,11 +497,12 @@ def get_series_asof_date(
     _ = kwargs.pop("realtime_start", None)
     _ = kwargs.pop("realtime_end", None)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_dict(
         SeriesApiParameters(
             realtime_start=_earliest_realtime_start, realtime_end=date, **kwargs
         )
     )
+
     return get_series(
         series_id=series_id,
         api_key=api_key,
@@ -540,13 +542,14 @@ def search_series(
     """
     return_format = ReturnFormat(return_format)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         SeriesSearchParameters(
             search_text=search_text,
             search_type=search_type,
             **kwargs,
         )
     )
+
     response = _get_request(
         endpoint="series/search",
         api_key=api_key,
@@ -564,7 +567,7 @@ def search_series_tags(
     return_format: ReturnFmtType = "pandas",
     **kwargs: KwargsType,
 ) -> JsonOrPdType:
-    """Get the FRED tags for a series search. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/release_related_tags.html).
+    """Get the FRED tags for a series search. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_search_related_tags.html).
 
     Parameters
     ----------
@@ -585,20 +588,23 @@ def search_series_tags(
     """
     return_format = ReturnFormat(return_format)
 
-    params = _convert_pydantic_model_to_frozen_dict(SeriesSearchParameters(**kwargs))
+    params = _convert_pydantic_model_to_dict(SeriesSearchParameters(**kwargs))
+    params = frozenset(
+        {
+            "series_search_text": search_text,
+            **params,
+        }.items()
+    )
+
     response = _get_request(
         endpoint="series/search/tags",
         api_key=api_key,
-        params=frozendict(
-            {
-                "series_search_text": search_text,
-                **params,
-            }
-        ),
+        params=params,
     )
 
     if return_format == ReturnFormat.pandas:
         return _convert_to_pandas(response["tags"])
+
     return response
 
 
@@ -632,17 +638,19 @@ def search_series_related_tags(
     """
     return_format = ReturnFormat(return_format)
 
-    params = _convert_pydantic_model_to_frozen_dict(SeriesSearchParameters(**kwargs))
+    params = _convert_pydantic_model_to_dict(SeriesSearchParameters(**kwargs))
+    params = frozenset(
+        {
+            "series_search_text": search_text,
+            "tag_names": tag_names,
+            **params,
+        }.items()
+    )
+
     response = _get_request(
         endpoint="series/search/related_tags",
         api_key=api_key,
-        params=frozendict(
-            {
-                "series_search_text": search_text,
-                "tag_names": tag_names,
-                **params,
-            }
-        ),
+        params=params,
     )
 
     if return_format == ReturnFormat.pandas:

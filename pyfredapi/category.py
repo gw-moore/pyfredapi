@@ -6,7 +6,7 @@ from pydantic import BaseModel, ConfigDict, PositiveInt
 
 from ._base import _get_request
 from .series import SeriesInfo
-from .utils import _convert_pydantic_model_to_frozen_dict
+from .utils import _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import (
     ApiKeyType,
     JsonOrPdType,
@@ -78,9 +78,10 @@ def get_category(
     >>> pf.get_category(category_id=125)
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         CategoryApiParameters(category_id=category_id, **kwargs)
     )
+
     return _get_request(
         api_key=api_key,
         endpoint="category",
@@ -113,7 +114,7 @@ def get_category_children(
     >>> pf.get_category_children(category_id=13)
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         CategoryApiParameters(category_id=category_id, **kwargs)
     )
     return _get_request(
@@ -144,7 +145,7 @@ def get_category_related(
         Dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         CategoryApiParameters(category_id=category_id, **kwargs)
     )
     return _get_request(
@@ -174,7 +175,7 @@ def get_category_series(
         A dictionary where the keys are series ids and the values for SeriesInfo objects.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         CategoryApiParameters(category_id=category_id, **kwargs)
     )
     response = _get_request(
@@ -213,7 +214,7 @@ def get_category_tags(
     """
     return_format = ReturnFormat(return_format)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         CategoryApiParameters(category_id=category_id, **kwargs)
     )
     response = _get_request(
@@ -254,7 +255,7 @@ def get_category_related_tags(
     """
     return_format = ReturnFormat(return_format)
 
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         CategoryApiParameters(category_id=category_id, **kwargs)
     )
     response = _get_request(

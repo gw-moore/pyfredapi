@@ -10,7 +10,7 @@ import pandas as pd
 from pydantic import BaseModel, ConfigDict
 
 from ._base import _get_request
-from .utils import _convert_pydantic_model_to_frozen_dict
+from .utils import _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import ApiKeyType, JsonType, ReturnFmtType
 from .utils.enums import ReturnFormat
 
@@ -80,9 +80,7 @@ def get_geoseries_info(series_id: str, api_key: ApiKeyType = None) -> GeoseriesI
         An instance of GeoseriesInfo.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
-        MapApiParameters(series_id=series_id)
-    )
+    params = _convert_pydantic_model_to_frozenset(MapApiParameters(series_id=series_id))
     response = _get_request(
         base_url=_geo_fred_url,
         endpoint="series/group",
@@ -121,7 +119,7 @@ def get_shape_files(
         Dictionary representing the json response.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(MapApiParameters(shape=shape))
+    params = _convert_pydantic_model_to_frozenset(MapApiParameters(shape=shape))
     return _get_request(
         base_url=_geo_fred_url,
         endpoint="shapes/file",
@@ -161,7 +159,7 @@ def get_geoseries(
         GeoseriesData object containing the geoseries data and metadata.
 
     """
-    params = _convert_pydantic_model_to_frozen_dict(
+    params = _convert_pydantic_model_to_frozenset(
         MapApiParameters(series_id=series_id, date=end_date, start_date=start_date)
     )
     response = _get_request(
