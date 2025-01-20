@@ -72,6 +72,7 @@ lint = [
 ]
 
 test = [
+    "pyfredapi[all]",
     "coverage==7.4.4",
     "pytest==8.1.1",
     "pytest-cov==5.0.0",
