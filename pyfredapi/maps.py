@@ -11,7 +11,7 @@ from pydantic import BaseModel, ConfigDict
 
 from ._base import _get_request
 from .utils import _convert_pydantic_model_to_frozenset
-from .utils._common_type_hints import ApiKeyType, JsonType, ReturnFmtType
+from .utils._common_type_hints import ApiKeyType, JsonType, ReturnFormats
 from .utils.enums import ReturnFormat
 
 _geo_fred_url = "https://api.stlouisfed.org/geofred/"
@@ -133,7 +133,7 @@ def get_geoseries(
     api_key: ApiKeyType = None,
     start_date: Optional[str] = None,
     end_date: Optional[str] = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
 ) -> GeoseriesData:
     """Request a cross section of regional data for a specified release date. If no date is specified, the most recent data available are returned.
 

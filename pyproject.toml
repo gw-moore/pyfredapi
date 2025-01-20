@@ -43,7 +43,13 @@ dependencies = [
 dynamic = ["version"]
 
 [project.optional-dependencies]
-plot = ["plotly>=5.0.0,<6.0.0"]
+polars = ["polars>=1.0.0,<2.0.0"]
+plotly = ["plotly>=5.0.0,<6.0.0"]
+all = [
+    "pyfredapi[polars]",
+    "pyfredapi[plotly]",
+]
+
 docs = [
     "mkdocs==1.6.1",
     "jupyter==1.0.0",
@@ -76,7 +82,7 @@ test = [
 dev = [
     "hatch==1.10.0",
     "pip-tools==7.4.1",
-    "pyfredapi[plot]",
+    "pyfredapi[all]",
     "pyfredapi[docs]",
     "pyfredapi[lint]",
     "pyfredapi[test]",

@@ -18,15 +18,26 @@
 
 ## Documentation
 
-The [documentation](https://pyfredapi.readthedocs.io/en/latest/) is made with [Sphinx](https://www.sphinx-doc.org/en/master/) and hosted on [Read the Docs](https://readthedocs.org/).
+The [documentation](https://pyfredapi.readthedocs.io/en/latest/) is made with [MkDocs](https://www.mkdocs.org/) and hosted on [Read the Docs](https://readthedocs.org/).
 
 ## Installation
 
+Install the latest version with pip:
+
 ```bash
 pip install pyfredapi
+```
 
-# install with plotting dependencies
-pip install 'pyfredapi[plot]'
+Install pyfredapi with all optional dependencies.
+
+```bash
+pip install 'pyfredapi[all]'
+```
+
+You can also install a subset of all optional dependencies.
+
+```bash
+pip install 'pyfredapi[polars]'
 ```
 
 ## Quick Start

@@ -1,5 +1,7 @@
 """The `series` module provides functions to request data from the [FRED API Sources endpoints](https://fred.stlouisfed.org/docs/api/fred/#Series)."""
 
+from __future__ import annotations
+
 import webbrowser
 from typing import List, Literal, Optional
 
@@ -10,12 +12,12 @@ from ._base import _get_request
 from .utils import _convert_pydantic_model_to_dict, _convert_pydantic_model_to_frozenset
 from .utils._common_type_hints import (
     ApiKeyType,
-    JsonOrPdType,
+    ReturnTypes,
     JsonType,
     KwargsType,
-    ReturnFmtType,
+    ReturnFormats,
 )
-from .utils._convert_to_pandas import _convert_to_pandas
+from .utils._convert_to_df import _convert_to_pandas, _convert_to_polars
 from .utils.enums import ReturnFormat
 
 _earliest_realtime_start: str = "1776-07-04"
@@ -201,9 +203,9 @@ def get_series_categories(
 def get_series(
     series_id: str,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the observations or data values for an economic data series by ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_observations.html).
 
     Parameters
@@ -219,8 +221,7 @@ def get_series(
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a dictionary representing the json response or a pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -235,8 +236,10 @@ def get_series(
     )
 
     if return_format == ReturnFormat.pandas:
-        pdf = _convert_to_pandas(response["observations"])
-        return pdf
+        return _convert_to_pandas(response["observations"])
+    if return_format == ReturnFormat.polars:
+        return _convert_to_polars(response["observations"])
+
     return response["observations"]
 
 
@@ -366,9 +369,9 @@ def get_series_vintagedates(
 def get_series_all_releases(
     series_id: str,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the observations or data values for all releases an economic data series by ID.
 
     Parameters
@@ -377,15 +380,14 @@ def get_series_all_releases(
         Series id of interest.
     api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
-    return_format : Literal["json", "pandas"] | ReturnFormat, optional
+    return_format : Literal["json", "pandas", "polars"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/observation`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a dictionary representing the json response or a pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -414,9 +416,9 @@ def get_series_all_releases(
 def get_series_initial_release(
     series_id: str,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the observations or data values for the initial release of an economic data series.
 
     Includes only the the initial release of the series and excludes all revisions.
@@ -427,15 +429,14 @@ def get_series_initial_release(
         Series id of interest.
     api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
-    return_format : Literal["json", "pandas"] | ReturnFormat, optional
+    return_format : Literal["json", "pandas", "polars"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/observation`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a dictionary representing the json response or a pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -463,9 +464,9 @@ def get_series_asof_date(
     series_id: str,
     date: str,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the observations or data values for an economic data series made on or before a specific date.
 
     Retrieves the latest data known for the series as of the date provided. This includes any revisions to
@@ -486,8 +487,7 @@ def get_series_asof_date(
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a dictionary representing the json response or a pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -515,9 +515,9 @@ def search_series(
     search_text: str,
     api_key: ApiKeyType = None,
     search_type: Literal["full_text", "series_id"] = "full_text",
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get economic data series that match search text. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_search.html).
 
     Parameters
@@ -529,15 +529,14 @@ def search_series(
     search_type : Literal["full_text", "series_id"]
         Defines which type of search to preform. One of the following strings: 'full_text', 'series_id'.
         [Parameter docs](https://fred.stlouisfed.org/docs/api/fred/series_search.html#search_type).
-    return_format : : Literal["json", "pandas"] | ReturnFormat, optional
+    return_format : : Literal["json", "pandas", "polars"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/observation`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -557,16 +556,18 @@ def search_series(
     )
 
     if return_format == ReturnFormat.pandas:
-        return pd.DataFrame.from_dict(response["seriess"])
+        return _convert_to_pandas(response["seriess"])
+    elif return_format == ReturnFormat.polars:
+        return _convert_to_polars(response["seriess"])
     return response
 
 
 def search_series_tags(
     search_text: str,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the FRED tags for a series search. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_search_related_tags.html).
 
     Parameters
@@ -575,15 +576,14 @@ def search_series_tags(
         The text to match against.
     api_key : str | None, optional, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
-    return_format : : Literal["json", "pandas"] | ReturnFormat, optional
+    return_format : : Literal["json", "pandas", "polars"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/observation`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -604,6 +604,8 @@ def search_series_tags(
 
     if return_format == ReturnFormat.pandas:
         return _convert_to_pandas(response["tags"])
+    elif return_format == ReturnFormat.polars:
+        return _convert_to_polars(response["tags"])
 
     return response
 
@@ -612,9 +614,9 @@ def search_series_related_tags(
     search_text: str,
     tag_names: str,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "pandas",
+    return_format: ReturnFormats = "pandas",
     **kwargs,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the related FRED tags for one or more FRED tags matching a series search. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/series_search_related_tags.html).
 
     Parameters
@@ -625,15 +627,14 @@ def search_series_related_tags(
         A semicolon delimited list of tag names that series match all of.
     api_key : str | None, optional
         FRED API key. Defaults to None. If None, will search for FRED_API_KEY in environment variables.
-    return_format : : Literal["json", "pandas"] | ReturnFormat, optional
+    return_format : : Literal["json", "pandas", "polars"] | ReturnFormat, optional
         In what format to return the response. Must be either 'json' or 'pandas'. Defaults to 'pandas'.
     **kwargs : dict, optional
         Additional parameters to FRED API ``series/observation`` endpoint. Refer to the FRED documentation for a list of all possible parameters.
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a pandas dataframe or json. Defaults to pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -655,4 +656,6 @@ def search_series_related_tags(
 
     if return_format == ReturnFormat.pandas:
         return pd.DataFrame.from_dict(response["tags"])
+    elif return_format == ReturnFormat.polars:
+        return _convert_to_polars(response["tags"])
     return response

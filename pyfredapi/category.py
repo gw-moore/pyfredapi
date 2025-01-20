@@ -1,5 +1,7 @@
 """The category module provides functions to request data from the [FRED API Categories endpoints](https://fred.stlouisfed.org/docs/api/fred/#Categories)."""
 
+from __future__ import annotations
+
 from typing import Dict, Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, PositiveInt
@@ -7,15 +9,16 @@ from pydantic import BaseModel, ConfigDict, PositiveInt
 from ._base import _get_request
 from .series import SeriesInfo
 from .utils import _convert_pydantic_model_to_frozenset
+from .utils._convert_to_df import _convert_to_pandas, _convert_to_polars
+from .utils.enums import ReturnFormat
+
 from .utils._common_type_hints import (
     ApiKeyType,
-    JsonOrPdType,
+    ReturnTypes,
     JsonType,
     KwargsType,
-    ReturnFmtType,
+    ReturnFormats,
 )
-from .utils._convert_to_pandas import _convert_to_pandas
-from .utils.enums import ReturnFormat
 
 
 class CategoryApiParameters(BaseModel):
@@ -190,9 +193,9 @@ def get_category_series(
 def get_category_tags(
     category_id: Optional[int] = None,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "json",
+    return_format: ReturnFormats = "json",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the FRED tags for a category by category ID.  [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_tags.html).
 
     Parameters
@@ -208,8 +211,7 @@ def get_category_tags(
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a dictionary representing the json response or a pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -225,15 +227,17 @@ def get_category_tags(
 
     if return_format == ReturnFormat.pandas:
         return _convert_to_pandas(response["tags"])
+    if return_format == ReturnFormat.polars:
+        return _convert_to_polars(response["tags"])
     return response
 
 
 def get_category_related_tags(
     category_id: Optional[int] = None,
     api_key: ApiKeyType = None,
-    return_format: ReturnFmtType = "json",
+    return_format: ReturnFormats = "json",
     **kwargs: KwargsType,
-) -> JsonOrPdType:
+) -> ReturnTypes:
     """Get the related FRED tags for a category by category ID. [Endpoint documentation](https://fred.stlouisfed.org/docs/api/fred/category_related_tags.html).
 
     Parameters
@@ -249,8 +253,7 @@ def get_category_related_tags(
 
     Returns
     -------
-    dict | pd.DataFrame
-        Either a dictionary representing the json response or a pandas dataframe.
+    dict | pd.DataFrame | pl.DataFrame
 
     """
     return_format = ReturnFormat(return_format)
@@ -266,4 +269,6 @@ def get_category_related_tags(
 
     if return_format == ReturnFormat.pandas:
         return _convert_to_pandas(response["tags"])
+    if return_format == ReturnFormat.polars:
+        return _convert_to_polars(response["tags"])
     return response

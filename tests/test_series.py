@@ -1,4 +1,6 @@
 import pandas as pd
+import polars as pl
+from polars.testing import assert_frame_equal
 import pytest
 
 from pyfredapi.series import (
@@ -17,7 +19,7 @@ from pyfredapi.series import (
     search_series_related_tags,
     search_series_tags,
 )
-from pyfredapi.utils._convert_to_pandas import _convert_to_pandas
+from pyfredapi.utils._convert_to_df import _convert_to_pandas, _convert_to_polars
 
 from .conftest import get_request
 
@@ -28,7 +30,7 @@ series_params = {
 test_search_text = "monetary+service+index"
 series_obv_endpoint = "series/observations"
 
-return_type_mark = pytest.mark.parametrize("return_type", ["json", "pandas"])
+return_type_mark = pytest.mark.parametrize("return_type", ["json", "pandas", "polars"])
 
 
 @pytest.mark.vcr()
@@ -154,6 +156,9 @@ def test_get_series_initial_release(return_type):
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
         pd.testing.assert_frame_equal(_convert_to_pandas(expected), actual)
+    elif return_type == "polars":
+        assert isinstance(actual, pl.DataFrame)
+        assert_frame_equal(_convert_to_polars(expected), actual)
 
 
 @pytest.mark.vcr()
@@ -180,6 +185,9 @@ def test_get_series_asof_date(return_type):
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
         pd.testing.assert_frame_equal(_convert_to_pandas(expected), actual)
+    elif return_type == "polars":
+        assert isinstance(actual, pl.DataFrame)
+        assert_frame_equal(_convert_to_polars(expected), actual)
 
 
 @pytest.mark.vcr()
@@ -204,6 +212,9 @@ def test_search_series(return_type):
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
         pd.testing.assert_frame_equal(_convert_to_pandas(expected["seriess"]), actual)
+    elif return_type == "polars":
+        assert isinstance(actual, pl.DataFrame)
+        assert_frame_equal(_convert_to_polars(expected["seriess"]), actual)
 
 
 @pytest.mark.vcr()
@@ -225,6 +236,9 @@ def test_search_series_tags(return_type):
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
         pd.testing.assert_frame_equal(_convert_to_pandas(expected["tags"]), actual)
+    elif return_type == "polars":
+        assert isinstance(actual, pl.DataFrame)
+        assert_frame_equal(_convert_to_polars(expected["tags"]), actual)
 
 
 @pytest.mark.vcr()
@@ -250,3 +264,6 @@ def test_search_series_related_tags(return_type):
     elif return_type == "pandas":
         assert isinstance(actual, pd.DataFrame)
         pd.testing.assert_frame_equal(_convert_to_pandas(expected["tags"]), actual)
+    elif return_type == "polars":
+        assert isinstance(actual, pl.DataFrame)
+        assert_frame_equal(_convert_to_polars(expected["tags"]), actual)

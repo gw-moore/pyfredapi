@@ -9,7 +9,6 @@ from dataclasses import dataclass
 from typing import Callable, Dict, List, Sequence, Union
 
 import pandas as pd
-from rich.console import Console
 
 from pyfredapi._base import _get_api_key
 from pyfredapi.series import SeriesInfo, get_series, get_series_info
@@ -18,10 +17,7 @@ try:
     import plotly.express as px
     from plotly.graph_objects import Figure
 except ImportError:
-    pass
-
-console = Console()
-
+    MISSING_PLOTLY = True
 
 date_cols = ["date", "realtime_start", "realtime_end"]
 
@@ -56,6 +52,11 @@ class SeriesData:
             A `plotly figure <https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html>`_.
 
         """
+        if MISSING_PLOTLY:
+            raise ImportError(
+                "Unable to import plotly. Ensure you have the plotly package installed."
+            )
+
         if not isinstance(self.df, pd.DataFrame):
             raise ValueError(
                 "Plots can only be created when data is returned as a pandas dataframe."
@@ -404,7 +405,7 @@ class SeriesCollection:
     def list_series(self) -> None:
         """List the series' id and title."""
         for series_data in self._data:
-            console.print(f"{series_data.info.id}: {series_data.info.title}")
+            print(f"{series_data.info.id}: {series_data.info.title}")
 
     def list_seasonality(self) -> None:
         """List the series' seasonality."""
@@ -418,10 +419,10 @@ class SeriesCollection:
             return
 
         for season in distinct_seasonality:
-            console.rule(f"[bold red]Series that are {season}")
+            print(f"Series that are {season}")
             for series_data in self._data:
                 if series_data.info.seasonal_adjustment == season:
-                    console.print(f"{series_data.info.id}: {series_data.info.title}")
+                    print(f"{series_data.info.id}: {series_data.info.title}")
 
     def list_frequency(self) -> None:
         """List the series' frequency."""
@@ -433,10 +434,10 @@ class SeriesCollection:
             return
 
         for freq in distinct_freq:
-            console.rule(f"[bold red]Series that are published {freq}")
+            print(f"Series that are published {freq}")
             for series_data in self._data:
                 if series_data.info.frequency == freq:
-                    console.print(f"{series_data.info.id}: {series_data.info.title}")
+                    print(f"{series_data.info.id}: {series_data.info.title}")
 
     def list_units(self) -> None:
         """List the series' measurement units."""
@@ -448,10 +449,10 @@ class SeriesCollection:
             return
 
         for unit in distinct_units:
-            console.rule(f"[bold red]Series that are measured in {unit}")
+            print(f"Series that are measured in {unit}")
             for series_data in self._data:
                 if series_data.info.units == unit:
-                    console.print(f"{series_data.info.id}: {series_data.info.title}")
+                    print(f"{series_data.info.id}: {series_data.info.title}")
 
     def list_end_date(self) -> None:
         """List the series' latest date."""
@@ -463,10 +464,10 @@ class SeriesCollection:
             return
 
         for date in distinct_end_dates:
-            console.rule(f"[bold red]Series that end on {date}")
+            print(f"Series that end on {date}")
             for series_data in self._data:
                 if series_data.info.observation_end == date:
-                    console.print(f"{series_data.info.id}: {series_data.info.title}")
+                    print(f"{series_data.info.id}: {series_data.info.title}")
 
     def list_start_date(self) -> None:
         """List the series' earliest date."""
@@ -478,7 +479,7 @@ class SeriesCollection:
             return
 
         for date in distinct_start_dates:
-            console.rule(f"[bold red]Series that start on {date}")
+            print(f"Series that start on {date}")
             for series_data in self._data:
                 if series_data.info.observation_start == date:
-                    console.print(f"{series_data.info.id}: {series_data.info.title}")
+                    print(f"{series_data.info.id}: {series_data.info.title}")

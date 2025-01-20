@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 0.9.2 - 2024-11-03
+
+### Added
+
+- Support for [polars](https://pola.rs/) as a return format.
+
+### Changed
+
+- Updated optional dependencies.
+
 ## Version 0.9.1 - 2024-11-02
 
 ### Removed
