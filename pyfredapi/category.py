@@ -9,16 +9,15 @@ from pydantic import BaseModel, ConfigDict, PositiveInt
 from ._base import _get_request
 from .series import SeriesInfo
 from .utils import _convert_pydantic_model_to_frozenset
-from .utils._convert_to_df import _convert_to_pandas, _convert_to_polars
-from .utils.enums import ReturnFormat
-
 from .utils._common_type_hints import (
     ApiKeyType,
-    ReturnTypes,
     JsonType,
     KwargsType,
     ReturnFormats,
+    ReturnTypes,
 )
+from .utils._convert_to_df import _convert_to_pandas, _convert_to_polars
+from .utils.enums import ReturnFormat
 
 
 class CategoryApiParameters(BaseModel):
