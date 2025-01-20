@@ -2023,4 +2023,906 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/releases/dates?file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2025-01-01","realtime_end":"9999-12-31","order_by":"release_date","sort_order":"desc","count":422,"offset":0,"limit":1000,"release_dates":[{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-20"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-20"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-20"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-20"},{"release_id":239,"release_name":"International
+        Financial Statistics","date":"2025-01-20"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-20"},{"release_id":267,"release_name":"National
+        Accounts - GDP (Eurostat)","date":"2025-01-20"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-20"},{"release_id":492,"release_name":"SONIA Interest
+        Rate Benchmark","date":"2025-01-20"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-19"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-19"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-18"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-18"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-17"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-17"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-17"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-17"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-17"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-17"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-17"},{"release_id":769,"release_name":"Fujita, Moscarini,
+        and Postel-Vinay Employer-to-Employer Transition Probability","date":"2025-01-17"},{"release_id":13,"release_name":"G.17
+        Industrial Production and Capacity Utilization","date":"2025-01-17"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-17"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-17"},{"release_id":22,"release_name":"H.8
+        Assets and Liabilities of Commercial Banks in the United States","date":"2025-01-17"},{"release_id":251,"release_name":"Harmonized
+        Indices of Consumer Prices (HICP)","date":"2025-01-17"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-17"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-17"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-17"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-17"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-17"},{"release_id":27,"release_name":"New
+        Residential Construction","date":"2025-01-17"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-17"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-17"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-17"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-17"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-17"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-17"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-17"},{"release_id":400,"release_name":"St.
+        Louis Fed Economic News Index","date":"2025-01-17"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-17"},{"release_id":349,"release_name":"Transportation
+        Services Index and Seasonally-Adjusted Transportation Data","date":"2025-01-17"},{"release_id":9,"release_name":"Advance
+        Monthly Sales for Retail and Food Services","date":"2025-01-16"},{"release_id":322,"release_name":"Business
+        Leaders Survey","date":"2025-01-16"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-16"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-16"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-16"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-16"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-16"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-16"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-16"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-16"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-16"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-16"},{"release_id":20,"release_name":"H.4.1
+        Factors Affecting Reserve Balances","date":"2025-01-16"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-16"},{"release_id":371,"release_name":"Hornstein-Kudlyak-Lange
+        Non-Employment Index","date":"2025-01-16"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-16"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-16"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-16"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-16"},{"release_id":25,"release_name":"Manufacturing
+        and Trade Inventories and Sales","date":"2025-01-16"},{"release_id":351,"release_name":"Manufacturing
+        Business Outlook Survey","date":"2025-01-16"},{"release_id":436,"release_name":"Monthly
+        Retail Trade and Food Services","date":"2025-01-16"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-16"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-16"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-16"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-16"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-16"},{"release_id":190,"release_name":"Primary
+        Mortgage Market Survey","date":"2025-01-16"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-16"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-16"},{"release_id":92,"release_name":"Selected
+        Real Retail Sales Series","date":"2025-01-16"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-16"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-16"},{"release_id":187,"release_name":"St.
+        Louis Fed Financial Stress Index","date":"2025-01-16"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-16"},{"release_id":180,"release_name":"Unemployment
+        Insurance Weekly Claims Report","date":"2025-01-16"},{"release_id":188,"release_name":"U.S.
+        Import and Export Price Indexes","date":"2025-01-16"},{"release_id":465,"release_name":"Weekly
+        Economic Index (Lewis-Mertens-Stock)","date":"2025-01-16"},{"release_id":503,"release_name":"Zillow
+        Home Value Index (ZHVI)","date":"2025-01-16"},{"release_id":454,"release_name":"Average
+        Price Data","date":"2025-01-15"},{"release_id":200,"release_name":"CBOE Market
+        Statistics","date":"2025-01-15"},{"release_id":221,"release_name":"Chicago
+        Fed National Financial Conditions Index","date":"2025-01-15"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-15"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-15"},{"release_id":10,"release_name":"Consumer Price
+        Index","date":"2025-01-15"},{"release_id":315,"release_name":"Current Median
+        CPI","date":"2025-01-15"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-15"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-15"},{"release_id":321,"release_name":"Empire
+        State Manufacturing Survey","date":"2025-01-15"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-15"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-15"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-15"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-15"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-15"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-15"},{"release_id":487,"release_name":"Index
+        of Global Real Economic Activity","date":"2025-01-15"},{"release_id":500,"release_name":"Inflation
+        Expectations","date":"2025-01-15"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-15"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-15"},{"release_id":476,"release_name":"Job Postings
+        on Indeed","date":"2025-01-15"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-15"},{"release_id":205,"release_name":"Main
+        Economic Indicators","date":"2025-01-15"},{"release_id":463,"release_name":"Market
+        Hotness Index","date":"2025-01-15"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-15"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-15"},{"release_id":342,"release_name":"Natural
+        Gas Spot and Futures Prices (NYMEX)","date":"2025-01-15"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-15"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-15"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-15"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-15"},{"release_id":345,"release_name":"Research
+        Consumer Price Index","date":"2025-01-15"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-15"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-15"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-15"},{"release_id":212,"release_name":"Spot
+        Prices","date":"2025-01-15"},{"release_id":313,"release_name":"Sticky Price
+        CPI","date":"2025-01-15"},{"release_id":379,"release_name":"Temporary Open
+        Market Operations","date":"2025-01-15"},{"release_id":637,"release_name":"Wage
+        Growth Tracker","date":"2025-01-15"},{"release_id":470,"release_name":"World
+        Uncertainty Index","date":"2025-01-15"},{"release_id":389,"release_name":"A
+        Millennium of Macroeconomic Data for the UK","date":"2025-01-14"},{"release_id":354,"release_name":"An
+        Arbitrage-Free Three-Factor Term Structure Model and the Recent Behavior of
+        Long-Term Yields and Distant-Horizon Forward Rates","date":"2025-01-14"},{"release_id":280,"release_name":"Cass
+        Freight Index Report","date":"2025-01-14"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-14"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-14"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-14"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-14"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-14"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-14"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-14"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-14"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-14"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-14"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-14"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-14"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-14"},{"release_id":341,"release_name":"Kansas
+        City Fed Labor Market Conditions Indicators","date":"2025-01-14"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-14"},{"release_id":363,"release_name":"Monthly
+        Treasury Statement","date":"2025-01-14"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-14"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-14"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-14"},{"release_id":352,"release_name":"Nonmanufacturing
+        Business Outlook Survey","date":"2025-01-14"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-14"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-14"},{"release_id":46,"release_name":"Producer
+        Price Index","date":"2025-01-14"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-14"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-14"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-14"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-14"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-14"},{"release_id":271,"release_name":"Weekly
+        Financial Statements of the Eurosystem","date":"2025-01-14"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-13"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-13"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-13"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-13"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-13"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-13"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-13"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-13"},{"release_id":15,"release_name":"G.5 Foreign
+        Exchange Rates","date":"2025-01-13"},{"release_id":183,"release_name":"Gasoline
+        and Diesel Fuel Update","date":"2025-01-13"},{"release_id":17,"release_name":"H.10
+        Foreign Exchange Rates","date":"2025-01-13"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-13"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-13"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-13"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-13"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-13"},{"release_id":239,"release_name":"International
+        Financial Statistics","date":"2025-01-13"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-13"},{"release_id":383,"release_name":"Market
+        Value of U.S. Government Debt","date":"2025-01-13"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-13"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-13"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-13"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-13"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-13"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-13"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-13"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-13"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-13"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-13"},{"release_id":426,"release_name":"U.S.
+        Treasury-Owned Gold","date":"2025-01-13"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-12"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-12"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-11"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-11"},{"release_id":443,"release_name":"Business
+        Formation Statistics","date":"2025-01-10"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-10"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-10"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-10"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-10"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-10"},{"release_id":50,"release_name":"Employment
+        Situation","date":"2025-01-10"},{"release_id":502,"release_name":"Euro Short
+        Term Rate","date":"2025-01-10"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-10"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-10"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-10"},{"release_id":20,"release_name":"H.4.1
+        Factors Affecting Reserve Balances","date":"2025-01-10"},{"release_id":22,"release_name":"H.8
+        Assets and Liabilities of Commercial Banks in the United States","date":"2025-01-10"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-10"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-10"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-10"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-10"},{"release_id":198,"release_name":"Kansas
+        City Financial Stress Index","date":"2025-01-10"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-10"},{"release_id":334,"release_name":"Labor
+        Force Status Flows from the Current Population Survey","date":"2025-01-10"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-10"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-10"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-10"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-10"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-10"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-10"},{"release_id":456,"release_name":"Sahm
+        Rule Recession Indicator","date":"2025-01-10"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-10"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-10"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-10"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-10"},{"release_id":400,"release_name":"St.
+        Louis Fed Economic News Index","date":"2025-01-10"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-10"},{"release_id":468,"release_name":"Weekly
+        Business Formation Statistics","date":"2025-01-10"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-09"},{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-09"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-09"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-09"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-09"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-09"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-09"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-09"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-09"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-09"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-09"},{"release_id":351,"release_name":"Manufacturing
+        Business Outlook Survey","date":"2025-01-09"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-09"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-09"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-09"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-09"},{"release_id":190,"release_name":"Primary
+        Mortgage Market Survey","date":"2025-01-09"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-09"},{"release_id":100,"release_name":"Seasonal
+        Credit Rate","date":"2025-01-09"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-09"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-09"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-09"},{"release_id":187,"release_name":"St.
+        Louis Fed Financial Stress Index","date":"2025-01-09"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-09"},{"release_id":736,"release_name":"Visa
+        Spending Momentum Index","date":"2025-01-09"},{"release_id":465,"release_name":"Weekly
+        Economic Index (Lewis-Mertens-Stock)","date":"2025-01-09"},{"release_id":194,"release_name":"ADP
+        National Employment Report","date":"2025-01-08"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-08"},{"release_id":221,"release_name":"Chicago
+        Fed National Financial Conditions Index","date":"2025-01-08"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-08"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-08"},{"release_id":402,"release_name":"Corporate Bond
+        Yield Curve","date":"2025-01-08"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-08"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-08"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-08"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-08"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-08"},{"release_id":14,"release_name":"G.19 Consumer
+        Credit","date":"2025-01-08"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-08"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-08"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-08"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-08"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-08"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-08"},{"release_id":290,"release_name":"Monthly
+        Wholesale Trade: Sales and Inventories","date":"2025-01-08"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-08"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-08"},{"release_id":342,"release_name":"Natural
+        Gas Spot and Futures Prices (NYMEX)","date":"2025-01-08"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-08"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-08"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-08"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-08"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-08"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-08"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-08"},{"release_id":212,"release_name":"Spot
+        Prices","date":"2025-01-08"},{"release_id":379,"release_name":"Temporary Open
+        Market Operations","date":"2025-01-08"},{"release_id":180,"release_name":"Unemployment
+        Insurance Weekly Claims Report","date":"2025-01-08"},{"release_id":271,"release_name":"Weekly
+        Financial Statements of the Eurosystem","date":"2025-01-08"},{"release_id":354,"release_name":"An
+        Arbitrage-Free Three-Factor Term Structure Model and the Recent Behavior of
+        Long-Term Yields and Distant-Horizon Forward Rates","date":"2025-01-07"},{"release_id":266,"release_name":"Bank
+        of Japan Accounts","date":"2025-01-07"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-07"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-07"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-07"},{"release_id":505,"release_name":"Community Bank
+        Sentiment Index","date":"2025-01-07"},{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-07"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-07"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-07"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-07"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-07"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-07"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-07"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-07"},{"release_id":462,"release_name":"Housing
+        Inventory Core Metrics","date":"2025-01-07"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-07"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-07"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-07"},{"release_id":192,"release_name":"Job Openings
+        and Labor Turnover Survey","date":"2025-01-07"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-07"},{"release_id":471,"release_name":"Manufactured
+        Housing Survey","date":"2025-01-07"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-07"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-07"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-07"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-07"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-07"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-07"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-07"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-07"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-07"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-07"},{"release_id":51,"release_name":"U.S.
+        International Trade in Goods and Services","date":"2025-01-07"},{"release_id":449,"release_name":"U.S.
+        Trade in Goods by State, by NAICS-Based Product","date":"2025-01-07"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-06"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-06"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-06"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-06"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-06"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-06"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-06"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-06"},{"release_id":15,"release_name":"G.5 Foreign
+        Exchange Rates","date":"2025-01-06"},{"release_id":183,"release_name":"Gasoline
+        and Diesel Fuel Update","date":"2025-01-06"},{"release_id":17,"release_name":"H.10
+        Foreign Exchange Rates","date":"2025-01-06"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-06"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-06"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-06"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-06"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-06"},{"release_id":239,"release_name":"International
+        Financial Statistics","date":"2025-01-06"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-06"},{"release_id":95,"release_name":"Manufacturer''s
+        Shipments, Inventories, and Orders (M3) Survey","date":"2025-01-06"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-06"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-06"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-06"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-06"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-06"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-06"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-06"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-06"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-06"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-06"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-06"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-05"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-05"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-04"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-04"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-03"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-03"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-03"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-03"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-03"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-03"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-03"},{"release_id":370,"release_name":"Financial
+        Access Survey","date":"2025-01-03"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-03"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-03"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-03"},{"release_id":22,"release_name":"H.8
+        Assets and Liabilities of Commercial Banks in the United States","date":"2025-01-03"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-03"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-03"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-03"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-03"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-03"},{"release_id":113,"release_name":"Metropolitan
+        Area Employment and Unemployment","date":"2025-01-03"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-03"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-03"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-03"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-03"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-03"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-03"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-03"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-03"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-03"},{"release_id":400,"release_name":"St.
+        Louis Fed Economic News Index","date":"2025-01-03"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-03"},{"release_id":116,"release_name":"Unemployment
+        in States and Local Areas (all other areas)","date":"2025-01-03"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-02"},{"release_id":221,"release_name":"Chicago
+        Fed National Financial Conditions Index","date":"2025-01-02"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-02"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-02"},{"release_id":229,"release_name":"Construction
+        Spending","date":"2025-01-02"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-02"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-02"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-02"},{"release_id":238,"release_name":"Financial
+        Soundness Indicators","date":"2025-01-02"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-02"},{"release_id":186,"release_name":"G.5A
+        Foreign Exchange Rates","date":"2025-01-02"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-02"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-02"},{"release_id":20,"release_name":"H.4.1
+        Factors Affecting Reserve Balances","date":"2025-01-02"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-02"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-02"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-02"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-02"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-02"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-02"},{"release_id":342,"release_name":"Natural
+        Gas Spot and Futures Prices (NYMEX)","date":"2025-01-02"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-02"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-02"},{"release_id":190,"release_name":"Primary
+        Mortgage Market Survey","date":"2025-01-02"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-02"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-02"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-02"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-02"},{"release_id":394,"release_name":"Spliced
+        Oil Price","date":"2025-01-02"},{"release_id":212,"release_name":"Spot Prices","date":"2025-01-02"},{"release_id":187,"release_name":"St.
+        Louis Fed Financial Stress Index","date":"2025-01-02"},{"release_id":245,"release_name":"Summary
+        Measures of the Foreign Exchange Value of the Dollar","date":"2025-01-02"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-02"},{"release_id":254,"release_name":"Travel
+        Volume Trends","date":"2025-01-02"},{"release_id":169,"release_name":"Turkish
+        Foreign Exchange Intervention","date":"2025-01-02"},{"release_id":180,"release_name":"Unemployment
+        Insurance Weekly Claims Report","date":"2025-01-02"},{"release_id":261,"release_name":"U.S.
+        Recession Probabilities","date":"2025-01-02"},{"release_id":465,"release_name":"Weekly
+        Economic Index (Lewis-Mertens-Stock)","date":"2025-01-02"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-01"},{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-01"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-01"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-01"},{"release_id":387,"release_name":"Minimum
+        Wage Rate by State","date":"2025-01-01"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-01"},{"release_id":274,"release_name":"University
+        of Louisville and Oklahoma State University: LoDI National Index","date":"2025-01-01"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '5281'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:00 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:00 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:56:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/releases/dates?file_type=json
+  response:
+    body:
+      string: '{"realtime_start":"2025-01-01","realtime_end":"9999-12-31","order_by":"release_date","sort_order":"desc","count":422,"offset":0,"limit":1000,"release_dates":[{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-20"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-20"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-20"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-20"},{"release_id":239,"release_name":"International
+        Financial Statistics","date":"2025-01-20"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-20"},{"release_id":267,"release_name":"National
+        Accounts - GDP (Eurostat)","date":"2025-01-20"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-20"},{"release_id":492,"release_name":"SONIA Interest
+        Rate Benchmark","date":"2025-01-20"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-19"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-19"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-18"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-18"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-17"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-17"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-17"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-17"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-17"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-17"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-17"},{"release_id":769,"release_name":"Fujita, Moscarini,
+        and Postel-Vinay Employer-to-Employer Transition Probability","date":"2025-01-17"},{"release_id":13,"release_name":"G.17
+        Industrial Production and Capacity Utilization","date":"2025-01-17"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-17"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-17"},{"release_id":22,"release_name":"H.8
+        Assets and Liabilities of Commercial Banks in the United States","date":"2025-01-17"},{"release_id":251,"release_name":"Harmonized
+        Indices of Consumer Prices (HICP)","date":"2025-01-17"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-17"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-17"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-17"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-17"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-17"},{"release_id":27,"release_name":"New
+        Residential Construction","date":"2025-01-17"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-17"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-17"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-17"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-17"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-17"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-17"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-17"},{"release_id":400,"release_name":"St.
+        Louis Fed Economic News Index","date":"2025-01-17"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-17"},{"release_id":349,"release_name":"Transportation
+        Services Index and Seasonally-Adjusted Transportation Data","date":"2025-01-17"},{"release_id":9,"release_name":"Advance
+        Monthly Sales for Retail and Food Services","date":"2025-01-16"},{"release_id":322,"release_name":"Business
+        Leaders Survey","date":"2025-01-16"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-16"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-16"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-16"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-16"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-16"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-16"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-16"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-16"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-16"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-16"},{"release_id":20,"release_name":"H.4.1
+        Factors Affecting Reserve Balances","date":"2025-01-16"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-16"},{"release_id":371,"release_name":"Hornstein-Kudlyak-Lange
+        Non-Employment Index","date":"2025-01-16"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-16"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-16"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-16"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-16"},{"release_id":25,"release_name":"Manufacturing
+        and Trade Inventories and Sales","date":"2025-01-16"},{"release_id":351,"release_name":"Manufacturing
+        Business Outlook Survey","date":"2025-01-16"},{"release_id":436,"release_name":"Monthly
+        Retail Trade and Food Services","date":"2025-01-16"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-16"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-16"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-16"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-16"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-16"},{"release_id":190,"release_name":"Primary
+        Mortgage Market Survey","date":"2025-01-16"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-16"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-16"},{"release_id":92,"release_name":"Selected
+        Real Retail Sales Series","date":"2025-01-16"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-16"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-16"},{"release_id":187,"release_name":"St.
+        Louis Fed Financial Stress Index","date":"2025-01-16"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-16"},{"release_id":180,"release_name":"Unemployment
+        Insurance Weekly Claims Report","date":"2025-01-16"},{"release_id":188,"release_name":"U.S.
+        Import and Export Price Indexes","date":"2025-01-16"},{"release_id":465,"release_name":"Weekly
+        Economic Index (Lewis-Mertens-Stock)","date":"2025-01-16"},{"release_id":503,"release_name":"Zillow
+        Home Value Index (ZHVI)","date":"2025-01-16"},{"release_id":454,"release_name":"Average
+        Price Data","date":"2025-01-15"},{"release_id":200,"release_name":"CBOE Market
+        Statistics","date":"2025-01-15"},{"release_id":221,"release_name":"Chicago
+        Fed National Financial Conditions Index","date":"2025-01-15"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-15"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-15"},{"release_id":10,"release_name":"Consumer Price
+        Index","date":"2025-01-15"},{"release_id":315,"release_name":"Current Median
+        CPI","date":"2025-01-15"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-15"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-15"},{"release_id":321,"release_name":"Empire
+        State Manufacturing Survey","date":"2025-01-15"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-15"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-15"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-15"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-15"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-15"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-15"},{"release_id":487,"release_name":"Index
+        of Global Real Economic Activity","date":"2025-01-15"},{"release_id":500,"release_name":"Inflation
+        Expectations","date":"2025-01-15"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-15"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-15"},{"release_id":476,"release_name":"Job Postings
+        on Indeed","date":"2025-01-15"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-15"},{"release_id":205,"release_name":"Main
+        Economic Indicators","date":"2025-01-15"},{"release_id":463,"release_name":"Market
+        Hotness Index","date":"2025-01-15"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-15"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-15"},{"release_id":342,"release_name":"Natural
+        Gas Spot and Futures Prices (NYMEX)","date":"2025-01-15"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-15"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-15"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-15"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-15"},{"release_id":345,"release_name":"Research
+        Consumer Price Index","date":"2025-01-15"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-15"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-15"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-15"},{"release_id":212,"release_name":"Spot
+        Prices","date":"2025-01-15"},{"release_id":313,"release_name":"Sticky Price
+        CPI","date":"2025-01-15"},{"release_id":379,"release_name":"Temporary Open
+        Market Operations","date":"2025-01-15"},{"release_id":637,"release_name":"Wage
+        Growth Tracker","date":"2025-01-15"},{"release_id":470,"release_name":"World
+        Uncertainty Index","date":"2025-01-15"},{"release_id":389,"release_name":"A
+        Millennium of Macroeconomic Data for the UK","date":"2025-01-14"},{"release_id":354,"release_name":"An
+        Arbitrage-Free Three-Factor Term Structure Model and the Recent Behavior of
+        Long-Term Yields and Distant-Horizon Forward Rates","date":"2025-01-14"},{"release_id":280,"release_name":"Cass
+        Freight Index Report","date":"2025-01-14"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-14"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-14"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-14"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-14"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-14"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-14"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-14"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-14"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-14"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-14"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-14"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-14"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-14"},{"release_id":341,"release_name":"Kansas
+        City Fed Labor Market Conditions Indicators","date":"2025-01-14"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-14"},{"release_id":363,"release_name":"Monthly
+        Treasury Statement","date":"2025-01-14"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-14"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-14"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-14"},{"release_id":352,"release_name":"Nonmanufacturing
+        Business Outlook Survey","date":"2025-01-14"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-14"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-14"},{"release_id":46,"release_name":"Producer
+        Price Index","date":"2025-01-14"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-14"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-14"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-14"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-14"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-14"},{"release_id":271,"release_name":"Weekly
+        Financial Statements of the Eurosystem","date":"2025-01-14"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-13"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-13"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-13"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-13"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-13"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-13"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-13"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-13"},{"release_id":15,"release_name":"G.5 Foreign
+        Exchange Rates","date":"2025-01-13"},{"release_id":183,"release_name":"Gasoline
+        and Diesel Fuel Update","date":"2025-01-13"},{"release_id":17,"release_name":"H.10
+        Foreign Exchange Rates","date":"2025-01-13"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-13"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-13"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-13"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-13"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-13"},{"release_id":239,"release_name":"International
+        Financial Statistics","date":"2025-01-13"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-13"},{"release_id":383,"release_name":"Market
+        Value of U.S. Government Debt","date":"2025-01-13"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-13"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-13"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-13"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-13"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-13"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-13"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-13"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-13"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-13"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-13"},{"release_id":426,"release_name":"U.S.
+        Treasury-Owned Gold","date":"2025-01-13"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-12"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-12"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-11"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-11"},{"release_id":443,"release_name":"Business
+        Formation Statistics","date":"2025-01-10"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-10"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-10"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-10"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-10"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-10"},{"release_id":50,"release_name":"Employment
+        Situation","date":"2025-01-10"},{"release_id":502,"release_name":"Euro Short
+        Term Rate","date":"2025-01-10"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-10"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-10"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-10"},{"release_id":20,"release_name":"H.4.1
+        Factors Affecting Reserve Balances","date":"2025-01-10"},{"release_id":22,"release_name":"H.8
+        Assets and Liabilities of Commercial Banks in the United States","date":"2025-01-10"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-10"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-10"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-10"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-10"},{"release_id":198,"release_name":"Kansas
+        City Financial Stress Index","date":"2025-01-10"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-10"},{"release_id":334,"release_name":"Labor
+        Force Status Flows from the Current Population Survey","date":"2025-01-10"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-10"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-10"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-10"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-10"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-10"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-10"},{"release_id":456,"release_name":"Sahm
+        Rule Recession Indicator","date":"2025-01-10"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-10"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-10"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-10"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-10"},{"release_id":400,"release_name":"St.
+        Louis Fed Economic News Index","date":"2025-01-10"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-10"},{"release_id":468,"release_name":"Weekly
+        Business Formation Statistics","date":"2025-01-10"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-09"},{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-09"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-09"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-09"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-09"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-09"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-09"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-09"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-09"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-09"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-09"},{"release_id":351,"release_name":"Manufacturing
+        Business Outlook Survey","date":"2025-01-09"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-09"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-09"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-09"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-09"},{"release_id":190,"release_name":"Primary
+        Mortgage Market Survey","date":"2025-01-09"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-09"},{"release_id":100,"release_name":"Seasonal
+        Credit Rate","date":"2025-01-09"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-09"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-09"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-09"},{"release_id":187,"release_name":"St.
+        Louis Fed Financial Stress Index","date":"2025-01-09"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-09"},{"release_id":736,"release_name":"Visa
+        Spending Momentum Index","date":"2025-01-09"},{"release_id":465,"release_name":"Weekly
+        Economic Index (Lewis-Mertens-Stock)","date":"2025-01-09"},{"release_id":194,"release_name":"ADP
+        National Employment Report","date":"2025-01-08"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-08"},{"release_id":221,"release_name":"Chicago
+        Fed National Financial Conditions Index","date":"2025-01-08"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-08"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-08"},{"release_id":402,"release_name":"Corporate Bond
+        Yield Curve","date":"2025-01-08"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-08"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-08"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-08"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-08"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-08"},{"release_id":14,"release_name":"G.19 Consumer
+        Credit","date":"2025-01-08"},{"release_id":18,"release_name":"H.15 Selected
+        Interest Rates","date":"2025-01-08"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-08"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-08"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-08"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-08"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-08"},{"release_id":290,"release_name":"Monthly
+        Wholesale Trade: Sales and Inventories","date":"2025-01-08"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-08"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-08"},{"release_id":342,"release_name":"Natural
+        Gas Spot and Futures Prices (NYMEX)","date":"2025-01-08"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-08"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-08"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-08"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-08"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-08"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-08"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-08"},{"release_id":212,"release_name":"Spot
+        Prices","date":"2025-01-08"},{"release_id":379,"release_name":"Temporary Open
+        Market Operations","date":"2025-01-08"},{"release_id":180,"release_name":"Unemployment
+        Insurance Weekly Claims Report","date":"2025-01-08"},{"release_id":271,"release_name":"Weekly
+        Financial Statements of the Eurosystem","date":"2025-01-08"},{"release_id":354,"release_name":"An
+        Arbitrage-Free Three-Factor Term Structure Model and the Recent Behavior of
+        Long-Term Yields and Distant-Horizon Forward Rates","date":"2025-01-07"},{"release_id":266,"release_name":"Bank
+        of Japan Accounts","date":"2025-01-07"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-07"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-07"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-07"},{"release_id":505,"release_name":"Community Bank
+        Sentiment Index","date":"2025-01-07"},{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-07"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-07"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-07"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-07"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-07"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-07"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-07"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-07"},{"release_id":462,"release_name":"Housing
+        Inventory Core Metrics","date":"2025-01-07"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-07"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-07"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-07"},{"release_id":192,"release_name":"Job Openings
+        and Labor Turnover Survey","date":"2025-01-07"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-07"},{"release_id":471,"release_name":"Manufactured
+        Housing Survey","date":"2025-01-07"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-07"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-07"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-07"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-07"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-07"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-07"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-07"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-07"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-07"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-07"},{"release_id":51,"release_name":"U.S.
+        International Trade in Goods and Services","date":"2025-01-07"},{"release_id":449,"release_name":"U.S.
+        Trade in Goods by State, by NAICS-Based Product","date":"2025-01-07"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-06"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-06"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-06"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-06"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-06"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-06"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-06"},{"release_id":101,"release_name":"FOMC Press
+        Release","date":"2025-01-06"},{"release_id":15,"release_name":"G.5 Foreign
+        Exchange Rates","date":"2025-01-06"},{"release_id":183,"release_name":"Gasoline
+        and Diesel Fuel Update","date":"2025-01-06"},{"release_id":17,"release_name":"H.10
+        Foreign Exchange Rates","date":"2025-01-06"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-06"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-06"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-06"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-06"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-06"},{"release_id":239,"release_name":"International
+        Financial Statistics","date":"2025-01-06"},{"release_id":484,"release_name":"Key
+        ECB Interest Rates","date":"2025-01-06"},{"release_id":95,"release_name":"Manufacturer''s
+        Shipments, Inventories, and Orders (M3) Survey","date":"2025-01-06"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-06"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-06"},{"release_id":287,"release_name":"Nikkei
+        Indexes","date":"2025-01-06"},{"release_id":473,"release_name":"Optimal Blue
+        Mortgage Market Indices","date":"2025-01-06"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-06"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-06"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-06"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-06"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-06"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-06"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-06"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-05"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-05"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-04"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-04"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-03"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-03"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-03"},{"release_id":72,"release_name":"Daily Treasury
+        Inflation-Indexed Securities","date":"2025-01-03"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-03"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-03"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-03"},{"release_id":370,"release_name":"Financial
+        Access Survey","date":"2025-01-03"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-03"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-03"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-03"},{"release_id":22,"release_name":"H.8
+        Assets and Liabilities of Commercial Banks in the United States","date":"2025-01-03"},{"release_id":504,"release_name":"Historical
+        Overnight AMERIBOR Unsecured Interest Rate","date":"2025-01-03"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-03"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-03"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-03"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-03"},{"release_id":113,"release_name":"Metropolitan
+        Area Employment and Unemployment","date":"2025-01-03"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-03"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-03"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-03"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-03"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-03"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-03"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-03"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-03"},{"release_id":469,"release_name":"State
+        Unemployment Insurance Weekly Claims Report","date":"2025-01-03"},{"release_id":400,"release_name":"St.
+        Louis Fed Economic News Index","date":"2025-01-03"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-03"},{"release_id":116,"release_name":"Unemployment
+        in States and Local Areas (all other areas)","date":"2025-01-03"},{"release_id":200,"release_name":"CBOE
+        Market Statistics","date":"2025-01-02"},{"release_id":221,"release_name":"Chicago
+        Fed National Financial Conditions Index","date":"2025-01-02"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-02"},{"release_id":86,"release_name":"Commercial
+        Paper","date":"2025-01-02"},{"release_id":229,"release_name":"Construction
+        Spending","date":"2025-01-02"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-02"},{"release_id":502,"release_name":"Euro
+        Short Term Rate","date":"2025-01-02"},{"release_id":378,"release_name":"Federal
+        Funds Data","date":"2025-01-02"},{"release_id":238,"release_name":"Financial
+        Soundness Indicators","date":"2025-01-02"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-02"},{"release_id":186,"release_name":"G.5A
+        Foreign Exchange Rates","date":"2025-01-02"},{"release_id":386,"release_name":"GDPNow","date":"2025-01-02"},{"release_id":18,"release_name":"H.15
+        Selected Interest Rates","date":"2025-01-02"},{"release_id":20,"release_name":"H.4.1
+        Factors Affecting Reserve Balances","date":"2025-01-02"},{"release_id":209,"release_name":"ICE
+        BofA Indices","date":"2025-01-02"},{"release_id":185,"release_name":"Interest
+        Rate on Reserve Balances","date":"2025-01-02"},{"release_id":304,"release_name":"Interest
+        Rate Spreads","date":"2025-01-02"},{"release_id":484,"release_name":"Key ECB
+        Interest Rates","date":"2025-01-02"},{"release_id":427,"release_name":"Moody''s
+        Daily Corporate Bond Yield Averages","date":"2025-01-02"},{"release_id":328,"release_name":"NASDAQ","date":"2025-01-02"},{"release_id":342,"release_name":"Natural
+        Gas Spot and Futures Prices (NYMEX)","date":"2025-01-02"},{"release_id":473,"release_name":"Optimal
+        Blue Mortgage Market Indices","date":"2025-01-02"},{"release_id":375,"release_name":"Overnight
+        Bank Funding Rate Data","date":"2025-01-02"},{"release_id":190,"release_name":"Primary
+        Mortgage Market Survey","date":"2025-01-02"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-02"},{"release_id":445,"release_name":"Secured
+        Overnight Financing Rate Data","date":"2025-01-02"},{"release_id":483,"release_name":"SOFR
+        Averages and Index Data","date":"2025-01-02"},{"release_id":492,"release_name":"SONIA
+        Interest Rate Benchmark","date":"2025-01-02"},{"release_id":394,"release_name":"Spliced
+        Oil Price","date":"2025-01-02"},{"release_id":212,"release_name":"Spot Prices","date":"2025-01-02"},{"release_id":187,"release_name":"St.
+        Louis Fed Financial Stress Index","date":"2025-01-02"},{"release_id":245,"release_name":"Summary
+        Measures of the Foreign Exchange Value of the Dollar","date":"2025-01-02"},{"release_id":379,"release_name":"Temporary
+        Open Market Operations","date":"2025-01-02"},{"release_id":254,"release_name":"Travel
+        Volume Trends","date":"2025-01-02"},{"release_id":169,"release_name":"Turkish
+        Foreign Exchange Intervention","date":"2025-01-02"},{"release_id":180,"release_name":"Unemployment
+        Insurance Weekly Claims Report","date":"2025-01-02"},{"release_id":261,"release_name":"U.S.
+        Recession Probabilities","date":"2025-01-02"},{"release_id":465,"release_name":"Weekly
+        Economic Index (Lewis-Mertens-Stock)","date":"2025-01-02"},{"release_id":441,"release_name":"Coinbase
+        Cryptocurrencies","date":"2025-01-01"},{"release_id":72,"release_name":"Daily
+        Treasury Inflation-Indexed Securities","date":"2025-01-01"},{"release_id":279,"release_name":"Economic
+        Policy Uncertainty","date":"2025-01-01"},{"release_id":101,"release_name":"FOMC
+        Press Release","date":"2025-01-01"},{"release_id":387,"release_name":"Minimum
+        Wage Rate by State","date":"2025-01-01"},{"release_id":242,"release_name":"Recession
+        Indicators Series","date":"2025-01-01"},{"release_id":274,"release_name":"University
+        of Louisville and Oklahoma State University: LoDI National Index","date":"2025-01-01"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '5281'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:00 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:00 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:56:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

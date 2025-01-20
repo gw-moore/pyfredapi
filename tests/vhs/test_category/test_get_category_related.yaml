@@ -79,4 +79,84 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"categories":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '17'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:55:50 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:55:50 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:55:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/category/related?category_id=125&file_type=json
+  response:
+    body:
+      string: '{"categories":[]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '17'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:55:50 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:55:50 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:55:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -51,4 +51,56 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2024-12-19","realtime_end":"2024-12-19","seriess":[{"id":"GDP","realtime_start":"2024-12-19","realtime_end":"2024-12-19","title":"Gross
+        Domestic Product","observation_start":"1947-01-01","observation_end":"2024-07-01","frequency":"Quarterly","frequency_short":"Q","units":"Billions
+        of Dollars","units_short":"Bil. of $","seasonal_adjustment":"Seasonally Adjusted
+        Annual Rate","seasonal_adjustment_short":"SAAR","last_updated":"2024-12-19
+        07:55:01-06","popularity":93,"notes":"BEA Account Code: A191RC\n\nGross domestic
+        product (GDP), the featured measure of U.S. output, is the market value of
+        the goods and services produced by labor and property located in the United
+        States.For more information, see the Guide to the National Income and Product
+        Accounts of the United States (NIPA) and the Bureau of Economic Analysis (http:\/\/www.bea.gov\/national\/pdf\/nipaguid.pdf)."}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '640'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:08 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:08 GMT
+      Last-Modified:
+      - Thu, 19 Dec 2024 13:55:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -91,4 +91,96 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:07 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:07 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:56:07 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release/tables?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"release_id":"10","elements":{"34481":{"element_id":34481,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index by Expenditure Category","level":"0","children":[]},"36712":{"element_id":36712,"release_id":10,"series_id":null,"parent_id":null,"line":null,"type":"section","name":"Consumer
+        Price Index Special Aggregate Indices","level":"0","children":[]}}}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '235'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:07 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:07 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:56:07 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

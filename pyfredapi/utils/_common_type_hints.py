@@ -11,11 +11,11 @@ from pyfredapi.utils.enums import ReturnFormat
 try:
     from polars import DataFrame as PlDataFrame
 except ImportError:
-    PlDataFrame: Any  # type: ignore
+    pass
 
 
 ApiKeyType = Union[str, None]
 JsonType = Dict[str, Any]
-ReturnTypes = Union[Dict, PdDataFrame, PlDataFrame]
+ReturnTypes = Union[Dict, PdDataFrame, "PlDataFrame"]
 ReturnFormats = Union[Literal["json", "pandas", "polars"], ReturnFormat]
 KwargsType = Dict[str, Union[int, str, None]]

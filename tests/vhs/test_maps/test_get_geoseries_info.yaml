@@ -87,4 +87,92 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2023-01-01"}}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:55:55 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:55:55 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:55:55 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2023-01-01"}}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:55:55 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:55:55 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:55:55 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

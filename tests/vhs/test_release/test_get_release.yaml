@@ -89,4 +89,94 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"realtime_start":"2025-01-20","realtime_end":"2025-01-20","releases":[{"id":10,"realtime_start":"2025-01-20","realtime_end":"2025-01-20","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '167'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:01 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:01 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:56:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.3
+    method: GET
+    uri: https://api.stlouisfed.org/fred/release?file_type=json&release_id=10
+  response:
+    body:
+      string: '{"realtime_start":"2025-01-20","realtime_end":"2025-01-20","releases":[{"id":10,"realtime_start":"2025-01-20","realtime_end":"2025-01-20","name":"Consumer
+        Price Index","press_release":true,"link":"http:\/\/www.bls.gov\/cpi\/"}]}'
+    headers:
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '167'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jan 2025 14:56:01 GMT
+      Expires:
+      - Mon, 20 Jan 2025 14:56:01 GMT
+      Last-Modified:
+      - Mon, 20 Jan 2025 14:56:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1
