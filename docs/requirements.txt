@@ -367,7 +367,7 @@ referencing==0.36.1
     #   jupyter-events
 regex==2024.11.6
     # via mkdocs-material
-requests==2.32.3
+requests==2.32.4
     # via
     #   jupyterlab-server
     #   mkdocs-material
