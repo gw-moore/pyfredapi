@@ -2,23 +2,17 @@
 
 ## Version 0.10.0 - 2025-07-26
 
-### Fixed
-
-- Fixed mispelling of ascending literal type. Changed to 'asc'. ([#38](https://github.com/gw-moore/pyfredapi/issues/38))
-
-### Removed
-
-- Removed dependency on numpy. ([#39](https://github.com/gw-moore/pyfredapi/issues/39))
-
-## Version 0.9.2 - 2024-11-03
-
 ### Added
 
 - Support for [polars](https://pola.rs/) as a return format.
 
-### Changed
+### Fixed
 
-- Updated optional dependencies.
+- Fixed misspelling of ascending literal type. Changed to 'asc'. ([#38](https://github.com/gw-moore/pyfredapi/issues/38))
+
+### Removed
+
+- Removed dependency on numpy. ([#39](https://github.com/gw-moore/pyfredapi/issues/39))
 
 ## Version 0.9.1 - 2024-11-02
 
