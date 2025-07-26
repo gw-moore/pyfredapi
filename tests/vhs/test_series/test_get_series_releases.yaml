@@ -179,4 +179,380 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:15:52 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:15:52 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 16:10:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:15:53 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:15:53 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 16:10:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:17:47 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:17:47 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 16:10:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:17:48 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:17:48 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 16:10:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:18:02 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:18:02 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 16:10:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:18:02 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:18:02 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 16:10:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:40:12 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:40:12 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 18:40:12 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/fred/series/release?file_type=json&series_id=GDP
+  response:
+    body:
+      string: '{"realtime_start":"2025-07-26","realtime_end":"2025-07-26","releases":[{"id":53,"realtime_start":"2025-07-26","realtime_end":"2025-07-26","name":"Gross
+        Domestic Product","press_release":true,"link":"https:\/\/www.bea.gov\/data\/gdp\/gross-domestic-product"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '186'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:40:12 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:40:12 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 18:40:12 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -46,7 +46,7 @@ class CategoryApiParameters(BaseModel):
             "group_popularity",
         ]
     ] = None
-    sort_order: Optional[Literal["acs", "desc"]] = None
+    sort_order: Optional[Literal["asc", "desc"]] = None
     filter_variable: Optional[Literal["frequency", "units", "seasonal_adjustment"]] = (
         None
     )

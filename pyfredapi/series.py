@@ -34,7 +34,7 @@ class SeriesApiParameters(BaseModel):
     realtime_end: Optional[str] = None
     limit: Optional[int] = None
     offset: Optional[PositiveInt] = None
-    sort_order: Optional[Literal["acs", "desc"]] = None
+    sort_order: Optional[Literal["asc", "desc"]] = None
     observation_start: Optional[str] = None
     observation_end: Optional[str] = None
     units: Optional[

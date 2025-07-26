@@ -35,7 +35,7 @@ class TagsApiParameters(BaseModel):
     order_by: Optional[
         Literal["series_count", "popularity", "created", "name", "group_id"]
     ] = None
-    sort_order: Optional[Literal["acs", "desc"]] = None
+    sort_order: Optional[Literal["asc", "desc"]] = None
     exclude_tag_names: Optional[str] = None
 
 

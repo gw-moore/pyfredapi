@@ -34,7 +34,6 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-    "numpy>=1.0.0,<2.0.0",
     "pandas>=1.0.0,<3.0.0",
     "pydantic>=2.0.0,<3.0.0",
     "requests>=2.0.0,<3.0.0",
@@ -61,12 +60,11 @@ docs = [
 ]
 
 lint = [
-    "black[jupyter]==24.8.0",
-    "mypy==1.14.1",
-    "pandas-stubs==2.2.1.240316",
+    "black[jupyter]==25.1.0",
+    "mypy==1.17.0",
+    "pandas-stubs==2.3.0.250703",
     "pre-commit==3.7.0",
-    "ruff==0.9.2",
-    "types-frozendict==2.0.9",
+    "ruff==0.12.5",
     "types-requests==2.31.0.20240403",
     "types-setuptools==69.2.0.20240317",
 ]

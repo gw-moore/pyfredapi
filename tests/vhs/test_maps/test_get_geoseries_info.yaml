@@ -175,4 +175,188 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2024-01-01"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:15:33 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:15:33 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 17:23:35 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2024-01-01"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:15:33 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:15:33 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 17:23:35 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2024-01-01"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:39:53 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:39:53 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 18:39:53 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.32.4
+    method: GET
+    uri: https://api.stlouisfed.org/geofred//series/group?file_type=json&series_id=WIPCPI
+  response:
+    body:
+      string: '{"series_group":{"title":"Per Capita Personal Income","region_type":"state","series_group":"882","season":"NSA","units":"Dollars","frequency":"Annual","min_date":"1929-01-01","max_date":"2024-01-01"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=93600
+      Cache-Control:
+      - max-age=0, no-cache
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 26 Jul 2025 18:39:53 GMT
+      Expires:
+      - Sat, 26 Jul 2025 18:39:53 GMT
+      Last-Modified:
+      - Sat, 26 Jul 2025 18:39:53 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=86400
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1
