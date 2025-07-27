@@ -16,6 +16,7 @@ from pyfredapi.series import SeriesInfo, get_series, get_series_info
 try:
     import plotly.express as px
     from plotly.graph_objects import Figure
+    # MISSING_PLOTLY = False
 except ImportError:
     MISSING_PLOTLY = True
 

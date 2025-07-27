@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.10.1 - 2025-07-27
+
+### Fixed
+
+- Fixed bug where `MISSING_PLOTLY` flag was not defined when plotly is installed.
+
 ## Version 0.10.0 - 2025-07-26
 
 ### Added
