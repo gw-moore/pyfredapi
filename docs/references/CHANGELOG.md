@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.10.2 - 2025-07-27
+
+### Changed
+
+- Bumped version number to 0.10.2 because pypi won't allow the reuse of already published version numbers.
+
 ## Version 0.10.1 - 2025-07-27
 
 ### Fixed
