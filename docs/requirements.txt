@@ -328,7 +328,7 @@ pygments==2.19.2
     #   mkdocs-material
     #   nbconvert
     #   rich
-pymdown-extensions==10.16
+pymdown-extensions==10.16.1
     # via
     #   mkdocs-material
     #   mkdocstrings
