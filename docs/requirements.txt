@@ -291,7 +291,7 @@ pathspec==0.12.1
     # via mkdocs
 pexpect==4.9.0
     # via ipython
-pillow==11.3.0
+pillow==12.1.1
     # via matplotlib
 platformdirs==4.3.8
     # via
